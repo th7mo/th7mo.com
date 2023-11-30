@@ -17,7 +17,7 @@ To keep my document workflow simple I want to minimize dependencies my documents
 
 ## Decision
 
-Use the Markdown markup language for documents and [Git](https://git-scm.com/) for version control.
+Use the [Markdown](https://en.wikipedia.org/wiki/Markdown) markup language for documents and [Git](https://git-scm.com/) for version control.
 Markdown and Git are the only two dependencies that can not be swapped by other implementations.
 Tools to convert Markdown to other formats can change over time.
 
@@ -28,7 +28,7 @@ As a result, the source files remain free of dependencies.
 
 ### Markdown styling
 
-Write strict [Markdown](https://en.wikipedia.org/wiki/Markdown) without flavors or extensions like GitHub Flavored Markdown (GFM).
+Write strict Markdown without flavors or extensions like GitHub Flavored Markdown (GFM).
 Only two exceptions are allowed:
 
 - referencing headers with the non-official syntax: `[](#header-name)` (does not break compatibility in any way, it is still valid link syntax)
