@@ -8,10 +8,10 @@ You can authenticate to those repository hosting services using an SSH key.
 Execute:
 
 ```sh
-ssh-key gen -t ed22519 -C [email]
+ssh-key gen -t ed22519 -C {email}
 ```
 
-- `[email]` is your email you use for GitHub or Bitbucket.
+- `{email}` is your email you use for GitHub or Bitbucket.
 
 When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
 The default location where the key is stored is `~/.ssh/`.
@@ -83,7 +83,7 @@ Also make sure that your local `.gitconfig` has the correct `user.name` and `use
 
 ## Reference
 
-- For a more detailed explanation reference the [GitHub article](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+- For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 - For a more detailed explanation for multiple ssh keys reference:
 	- [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
 	- [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).
