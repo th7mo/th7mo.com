@@ -3,6 +3,8 @@
 A method to access and write data to GitHub and Bitbucket is Secure Shell Protocol (SSH).
 You can authenticate to those repository hosting services using an SSH key.
 
+When you only need one SSH key, you can skip the section that covers [Multiple accounts](#multiple-accounts-on-the-same-repository-hosting-service).
+
 ## Generate a new SSH key
 
 Execute:
@@ -35,12 +37,12 @@ ssh-add ~/.ssh/id_ed25519
 
 ## Multiple accounts on the same repository hosting service
 
-When you have a personal and work ssh key for the same repository hosting service, you probably need to take more steps to distinct the keys.
+When you have a personal and work SSH key for the same repository hosting service, you probably need to take more steps to distinct the keys.
 
-### Add both the ssh keys to the ssh-agent
+### Add both the SSH keys to the ssh-agent
 
-Use the `ssh-add {ssh-key-path}` command explained in [the previous subsection](#adding-the-ssh-key) for each ssh key.
-Verify if all ssh keys are loaded by using the command:
+Use the `ssh-add {ssh-key-path}` command explained in [the previous subsection](#adding-the-ssh-key) for each SSH key.
+Verify if all SSH keys are loaded by using the command:
 
 ```sh
 ssh-add -l
@@ -84,6 +86,6 @@ Also make sure that your local `.gitconfig` has the correct `user.name` and `use
 ## Reference
 
 - For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-- For a more detailed explanation for multiple ssh keys reference:
+- For a more detailed explanation for multiple SSH keys reference:
 	- [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
 	- [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).
