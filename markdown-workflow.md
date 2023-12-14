@@ -32,7 +32,7 @@ The amount of hashes defines the heading level.
 
 ### Lists
 
-Prefix a list item with the hyphen (`-`) symbol to make it an unordered list.
+Prefix a list item with the hyphen (`-`) symbol to make it an unordered list:
 
 ```md
 - item
@@ -44,7 +44,7 @@ Alternatively an unordered list can be made using the asterisk (`*`) or addition
 Using an asterisk (`*`) symbol is discouraged because it is also used for making text bold or italic.
 Using an addition (`+`) symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
 
-Prefix a list item with a number and a period (`1.`) to make it an ordered list.
+Prefix a list item with a number and a period (`.`) to make it an ordered list:
 
 ```md
 1. item
@@ -56,7 +56,7 @@ Prefix a list item with a number and a period (`1.`) to make it an ordered list.
 
 To create a code block surround the code between two lines with three backticks:
 
-```md
+```
 {three backticks}{language}
 {your code here}
 {three backticks}
@@ -66,7 +66,7 @@ Add a programming language name after the first three backticks to indicate to M
 
 To create an inline code use single backticks:
 
-```md
+```
 `{inline code here}`
 ```
 
