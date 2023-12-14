@@ -13,7 +13,7 @@ Execute:
 ssh-key gen -t ed22519 -C {email}
 ```
 
-- `{email}` is your email you use for GitHub or Bitbucket.
+- `{email}` is the email you use for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
 
 When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
 The default location where the key is stored is `~/.ssh/`.
