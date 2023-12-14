@@ -84,4 +84,6 @@ Also make sure that your local `.gitconfig` has the correct `user.name` and `use
 ## Reference
 
 - For a more detailed explanation reference the [GitHub article](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-- For a more detailed explanation for multiple ssh keys on the same repository hosting service reference this [Bitbucket support page](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
+- For a more detailed explanation for multiple ssh keys reference:
+	- [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
+	- [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).
