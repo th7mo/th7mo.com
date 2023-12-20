@@ -13,18 +13,34 @@ Legacy addresses:
 - `gaming@th7mo.com`, currently used for gaming platforms (League, Blizzard, Xbox, Parsec, Steam)
 - `media@th7mo.com`, currently used for media platforms (Spotify, Tidal, Discord, Instagram, Snapchat, Reddit)
 
+# New situation - Yet to implement
+
+## Design philosophy
+
+Excessive categorizing is doing me more harm than good.
+Setting up the emails on a new email client takes a lot of time and I doubt a lot which email to use for some accounts.
+I am using a unique password for each account, so separating really important stuff from regular stuff is secure enough for me.
+I handle and archive each email on each account, so there is no real difference from separate emails.
+There is no real difference from separate emails since I handled and archived each email on each account anyway. 
+
+## root@th7mo.com 
+
+For everything that involves money (except regular subscriptions) or other really important stuff. 
+Contains the sensitive old `thimo@th7mo.com` accounts.
+
+## thimo@th7mo.com
+
+For public. 
+Probably the most accounts will be using this email address.
+Merges `media@th7mo.com`, `dev@th7mo.com`, `work@th7mo.com`, `gaming@th7mo.com` and old `thimo@th7mo.com` public stuff.
+
+## thimoquinten@gmail.com
+
+For throw-away stuff and spam I never use.
+A fallback for when my other emails are compromised.
+
 # Improvements
 
-Can I categorize everything into three or four separate categories? 
-
-## Things to think about
-
-- What if I don't code anymore in 10 or 20 years? Is `dev@` or `code@` prefix future-proof?
-- What is the real benefit of multiple email accounts?
-- Does multiple accounts really add more security when using a different password for every site using [Bitwarden](https://bitwarden.com/)?
-  - Only when the email password itself gets leaked. When the email password gets compromised it has less impact to more emails you have.
-- What about a `thimo@th7mo.com` for everything public, and `root@th7mo.com` for everything important. 
-- An email for spam (`void@th7mo.com`), one for online platforms (`media@th7mo.com`) and one for the rest (`thimo@th7mo.com`).
-- For coding only the email addresses [`dev@th7mo.com`, `thimo@th7mo.com`, `code@th7mo.com`] look like good options. 
-- Multiple accounts are way more difficult to set up and manage for email clients, email servers and password managing.
-- It is easier to detect phishing when having multiple emails (if a personal matter is used for work email that is suspicious).
+- implement the new situation
+- remove the old situation
+- cleanup references that hint that there was a previous implementation
