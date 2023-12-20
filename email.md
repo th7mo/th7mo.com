@@ -37,6 +37,7 @@ Merges `media@th7mo.com`, `dev@th7mo.com`, `work@th7mo.com`, `gaming@th7mo.com` 
 ## thimoquinten@gmail.com
 
 For throw-away stuff and spam I never use.
+Migrates old `void@th7mo.com` accounts.
 A fallback for when my other emails are compromised.
 
 # Improvements
@@ -44,3 +45,4 @@ A fallback for when my other emails are compromised.
 - implement the new situation
 - remove the old situation
 - cleanup references that hint that there was a previous implementation
+- don't forget to update my email in `frontend-monorepo` from `dev@th7mo.com` to `thimo@th7mo.com`
