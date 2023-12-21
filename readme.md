@@ -9,7 +9,8 @@ The wiki relies on the [Markdown](/markdown-workflow.md) markup language.
 # Improvements
 
 - Make a guide for Arch, or find a way to back up my entire OS configuration.
+  - It is probably better to back up my configuration files (already did) and write a guide for how to re-install Arch with the packages I use a lot.
 - Write an article about how to structure articles in this wiki.
   - Include an explanation about how to store work in progress.
-    This is now temporarily done using the `Improvements heading 1`.
+    This is now temporarily done using the `# Improvements` heading.
     How can I keep the work in progress close to its source without cluttering the articles or the file structure?
