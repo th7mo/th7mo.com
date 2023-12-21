@@ -47,3 +47,4 @@ A fallback for when my other emails are compromised.
 - cleanup references that hint that there was a previous implementation
 - don't forget to update my email in `frontend-monorepo` from `dev@th7mo.com` to `thimo@th7mo.com`
 - don't forget to use `thimo@th7mo.com` instead of `media@th7mo.com` for YouTube Premium
+- Link to page about email server Stalwart
