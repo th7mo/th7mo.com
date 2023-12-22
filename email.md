@@ -1,7 +1,8 @@
 # Email
 
 I use my own custom domain `th7mo.com` for my emails.
-I use the following emails:
+The [Stalwart](/stalwart.md) article describes how I manage my email server.
+I use the following email addresses:
 
 - `dev@th7mo.com`
 - `thimo@th7mo.com`, 
@@ -25,8 +26,7 @@ There is no real difference from separate emails since I handled and archived ea
 
 ## root@th7mo.com 
 
-For everything that involves money (except regular subscriptions) or other really important stuff. 
-Contains the sensitive old `thimo@th7mo.com` accounts.
+For everything administrative (except regular subscriptions). 
 
 ## thimo@th7mo.com
 
@@ -47,4 +47,3 @@ A fallback for when my other emails are compromised.
 - cleanup references that hint that there was a previous implementation
 - don't forget to update my email in `frontend-monorepo` from `dev@th7mo.com` to `thimo@th7mo.com`
 - don't forget to use `thimo@th7mo.com` instead of `media@th7mo.com` for YouTube Premium
-- Link to page about email server Stalwart

@@ -36,6 +36,15 @@ Open a port by using the following `ufw` command:
 ufw enable {port-number}
 ```
 
+## DNS
+
+Stalwart generates keys you need to add to your DNS configuration.
+
+- `@` | `MX` | `mx.th7mo.com.` (trailing dot (`.`))
+- `stalwart._domainkey` | `TXT` | `{your-DKIM1-key}` (including quotes)
+- `_dmarc` | `TXT` | `{your-DMARC1-key}` (including quotes) 
+- `@` | `TXT` | `{your-spf1-key}` (something like ` "v=spf1 a:mail.th7mo.com mx -all ra=postmaster" `)
+
 ## Add account to email client
 
 ### Gmail (mobile)
@@ -51,8 +60,30 @@ ufw enable {port-number}
 
 ### Manual setup 
 
+This configuration is for other email clients.
+It is possible that not every listed setting is required by your email client.
+The individual setting names can vary too.
 
+#### Incoming server settings (IMAP)
 
-# Improvements
+**Username**: email without domain (`thimo` for `thimo@th7mo.com`)
 
-- Finish [manual setup]('#manual-setup') section and provide port numbers (look what is configured in Thunderbird).
+**Server**: `mail.th7mo.com`
+
+**Port**: `993`
+
+**Connection security**: `SSL/TLS`
+
+**Authentication method**: `normal password`
+
+#### Outgoing server settings (SMTP)
+
+**Username**: email without domain (`thimo` for `thimo@th7mo.com`)
+
+**Server**: `mail.th7mo.com`
+
+**Port**: `465`
+
+**Connection security**: `SSL/TLS`
+
+**Authentication method**: `normal password`
