@@ -103,7 +103,8 @@ Host bitbucket # Use this name in the remote URL
 	IdentitiesOnly yes
 ```
 
-> **Hint**: It is recommended to use a lowercase name for the `Host`, because you need to add this name to your remote url.
+> [!TIP]
+> It is recommended to use a lowercase name for the `Host`, because you need to add this name to your remote url.
 
 ### Update the existing remotes
 
