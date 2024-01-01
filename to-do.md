@@ -17,3 +17,5 @@ I depend on [Git](https://git-scm.com/) for version control.
   A Network Attached Storage (NAS) or home server solution should be future proof.
 - Figure out how to make the text while logging in my laptop and computer high resolution and also readable.
   At the moment my computer font is way to big and blurry, and my laptop font size is way to small to read anything.
+- Write a guide for my Gentoo setup (including WM).
+  - Explain that for Vulkan needs to be used for rendering Sway for NVIDIA card.
