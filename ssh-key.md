@@ -118,7 +118,7 @@ git remote set-url {remote_name} git@{Host}:{workspace}/{repository}.git
 Example for this repository:
 
 ```sh
-git remote set-url origin git@github:th7mo/wiki.git
+git remote set-url origin git@github:th7mo/second-brain.git
 ```
 
 Also make sure that your local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
