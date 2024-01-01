@@ -17,3 +17,4 @@ They also don't always take Debian or Arch based distributions into account.
     This is now temporarily done using the `# Improvements` heading.
     How can I keep the work in progress close to its source without cluttering the articles or the file structure?
     It might be good to let the reader know that the article is not complete or incorrect
+- Rename this repo to `brain` or `second-brain` because this is more than just a wiki. It also captures my notes and thoughts.
