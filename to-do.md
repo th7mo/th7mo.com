@@ -19,3 +19,8 @@ I depend on [Git](https://git-scm.com/) for version control.
   At the moment my computer font is way to big and blurry, and my laptop font size is way to small to read anything.
 - Write a guide for my Gentoo setup (including WM).
   - Explain that for Vulkan needs to be used for rendering Sway for NVIDIA card.
+- Explain that I need to use Vulkan for Sway using NVIDIA.
+- Explain that I need `iwd` as [Networkmanager](/networkmanager.md) backend instead of `wpa_supplicant`.
+- Backup my Gentoo portage configuration settings
+- Backup my Linux kernel `.config` file.
+- Make a seperate branch for pc and laptop for my `dotfiles` repository.
