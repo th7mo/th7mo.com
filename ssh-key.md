@@ -10,7 +10,7 @@ When you only need one SSH key, you can skip the section that covers [Multiple a
 To generate a new SSH key execute:
 
 ```sh
-ssh-keygen -t ed22519 -C {email}
+ssh-keygen -t ed25519 -C {email}
 ```
 
 - `{email}` is the email you use for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
@@ -26,10 +26,10 @@ Press `Enter` until the file is generated.
 
 The previous command generated two files (assuming you did not change the name when prompted):
 
-- `id_ed22519` (private key)
-- `id_ed22519.pub` (public key)
+- `id_ed25519` (private key)
+- `id_ed25519.pub` (public key)
 
-Copy entire contents of the `id_ed22519.pub` file.
+Copy entire contents of the `id_ed25519.pub` file.
 The following command demonstrates how to copy a file to the clipboard:
 
 ```sh
