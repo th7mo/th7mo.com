@@ -7,11 +7,10 @@ I depend on [Git](https://git-scm.com/) for version control.
 - Install [NVM](https://github.com/nvm-sh/nvm) (don't use Gentoo package repository for this)
 - Use NPM to install LSP servers for the languages I use (check existing `languages.toml` on Github for used languages).
 - Swapping the stuff from my closet and my bed-drawers.
-- Replace [i3](https://i3wm.org/) for [Sway](https://swaywm.org/) or another Wayland compatible window manager.
-  - The replacement must to have compatiblity with NVIDIA GPU's.
-  - The replacement must be lightweight.
-  - The replacement must be in the official Gentoo package repository.
-  - The replacement should have a stable version in the Gentoo package repository.
+- Write why I still use Xorg (nvidia) and explain how to set it up.
+  - Explain that you NEVER use xrandr but use `.Xresources` to scale.
+  - When specifing a cursor and size you get consistant cursor.
+  - Don't forget to source the `.Xresources` file in the `.xinitrc` file.
 - Remove dependency on Google Photos for my media.
   I want a platform independent solution to store my media.
   A Network Attached Storage (NAS) or home server solution should be future proof.
@@ -24,3 +23,10 @@ I depend on [Git](https://git-scm.com/) for version control.
 - Backup my Gentoo portage configuration settings
 - Backup my Linux kernel `.config` file.
 - Make a seperate branch for pc and laptop for my `dotfiles` repository.
+- Explain how to make audio work before you forget it
+  - global pulseaudio flag
+  - install pipewire and wireplumber
+  - start your windowmanager using dbus-run-session or dbus-launch (otherwise your audio will probably not work)
+  - use the gentoo-pipewire-launcher (see i3 config) on startup
+  - use pavucontrol for easy managing of audio (it is not worth it for the terminal)
+ 
