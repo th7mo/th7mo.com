@@ -1,12 +1,12 @@
 # Style guide
 
-This note aims to dictate rules to make the writing of the entire Second Brain consistant.
+This note aims to dictate rules to make the writing of the entire Second Brain consistent.
 
 ## Terminology
 
 **Second Brain**:
 The Second Brain is a collection of all my digital thoughts and documentation.
-It is stored in the form of a repository, but this is only a implementation detail.
+It is stored in the form of a repository, but this is only an implementation detail.
 Use the term Second Brain instead of repository.
 
 **Note**:
@@ -29,21 +29,18 @@ Use spaces instead of slashes and capitalize the first character.
 Only one heading 1 is allowed in the entire Markdown file.
 
 When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
-Write the command without any prefixes so it can easily be copied to the terminal.
+Write the command without any prefixes, so it can easily be copied to the terminal.
 
-When using the GitHub syntax for a tip, important, warning, or caution, only capitalize the first letter.
-This is because when this is viewed on anything besides GitHub, it is more user friendly to read than all uppercased.
-
-Use the `> [!Note]` Github syntax for explaining that a section is work in progress.
+Use the `> [!NOTE]` GitHub syntax for explaining that a section is work in progress.
 Use the blockquote as close to the source as possible, so the reader knows that the note is not finished or needs adjustments.
-If this rule is followed than there should not be anything work in progress related in the [To Do](/to-do.md) list.
+If this rule is followed than there should not be anything work in progress related in the [To-Do](/to-do.md) list.
 
 Put the Gentoo package name in backticks when referencing a Gentoo package.
 Always make a Gentoo package a link.
 For example: [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
 
 When referencing another note, make the link name the same as the title of the note.
-For this note the title is "Stlye guide".
+For this note the title is "Style guide".
 The link itself should start with a slash (`/`).
 Because there are no folders in the Second Brain, every note can be referenced using the syntax `/{file-name}`.
 For example: the complete syntax to reference this note from anywhere in the Second brain is: `[Style guide](/style-guide.md)`.

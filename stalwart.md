@@ -1,5 +1,8 @@
 # Stalwart
 
+> [!NOTE]
+> This note is not written in third person yet.
+
 [Stalwart](https://stalw.art/) is a mail server written in Rust.
 I use Stalwart for hosting my email on my own server.
 
@@ -30,7 +33,7 @@ I don't know which ports are strictly needed for Stalwart to work, but I have a 
 143                        ALLOW IN    Anywhere
 ```
 
-Open a port by using the following `ufw` command:
+Open a port by executing the following `ufw` command:
 
 ```sh
 ufw enable {port-number}
@@ -38,7 +41,7 @@ ufw enable {port-number}
 
 ## DNS
 
-Stalwart generates keys you need to add to your DNS configuration.
+Stalwart generates keys needed to add to the DNS configuration.
 
 - `@` | `MX` | `mx.th7mo.com.` (trailing dot (`.`))
 - `stalwart._domainkey` | `TXT` | `{your-DKIM1-key}` (including quotes)
@@ -49,14 +52,14 @@ Stalwart generates keys you need to add to your DNS configuration.
 
 ### Gmail (mobile)
 
-1. In the first screen `Add your email address` enter your email address.
+1. In the first screen `Add your email address` enter the email address.
 2. When choosing which type of account this is, choose `Personal (IMAP)`.
-3. Enter your password.
+3. Enter the password.
 4. For `Incoming server settings`, adjust the `Server` from `th7mo.com` to `mail.th7mo.com`.
-5. Also change your `Username` that defaults to your email address, to only the prefix.
-   For example: when your email is `thimo@th7mo.com`, make your `Username` only `thimo` (without the domain name).
+5. Also change the `Username` that defaults to the email address, to only the prefix.
+   For example: when the email is `thimo@th7mo.com`, make the `Username` only `thimo` (without the domain name).
 6. Apply step 5 again for `Outgoing server settings`.
-7. Now your account is set up, you can choose to full in a `Account name` and `Your name` (optional).
+7. Now the account is set up, a `Account name` and `Your name` can be chosen (optional).
 
 ### Manual setup 
 

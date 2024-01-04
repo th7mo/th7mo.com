@@ -1,11 +1,11 @@
 # SSH key
 
-> [!Note]
+> [!NOTE]
 > This note is not finished yet.
-> - this article has not been reviewed yet
-> - add Gentoo package names too (and decide where)
+> - This article has not been reviewed yet.
+> - Add Gentoo package names too (and decide where).
 
-A method to access and write data to GitHub, Gitlab and Bitbucket is the Secure Shell Protocol (SSH).
+A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
 You can authenticate to those repository hosting services using an SSH key.
 
 When you only need one SSH key, you can skip the section that covers [Multiple accounts](#multiple-accounts-on-the-same-repository-hosting-service).
@@ -24,7 +24,7 @@ ssh-keygen -t ed25519 -C {email}
 	This flag is optional.
 
 When you are prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
-Otherwise if you want a different name for your SSH key, you can enter a custom name.
+Otherwise, if you want a different name for your SSH key, you can enter a custom name.
 The default directory for storing SSH keys is `~/.ssh/`.
 Press `Enter` until the file is generated.
 
@@ -42,12 +42,12 @@ The following command demonstrates how to copy a file to the clipboard:
 cat ~/.ssh/id_ed25519.pub | wl-copy
 ```
 
-In this example the output of the `cat` command got redirected to `wl-copy`; a utility part of [wl-clipboard](https://github.com/bugaevc/wl-clipboard).
-Add the key (that should be inside your clipboard now) to your {Github, Bitbucket, Gitlab} account.
+In this example the output of the `cat` command got redirected to `wl-copy`; a utility part of [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard).
+Add the key (that should be inside your clipboard now) to your {GitHub, Bitbucket, GitLab} account.
 
 ## Adding the private SSH key to the ssh-agent
 
-Choose one of the following options to add a SSH key to the ssh-agent.
+Choose one of the following options to add an SSH key to the ssh-agent.
 
 ### Option 1: use ssh-add manually
 
@@ -61,7 +61,7 @@ To automate this process put this command in your shell initialization file (`~/
  
 ### Option 2 (preferred): use Keychain
 
-Another option to add a SSH key to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
+Another option to add an SSH key to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
 
 ```sh
 keychain ~/.ssh/id_ed25519
@@ -93,7 +93,7 @@ keychain -l
 ### Create or modify the .ssh/config file
 
 To tell Git which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
-Make a host enty with the following settings for each key:
+Make a host entry with the following settings for each key:
 
 ```sh
 Host github # Use this name in the remote URL
@@ -110,7 +110,7 @@ Host bitbucket # Use this name in the remote URL
 ```
 
 > [!TIP]
-> It is recommended to use a lowercase name for the `Host`, because you need to add this name to your remote url.
+> It is recommended to use a lowercase name for the `Host`, because you need to add this name to your remote URL.
 
 ### Update the existing remotes
 
@@ -131,7 +131,7 @@ Also make sure that your local `.gitconfig` has the correct `user.name` and `use
 
 ## IncludeIf configuration in gitconfig
 
-> [!Note]
+> [!NOTE]
 > This section needs to be expanded.
 
 ## Reference

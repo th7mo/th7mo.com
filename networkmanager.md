@@ -1,27 +1,27 @@
 # NetworkManager
 
 [NetworkManager](https://networkmanager.dev) is a program for connecting to internet.
-It is only needed for wireless connnections.
-For an ethernet connection dhcpcd is sufficient.
+It is only needed for wireless connections.
+For an Ethernet connection [`net-misc/dhcpcd`](https://packages.gentoo.org/packages/net-misc/dhcpcd) is sufficient.
 
 ## Installation
 
-The Gentoo package for Networkmanager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
+The Gentoo package for NetworkManager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
 
 ```sh
 emerge --ask net-misc/networkmanager
 ```
 
-> [!Tip]
-> It is recommended to use [iwd](https://wiki.gentoo.org/wiki/Iwd) as a backend for Networkmanager.
+> [!TIP]
+> It is recommended to use [iwd](https://wiki.gentoo.org/wiki/Iwd) as a backend for NetworkManager.
 > Iwd is the modern replacement for wpa_supplicant.
 >
-> Install Networkmanager with the `iwd` and `wifi` USE flag set.
+> Install NetworkManager with the `iwd` and `wifi` USE flag set.
 
 ## Usage
 
 NetworkManager provides a command line (CLI) tool to connect with the internet called `nmcli` (NetworkManager CLI).
-The graphical equivalent provided is `nmtui` (Networkmanager Terminal User Interface).
+The graphical equivalent provided is `nmtui` (NetworkManager Terminal User Interface).
 
 To list the available Wi-Fi networks execute:
 
@@ -40,7 +40,7 @@ nmcli device wifi connect {SSID} password {password}
 
 ### Eduroam
 
-> [!Note]
+> [!NOTE]
 > The references to external resources need to be replaced with a tested guide.
 
 It is not possible to connect to the eduroam network using NetworkManager without custom configuration.

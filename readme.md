@@ -8,6 +8,10 @@ The Second Brain has a flat file structure; there is no nesting using directorie
 The notes inside the Second Brain can cross-reference to other notes.
 The Second Brain relies on the [Markdown](/markdown-workflow.md) markup language. 
 
+All the issues and improvements to the Second Brain are documented in the notes themselves.
+This is why this repository does not have an "Issues" tab.
+For more guidelines see [Style guide](/style-guide.md).
+
 I use Gentoo Linux as operating system.
-The technical notes are written with this in mind, and don't always take Microsoft Windows or MacOS into account.
+The technical notes are written with this in mind, and don't always take Microsoft Windows or macOS into account.
 They also don't always take Debian or Arch based distributions into account.

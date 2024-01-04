@@ -2,6 +2,6 @@
 
 **Bus**: `15-VZJ-1`
 
-**Suzuzi White**: `19-HNF-7`
+**Suzuki White**: `19-HNF-7`
 
-**Suzuzi Gray**: `04-ZL-HT`
+**Suzuki Gray**: `04-ZL-HT`

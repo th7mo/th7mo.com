@@ -1,7 +1,7 @@
 # Flatpak
 
-For some proprietary applications or applications not covered by the Gentoo repository, it could be better install a [Flatpak](https://flatpak.org/) package for that application.
-[Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are really ugly to install on Gentoo and should be isolated using Flatpak.
+For some proprietary applications or applications not covered by the Gentoo repository, it could be better to install a [Flatpak](https://flatpak.org/) package for that application.
+[Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are ugly to install on Gentoo and should be isolated using Flatpak.
 
 ## Installation
 
@@ -36,4 +36,4 @@ Now application launchers (and your terminal) are able to find the application, 
 ## References
 
 - The Gentoo article about [Flatpak](https://wiki.gentoo.org/wiki/Flatpak).
-- I learned about symbolic linking of Flatpak installed applications from this from a very specific [Github Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
+- I learned about symbolic linking of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).

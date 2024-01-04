@@ -1,7 +1,7 @@
 # Recipes
 
 This is my recipe book.
-The recipes are in alpabetical order for easy indexing.
+The recipes are in alphabetical order for easy indexing.
 
 ## Protein shake (banana & chocolate)
 
