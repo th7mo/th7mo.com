@@ -1,4 +1,5 @@
 # NetworkManager
+> The references to external resources need to be replaced with a tested guide.
 
 NetworkManager is a program for connecting to internet.
 It is only needed for wireless connnections.
@@ -40,6 +41,9 @@ nmcli device wifi connect {SSID} password {password}
 
 ### Eduroam
 
+> [!Note]
+> The references to external resources need to be replaced with a tested guide.
+
 It is not possible to connect to the eduroam network using NetworkManager without custom configuration.
 For more information reference about how to the following:
 
@@ -51,7 +55,3 @@ For more information reference about how to the following:
 - The Gentoo wiki article about [Networkmanager](https://wiki.gentoo.org/wiki/NetworkManager).
 - The Arch Wiki article about [NetworkManager](https://wiki.archlinux.org/title/NetworkManager).
 - The website of [NetworkManager](https://networkmanager.dev/docs/).
-
-# Improvements
-
-- Expand the section [about eduroam](#eduroam) to provide the guide instead of only referencing to external resources.

@@ -70,7 +70,8 @@ To create an inline code use single backticks:
 `{inline code here}`
 ```
 
-[WIP: split the rest of the article into separate subjects]
+> [!Note]
+> The rest of the note needs to be split into seperate subjects
 
 I strongly believe that simple is better.
 That applies to technology as well.

@@ -1,7 +1,7 @@
 # Email
 
 I use my own custom domain `th7mo.com` for my emails.
-The [Stalwart](/stalwart.md) article describes how I manage my email server.
+The [Stalwart](/stalwart.md) note describes how I manage my email server.
 I use the following email addresses:
 
 - `dev@th7mo.com`
@@ -19,11 +19,10 @@ Legacy addresses:
 > [!Note]
 > The new situation still needs to be implemented.
 > This is not done yet.
-> To old situation needs to be removed.
 > 
-> The email address used in the `frontend-monorepo` needs to be changed from `dev@th7mo.com` to `thimo@th7mo.com`
->
-> Also the Youtube Premium mail needs to be migrated to `thimo@th7mo.com`
+> - The old situation needs to be removed.
+> - The email address used in the `frontend-monorepo` needs to be changed from `dev@th7mo.com` to `thimo@th7mo.com`
+> - Also the Youtube Premium mail needs to be migrated to `thimo@th7mo.com`
 >
 > When the migration is done all references to the old situation will be removed in this note.
 > Only the explanation for why the new implementation is the best one will remain.

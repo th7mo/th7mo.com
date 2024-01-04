@@ -1,5 +1,10 @@
 # SSH key
 
+> [!Note]
+> This note is not finished yet.
+> - this article has not been reviewed yet
+> - add Gentoo package names too (and decide where)
+
 A method to access and write data to GitHub, Gitlab and Bitbucket is the Secure Shell Protocol (SSH).
 You can authenticate to those repository hosting services using an SSH key.
 
@@ -7,7 +12,7 @@ When you only need one SSH key, you can skip the section that covers [Multiple a
 
 ## Generate a new SSH key
 
-To generate a new SSH key execute:
+To generate a new SSH key execute the following command:
 
 ```sh
 ssh-keygen -t ed25519 -C {email}
@@ -16,6 +21,7 @@ ssh-keygen -t ed25519 -C {email}
 - `{email}` is the email you use for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
 - The `-t` flag specifies the type of key to generate.
 - The `-C` is only a comment.
+	This flag is optional.
 
 When you are prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
 Otherwise if you want a different name for your SSH key, you can enter a custom name.
@@ -71,7 +77,7 @@ When you have a personal and work SSH key for the same repository hosting servic
 
 ### Add both the SSH keys to the ssh-agent
 
-Use one of the options explained in [the previous subsection](#adding-the-ssh-key) for each SSH key.
+Use one of the options explained in [the previous subsection](#adding-the-private-ssh-key-to-the-ssh-agent) for each SSH key.
 Verify if all SSH keys are loaded by executing the command:
 
 ```sh
@@ -123,16 +129,14 @@ git remote set-url origin git@github:th7mo/second-brain.git
 
 Also make sure that your local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
 
+## IncludeIf configuration in gitconfig
+
+> [!Note]
+> This section needs to be expanded.
+
 ## Reference
 
 - For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 - For a more detailed explanation for multiple SSH keys reference:
 	- [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
 	- [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).
-
-# Improvements
-
-- add the missing includeIf for `.gitconfig` part
-- fix broken link somewhere by adding ssh key
-- this article has not been reviewed yet
-- add Gentoo package names too (and decide where)
