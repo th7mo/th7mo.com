@@ -2,7 +2,7 @@
 
 NetworkManager is a program for connecting to internet.
 It is only needed for wireless connnections.
-For an ethernet connection dhcpcd is enough.
+For an ethernet connection dhcpcd is sufficient.
 
 ## Installation
 
@@ -18,7 +18,7 @@ emerge --ask net-misc/networkmanager
 >
 > Install Networkmanager with the `iwd` and `wifi` USE flag set.
 
-## Wi-Fi
+## Usage
 
 NetworkManager provides a command line (CLI) tool to connect with the internet called `nmcli` (NetworkManager CLI).
 The graphical equivalent provided is `nmtui` (Networkmanager Terminal User Interface).
