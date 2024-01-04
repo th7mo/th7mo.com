@@ -20,6 +20,8 @@ For example: "Execute the following command:" instead of "Run the following comm
 
 ## Formatting
 
+Every Markdown file must be written in `lowercase-kabab-case`.
+
 Use the rules described in the [Markdown Workflow](/markdown-workflow.md).
 
 Start the document with a heading 1 (`#`) with the name of the Markdown file.
