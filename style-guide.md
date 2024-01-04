@@ -24,6 +24,7 @@ Use the rules described in the [Markdown Workflow](/markdown-workflow.md).
 
 Start the document with a heading 1 (`#`) with the name of the Markdown file.
 Use spaces instead of slashes and capitalize the first character.
+Only one heading 1 is allowed in the entire Markdown file.
 
 When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
 Write the command without any prefixes so it can easily be copied to the terminal.
@@ -32,12 +33,18 @@ When using the GitHub syntax for a tip, important, warning, or caution, only cap
 This is because when this is viewed on anything besides GitHub, it is more user friendly to read than all uppercased.
 
 Use the `> [!Note]` Github syntax for explaining that a section is work in progress.
-Use the blockquote as close to the source as possible, so the reader knows that the note is not finished or needs adjustment.
+Use the blockquote as close to the source as possible, so the reader knows that the note is not finished or needs adjustments.
 If this rule is followed than there should not be anything work in progress related in the [To Do](/to-do.md) list.
 
 Put the Gentoo package name in backticks when referencing a Gentoo package.
 Always make a Gentoo package a link.
 For example: [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
+
+When referencing another note, make the link name the same as the title of the note.
+For this note the title is "Stlye guide".
+The link itself should start with a slash (`/`).
+Because there are no folders in the Second Brain, every note can be referenced using the syntax `/{file-name}`.
+For example: the complete syntax to reference this note from anywhere in the Second brain is: `[Style guide](/style-guide.md)`.
 
 ## Language
 
