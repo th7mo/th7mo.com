@@ -1,6 +1,7 @@
 # NetworkManager
 
 NetworkManager is a program for connecting to internet.
+The gentoo package for Networkmanager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
 
 ## Wi-Fi
 
