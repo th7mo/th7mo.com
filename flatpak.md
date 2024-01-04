@@ -36,4 +36,4 @@ Now application launchers (and your terminal) are able to find the application, 
 ## References
 
 - The Gentoo article about [Flatpak](https://wiki.gentoo.org/wiki/Flatpak).
-- I learned about symbolic linking of Flatpak installed application from this from a very specific [Github Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
+- I learned about symbolic linking of Flatpak installed applications from this from a very specific [Github Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
