@@ -8,7 +8,7 @@ For some proprietary applications or applications not covered by the Gentoo repo
 The Gentoo package for Flatpak is [`sys-apps/flatpak`](https://packages.gentoo.org/packages/sys-apps/flatpak).
 Install Flatpak with the following command:
 
-```bash
+```sh
 emerge --ask sys-apps/flatpak
 ```
 
@@ -21,13 +21,13 @@ Refer to the [Flatpak website](https://flatpak.org/) for how to install applicat
 When the Flatpak applications are installed, most application launcher are not able to find them.
 To make those launchers find the applications, it is possible to create symbolic links to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
 
-```bash
+```sh
 ln -s /var/lib/flatpak/exports/bin/{your-flatpak-name} /usr/bin/{custom-name}
 ```
 
 For example for [Steam](https://flathub.org/apps/com.valvesoftware.Steam):
 
-```shell
+```sh
 ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam
 ```
 
