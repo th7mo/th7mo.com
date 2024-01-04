@@ -1,12 +1,27 @@
 # NetworkManager
 
 NetworkManager is a program for connecting to internet.
-The gentoo package for Networkmanager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
+It is only needed for wireless connnections.
+For an ethernet connection dhcpcd is enough.
+
+## Installation
+
+The Gentoo package for Networkmanager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
+
+```sh
+emerge --ask net-misc/networkmanager
+```
+
+> [!Tip]
+> It is recommended to use [iwd](https://wiki.gentoo.org/wiki/Iwd) as a backend for Networkmanager.
+> Iwd is the modern replacement for wpa_supplicant.
+>
+> Install Networkmanager with the `iwd` and `wifi` USE flag set.
 
 ## Wi-Fi
 
-NetworkManager provides a command line (CLI) tool to connect with the internet called `nmcli`.
-The graphical equivalent provided is `nmtui`.
+NetworkManager provides a command line (CLI) tool to connect with the internet called `nmcli` (NetworkManager CLI).
+The graphical equivalent provided is `nmtui` (Networkmanager Terminal User Interface).
 
 To list the available Wi-Fi networks execute:
 
@@ -14,7 +29,7 @@ To list the available Wi-Fi networks execute:
 nmcli device wifi list
 ```
 
-To connect to Wi-Fi using `nmcli` execute:
+To connect to a Wi-Fi network using `nmcli` execute:
 
 ```sh
 nmcli device wifi connect {SSID} password {password}
@@ -33,8 +48,9 @@ For more information reference about how to the following:
 
 ## References
 
-- The website of [NetworkManager](https://networkmanager.dev/docs/).
+- The Gentoo wiki article about [Networkmanager](https://wiki.gentoo.org/wiki/NetworkManager).
 - The Arch Wiki article about [NetworkManager](https://wiki.archlinux.org/title/NetworkManager).
+- The website of [NetworkManager](https://networkmanager.dev/docs/).
 
 # Improvements
 
