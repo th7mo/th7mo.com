@@ -1,7 +1,6 @@
 # NetworkManager
-> The references to external resources need to be replaced with a tested guide.
 
-NetworkManager is a program for connecting to internet.
+[NetworkManager](https://networkmanager.dev) is a program for connecting to internet.
 It is only needed for wireless connnections.
 For an ethernet connection dhcpcd is sufficient.
 
