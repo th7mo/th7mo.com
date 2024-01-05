@@ -13,6 +13,6 @@ This is why this repository does not have an "Issues" tab.
 For more guidelines see [Style guide](/style-guide.md).
 
 I use Debian Linux as my operating system.
-The [Linux workflow](/linux-workflow) note explains why.
+The [Linux workflow](/linux-workflow.md) note explains why.
 The technical notes are written with this in mind, and don't always take Microsoft Windows or macOS into account.
 They also don't always take Arch or Red Hat based distributions into account.
