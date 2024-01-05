@@ -5,11 +5,11 @@ For some proprietary applications or applications not covered by the Gentoo repo
 
 ## Installation
 
-The Gentoo package for Flatpak is [`sys-apps/flatpak`](https://packages.gentoo.org/packages/sys-apps/flatpak).
+The Debian package for Flatpak is [`flatpak`](https://packages.gentoo.org/packages/sys-apps/flatpak).
 Install Flatpak with the following command:
 
 ```sh
-emerge --ask sys-apps/flatpak
+sudo apt install flatpak
 ```
 
 ## Usage
