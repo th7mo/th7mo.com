@@ -1,9 +1,5 @@
 # SSH key
 
-> [!NOTE]
-> This note is not finished yet.
-> - This article has not been reviewed yet.
-
 A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
 You can authenticate to those repository hosting services using an SSH key.
 
@@ -20,7 +16,8 @@ ssh-keygen -t ed25519 -C {email}
 - `{email}` is the email you use for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
 - The `-t` flag specifies the type of key to generate.
 - The `-C` is only a comment.
-	This flag is optional.
+	This flag is optional but recommended.
+	It will help indicate which key belongs to which email when using `ssh-add -l` or `keychain -l`.
 
 When you are prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
 Otherwise, if you want a different name for your SSH key, you can enter a custom name.
@@ -85,7 +82,7 @@ When you have a personal and work SSH key for the same repository hosting servic
 ### Add both the SSH keys to the ssh-agent
 
 Use one of the options explained in [the previous subsection](#adding-the-private-ssh-key-to-the-ssh-agent) for each SSH key.
-Verify if all SSH keys are loaded by executing the command:
+Verify that all SSH keys are loaded by executing the command:
 
 ```sh
 ssh-add -l
@@ -103,43 +100,41 @@ To tell Git which SSH key to use when interacting with the remote repository, we
 Make a host entry with the following settings for each key:
 
 ```sh
-Host github # Use this name in the remote URL
+Host github.com # Use this name in the remote URL
 	HostName github.com # domain name
-	User your_user_name
+	User your_user_name # put this in double quotes when your User name has spaces
 	IdentityFile ~/.ssh/id_ed25519-personal # location of the private key
 	IdentitiesOnly yes
 
-Host bitbucket # Use this name in the remote URL
+Host bitbucket.com # Use this name in the remote URL
 	HostName bitbucket.org #domain name
-	User your_user_name
+	User your_user_name # put this in double quotes when your User name has spaces
 	IdentityFile ~/.ssh/id_ed25519-work # location of the private key
 	IdentitiesOnly yes
 ```
 
 > [!TIP]
-> It is recommended to use a lowercase name for the `Host`, because you need to add this name to your remote URL.
+> Make the `Host` name the same has the `HostName`.
+> When those are the same you don't need to update any existing remotes because the URL stays the same.
 
 ### Update the existing remotes
 
-You need to modify the remotes to specify which host should be used:
-Instead of the default domain name for the host, use the name specified in your `~/.ssh/config` file. 
+When the `Host` name has the same name as the `HostName`, this section can be skipped.
+
+When the `Host` name is not the same has the `HostName` need, modify the remotes to specify which host should be used:
+Instead of the default domain name for the host, the `Host` name specified in the `~/.ssh/config` file must be used.
 
 ```sh
 git remote set-url {remote_name} git@{Host}:{workspace}/{repository}.git
 ```
 
-Example for this repository:
+Example for this repository when `Host` is named `github` instead of `github.com`:
 
 ```sh
 git remote set-url origin git@github:th7mo/second-brain.git
 ```
 
-Also make sure that your local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
-
-## IncludeIf configuration in gitconfig
-
-> [!NOTE]
-> This section needs to be expanded.
+Make sure that the local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
 
 ## Reference
 
