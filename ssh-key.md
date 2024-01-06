@@ -3,7 +3,6 @@
 > [!NOTE]
 > This note is not finished yet.
 > - This article has not been reviewed yet.
-> - Add Gentoo package names too (and decide where).
 
 A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
 You can authenticate to those repository hosting services using an SSH key.
@@ -62,6 +61,14 @@ To automate this process put this command in your shell initialization file (`~/
 ### Option 2 (preferred): use Keychain
 
 Another option to add an SSH key to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
+
+Keychain does not come pre-installed on most systems, so first install Keychain:
+
+```sh
+sudo apt install keychain
+```
+
+To add a private SSH key to Keychain, execute:
 
 ```sh
 keychain ~/.ssh/id_ed25519

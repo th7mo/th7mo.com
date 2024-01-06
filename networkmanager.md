@@ -2,21 +2,19 @@
 
 [NetworkManager](https://networkmanager.dev) is a program for connecting to internet.
 It is only needed for wireless connections.
-For an Ethernet connection [`net-misc/dhcpcd`](https://packages.gentoo.org/packages/net-misc/dhcpcd) is sufficient.
 
 ## Installation
 
-The Gentoo package for NetworkManager is [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
+Debian probably has Networkmanager pre-installed.
+A manual install can be done executing the following command:
 
 ```sh
-emerge --ask net-misc/networkmanager
+sudo apt install network-manager
 ```
 
 > [!TIP]
 > It is recommended to use [iwd](https://wiki.gentoo.org/wiki/Iwd) as a backend for NetworkManager.
 > Iwd is the modern replacement for wpa_supplicant.
->
-> Install NetworkManager with the `iwd` and `wifi` USE flag set.
 
 ## Usage
 

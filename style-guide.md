@@ -35,10 +35,6 @@ Use the `> [!NOTE]` GitHub syntax for explaining that a section is work in progr
 Use the blockquote as close to the source as possible, so the reader knows that the note is not finished or needs adjustments.
 If this rule is followed than there should not be anything work in progress related in the [To-Do](/to-do.md) list.
 
-Put the Gentoo package name in backticks when referencing a Gentoo package.
-Always make a Gentoo package a link.
-For example: [`net-misc/networkmanager`](https://packages.gentoo.org/packages/net-misc/networkmanager).
-
 When referencing another note, make the link name the same as the title of the note.
 For this note the title is "Style guide".
 The link itself should start with a slash (`/`).
