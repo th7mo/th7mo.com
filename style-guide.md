@@ -18,6 +18,9 @@ Use the term note instead of page, article or document.
 When writing commands with the triple backtick syntax, use the term execute instead of run.
 For example: "Execute the following command:" instead of "Run the following command:".
 
+**Directory**:
+Use directory instead of folder for naming directories.
+
 ## Formatting
 
 Every Markdown file must be written in `lowercase-kabab-case`.
@@ -38,7 +41,7 @@ If this rule is followed than there should not be anything work in progress rela
 When referencing another note, make the link name the same as the title of the note.
 For this note the title is "Style guide".
 The link itself should start with a slash (`/`).
-Because there are no folders in the Second Brain, every note can be referenced using the syntax `/{file-name}`.
+Because there are no directories in the Second Brain, every note can be referenced using the syntax `/{file-name}`.
 For example: the complete syntax to reference this note from anywhere in the Second brain is: `[Style guide](/style-guide.md)`.
 
 ## Language
