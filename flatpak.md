@@ -1,11 +1,11 @@
 # Flatpak
 
-For some proprietary applications or applications not covered by the Gentoo repository, it could be better to install a [Flatpak](https://flatpak.org/) package for that application.
-[Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are ugly to install on Gentoo and should be isolated using Flatpak.
+For some proprietary applications or applications not covered by the Debian repository, it could be better to install a [Flatpak](https://flatpak.org/) package for that application.
+[Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are ugly to install on Debian and should be isolated using Flatpak.
 
 ## Installation
 
-The Debian package for Flatpak is [`flatpak`](https://packages.gentoo.org/packages/sys-apps/flatpak).
+The Debian package for Flatpak is `flatpak`.
 Install Flatpak with the following command:
 
 ```sh
