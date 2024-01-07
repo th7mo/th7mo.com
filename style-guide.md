@@ -1,12 +1,12 @@
 # Style guide
 
-This note aims to dictate rules to make the writing of the entire Second Brain consistent.
+This note provides rules to make the writing of the entire Second Brain consistent.
 
 ## Terminology
 
 **Second Brain**:
-The Second Brain is a collection of all my digital thoughts and documentation.
-It is stored in the form of a repository, but this is only an implementation detail.
+The Second Brain is a digital collection of all thoughts, documentation and ideas.
+It is stored in the form of a repository, but that is only an implementation detail.
 Use the term Second Brain instead of repository.
 
 **Note**:
@@ -19,13 +19,13 @@ When writing commands with the triple backtick syntax, use the term execute inst
 For example: "Execute the following command:" instead of "Run the following command:".
 
 **Directory**:
-Use directory instead of folder for naming directories.
+Use the term directory instead of folder.
 
 ## Formatting
 
-Every Markdown file must be written in `lowercase-kabab-case`.
-
 Use the rules described in the [Markdown Workflow](/markdown-workflow.md).
+
+Every Markdown file name must be written in `lowercase-kabab-case`.
 
 Start the document with a heading 1 (`#`) with the name of the Markdown file.
 Use spaces instead of slashes and capitalize the first character.
@@ -35,7 +35,7 @@ When writing commands using the triple backtick syntax, never prefix the command
 Write the command without any prefixes, so it can easily be copied to the terminal.
 
 Use the `> [!NOTE]` GitHub syntax for explaining that a section is work in progress.
-Use the blockquote as close to the source as possible, so the reader knows that the note is not finished or needs adjustments.
+Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustments.
 If this rule is followed than there should not be anything work in progress related in the [To-Do](/to-do.md) list.
 
 When referencing another note, make the link name the same as the title of the note.
