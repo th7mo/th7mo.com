@@ -10,7 +10,7 @@ The Second Brain relies on the [Markdown](/markdown-workflow.md) markup language
 
 All the issues and improvements to the Second Brain are documented in the notes themselves.
 This is why this repository does not have an "Issues" tab.
-For more guidelines see [Style guide](/style-guide.md).
+For more guidelines see the [Style guide](/style-guide.md).
 
 I use [Debian](https://www.debian.org/) Linux as my operating system.
 The [Linux workflow](/linux-workflow.md) note explains why.
