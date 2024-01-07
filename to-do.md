@@ -4,7 +4,6 @@ This is an unordered, unstructured collection of things I still need to do.
 This To-Do list can never contain everything I need to do. 
 I depend on [Git](https://git-scm.com/) for version control.
 
-- Use NPM to install LSP servers for the languages I use (check existing `languages.toml` on GitHub for used languages).
 - Swapping the stuff from my closet and my bed-drawers.
 - Remove dependency on Google Photos for my media.
   I want a platform independent solution to store my media.
