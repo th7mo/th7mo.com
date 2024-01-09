@@ -5,6 +5,7 @@ This To-Do list can never contain everything I need to do.
 I depend on [Git](https://git-scm.com/) for version control.
 
 - Swapping the stuff from my closet and my bed-drawers.
+- Write down every technical dept I have for school.
 - Remove dependency on Google Photos for my media.
   I want a platform independent solution to store my media.
   A Network Attached Storage (NAS) or home server solution should be future-proof.
