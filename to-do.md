@@ -13,3 +13,4 @@ I depend on [Git](https://git-scm.com/) for version control.
   - install pipewire and wireplumber
   - start your windowmanager using dbus-run-session or dbus-launch (otherwise your audio will probably not work)
   - use pavucontrol for easy managing of audio (it is not worth it for the terminal)
+- Buy a microphone
