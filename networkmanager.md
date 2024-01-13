@@ -5,8 +5,8 @@ It is only needed for wireless connections.
 
 ## Installation
 
-Debian probably has Networkmanager pre-installed.
-A manual install can be done executing the following command:
+[Debian](https://www.debian.org/) probably has Networkmanager pre-installed.
+A manual install can be done by executing the following command:
 
 ```sh
 sudo apt install network-manager
