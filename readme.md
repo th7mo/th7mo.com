@@ -5,8 +5,8 @@ A Second Brain is a place to gather all somebody's thoughts.
 The thoughts, ideas, things somebody needs to do, references to good books or articles, or documentation that is important to somebody.
 It is the place for documenting important information and made decisions.
 The Second Brain has a flat file structure; there is no nesting using directories.
-The notes inside the Second Brain can cross-reference to other notes.
-The Second Brain relies on the [Markdown](/markdown-workflow.md) markup language. 
+The notes inside the Second Brain can cross-reference other notes.
+The Second Brain relies on the [Markdown workflow](/markdown-workflow.md).
 
 All the issues and improvements to the Second Brain are documented in the notes themselves.
 This is why this repository does not have an "Issues" tab.
