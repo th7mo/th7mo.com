@@ -112,7 +112,7 @@ Clone the repository from inside the repository directory:
 cd {name-of-repository}
 ```
 
-After that clone the repository without workspaces (`--bare` only clones the essential Git files).
+After that clone the repository without Worktrees (`--bare` only clones the essential Git files).
 
 ```sh
 git clone --bare {git-remote-url}
