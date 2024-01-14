@@ -14,8 +14,6 @@ It also allows for easy editing on different devices, like phones.
 >  Rename `{repository-name}.git/` to `{repository-name}/.git/` (note the slash `/`).
 > There is also a way to do not rely on GNU Stow but use a bare repository to manage dotfiles.
 > This needs to be researched first.
-> 
-> Move multiple Git identities to the bottom of the note.
 
 ## Installation
 
@@ -35,25 +33,6 @@ It also stores custom aliases and branch handling preferences.
 > [!TIP]
 > It is recommended to put `.gitconfig` files in the [Dotfiles](/dotfiles.md).
 > This will make sure the configuration is backed up.
-
-## Multiple Git identities
-
-Sometimes it is desired to overwrite the default configuration specified in `~/.gitconfig`.
-This can be done by creating another `.gitconfig` file anywhere, and referencing it in the main `~/.gitconfig` file.
-The `includeIf` option is used to specify when a `.gitconfig` file should be active.
-
-For example:
-
-```sh
-[includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
-```
-
-This specifies that the `~/work/.gitconfig` configuration should be used when inside a Git repository anywhere under the `~/work/` folder.
-The `~/work/.gitconfig` can have a different `user.name` and `user.email` for professional use.
-
-> [!IMPORTANT]
-> Always end the `gitdir` path with a slash (`/`), otherwise it will not work!
 
 ## Commits
 
@@ -103,6 +82,49 @@ It is perfectly fine to have a long branch name.
 A more descriptive name is always better.
 [Bash](https://www.gnu.org/software/bash/) and other shells have branch autocompletion for Git branches and for graphical interfaces the branch name length does not matter either.
 
+## Rebase
+
+A Git rebase adds commits from a branch on top of another branch.
+The most simple use case for a rebase is when a remote branch somebody is also locally working on has new changes.
+If somebody is working on branch `main`, but `origin/main` has new commits, the command `git pull origin main` can be executed to make a merge commit which adds the new commits on `origin/main` to the local `main` branch.
+
+To preserve a clean commit history, an alternative approach would use a rebase.
+
+First, fetch the remote to download contents from the remote repository:
+
+```sh
+git fetch
+```
+
+If new changes have been made to the remote branch, include those remote changes by rebasing the commits made on top of the local branch as if they were made locally:
+
+```sh
+git rebase origin main
+```
+
+Now all the new commits made on the remote `main` branch will be applied to the local `main` branch.
+
+A shorthand for this workflow is the `pull` command with the `--rebase` flag:
+
+```sh
+git pull --rebase {remote-name} {branch-name}
+```
+
+The `--rebase` flag can be omitted when the `pull.rebase` option is configured in the `.gitconfig`:
+
+```ini
+[pull]
+    rebase = true
+```
+
+### Pull request / Merge request
+
+The rebase option is also a good option for pull requests.
+
+> [!TIP]
+> Do not squash commits or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
+> It is always better to leave as much history as possible for later debugging of code.
+
 ## Worktrees
 
 > [!NOTE]
@@ -114,7 +136,7 @@ Instead of switching branches, just switch directories.
 ### Make a directory
 
 ```sh
-mkdir {name-of-repository}
+mkdir {repository-name}
 ```
 
 ### Clone a repository without checking out a branch:
@@ -122,7 +144,7 @@ mkdir {name-of-repository}
 Clone the repository from inside the repository directory:
 
 ```sh
-cd {name-of-repository}
+cd {repository-name}
 ```
 
 After that clone the repository without Worktrees: (The `--bare` flag specifies to only clone the essential Git files)
@@ -130,6 +152,8 @@ After that clone the repository without Worktrees: (The `--bare` flag specifies 
 ```sh
 git clone --bare {git-remote-url}
 ```
+
+- `{git-remote-url}` can be a `HTTPS` or `SSH` URL.
 
 ### Add a Worktree
 
@@ -190,3 +214,22 @@ git worktree remove {worktree-name}
 ```
 
 For a full reference to Worktrees see the official [Git Worktree documentation](https://git-scm.com/docs/git-worktree).
+
+## Multiple Git identities
+
+Sometimes it is desired to overwrite the default configuration specified in `~/.gitconfig`.
+This can be done by creating another `.gitconfig` file anywhere, and referencing it in the main `~/.gitconfig` file.
+The `includeIf` option is used to specify when a `.gitconfig` file should be active.
+
+For example:
+
+```sh
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
+```
+
+This specifies that the `~/work/.gitconfig` configuration should be used when inside a Git repository anywhere under the `~/work/` folder.
+The `~/work/.gitconfig` can have a different `user.name` and `user.email` for professional use.
+
+> [!IMPORTANT]
+> Always end the `gitdir` path with a slash (`/`), otherwise it will not work!
