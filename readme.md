@@ -9,7 +9,7 @@ The notes inside the Second Brain can cross-reference other notes.
 The Second Brain relies on the [Markdown workflow](/markdown-workflow.md).
 
 All the issues and improvements to the Second Brain are documented in the notes themselves.
-This improves portability to other platforms than be locked in on GitHub.
+This improves portability to other platforms rather than be locked in on GitHub.
 It also makes the reader aware that a note is not finished.
 For more guidelines see the [Style guide](/style-guide.md).
 
