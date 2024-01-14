@@ -22,7 +22,7 @@ systemctl restart stalwart-mail
 For email to even work on the server you need to open ports email protocols use.
 Services that let you rent a server usually disable email ports by default.
 You probably need to open a ticket to let support open those ports on your server.
-I don't know which ports are strictly needed for Stalwart to work, but I have a working version with the following ports open:
+I do not know which ports are strictly needed for Stalwart to work, but I have a working version with the following ports open:
 
 ```
 443                        ALLOW IN    Anywhere

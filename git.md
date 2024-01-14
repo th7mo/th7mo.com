@@ -40,7 +40,7 @@ This specifies that the `~/work/.gitconfig` configuration should be used when in
 The `~/work/.gitconfig` can have a different `user.name` and `user.email` for professional use.
 
 > [!IMPORTANT]
-> Always end the `gitdir` path with a slash (`/`), otherwise it won't work!
+> Always end the `gitdir` path with a slash (`/`), otherwise it will not work!
 
 ## Commits
 

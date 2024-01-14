@@ -115,7 +115,7 @@ Host bitbucket.com # Use this name in the remote URL
 
 > [!TIP]
 > Make the `Host` name the same has the `HostName`.
-> When those are the same you don't need to update any existing remotes because the URL stays the same.
+> When those are the same there is no need to update any existing remotes because the URL stays the same.
 
 ### Update the existing remotes
 

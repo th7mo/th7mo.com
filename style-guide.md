@@ -54,5 +54,7 @@ This Second Brain should be mostly informative.
 This improves the ability to make more notes publicly available.
 It is allowed to use first or second person when writing personal notes.
 
+Write ` not` instead of `'t` (`do not` instead of `don't`).
+
 Use English (not British) for writing notes.
 The only exception are words that do not have a proper English equivalent.
