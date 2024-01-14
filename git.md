@@ -128,7 +128,7 @@ The rebase option is also a good option for pull requests.
 > Do not squash commits or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
 > It is always better to leave as much history as possible for later debugging of code.
 
-## worktrees
+## Worktrees
 
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.

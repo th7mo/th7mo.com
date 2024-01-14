@@ -38,6 +38,6 @@ stow .
 ```
 
 > [!WARNING]
-> Be careful with where to execute this command.
+> Careful with where to execute this command.
 > Only execute `stow .` at the root of the repository, otherwise the symbolic links will be invalid.
 > Also be careful when removing symlinks and make sure to have a backup of the original configuration files (dotfiles).

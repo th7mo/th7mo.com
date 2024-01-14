@@ -21,7 +21,7 @@ Legacy addresses:
 > This is not done yet.
 > 
 > - The old situation needs to be removed.
-> - Also the YouTube Premium mail needs to be migrated to `thimo@th7mo.com`
+> - Also, the YouTube Premium mail needs to be migrated to `thimo@th7mo.com`
 >
 > When the migration is done all references to the old situation will be removed in this note.
 > Only the explanation for why the new implementation is the best one will remain.

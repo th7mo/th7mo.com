@@ -5,7 +5,7 @@ It is only needed for wireless connections.
 
 ## Installation
 
-[Debian](https://www.debian.org/) probably has Networkmanager pre-installed.
+[Debian](https://www.debian.org/) probably has NetworkManager pre-installed.
 A manual install can be done by executing the following command:
 
 ```sh
@@ -14,7 +14,7 @@ sudo apt install network-manager
 
 > [!TIP]
 > It is recommended to use [iwd](https://wiki.gentoo.org/wiki/Iwd) as a backend for NetworkManager.
-> Iwd is the modern replacement for wpa_supplicant.
+> Iwd is the modern replacement for `wpa_supplicant`.
 
 ## Usage
 
@@ -49,6 +49,6 @@ For more information reference about how to the following:
 
 ## References
 
-- The Gentoo wiki article about [Networkmanager](https://wiki.gentoo.org/wiki/NetworkManager).
+- The Gentoo wiki article about [NetworkManager](https://wiki.gentoo.org/wiki/NetworkManager).
 - The Arch Wiki article about [NetworkManager](https://wiki.archlinux.org/title/NetworkManager).
 - The website of [NetworkManager](https://networkmanager.dev/docs/).
