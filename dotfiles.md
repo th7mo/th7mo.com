@@ -6,6 +6,9 @@ A better alternative is to move configuration files into a separate directory li
 To make sure installed programs still have access to the configuration files, symbolic links to the configuration files can be made.
 [Stow](https://www.gnu.org/software/stow/) is a utility that simplifies the process of making symbolic links.
 
+> [!NOTE]
+> This might be replaced with a Git `--bare` repository using a worktree implementation.
+
 ## Installation
 
 Install Stow by executing the following command:
