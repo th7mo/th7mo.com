@@ -236,3 +236,9 @@ The `~/work/.gitconfig` can have a different `user.name` and `user.email` for pr
 
 > [!IMPORTANT]
 > Always end the `gitdir` path with a slash (`/`), otherwise it will not work!
+
+## References
+
+- A [Reddit thread](https://www.reddit.com/r/git/comments/wwapum/comment/ilkdpzv/) about worktrees.
+- The [Medium article](https://medium.com/ngconf/git-worktrees-in-use-f4e516512feb) about worktrees. 
+- The [Git documentation](https://git-scm.com/docs/git-worktree) about worktrees.
