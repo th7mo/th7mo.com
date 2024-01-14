@@ -9,7 +9,8 @@ The notes inside the Second Brain can cross-reference other notes.
 The Second Brain relies on the [Markdown workflow](/markdown-workflow.md).
 
 All the issues and improvements to the Second Brain are documented in the notes themselves.
-This is why this repository does not have an "Issues" tab.
+This improves portability to other platforms than be locked in on GitHub.
+It also makes the reader aware that a note is not finished.
 For more guidelines see the [Style guide](/style-guide.md).
 
 I use [Debian](https://www.debian.org/) Linux as my operating system.
