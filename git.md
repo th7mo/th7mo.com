@@ -133,7 +133,7 @@ The rebase option is also a good option for pull requests.
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
 
-Git worktrees make branches root-level directories in the repository.
+Git worktrees make branches directories at the root of the repository.
 Instead of switching branches, just switch directories.
 
 ### Make a directory
@@ -166,7 +166,7 @@ Only add worktrees from the bare repository, so navigate to the bare repository:
 cd {repository-name}.git/
 ```
 
-Now add a worktree to the root directory of the repository:
+Now add a worktree to the root of the repository:
 
 ```sh
 git worktree add ../{branch-name}

@@ -1,9 +1,9 @@
 # File structure
 
 The Second Brain has the most simple file structure possible.
-It does not contain any directories.
+It does not contain any directories and only uses plain text files (using the [Markdown workflow](/markdown-workflow.md)).
 
-Every note is located at the root level of the repository.
+Every note is located at the root of the repository.
 The filenames of notes have a naming convention mentioned in the [Style guide](/style-guide.md).
 
 ## Why
