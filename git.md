@@ -90,7 +90,78 @@ It is perfectly fine to have a long branch name.
 A more descriptive name is always better.
 [Bash](https://www.gnu.org/software/bash/) and other shells have branch autocompletion for Git branches and for graphical interfaces the branch name length does not matter either.
 
-## Work trees
+## Worktrees
 
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
+
+Git Worktrees make branches root-level directories in the repository.
+Instead of switching branches, just switch directories.
+
+### Make a directory
+
+```sh
+mkdir {name-of-repository}
+```
+
+### Clone a repository without checking out a branch:
+
+Clone the repository from inside the repository directory:
+
+```sh
+cd {name-of-repository}
+```
+
+After that clone the repository without workspaces (`--bare` only clones the essential Git files).
+
+```sh
+git clone --bare {git-remote-url}
+```
+
+### Add a Worktree
+
+Only add Worktrees from the bare repository, so navigate to the bare repository:
+
+```sh
+cd {name-of-repository}.git/
+```
+
+Now add a Worktree to the root directory of the repository:
+
+```sh
+git worktree add ../{branch-name}
+```
+
+Now the directory structure should look something like this: (as an example this repository has been used)
+
+```
+second-brain
+├── second-brain.git/
+└── main/
+```
+
+To switch to branch `main`, simply `cd main`.
+
+### Add a Worktree with a new branch
+
+```sh
+git worktree add -b {new-branch-name} {worktree-name}
+```
+
+- `{branch-name}` is the name of the new branch
+- `{worktree-name}` is the name of directory (Worktree)
+
+### Add a Worktree based on a remote branch
+
+```sh
+git worktree add {worktree-name} {remote-branch-name}
+```
+
+### Remove a Worktree
+
+```sh
+git worktree remove {worktree-name}
+```
+
+For a full reference to Worktrees see the official [Git Worktree documentation](https://git-scm.com/docs/git-worktree).
+
