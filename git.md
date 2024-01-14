@@ -85,6 +85,9 @@ A more descriptive name is always better.
 ## Rebase
 
 A Git rebase adds commits from a branch on top of another branch.
+
+### Usage
+
 The most simple use case for a rebase is when a remote branch somebody is also locally working on has new changes.
 If somebody is working on branch `main`, but `origin/main` has new commits, the command `git pull origin main` can be executed to make a merge commit which adds the new commits on `origin/main` to the local `main` branch.
 
