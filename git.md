@@ -9,7 +9,7 @@ It also allows for easy editing on different devices, like phones.
 > The Git workflow (branch strategy) can have a better explanation.
 > Also, rebasing and when to use it is not explained yet.
 > 
-> The terms used in the Worktree section is inconsistent, and there should be a warning about only executing commands in the bare Workspace `{repository-name}/.git/`
+> The terms used in the worktree section is inconsistent, and there should be a warning about only executing commands in the bare workspace `{repository-name}/.git/`
 > 
 >  Rename `{repository-name}.git/` to `{repository-name}/.git/` (note the slash `/`).
 > There is also a way to do not rely on GNU Stow but use a bare repository to manage dotfiles.
@@ -128,12 +128,12 @@ The rebase option is also a good option for pull requests.
 > Do not squash commits or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
 > It is always better to leave as much history as possible for later debugging of code.
 
-## Worktrees
+## worktrees
 
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
 
-Git Worktrees make branches root-level directories in the repository.
+Git worktrees make branches root-level directories in the repository.
 Instead of switching branches, just switch directories.
 
 ### Make a directory
@@ -150,7 +150,7 @@ Clone the repository from inside the repository directory:
 cd {repository-name}
 ```
 
-After that clone the repository without Worktrees: (The `--bare` flag specifies to only clone the essential Git files)
+After that clone the repository without worktrees: (The `--bare` flag specifies to only clone the essential Git files)
 
 ```sh
 git clone --bare {git-remote-url}
@@ -158,15 +158,15 @@ git clone --bare {git-remote-url}
 
 - `{git-remote-url}` can be a `HTTPS` or `SSH` URL.
 
-### Add a Worktree
+### Add a worktree
 
-Only add Worktrees from the bare repository, so navigate to the bare repository:
+Only add worktrees from the bare repository, so navigate to the bare repository:
 
 ```sh
 cd {repository-name}.git/
 ```
 
-Now add a Worktree to the root directory of the repository:
+Now add a worktree to the root directory of the repository:
 
 ```sh
 git worktree add ../{branch-name}
@@ -182,41 +182,41 @@ second-brain
 
 To switch to branch `main`, simply `cd main`.
 
-### Add a Worktree with a new branch
+### Add a worktree with a new branch
 
-Make sure to be in the bare repository when managing Worktrees.
+Make sure to be in the bare repository when managing worktrees.
 
 ```sh
 git worktree add -b {new-branch-name} ../{worktree-name}
 ```
 
 - `{branch-name}` is the name of the new branch
-- `{worktree-name}` is the name of directory (Worktree)
+- `{worktree-name}` is the name of directory (worktree)
 
-### Add a Worktree based on a remote branch
+### Add a worktree based on a remote branch
 
 ```sh
 git worktree add {worktree-name} {remote-branch-name}
 ```
 
 > [!TIP]
-> When the Worktree commit log does not line up with the remote commit log for that specific branch, it is probably because `{remote-branch-name}` was not the correct remote branch name when executing the `git worktree add` command.
+> When the worktree commit log does not line up with the remote commit log for that specific branch, it is probably because `{remote-branch-name}` was not the correct remote branch name when executing the `git worktree add` command.
 
-### Remove a Worktree
+### Remove a worktree
 
-Remove Worktrees from the bare repository:
+Remove worktrees from the bare repository:
 
 ```sh
 cd {repository-name}.git/
 ```
 
-Remove a Worktree by executing the following command:
+Remove a worktree by executing the following command:
 
 ```sh
 git worktree remove {worktree-name}
 ```
 
-For a full reference to Worktrees see the official [Git Worktree documentation](https://git-scm.com/docs/git-worktree).
+For a full reference to worktrees see the official [Git worktree documentation](https://git-scm.com/docs/git-worktree).
 
 ## Multiple Git identities
 
