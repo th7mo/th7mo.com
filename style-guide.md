@@ -35,6 +35,10 @@ Only one heading 1 is allowed in the entire note.
 When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
 Write the command without any prefixes, so it can easily be copied to the terminal.
 
+> [!NOTE]
+> Standardize where `(additional comments)` should be.
+> Should they be inside the sentence (the `.` period after the `(comment)`) or after the sentence?
+
 Use the `> [!NOTE]` GitHub syntax for explaining that a section is work in progress.
 Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustments.
 If this rule is followed than there should not be anything work in progress related in the [To-do](/to-do.md) list.
