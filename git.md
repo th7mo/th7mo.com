@@ -123,7 +123,7 @@ git clone --bare {git-remote-url}
 Only add Worktrees from the bare repository, so navigate to the bare repository:
 
 ```sh
-cd {name-of-repository}.git/
+cd {repository-name}.git/
 ```
 
 Now add a Worktree to the root directory of the repository:
@@ -144,8 +144,10 @@ To switch to branch `main`, simply `cd main`.
 
 ### Add a Worktree with a new branch
 
+Make sure to be in the bare repository when managing Worktrees.
+
 ```sh
-git worktree add -b {new-branch-name} {worktree-name}
+git worktree add -b {new-branch-name} ../{worktree-name}
 ```
 
 - `{branch-name}` is the name of the new branch
@@ -157,11 +159,21 @@ git worktree add -b {new-branch-name} {worktree-name}
 git worktree add {worktree-name} {remote-branch-name}
 ```
 
+> [!TIP]
+> When the Worktree commit log does not line up with the remote commit log for that specific branch, it is probably because `{remote-branch-name}` was not the correct remote branch name when executing the `git worktree add` command.
+
 ### Remove a Worktree
+
+Remove Worktrees from the bare repository:
+
+```sh
+cd {repository-name}.git/
+```
+
+Remove a Worktree by executing the following command:
 
 ```sh
 git worktree remove {worktree-name}
 ```
 
 For a full reference to Worktrees see the official [Git Worktree documentation](https://git-scm.com/docs/git-worktree).
-
