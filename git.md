@@ -10,6 +10,8 @@ It also allows for easy editing on different devices, like phones.
 > Also, rebasing and when to use it is not explained yet.
 > The terms used in the Worktree section is inconsistent, and there should be a warning about only executing commands in the bare Workspace `{repository-name}/.git/`
 >  Rename `{repository-name}.git/` to `{repository-name}/.git/` (note the slash `/`).
+> There is also a way to do not rely on GNU Stow but use a bare repository to manage dotfiles.
+> This needs to be researched first.
 
 ## Installation
 
