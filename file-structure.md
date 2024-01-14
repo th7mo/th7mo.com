@@ -3,10 +3,6 @@
 The Second Brain has the most simple file structure possible.
 It does not contain any directories.
 
-> [!NOTE]
-> At the current time of writing the Second Brain does not contain images.
-> When images are introduced, there will probably be a `images/` directory at the root level.
-
 Every note is located at the root level of the repository.
 The filenames of notes have a naming convention mentioned in the [Style guide](/style-guide.md).
 
