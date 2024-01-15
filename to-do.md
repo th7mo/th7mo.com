@@ -9,3 +9,4 @@ I depend on [Git](https://git-scm.com/) for version control.
   I want a platform independent solution to store my media.
   A Network Attached Storage (NAS) or home server solution should be future-proof.
 - Buy a microphone
+- Cleanup Spotify ⇒ Tidal conversion
