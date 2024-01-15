@@ -1,9 +1,9 @@
 # SSH key
 
 A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
-You can authenticate to those repository hosting services using an SSH key.
+SSH keys can be used to authenticate to those repository hosting services.
 
-When you only need one SSH key, you can skip the section that covers [Multiple accounts](#multiple-accounts-on-the-same-repository-hosting-service).
+When only one SSH key is needed to configure, the section that covers [Multiple SSH keys](#managing-multiple-ssh-keys) can be ignored.
 
 ## Generate a new SSH key
 
@@ -13,25 +13,25 @@ To generate a new SSH key execute the following command:
 ssh-keygen -t ed25519 -C {email}
 ```
 
-- `{email}` is the email you use for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
 - The `-t` flag specifies the type of key to generate.
-- The `-C` is only a comment.
+- The `-C` adds a comment to the SSH key.
 	This flag is optional but recommended.
 	It will help indicate which key belongs to which email when using `ssh-add -l` or `keychain -l`.
+- `{email}` is the email used for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
 
-When you are prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
-Otherwise, if you want a different name for your SSH key, you can enter a custom name.
+When prompted to "Enter a file in which to save the key", press `Enter` to accept the default file location.
+Otherwise, if a different name or located is desired, a custom name can be specified.
 The default directory for storing SSH keys is `~/.ssh/`.
 Press `Enter` until the file is generated.
 
 ## Adding the SSH key 
 
-The previous command generated two files (assuming you did not change the name when prompted):
+The previous command generated two files (unless another file name or path was specified at the [Generate a new SSH key](#generate-a-new-ssh-key) section):
 
-- `id_ed25519` (private key)
-- `id_ed25519.pub` (public key)
+- `~/.ssh/id_ed25519` (private key)
+- `~/.ssh/id_ed25519.pub` (public key)
 
-Copy entire contents of the `id_ed25519.pub` file.
+Copy entire contents of the `~/.ssh/id_ed25519.pub` file.
 The following command demonstrates how to copy a file to the clipboard:
 
 ```sh
@@ -39,7 +39,7 @@ cat ~/.ssh/id_ed25519.pub | wl-copy
 ```
 
 In this example the output of the `cat` command got redirected to `wl-copy`; a utility part of [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard).
-Add the key (that should be inside your clipboard now) to your {GitHub, Bitbucket, GitLab} account.
+Add the key (that should be inside the clipboard now) to a {GitHub, Bitbucket, GitLab} account.
 
 ## Adding the private SSH key to the ssh-agent
 
@@ -53,7 +53,7 @@ Add the private SSH key previously generated to the ssh-agent by executing the f
 ssh-add ~/.ssh/id_ed25519
 ```
 
-To automate this process put this command in your shell initialization file (`~/.bash_profile` or `~/.zshrc`).
+This process can be automated by having this command in the shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
  
 ### Option 2 (preferred): use Keychain
 
@@ -71,13 +71,13 @@ To add a private SSH key to Keychain, execute:
 keychain ~/.ssh/id_ed25519
 ```
 
-To automate this process put the command above in your shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
+This process can be automated by having this command in the shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
 
-Keychain has benefit of starting ssh-agent if it has not already been started, and can be used to add GPG keys.
+Keychain has the benefit of starting ssh-agent if it has not already been started, and can be used to add GPG keys.
 
-## Multiple accounts on the same repository hosting service
+## Managing multiple SSH keys
 
-When you have a personal and work SSH key for the same repository hosting service, you probably need to take more steps to distinct the keys.
+When two or more SSH keys are used, more steps are required to let SSH know which key to use when.
 
 ### Add both the SSH keys to the ssh-agent
 
@@ -100,15 +100,15 @@ To tell Git which SSH key to use when interacting with the remote repository, we
 Make a host entry with the following settings for each key:
 
 ```sh
-Host github.com # Use this name in the remote URL
-	HostName github.com # domain name
-	User your_user_name # put this in double quotes when your User name has spaces
+Host github.com                           # Use this name in the remote URL
+	HostName github.com                     # domain name
+	User user_name                          # put this in double quotes when the User name has spaces
 	IdentityFile ~/.ssh/id_ed25519-personal # location of the private key
 	IdentitiesOnly yes
 
-Host bitbucket.com # Use this name in the remote URL
-	HostName bitbucket.org #domain name
-	User your_user_name # put this in double quotes when your User name has spaces
+Host bitbucket.com                    # Use this name in the remote URL
+	HostName bitbucket.org              # domain name
+	User user_name                      # put this in double quotes when the User name has spaces
 	IdentityFile ~/.ssh/id_ed25519-work # location of the private key
 	IdentitiesOnly yes
 ```

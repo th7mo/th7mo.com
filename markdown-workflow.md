@@ -58,7 +58,7 @@ To create a code block surround the code between two lines with three backticks:
 
 ```
 {three backticks}{language}
-{your code here}
+{place code here}
 {three backticks}
 ```
 

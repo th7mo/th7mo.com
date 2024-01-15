@@ -22,7 +22,7 @@ When the Flatpak applications are installed, most application launcher are not a
 To make those launchers find the applications, it is possible to create symbolic links to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
 
 ```sh
-ln -s /var/lib/flatpak/exports/bin/{your-flatpak-name} /usr/bin/{custom-name}
+ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}
 ```
 
 For example for [Steam](https://flathub.org/apps/com.valvesoftware.Steam):
@@ -31,7 +31,7 @@ For example for [Steam](https://flathub.org/apps/com.valvesoftware.Steam):
 ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam
 ```
 
-Now application launchers (and your terminal) are able to find the application, because it is added to the `$PATH` variable.
+Now application launchers (and the terminal) are able to find the application, because it is added to the `$PATH` variable.
 
 ## References
 

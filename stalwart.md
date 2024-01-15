@@ -16,7 +16,7 @@ systemctl restart stalwart-mail
 
 ## Ports
 
-For email to even work on the server you need to open ports email protocols use.
+For email to work it is required to open ports that are used by email protocols.
 Services that rent servers usually disable email ports by default.
 It is most likely required to open a ticket to let support open those ports on an own server.
 Following ports are required to be open to let Stalwart receive and send mail: 
