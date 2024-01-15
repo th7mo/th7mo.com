@@ -1,14 +1,11 @@
 # Stalwart
 
-> [!NOTE]
-> This note is not written in third person yet.
-
 [Stalwart](https://stalw.art/) is a mail server written in Rust.
-I use Stalwart for hosting my email on my own server.
+Stalwart can be used for hosting email on an own server.
 
 ## Installation
 
-How to install Stalwart can be found at their [docs](https://stalw.art/docs/install/linux).
+How to install Stalwart can be found at their [documentation](https://stalw.art/docs/install/linux).
 After running the installation script the only thing left to configure is the user accounts in the SQLite database.
 How to add users (email addresses) can be found [here](https://stalw.art/docs/directory/types/sql).
 After configuring everything restart the service using:
@@ -20,17 +17,17 @@ systemctl restart stalwart-mail
 ## Ports
 
 For email to even work on the server you need to open ports email protocols use.
-Services that let you rent a server usually disable email ports by default.
-You probably need to open a ticket to let support open those ports on your server.
-I do not know which ports are strictly needed for Stalwart to work, but I have a working version with the following ports open:
+Services that rent servers usually disable email ports by default.
+It is most likely required to open a ticket to let support open those ports on an own server.
+Following ports are required to be open to let Stalwart receive and send mail: 
 
 ```
-443                        ALLOW IN    Anywhere
-465                        ALLOW IN    Anywhere
-993                        ALLOW IN    Anywhere
-587                        ALLOW IN    Anywhere
-25                         ALLOW IN    Anywhere
-143                        ALLOW IN    Anywhere
+443
+465
+993
+587
+25 
+143
 ```
 
 Open a port by executing the following `ufw` command:
@@ -39,14 +36,16 @@ Open a port by executing the following `ufw` command:
 ufw enable {port-number}
 ```
 
+Repeat this command for every port listed above.
+
 ## DNS
 
 Stalwart generates keys needed to add to the DNS configuration.
 
 - `@` | `MX` | `mx.th7mo.com.` (trailing dot (`.`))
-- `stalwart._domainkey` | `TXT` | `{your-DKIM1-key}` (including quotes)
-- `_dmarc` | `TXT` | `{your-DMARC1-key}` (including quotes) 
-- `@` | `TXT` | `{your-spf1-key}` (something like ` "v=spf1 a:mail.th7mo.com mx -all ra=postmaster" `)
+- `stalwart._domainkey` | `TXT` | `{generated-DKIM1-key}` (including quotes)
+- `_dmarc` | `TXT` | `{generated-DMARC1-key}` (including quotes) 
+- `@` | `TXT` | `{generated-spf1-key}` (something like ` "v=spf1 a:mail.th7mo.com mx -all ra=postmaster" `)
 
 ## Add account to email client
 
@@ -64,7 +63,7 @@ Stalwart generates keys needed to add to the DNS configuration.
 ### Manual setup 
 
 This configuration is for other email clients.
-It is possible that not every listed setting is required by your email client.
+It is possible that not every listed setting is required by the chosen email client.
 The individual setting names can vary too.
 
 #### Incoming server settings (IMAP)
