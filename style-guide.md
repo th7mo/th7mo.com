@@ -43,11 +43,25 @@ Use the `> [!NOTE]` GitHub syntax for explaining that a section is work in progr
 Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustments.
 If this rule is followed than there should not be anything work in progress related in the [To-do](/to-do.md) list.
 
-When referencing another note, make the link name the same as the title of the note.
+## Cross-referencing other notes
+
+When cross-referencing another note, make the link name the same as the title of the note.
 For this note the title is "Style guide".
 The link itself should start with a slash (`/`).
-Because there are no directories inside the Second Brain (the [File structure](/file-structure.md) note explains why), every note can be referenced using the syntax `/{file-name}`.
-For example: the complete syntax to reference this note from anywhere inside the Second Brain is: `[Style guide](/style-guide.md)`.
+Because there are no directories inside the Second Brain (the [File structure](/file-structure.md) note explains why), every note can be cross-referenced using the syntax `/{file-name}`.
+For example: the complete syntax to cross-reference this note from anywhere inside the Second Brain is: `[Style guide](/style-guide.md)`.
+
+Prefer internal cross-references above external cross-references:
+
+```
+style-guide.md -> git.md -> https://git-scm.com/
+```
+
+is better than:
+
+```
+style-guide.md -> https://git-scm.com/ <- git.md
+```
 
 ## Language
 

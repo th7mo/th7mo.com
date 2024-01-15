@@ -96,7 +96,7 @@ keychain -l
 
 ### Create or modify the .ssh/config file
 
-To tell Git which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
+To tell [Git](/git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
 Make a host entry with the following settings for each key:
 
 ```sh
@@ -106,10 +106,10 @@ Host github.com                           # Use this name in the remote URL
 	IdentityFile ~/.ssh/id_ed25519-personal # location of the private key
 	IdentitiesOnly yes
 
-Host bitbucket.com                    # Use this name in the remote URL
-	HostName bitbucket.org              # domain name
-	User user_name                      # put this in double quotes when the User name has spaces
-	IdentityFile ~/.ssh/id_ed25519-work # location of the private key
+Host bitbucket.com                        # Use this name in the remote URL
+	HostName bitbucket.org                  # domain name
+	User user_name                          # put this in double quotes when the User name has spaces
+	IdentityFile ~/.ssh/id_ed25519-work     # location of the private key
 	IdentitiesOnly yes
 ```
 

@@ -1,6 +1,6 @@
 # Dotfiles
 
-It is a good idea to make a Git repository to back up and sync configuration files.
+It is a good idea to make a [Git](/git.md) repository to back up and sync configuration files.
 However, it is not recommended to make a Git repository directly into the `~/` home directory.
 A better alternative is to move configuration files into a separate directory like `~/dotfiles/`.
 To make sure installed programs still have access to the configuration files, symbolic links to the configuration files can be made.

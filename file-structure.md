@@ -15,7 +15,7 @@ It would be very difficult to create a file structure that does not require a lo
 Although it is not intuitive, it is fine to have a thousand notes in a single directory just like it is fine to have a thousand words in a single note.
 Also, there is no real benefit to categorizing the notes.
 It would result in more overhead and complexity.
-Moving notes to different directories would invalidate every reference to that note.
+Moving notes to different directories would invalidate every cross-reference to that note.
 
 When searching for a note, just search for the filename of that note.
 Because the Second Brain uses just plain text in all notes, searching for a word in all the notes is also a good option.
