@@ -49,7 +49,12 @@ When cross-referencing another note, make the link name the same as the title of
 For this note the title is "Style guide".
 The link itself should start with a slash (`/`).
 Because there are no directories inside the Second Brain (the [File structure](/file-structure.md) note explains why), every note can be cross-referenced using the syntax `/{file-name}`.
-For example: the complete syntax to cross-reference this note from anywhere inside the Second Brain is: `[Style guide](/style-guide.md)`.
+
+For example: the complete syntax to cross-reference this note from anywhere in the Second Brain is: 
+
+```
+[Style guide](/style-guide.md)
+```
 
 Prefer internal cross-references above external cross-references:
 
