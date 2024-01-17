@@ -7,7 +7,6 @@ It also allows for easy editing on different devices, like phones.
 > [!NOTE]
 > This note is not complete yet.
 > The Git workflow (branch strategy) can have a better explanation.
-> Also, rebasing and when to use it is not explained yet.
 > 
 > The terms used in the worktree section is inconsistent, and there should be a warning about only executing commands in the bare workspace `{repository-name}/.git/`
 > 
@@ -39,25 +38,40 @@ It also stores custom aliases and branch handling preferences.
 Commits should be short.
 Commit messages can have a short summary, and an optional longer explanation after an empty line.
 Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/). 
-It is not a benefit.
-There are still a lot of tools that cannot handle emoji's.
-It is also way more difficult to filter or search commit messages when they use emoji's for describing the commit.
+Emojis do not provide any benefit to the commit message.
+There are still a lot of tools that lack proper emoji support.
+It is also way more difficult to filter or search commit messages when they use emojis for describing the commit.
 
 Use the following prefixes for commit message titles:
 
-`feat: ` for new functionality.
-
-`fix: ` for reworking existing code to solve bugs.
-
-`refact: ` for refactoring code.
-
-`docs: ` for adding documentation.
-
-`test: ` for adding or fixing tests.
-
-`bump: ` for incrementing version numbers of dependencies.
+- `feat: ` for new functionality.
+- `fix: ` for reworking existing code to solve bugs.
+- `refact: ` for refactoring code.
+- `docs: ` for adding documentation.
+- `test: ` for adding or fixing tests.
+- `bump: ` for incrementing version numbers of dependencies.
 
 It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
+
+## Reverting commits
+
+It is possible to revert changes without modifying the Git history.
+This makes reverting commits a safer option than resetting commits.
+To revert a commit execute the following command:
+
+```sh
+git revert {commit-hash}
+```
+
+Unlike `git reset`, the `git revert` command only reverts the changes of a specified commit, and will not revert the commits that came after the specified commit.
+When multiple commits need to be reverted, the `--no-commit` flag can be specified to make all reverts a single commit:
+
+```sh
+git revert --no-commit {A-commit-hash}
+git revert --no-commit {B-commit-hash}
+git revert --no-commit {C-commit-hash}
+git commit -am "revert: {reason for reverting commits}"
+```
 
 ## Branches
 
