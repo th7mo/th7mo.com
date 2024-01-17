@@ -69,7 +69,7 @@ The `git revert` command also accepts a range of commits:
 
 ```sh
 git revert --no-commit {commit-hash}..HEAD
-git commit -m "revert: {reason for reverting commits}"
+git commit -m "revert: {reason for reverting}"
 ```
 
 The `git revert` command above reverts all changes from the `{commit-hash}` up to and including where `HEAD` is.
