@@ -33,7 +33,7 @@ ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam
 
 Now application launchers (and the terminal) are able to find the application, because it is added to the `$PATH` variable.
 
-## References
+## See also
 
 - The Gentoo article about [Flatpak](https://wiki.gentoo.org/wiki/Flatpak).
 - I learned about symbolic linking of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).

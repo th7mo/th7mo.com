@@ -47,7 +47,7 @@ For more information reference about how to the following:
 - The Arch Wiki section about [network configuration with eduroam](https://wiki.archlinux.org/title/Network_configuration/Wireless#eduroam).
 - To generate configuration for NetworkManager use the [eduroam Configuration Assistant Tool](https://cat.eduroam.org/).
 
-## References
+## See also
 
 - The Gentoo wiki article about [NetworkManager](https://wiki.gentoo.org/wiki/NetworkManager).
 - The Arch Wiki article about [NetworkManager](https://wiki.archlinux.org/title/NetworkManager).

@@ -136,7 +136,7 @@ git remote set-url origin git@github:th7mo/second-brain.git
 
 Make sure that the local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
 
-## Reference
+## See also
 
 - For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 - For a more detailed explanation for multiple SSH keys reference:

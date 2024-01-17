@@ -73,7 +73,7 @@ For example: "Execute the following command:" instead of "Run the following comm
 **Directory**:
 Use the term directory instead of folder.
 
-## References
+## See also
 
 - The Second Brain setup of David Luhr.
   He also uses [Git](/git.md) and a [Markdown workflow](/markdown-workflow.md) to store his Second Brain.
