@@ -38,9 +38,6 @@ nmcli device wifi connect {SSID} password {password}
 
 ### Eduroam
 
-> [!NOTE]
-> The references to external resources need to be replaced with a tested guide.
-
 It is not possible to connect to the eduroam network using NetworkManager without custom configuration.
 For more information reference about how to the following:
 
