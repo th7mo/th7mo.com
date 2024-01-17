@@ -73,5 +73,5 @@ Use the term directory instead of folder.
 
 - The Second Brain setup of David Luhr.
   He also uses [Git](/git.md) and a [Markdown workflow](/markdown-workflow.md) to store his Second Brain.
-  He explains his setup on his [personal website `luhr.co`](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
-- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brains. 
+  He explains his setup on his [personal website](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
+- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brains.
