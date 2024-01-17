@@ -10,7 +10,6 @@ It also allows for easy editing on different devices, like phones.
 > 
 > The terms used in the worktree section is inconsistent, and there should be a warning about only executing commands in the bare workspace `{repository-name}/.git/`
 > 
->  Rename `{repository-name}.git/` to `{repository-name}/.git/` (note the slash `/`).
 > There is also a way to do not rely on GNU Stow but use a bare repository to manage dotfiles.
 > This needs to be researched first.
 
@@ -184,7 +183,7 @@ git clone --bare {git-remote-url}
 Only add worktrees from the bare repository, so navigate to the bare repository:
 
 ```sh
-cd {repository-name}.git/
+cd {repository-name}/.git/
 ```
 
 Now add a worktree to the root of the repository:
@@ -197,7 +196,7 @@ Now the directory structure should look something like this: (as an example this
 
 ```
 second-brain
-├── second-brain.git/
+├── second-brain/.git/
 └── main/
 ```
 
@@ -228,7 +227,7 @@ git worktree add {worktree-name} {remote-branch-name}
 Remove worktrees from the bare repository:
 
 ```sh
-cd {repository-name}.git/
+cd {repository-name}/.git/
 ```
 
 Remove a worktree by executing the following command:
