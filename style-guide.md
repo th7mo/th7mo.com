@@ -29,23 +29,15 @@ style-guide.md -> https://git-scm.com/ <- git.md
 
 ## Formatting
 
-Use the rules described in the [Markdown workflow](/markdown-workflow.md).
-
-Every Markdown file name must be written in `lowercase-kabab-case`.
-
-Start the document with a heading 1 (`#`) with the name of the Markdown file.
-Capitalize the first character of the note title.
-Only one heading 1 is allowed in the entire note.
-
-When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
-Write the command without any prefixes, so it can easily be copied to the terminal.
-
-> [!NOTE]
-> Standardize where `(additional comments)` should be.
-> Should they be inside the sentence (the `.` period after the `(comment)`) or after the sentence?
-
-Use the `> [!NOTE]` GitHub Flavored Markdown syntax for explaining that a section is work in progress.
-Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustment.
+- Use the rules described in the [Markdown workflow](/markdown-workflow.md).
+- Every Markdown file name must be written in `lowercase-kabab-case`.
+- Start the document with a heading 1 (`#`) with the name of the Markdown file.
+- Capitalize the first character of the note title.
+- Only one heading 1 is allowed in the entire note.
+- When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
+  Write the command without any prefixes, so it can easily be copied to the terminal.
+- Use the `> [!NOTE]` GitHub Flavored Markdown syntax for explaining that a section is work in progress.
+- Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustment.
 
 ## Language
 
@@ -53,8 +45,6 @@ Try to avoid first and second person writing.
 This Second Brain should be mostly informative.
 This improves the ability to make more notes publicly available.
 It is allowed to use first or second person when writing personal notes.
-
-Write ` not` instead of `'t` (`do not` instead of `don't`).
 
 Use English (not British) for writing notes.
 The only exception are words that do not have a proper English equivalent.
@@ -78,3 +68,10 @@ For example: "Execute the following command:" instead of "Run the following comm
 
 **Directory**:
 Use the term directory instead of folder.
+
+## Resources
+
+- The Second Brain setup of David Luhr.
+  He also uses [Git](/git.md) and a [Markdown workflow](/markdown-workflow.md) to store his Second Brain.
+  He explains his setup on his [personal website `luhr.co`](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
+- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brains. 
