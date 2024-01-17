@@ -64,14 +64,21 @@ git revert {commit-hash}
 ```
 
 Unlike `git reset`, the `git revert` command only reverts the changes of a specified commit, and will not revert the commits that came after the specified commit.
-When multiple commits need to be reverted, the `--no-commit` flag can be specified to make all reverts a single commit:
+
+The `git revert` command also accepts a range of commits:
 
 ```sh
-git revert --no-commit {A-commit-hash}
-git revert --no-commit {B-commit-hash}
-git revert --no-commit {C-commit-hash}
-git commit -am "revert: {reason for reverting commits}"
+git revert --no-commit {commit-hash}..HEAD
+git commit -m "revert: {reason for reverting commits}"
 ```
+
+The `git revert` command above reverts all changes from the `{commit-hash}` up to and including where `HEAD` is.
+It also adds the reverts to the staging area.
+
+> [!TIP]
+> For more safety use the `--no-commit` flag.
+> It allows for reviewing the reverted changes before the commit is made.
+> To abort the revert execute `git revert --abort`
 
 ## Branches
 
