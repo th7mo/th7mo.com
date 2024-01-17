@@ -27,6 +27,10 @@ is better than:
 style-guide.md -> https://git-scm.com/ <- git.md
 ```
 
+> [!TIP]
+> Heading names inside notes can change, and should not be cross-referenced.
+> Only cross-reference to an entire note using the syntax explained earlier.
+
 ## Formatting
 
 - Use the rules described in the [Markdown workflow](/markdown-workflow.md).
