@@ -1,8 +1,8 @@
 # Dotfiles
 
-It is a good idea to make a [(Note) Git](/git.md) repository to back up and sync configuration files.
+It is a good idea to make a [Note: Git](/git.md) repository to back up and sync configuration files.
 
-It is a good idea to make a (Note) [Git](/git.md) repository to back up and sync configuration files.
+It is a good idea to make a [`Git`](/git.md) repository to back up and sync configuration files.
 
 It is a good idea to make a [`Note: Git`](/git.md) repository to back up and sync configuration files.
 
