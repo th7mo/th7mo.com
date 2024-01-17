@@ -2,7 +2,7 @@
 
 This repository is my [Second Brain](https://www.buildingasecondbrain.com/).
 A Second Brain is a place to gather all somebody's thoughts.
-The thoughts, ideas, things somebody needs [To do](/to-do.md) or needs [To watch](/to-watch.md), references to good books or articles, or documentation that is important to somebody.
+The thoughts, ideas, things somebody needs [To do](/to-do.md) or wants [To watch](/to-watch.md), references to good books or articles, or documentation that is important to somebody.
 It is the place for documenting important information and made decisions.
 
 The Second Brain has a flat [File structure](/file-structure.md) without directories.
