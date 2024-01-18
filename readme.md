@@ -14,7 +14,7 @@ This keeps the repository (and its history) small and searchable.
 All the issues and improvements to the Second Brain are documented in the notes themselves.
 This improves portability to other platforms rather than be dependent on [GitHub](https://github.com/).
 It also makes the reader aware that a note is possibly not finished.
-For more guidelines see the [Style guide](/style-guide.md).
+For more guidelines see [Maintaining](/maintaining.md).
 
 I use [Debian](https://www.debian.org/) Linux as my operating system.
 The [Linux workflow](/linux-workflow.md) note explains why.

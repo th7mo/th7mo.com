@@ -1,34 +1,30 @@
-# Style guide
+# Maintaining
 
 This note provides rules to make the writing of the entire Second Brain consistent.
-
-> [!NOTE]
-> This note should be split or be renamed to 'maintainer guide' or something like that.
-> Now it does more than only document the styling.
 
 ## Cross-referencing other notes
 
 When cross-referencing another note, make the link name the same as the title of the note.
-For this note the title is "Style guide".
+For this note the title is "Maintaining".
 The link itself should start with a slash (`/`).
 Because the [File structure](/file-structure.md) has no directories, every note can be cross-referenced using the syntax `/{file-name}`.
 
 For example: the complete syntax to cross-reference this note from anywhere in the Second Brain is: 
 
 ```
-[Style guide](/style-guide.md)
+[Maintaining](/maintaining.md)
 ```
 
 Prefer internal cross-references above external cross-references:
 
 ```
-style-guide.md -> git.md -> https://git-scm.com/
+maintaining.md -> git.md -> https://git-scm.com/
 ```
 
 is better than:
 
 ```
-style-guide.md -> https://git-scm.com/ <- git.md
+maintaining.md -> https://git-scm.com/ <- git.md
 ```
 
 ### Cross-referencing sections of other notes
@@ -37,7 +33,7 @@ For a more specific cross-reference it is also possible to cross-reference headi
 This can be achieved by specifying the heading in `lower-kabab-case` after a `#` as divider:
 
 ```
-[Style guide | Cross-referencing sections of other notes](/style-guide.md#cross-referencing-sections-of-other-notes)
+[Maintaining | Cross-referencing sections of other notes](/maintaining.md#cross-referencing-sections-of-other-notes)
 ```
 
 The `|` pipe character can indicate that a section of a note is cross-referenced.
