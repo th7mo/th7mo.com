@@ -4,7 +4,7 @@ The Second Brain has the most simple file structure possible.
 It does not contain any directories and only uses [Markdown](/markdown.md) as a file format.
 
 Every note is located at the root of the repository.
-The filenames of notes have a naming convention mentioned in [Maintaining | Formatting](/maintaining.md#formatting).
+The filenames of notes have a naming convention mentioned in [Maintaining#Formatting](/maintaining.md#formatting).
 
 ## Why
 

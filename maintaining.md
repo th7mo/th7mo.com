@@ -33,10 +33,10 @@ For a more specific cross-reference it is also possible to cross-reference headi
 This can be achieved by specifying the heading in `lower-kabab-case` after a `#` as divider:
 
 ```
-[Maintaining | Cross-referencing sections of other notes](/maintaining.md#cross-referencing-sections-of-other-notes)
+[Maintaining#Cross-referencing sections of other notes](/maintaining.md#cross-referencing-sections-of-other-notes)
 ```
 
-The `|` pipe character can indicate that a section of a note is cross-referenced.
+The `#` hash character can indicate that only a section of a note is cross-referenced.
 
 ## Formatting
 
