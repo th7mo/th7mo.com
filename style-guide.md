@@ -27,9 +27,16 @@ is better than:
 style-guide.md -> https://git-scm.com/ <- git.md
 ```
 
-> [!TIP]
-> Heading names inside notes can change, and should not be cross-referenced.
-> Only cross-reference to an entire note using the syntax explained earlier.
+### Cross-referencing sections of other notes
+
+For a more specific cross-reference it is also possible to cross-reference headings of other notes.
+This can be achieved by specifying the heading in `lower-kabab-case` after a `#` as divider:
+
+```
+[Style guide | Cross-referencing sections of other notes](/style-guide.md#cross-referencing-sections-of-other-notes)
+```
+
+The `|` pipe character can indicate that a section of a note is cross-referenced.
 
 ## Formatting
 
@@ -42,6 +49,16 @@ style-guide.md -> https://git-scm.com/ <- git.md
   Write the command without any prefixes, so it can easily be copied to the terminal.
 - Use the `> [!NOTE]` GitHub Flavored Markdown syntax for explaining that a section is work in progress.
 - Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the note is not finished or needs adjustment.
+
+## Renaming
+
+Sometimes it is necessary to rename a note, or a heading inside a note.
+
+> [!WARNING]
+> Never just rename a note or heading, because all cross-references that pointed to that note or heading will be broken.
+
+Instead, always refactor a heading or note name using [LSP](https://microsoft.github.io/language-server-protocol/)'s or indexed projects.
+This will make sure all cross-references to that note or heading will also be renamed appropriately.
 
 ## Language
 

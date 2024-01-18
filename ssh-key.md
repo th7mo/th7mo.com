@@ -117,6 +117,8 @@ Host bitbucket.com                        # Use this name in the remote URL
 > Make the `Host` name the same has the `HostName`.
 > When those are the same there is no need to update any existing remotes because the URL stays the same.
 
+When using multiple Git identities, also follow the section [Git | Multiple Git identities](/git.md#multiple-git-identities).
+
 ### Update the existing remotes
 
 When the `Host` name has the same name as the `HostName`, this section can be skipped.
