@@ -33,7 +33,7 @@ style-guide.md -> https://git-scm.com/ <- git.md
 
 ## Formatting
 
-- Use the rules described in the [Markdown workflow](/markdown-workflow.md).
+- Use the rules described in the [Markdown](/markdown.md) note.
 - Every Markdown file name must be written in `lowercase-kabab-case`.
 - Start the document with a heading 1 (`#`) with the name of the Markdown file.
 - Capitalize the first character of the note title.
@@ -76,6 +76,6 @@ Use the term directory instead of folder.
 ## See also
 
 - The Second Brain setup of David Luhr.
-  He also uses [Git](/git.md) and a [Markdown workflow](/markdown-workflow.md) to store his Second Brain.
+  He also uses [Git](/git.md) and [Markdown](/markdown.md) to store his Second Brain.
   He explains his setup on his [personal website](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
 - There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brains.

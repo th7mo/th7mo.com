@@ -7,7 +7,7 @@ It is the place for documenting important information and made decisions.
 
 The Second Brain has a flat [File structure](/file-structure.md) without directories.
 The notes inside the Second Brain can cross-reference other notes.
-The Second Brain relies on the [Markdown workflow](/markdown-workflow.md) using only plain text.
+The Second Brain relies on the [Markdown](/markdown.md) using only plain text.
 It uses [Git](/git.md) as a version control system.
 This keeps the repository (and its history) small and searchable.
 
