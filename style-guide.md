@@ -2,6 +2,10 @@
 
 This note provides rules to make the writing of the entire Second Brain consistent.
 
+> [!NOTE]
+> This note should be split or be renamed to 'maintainer guide' or something like that.
+> Now it does more than only document the styling.
+
 ## Cross-referencing other notes
 
 When cross-referencing another note, make the link name the same as the title of the note.
