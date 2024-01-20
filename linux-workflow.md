@@ -35,4 +35,4 @@ File navigation, syntax highlighting and LSP support are built-in, and almost no
 ## Applications
 
 Prefer applications available in the Debian repository over anything else.
-When the Debian repository does not have a specific application, a [flatpak](/flatpak.md) packaged application is a good alternative.
+When the Debian repository does not provide a specific application, a [flatpak](/flatpak.md) packaged application is a good alternative.

@@ -1,6 +1,7 @@
 # Flatpak
 
-For some proprietary applications or applications not covered by the Debian repository, it could be better to install a [Flatpak](https://flatpak.org/) package for that application.
+Some proprietary applications or applications are not provided by the Debian repository.
+In those cases it could be better to install the [Flatpak](https://flatpak.org/) packaged version of that application.
 [Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are ugly to install on Debian and should be isolated using Flatpak.
 
 ## Installation
@@ -18,8 +19,9 @@ Refer to the [Flatpak website](https://flatpak.org/) for how to install applicat
 
 ## Creating [symbolic-link](/symbolic-link.md)s
 
-When the Flatpak applications are installed, most application launcher are not able to find them.
-To make those launchers find the applications, it is possible to create [symbolic-link](/symbolic-link.md)s to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
+When the Flatpak applications are installed, most application launchers are not able to find them.
+This is because the Flatpak applications are not in a `$PATH` directory.
+To make those application launchers find the Flatpak applications, it is possible to create [symbolic-link](/symbolic-link.md)s to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
 
 ```sh
 ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}
@@ -31,7 +33,7 @@ For example for [Steam](https://flathub.org/apps/com.valvesoftware.Steam):
 ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam
 ```
 
-Now application launchers (and the terminal) are able to find the application, because it is added to the `$PATH` variable.
+Now application launchers (and the terminal) are able to find the Flatpak application, because it is added to the `$PATH` variable.
 
 ## See also
 
