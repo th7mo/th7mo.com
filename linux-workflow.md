@@ -1,6 +1,6 @@
 # Linux workflow
 
-This note describes a solid Linux workflow stack, using reliable, stable and future-proof software.
+This [note](note.md) describes a solid Linux workflow stack, using reliable, stable and future-proof software.
 
 ## Philosophy
 
@@ -31,3 +31,8 @@ It is popular, minimalistic (from a design perspective), very polished, and has 
 
 The [Helix](https://helix-editor.com/) text editor is pretty new, but is one of the few text editors that just works out of the box.
 File navigation, syntax highlighting and LSP support are built-in, and almost nobody their configuration file is longer than 30 lines.
+
+## Applications
+
+Prefer applications available in the Debian repository over anything else.
+When the Debian repository does not have a specific application, a [flatpak](/flatpak.md) packaged application is a good alternative.

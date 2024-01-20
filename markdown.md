@@ -5,7 +5,6 @@ The Second Brain uses the Markdown format to store information.
 Markdown provides universal readability, regardless of platform or tooling.
 Markdown also allows easy history tracking, collaboration and reviewing with [Git](/git.md). 
 The Markdown format is very established and is not sensitive to major technological shifts.
-
 ## Syntax
 
 Markdown uses reserved symbols to mark the styling of text or give text a special meaning.

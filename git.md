@@ -23,14 +23,7 @@ sudo apt install git
 
 ## Configuration
 
-Git is configured with `.gitconfig` files.
-The main configuration file is located at `~/.gitconfig`.
-The `.gitconfig` file stores all Git configuration like a `user.name` and `user.email` that is used for each commit.
-It also stores custom aliases and branch handling preferences.
-
-> [!TIP]
-> It is recommended to put `.gitconfig` files in the [Dotfiles](/dotfiles.md).
-> This will make sure the configuration is backed up.
+All the configuration for Git is stored in [gitconfig](/gitconfig.md) files.
 
 ## Commits
 
@@ -150,112 +143,11 @@ The rebase option is also a good option for pull requests.
 
 ## Worktrees
 
-> [!NOTE]
-> This section will be explained when I actually included work trees in my own workflow.
-
-Git worktrees make branches directories at the root of the repository.
-Instead of switching branches, just switch directories.
-
-### Make a directory
-
-```sh
-mkdir {repository-name}
-```
-
-### Clone a repository without checking out a branch:
-
-Clone the repository from inside the repository directory:
-
-```sh
-cd {repository-name}
-```
-
-After that clone the repository without worktrees: (The `--bare` flag specifies to only clone the essential Git files)
-
-```sh
-git clone --bare {git-remote-url}
-```
-
-- `{git-remote-url}` can be a `HTTPS` or `SSH` URL.
-
-### Add a worktree
-
-Only add worktrees from the bare repository, so navigate to the bare repository:
-
-```sh
-cd {repository-name}/.git/
-```
-
-Now add a worktree to the root of the repository:
-
-```sh
-git worktree add ../{branch-name}
-```
-
-Now the directory structure should look something like this: (as an example this repository has been used)
-
-```
-second-brain
-├── second-brain/.git/
-└── main/
-```
-
-To switch to branch `main`, simply `cd main`.
-
-### Add a worktree with a new branch
-
-Make sure to be in the bare repository when managing worktrees.
-
-```sh
-git worktree add -b {new-branch-name} ../{worktree-name}
-```
-
-- `{branch-name}` is the name of the new branch
-- `{worktree-name}` is the name of directory (worktree)
-
-### Add a worktree based on a remote branch
-
-```sh
-git worktree add {worktree-name} {remote-branch-name}
-```
-
-> [!TIP]
-> When the worktree commit log does not line up with the remote commit log for that specific branch, it is probably because `{remote-branch-name}` was not the correct remote branch name when executing the `git worktree add` command.
-
-### Remove a worktree
-
-Remove worktrees from the bare repository:
-
-```sh
-cd {repository-name}/.git/
-```
-
-Remove a worktree by executing the following command:
-
-```sh
-git worktree remove {worktree-name}
-```
-
-For a full reference to worktrees see the official [Git worktree documentation](https://git-scm.com/docs/git-worktree).
+[git-worktree](/git-worktree.md)s can be used to switch between branches without committing or stashing changes. 
 
 ## Multiple Git identities
 
-Sometimes it is desired to overwrite the default configuration specified in `~/.gitconfig`.
-This can be done by creating another `.gitconfig` file anywhere, and referencing it in the main `~/.gitconfig` file.
-The `includeIf` option is used to specify when a `.gitconfig` file should be active.
-
-For example:
-
-```sh
-[includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
-```
-
-This specifies that the `~/work/.gitconfig` configuration should be used when inside a Git repository anywhere under the `~/work/` folder.
-The `~/work/.gitconfig` can have a different `user.name` and `user.email` for professional use.
-
-> [!IMPORTANT]
-> Always end the `gitdir` path with a slash (`/`), otherwise it will not work!
+See [multiple-git-identities](/multiple-git-identities.md) for how to configure multiple Git identities.
 
 ## See also
 

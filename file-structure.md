@@ -1,24 +1,24 @@
 # File structure
 
 The Second Brain has the most simple file structure possible.
-It does not contain any directories and only uses [Markdown](/markdown.md) as a file format.
+It does not contain any directories and only uses [markdown](/markdown.md) as a file format.
 
-Every note is located at the root of the repository.
-The filenames of notes have a naming convention mentioned in [Maintaining#Formatting](/maintaining.md#formatting).
+Every [note](note.md) is located at the root of the repository.
+The filenames of [note](note.md)s have a naming convention mentioned in [maintaining#Formatting](/maintaining.md#formatting).
 
 ## Why
 
-The notes in the Second Brain have a complex relation to each other.
-There is not a simple file structure solution because the notes are very different in nature.
+The [note](note.md)s in the Second Brain have a complex relation to each other.
+There is not a simple file structure solution because the [note](note.md)s are very different in nature.
 It would be very difficult to create a file structure that does not require a lot of maintenance.
 
-Although it is not intuitive, it is fine to have a thousand notes in a single directory just like it is fine to have a thousand words in a single note.
-Also, there is no real benefit to categorizing the notes.
+Although it is not intuitive, it is fine to have a thousand [note](note.md) in a single directory.
+Also, there is no real benefit to categorizing the [note](note.md)s.
 It would result in more overhead and complexity.
-Moving notes to different directories would invalidate every cross-reference to that note.
+Moving [note](note.md) to different directories would invalidate every [cross-reference](/cross-reference.md) to that [note](note.md).
 
-When searching for a note, just search for the filename of that note.
-Because the Second Brain uses just plain text in all notes, searching for a word in all the notes is also a good option.
+When searching for a [note](note.md), just search for the filename of that [note](note.md).
+Because the Second Brain uses just plain text in all [note](note.md)s, searching for a word in all the [note](note.md)s is also a good option.
 
-The benefit for not using directories is that it makes referencing other notes easy.
-The path to another note is always `/{name-of-note}`.
+The benefit for not using directories is that it makes a [cross-reference](/cross-reference.md) to any other [note](note.md) easy.
+The path to another [note](note.md) is always `/{name-of-note}`.
