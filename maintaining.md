@@ -1,6 +1,6 @@
 # Maintaining
 
-This [note](note.md) provides rules to make the writing of the entire Second Brain consistent.
+This [note](note.md) provides rules to make the writing of the entire [second-brain](/second-brain.md) consistent.
 
 ## Formatting
 
@@ -17,7 +17,7 @@ This [note](note.md) provides rules to make the writing of the entire Second Bra
 ## Language
 
 Try to avoid first and second person writing.
-This Second Brain should be mostly informative.
+This [second-brain](/second-brain.md) should be mostly informative.
 This improves the ability to make more [note](note.md)s publicly available.
 It is allowed to use first or second person when writing personal [note](note.md)s.
 
@@ -26,14 +26,8 @@ The only exception are words that do not have a proper English equivalent.
 
 ## Terminology
 
-**Second Brain**:
-The Second Brain is a digital collection of all thoughts, documentation and ideas.
-It is stored in the form of a repository, but that is only an implementation detail.
-Use the term Second Brain instead of repository.
-Second Brain is a name, and should be written with capital letters.
-
 **Note**:
-Every [markdown](/markdown.md) file in the Second Brain is a [note](note.md).
+Every [markdown](/markdown.md) file in the [second-brain](/second-brain.md) is a [note](note.md).
 Use the term 'note' instead of page, article or document.
 
 **Execute**:
@@ -45,7 +39,7 @@ Use the term directory instead of folder.
 
 ## See also
 
-- The Second Brain setup of David Luhr.
-  He also uses [git](/git.md) and [markdown](/markdown.md) to store his Second Brain.
+- The [second-brain](/second-brain.md) setup of David Luhr.
+  He also uses [git](/git.md) and [markdown](/markdown.md) to store his [second-brain](/second-brain.md).
   He explains his setup on his [personal website](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
-- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brains.
+- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public [second-brain](/second-brain.md).

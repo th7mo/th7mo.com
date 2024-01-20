@@ -1,7 +1,7 @@
 # Cross-reference
 
 A cross-reference is a connection to another part of the content.
-For the Second Brain a cross-reference is a connection between two [note](note.md)s.
+For the [second-brain](/second-brain.md) a cross-reference is a connection between two [note](note.md)s.
 
 ## Cross-referencing other [note](/note.md)s
 
@@ -10,7 +10,7 @@ For this [note](note.md) the file name is "cross-reference".
 The link itself should start with a slash (`/`).
 Because the [file-structure](/file-structure.md) has no directories, every [note](note.md) can be cross-referenced using the syntax `/{file-name}`.
 
-For example: the complete syntax to cross-reference this [note](note.md) from anywhere in the Second Brain is: 
+For example: the complete syntax to cross-reference this [note](note.md) from anywhere in the [second-brain](/second-brain.md) is: 
 
 ```
 [cross-reference](/cross-reference.md)

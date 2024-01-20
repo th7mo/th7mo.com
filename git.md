@@ -1,7 +1,7 @@
 # Git
 
 [Git](https://git-scm.com/) is a version control system.
-It is used for the Second Brain to keep track of changes and preserve history.
+It is used for the [second-brain](/second-brain.md) to keep track of changes and preserve history.
 It also allows for easy editing on different devices, like phones.
 
 > [!NOTE]

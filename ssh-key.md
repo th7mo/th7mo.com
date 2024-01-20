@@ -17,7 +17,7 @@ ssh-keygen -t ed25519 -C {email}
 - The `-C` adds a comment to the SSH key.
 	This flag is optional but recommended.
 	It will help indicate which key belongs to which [email](/email.md) when using `ssh-add -l` or `keychain -l`.
-- `{email}` is the [email](/email.md) used for GitHub or Bitbucket, configured as `user.email` in the `.gitconfig` file.
+- `{email}` is the [email](/email.md) used for GitHub or Bitbucket, configured as `user.email` in the [gitconfig](/gitconfig.md) file.
 
 When prompted to "Enter a file in which to save the key", press `Enter` to accept the default file location.
 Otherwise, if a different name or located is desired, a custom name can be specified.
@@ -96,7 +96,7 @@ keychain -l
 
 ### Create or modify the .ssh/config file
 
-To tell [Git](/git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
+To tell [git](/git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
 Make a host entry with the following settings for each key:
 
 ```sh
@@ -117,7 +117,7 @@ Host bitbucket.com                        # Use this name in the remote URL
 > Make the `Host` name the same has the `HostName`.
 > When those are the same there is no need to update any existing remotes because the URL stays the same.
 
-When using multiple Git identities, also follow the section [Git#Multiple Git identities](/git.md#multiple-git-identities).
+When using multiple [git](/git.md) identities, also follow the section [git#Multiple-git-identities](/git.md#multiple-git-identities).
 
 ### Update the existing remotes
 
@@ -136,7 +136,7 @@ Example for this repository when `Host` is named `github` instead of `github.com
 git remote set-url origin git@github:th7mo/second-brain.git
 ```
 
-Make sure that the local `.gitconfig` has the correct `user.name` and `user.email` for authentication.
+Make sure that the local [gitconfig](/gitconfig.md) has the correct `user.name` and `user.email` for authentication.
 
 ## See also
 
