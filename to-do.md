@@ -10,3 +10,4 @@ I depend on [Git](/git.md) for version control.
   A Network Attached Storage (NAS) or home server solution should be future-proof.
 - Buy a microphone
 - Cleanup Spotify ⇒ Tidal conversion
+- Split notes to only 1 concept per note
