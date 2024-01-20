@@ -1,7 +1,7 @@
 # Dotfiles
 
 > [!NOTE]
-> This might be replaced with a Git `--bare` repository using a worktree implementation.
+> This might be replaced with a [git](/git.md) `--bare` repository using a worktree implementation.
 
 Dotfiles are files prefixed with a dot (`.`).
 They are hidden by default on UNIX-based operating systems.
@@ -12,7 +12,7 @@ A lot of applications store their configuration in the `~/.config/` directory.
 It is a good idea to make a [git](/git.md) repository to back up and sync configuration files.
 However, it is not recommended to make a [git](/git.md) repository directly into the `~/` home directory.
 A better alternative is to move configuration files into a separate directory like `~/dotfiles/`.
-To make sure installed programs still have access to the configuration files, symbolic links to the configuration files can be made using [stow](/stow.md).
+To make sure installed programs still have access to the configuration files, [symbolic-link](/symbolic-link.md)s to the configuration files can be made using [stow](/stow.md).
 
 ## History
 
