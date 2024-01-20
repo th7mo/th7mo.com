@@ -2,6 +2,7 @@
 
 The Second Brain contains notes.
 A note represents a single concept.
+They should be as atomic as possible.
 Notes can be [cross-reference](/cross-reference.md)d.
 Notes should be small, and split up if it has multiple responsibilities.
 
