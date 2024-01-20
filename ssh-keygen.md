@@ -2,7 +2,7 @@
 
 `ssh-keygen` is a command line tool to create a [ssh-key](/ssh-key.md).
 
-## Generating a [ssh-key](/ssh-key.md)
+## Generating an SSH key
 
 To generate a new [ssh-key](/ssh-key.md) execute the following command:
 

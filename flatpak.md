@@ -17,7 +17,7 @@ sudo apt install flatpak
 
 Refer to the [Flatpak website](https://flatpak.org/) for how to install applications using Flatpak.
 
-## Creating [symbolic-link](/symbolic-link.md)s
+## Make application launchers find Flatpak applications
 
 When the Flatpak applications are installed, most application launchers are not able to find them.
 This is because the Flatpak applications are not in a `$PATH` directory.

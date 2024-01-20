@@ -12,7 +12,7 @@ Instead of switching [git-branch](/git-branch.md)es, just switch directories.
 mkdir {repository-name}
 ```
 
-## Clone a repository without checking out a [git-branch](/git-branch.md):
+## Clone a repository without checking out a branch
 
 Clone the repository from inside the repository directory:
 
@@ -52,7 +52,7 @@ second-brain
 
 To switch to [git-branch](/git-branch.md) `main`, simply `cd main`.
 
-## Add a worktree with a new [git-branch](/git-branch.md)
+## Add a worktree with a new branch
 
 Make sure to be in the bare repository when managing worktrees.
 
@@ -63,7 +63,7 @@ git worktree add -b {new-branch-name} ../{worktree-name}
 - `{branch-name}` is the name of the new [git-branch](/git-branch.md)
 - `{worktree-name}` is the name of directory (worktree)
 
-## Add a worktree based on a remote [git-branch](/git-branch.md)
+## Add a worktree based on a remote branch
 
 ```sh
 git worktree add {worktree-name} {remote-branch-name}

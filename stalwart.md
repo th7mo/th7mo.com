@@ -47,7 +47,7 @@ Stalwart generates keys needed to add to the DNS configuration.
 - `_dmarc` | `TXT` | `{generated-DMARC1-key}` (including quotes) 
 - `@` | `TXT` | `{generated-spf1-key}` (something like ` "v=spf1 a:mail.th7mo.com mx -all ra=postmaster" `)
 
-## Add account to [email](/email.md) client
+## Add account to email client
 
 ### Gmail (mobile)
 

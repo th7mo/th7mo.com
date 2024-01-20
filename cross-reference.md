@@ -3,7 +3,7 @@
 A cross-reference is a connection to another part of the content.
 For the [second-brain](/second-brain.md) a cross-reference is a connection between two [note](note.md)s.
 
-## Cross-referencing other [note](/note.md)s
+## Cross-referencing another note
 
 When cross-referencing another [note](note.md), make the link name the same as the file name of the [note](note.md).
 For this [note](note.md) the file name is "cross-reference".
@@ -28,7 +28,7 @@ is better than:
 cross-reference.md -> https://git-scm.com/ <- another-note.md
 ```
 
-### Cross-referencing sections of other [note](/note.md)s
+### Cross-referencing sections of other notes
 
 For a more specific cross-reference it is also possible to cross-reference headings of other [note](note.md)s.
 This can be achieved by specifying the heading in `lower-kabab-case` after a `#` as divider:
@@ -39,3 +39,6 @@ This can be achieved by specifying the heading in `lower-kabab-case` after a `#`
 
 The `#` hash character can indicate that only a section of a [note](note.md) is cross-referenced.
 
+> [!IMPORTANT]
+> It is important to not cross-reference another [note](/note.md) inside a heading.
+> This is because a cross-reference to a heading that also has a cross-reference, is ugly to handle.

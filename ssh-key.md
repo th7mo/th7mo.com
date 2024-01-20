@@ -42,23 +42,8 @@ This process can be automated by having this command in the shell initialization
  
 ### Option 2 (preferred): use Keychain
 
-Another option to add an SSH key to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
-
-Keychain does not come pre-installed on most systems, so first install Keychain:
-
-```sh
-sudo apt install keychain
-```
-
-To add a private SSH key to Keychain, execute:
-
-```sh
-keychain ~/.ssh/id_ed25519
-```
-
-This process can be automated by having this command in the shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
-
-Keychain has the benefit of starting ssh-agent if it has not already been started, and can be used to add GPG keys.
+The [keychain](/keychain.md) tool has better tooling for adding SSH keys.
+Refer to [keychain](/keychain.md#add-an-ssh-key-to-keychain) for how to add an SSH key to [keychain](/keychain.md).
 
 ## Managing multiple SSH keys
 
@@ -73,11 +58,7 @@ Verify that all SSH keys are loaded by executing the command:
 ssh-add -l
 ```
 
-or the Keychain equivalent:
-
-```sh
-keychain -l
-```
+if [keychain](/keychain.md) is used see [keychain#List-loaded-ssh-keys](/keychain.md#list-loaded-ssh-keys)
 
 ### Create or modify the .ssh/config file
 
