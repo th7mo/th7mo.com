@@ -25,82 +25,22 @@ sudo apt install git
 
 All the configuration for Git is stored in [gitconfig](/gitconfig.md) files.
 
-## Commits
+## Usage
 
 [git-commit](/git-commit.md)s are used to create snapshots of the Git repository.
-
-## Branches
-
-When working alone on a small project a single `main` branch works perfect most of the time.
-Add a new `feat/` branch when it is desired to test in isolation or when doing an entire overhaul/refactor of a project.
-
-Use `lower-kabab-case` for naming branches, and use an underscore `_` for including an issue in the branch name:
-
-```
-feat/add-primary-navigation-component_#29
-```
-
-or for [Jira](https://www.atlassian.com/software/jira) tickets:
-
-```
-fix/navigation-overflow-on-mobile_APP-43
-```
-
-A single feature branch should ideally only solve one issue, so adding an issue identifier should work most of the time.
-
-It is perfectly fine to have a long branch name.
-A more descriptive name is always better.
-[Bash](https://www.gnu.org/software/bash/) and other shells have branch autocompletion for Git branches and for graphical interfaces the branch name length does not matter either.
-
-## Rebase
-
-A Git rebase adds [git-commit](/git-commit.md) from a branch on top of another branch.
-
-### Usage
-
-The most simple use case for a rebase is when a remote branch somebody is also locally working on has new changes.
-If somebody is working on branch `main`, but `origin/main` has new [git-commit](/git-commit.md)s, the command `git pull origin main` can be executed to make a merge [git-commit](/git-commit.md) which adds the new [git-commit](/git-commit.md)s on `origin/main` to the local `main` branch.
-
-To preserve a clean [git-commit](/git-commit.md) history, an alternative approach would use a rebase.
-
-First, fetch the remote to download contents from the remote repository:
-
-```sh
-git fetch
-```
-
-If new changes have been made to the remote branch, include those remote changes by rebasing the [git-commit](/git-commit.md) made on top of the local branch as if they were made locally:
-
-```sh
-git rebase origin main
-```
-
-Now all the new [git-commit](/git-commit.md)s made on the remote `main` branch will be applied to the local `main` branch.
-
-A shorthand for this workflow is the `pull` command with the `--rebase` flag:
-
-```sh
-git pull --rebase {remote-name} {branch-name}
-```
-
-The `--rebase` flag can be omitted when the `pull.rebase` option is configured in the `.gitconfig`:
-
-```ini
-[pull]
-    rebase = true
-```
+Git uses [git-branch](/git-branch.md)es for collaborate work and diverging from the default environment.
 
 ### Pull request / Merge request
 
-The rebase option is also a good option for pull requests.
+The [git-rebase](/git-rebase.md) option is also a good option for pull requests.
 
 > [!TIP]
-> Do not squash [git-commit](/git-commit.md)s or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
+> Do not squash [git-commit](/git-commit.md)s or merge a pull request using the `squash` option, unless the [git-commit](/git-commit.md) messages are not providing any information.
 > It is always better to leave as much history as possible for later debugging of code.
 
 ## Worktrees
 
-[git-worktree](/git-worktree.md)s can be used to switch between branches without committing or stashing changes. 
+[git-worktree](/git-worktree.md)s can be used to switch between [git-branch](/git-branch.md)es without committing or stashing changes. 
 
 ## Multiple Git identities
 

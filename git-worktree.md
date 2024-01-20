@@ -3,8 +3,8 @@
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
 
-[git](/git.md) worktrees make branches directories at the root of the repository.
-Instead of switching branches, just switch directories.
+[git](/git.md) worktrees make [git-branch](/git-branch.md)es directories at the root of the repository.
+Instead of switching [git-branch](/git-branch.md)es, just switch directories.
 
 ## Make a directory
 
@@ -12,7 +12,7 @@ Instead of switching branches, just switch directories.
 mkdir {repository-name}
 ```
 
-## Clone a repository without checking out a branch:
+## Clone a repository without checking out a [git-branch](/git-branch.md):
 
 Clone the repository from inside the repository directory:
 
@@ -20,7 +20,7 @@ Clone the repository from inside the repository directory:
 cd {repository-name}
 ```
 
-After that clone the repository without worktrees: (The `--bare` flag specifies to only clone the essential Git files)
+After that clone the repository without worktrees: (The `--bare` flag specifies to only clone the essential [git](/git.md) files)
 
 ```sh
 git clone --bare {git-remote-url}
@@ -50,9 +50,9 @@ second-brain
 └── main/
 ```
 
-To switch to branch `main`, simply `cd main`.
+To switch to [git-branch](/git-branch.md) `main`, simply `cd main`.
 
-## Add a worktree with a new branch
+## Add a worktree with a new [git-branch](/git-branch.md)
 
 Make sure to be in the bare repository when managing worktrees.
 
@@ -60,17 +60,17 @@ Make sure to be in the bare repository when managing worktrees.
 git worktree add -b {new-branch-name} ../{worktree-name}
 ```
 
-- `{branch-name}` is the name of the new branch
+- `{branch-name}` is the name of the new [git-branch](/git-branch.md)
 - `{worktree-name}` is the name of directory (worktree)
 
-## Add a worktree based on a remote branch
+## Add a worktree based on a remote [git-branch](/git-branch.md)
 
 ```sh
 git worktree add {worktree-name} {remote-branch-name}
 ```
 
 > [!TIP]
-> When the worktree [git-commit](/git-commit.md) log does not line up with the remote [git-commit](/git-commit.md) log for that specific branch, it is probably because `{remote-branch-name}` was not the correct remote branch name when executing the `git worktree add` command.
+> When the worktree [git-commit](/git-commit.md) log does not line up with the remote [git-commit](/git-commit.md) log for that specific [git-branch](/git-branch.md), it is probably because `{remote-branch-name}` was not the correct remote [git-branch](/git-branch.md) name when executing the `git worktree add` command.
 
 ## Remove a worktree
 
