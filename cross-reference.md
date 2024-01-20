@@ -40,5 +40,5 @@ This can be achieved by specifying the heading in `lower-kabab-case` after a `#`
 The `#` hash character can indicate that only a section of a [note](note.md) is cross-referenced.
 
 > [!IMPORTANT]
-> It is important to not cross-reference another [note](/note.md) inside a heading.
+> Do not cross-reference another [note](/note.md) inside a heading.
 > This is because a cross-reference to a heading that also has a cross-reference, is ugly to handle.
