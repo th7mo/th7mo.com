@@ -1,7 +1,7 @@
 # Email
 
 I use my own custom domain `th7mo.com` for my emails.
-The [stalwart](/stalwart.md) note describes how I manage my email server.
+[stalwart](/stalwart.md) is used to manage my email server.
 I use the following email addresses:
 
 - `dev@th7mo.com`
