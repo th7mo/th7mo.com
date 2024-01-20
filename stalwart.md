@@ -19,7 +19,7 @@ systemctl restart stalwart-mail
 For [email](/email.md) to work it is required to open ports that are used by [email](/email.md) protocols.
 Services that rent servers usually disable [email](/email.md) ports by default.
 It is most likely required to open a ticket to let support open those ports on an own server.
-Following ports are required to be open to let Stalwart receive and send mail: 
+Following ports are required to be open to let Stalwart receive and send [email](/email.md): 
 
 ```
 443

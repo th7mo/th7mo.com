@@ -7,22 +7,7 @@ When only one SSH key is needed to configure, the section that covers [Multiple 
 
 ## Generate a new SSH key
 
-To generate a new SSH key execute the following command:
-
-```sh
-ssh-keygen -t ed25519 -C {email}
-```
-
-- The `-t` flag specifies the type of key to generate.
-- The `-C` adds a comment to the SSH key.
-	This flag is optional but recommended.
-	It will help indicate which key belongs to which [email](/email.md) when using `ssh-add -l` or `keychain -l`.
-- `{email}` is the [email](/email.md) used for GitHub or Bitbucket, configured as `user.email` in the [gitconfig](/gitconfig.md) file.
-
-When prompted to "Enter a file in which to save the key", press `Enter` to accept the default file location.
-Otherwise, if a different name or located is desired, a custom name can be specified.
-The default directory for storing SSH keys is `~/.ssh/`.
-Press `Enter` until the file is generated.
+Create a new SSH key using the [ssh-keygen](/ssh-keygen.md) tool.
 
 ## Adding the SSH key 
 
