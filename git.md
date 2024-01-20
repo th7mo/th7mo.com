@@ -27,50 +27,7 @@ All the configuration for Git is stored in [gitconfig](/gitconfig.md) files.
 
 ## Commits
 
-Commits should be short.
-Commit messages can have a short summary, and an optional longer explanation after an empty line.
-Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/). 
-Emojis do not provide any benefit to the commit message.
-There are still a lot of tools that lack proper emoji support.
-It is also way more difficult to filter or search commit messages when they use emojis for describing the commit.
-
-Use the following prefixes for commit message titles:
-
-- `feat: ` for new functionality.
-- `fix: ` for reworking existing code to solve bugs.
-- `refact: ` for refactoring code.
-- `docs: ` for adding documentation.
-- `test: ` for adding or fixing tests.
-- `bump: ` for incrementing version numbers of dependencies.
-
-It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
-
-## Reverting commits
-
-It is possible to revert changes without modifying the Git history.
-This makes reverting commits a safer option than resetting commits.
-To revert a commit execute the following command:
-
-```sh
-git revert {commit-hash}
-```
-
-Unlike `git reset`, the `git revert` command only reverts the changes of a specified commit, and will not revert the commits that came after the specified commit.
-
-The `git revert` command also accepts a range of commits:
-
-```sh
-git revert --no-commit {commit-hash}..HEAD
-git commit -m "revert: {reason for reverting}"
-```
-
-The `git revert` command above reverts all changes from the `{commit-hash}` up to and including where `HEAD` is.
-It also adds the reverts to the staging area.
-
-> [!TIP]
-> For more safety use the `--no-commit` flag.
-> It allows for reviewing the reverted changes before the commit is made.
-> To abort the revert execute `git revert --abort`
+[git-commit](/git-commit.md)s are used to create snapshots of the Git repository.
 
 ## Branches
 
@@ -97,14 +54,14 @@ A more descriptive name is always better.
 
 ## Rebase
 
-A Git rebase adds commits from a branch on top of another branch.
+A Git rebase adds [git-commit](/git-commit.md) from a branch on top of another branch.
 
 ### Usage
 
 The most simple use case for a rebase is when a remote branch somebody is also locally working on has new changes.
-If somebody is working on branch `main`, but `origin/main` has new commits, the command `git pull origin main` can be executed to make a merge commit which adds the new commits on `origin/main` to the local `main` branch.
+If somebody is working on branch `main`, but `origin/main` has new [git-commit](/git-commit.md)s, the command `git pull origin main` can be executed to make a merge [git-commit](/git-commit.md) which adds the new [git-commit](/git-commit.md)s on `origin/main` to the local `main` branch.
 
-To preserve a clean commit history, an alternative approach would use a rebase.
+To preserve a clean [git-commit](/git-commit.md) history, an alternative approach would use a rebase.
 
 First, fetch the remote to download contents from the remote repository:
 
@@ -112,13 +69,13 @@ First, fetch the remote to download contents from the remote repository:
 git fetch
 ```
 
-If new changes have been made to the remote branch, include those remote changes by rebasing the commits made on top of the local branch as if they were made locally:
+If new changes have been made to the remote branch, include those remote changes by rebasing the [git-commit](/git-commit.md) made on top of the local branch as if they were made locally:
 
 ```sh
 git rebase origin main
 ```
 
-Now all the new commits made on the remote `main` branch will be applied to the local `main` branch.
+Now all the new [git-commit](/git-commit.md)s made on the remote `main` branch will be applied to the local `main` branch.
 
 A shorthand for this workflow is the `pull` command with the `--rebase` flag:
 
@@ -138,7 +95,7 @@ The `--rebase` flag can be omitted when the `pull.rebase` option is configured i
 The rebase option is also a good option for pull requests.
 
 > [!TIP]
-> Do not squash commits or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
+> Do not squash [git-commit](/git-commit.md)s or merge a pull request using the `squash` option, unless the commit messages are not providing any information.
 > It is always better to leave as much history as possible for later debugging of code.
 
 ## Worktrees
