@@ -13,7 +13,7 @@ Markdown uses reserved symbols to mark the styling of text or give text a specia
 Markdown allows a non-hierarchical structure of headings.
 It is recommended however to start with a level one heading and only increment it with a maximum of one when introducing a subheading.
 
-Prefix a line with a hash (`#`) symbol to make it a heading.
+Prefix a line with a hash `#` symbol to make it a heading.
 The amount of hashes defines the heading level.
 It is recommended to not number the headings manually.
 
@@ -28,13 +28,13 @@ It is recommended to not number the headings manually.
 
 ### Text styling
 
-- Surround text with single asterisks (`*`) to make text *italic*.
-- Surround text with double asterisks (`**`) to make text **bold**.
-- Surround text with double tildes (`~~`) to make text ~~strike-through~~.
+- Surround text with single asterisks `*` to make text *italic*.
+- Surround text with double asterisks `**` to make text **bold**.
+- Surround text with double tildes `~~` to make text ~~strike-through~~.
 
 ### Lists
 
-Prefix a list item with the hyphen (`-`) symbol to make it an unordered list:
+Prefix a list item with the hyphen `-` symbol to make it an unordered list:
 
 ```md
 - item
@@ -42,11 +42,11 @@ Prefix a list item with the hyphen (`-`) symbol to make it an unordered list:
 - item
 ```
 
-Alternatively an unordered list can be made using the asterisk (`*`) or addition (`+`) symbol.
-Using an asterisk (`*`) symbol is discouraged because it is also used for making text bold or italic.
-Using an addition (`+`) symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
+Alternatively an unordered list can be made using the asterisk `*` or addition `+` symbol.
+Using an asterisk `*` symbol is discouraged because it is also used for making text bold or italic.
+Using an addition `+` symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
 
-Prefix a list item with a number and a period (`.`) to make it an ordered list:
+Prefix a list item with a number and a period `.` to make it an ordered list:
 
 ```md
 1. item
