@@ -1,6 +1,6 @@
-# Second Brain
-
 A [second-brain](/second-brain.md) is a place to gather all somebody's thoughts.
+[[second-brain]]
+another [[second-brain]]
 The thoughts, ideas, things somebody needs [to-do](/to-do.md) or wants [to-watch](/to-watch.md), [recipes](/recipes.md) references to good books or articles, or documentation that is important to somebody.
 It is the place for documenting important information and made decisions.
 
