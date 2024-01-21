@@ -1,5 +1,3 @@
-# Linux workflow
-
 This [note](note.md) describes a solid Linux workflow stack, using reliable, stable and future-proof software.
 
 ## Philosophy

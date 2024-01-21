@@ -1,5 +1,3 @@
-# Git
-
 [Git](https://git-scm.com/) is a version control system.
 It is used for the [second-brain](second-brain.md) to keep track of changes and preserve history.
 It also allows for easy editing on different devices, like phones.
@@ -27,10 +25,10 @@ All the configuration for Git is stored in [gitconfig](gitconfig.md) files.
 
 ## Usage
 
-[git-commit](git-commit.md)s are used to create snapshots of the Git repository.
+A [git-commit](git-commit.md) creates a snapshot of the current state of a Git repository.
 Git uses [git-branch](git-branch.md)es for collaborate work and diverging from the default environment.
 
-### Pull request / Merge request
+## Pull request / Merge request
 
 The [git-rebase](git-rebase.md) option is also a good option for pull requests.
 

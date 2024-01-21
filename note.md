@@ -1,5 +1,3 @@
-# Note
-
 The [second-brain](second-brain.md) contains notes.
 A note represents a single concept.
 They should be as atomic as possible.

@@ -1,5 +1,3 @@
-# Dotfiles
-
 > [!NOTE]
 > This might be replaced with a [git](git.md) `--bare` repository using a worktree implementation.
 

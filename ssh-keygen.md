@@ -1,6 +1,4 @@
-# SSH-keygen
-
-`ssh-keygen` is a command line tool to create a [ssh-key](ssh-key.md).
+`ssh-keygen` is a command line tool to create an [ssh-key](ssh-key.md).
 
 ## Generating an SSH key
 
@@ -11,9 +9,9 @@ ssh-keygen -t ed25519 -C {email}
 ```
 
 - The `-t` flag specifies the type of key to generate.
-- The `-C` adds a comment to the [ssh-hey](ssh-key.md).
+- The `-C` flag adds a comment to the [ssh-hey](ssh-key.md).
 	This flag is optional but recommended.
-	It will help indicate which [ssh-key](ssh-key.md) belongs to which [email](email.md) when using `ssh-add -l` or `keychain -l`.
+	It will help indicate which [ssh-key](ssh-key.md) belongs to which [email](email.md) when using `ssh-add -l` or [keychain.md#List-loaded-ssh-keys](keychain.md#list-loaded-ssh-keys).
 - `{email}` is the [email](email.md) used for GitHub or Bitbucket, configured as `user.email` in the [gitconfig](gitconfig.md) file.
 
 When prompted to "Enter a file in which to save the key", press `Enter` to accept the default file location.

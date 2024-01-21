@@ -1,5 +1,3 @@
-# Stow
-
 [Stow](https://www.gnu.org/software/stow/) is a utility that simplifies the process of making [symbolic-link](symbolic-link.md)s.
 It can be used to easily manage [dotfiles](dotfiles.md).
 

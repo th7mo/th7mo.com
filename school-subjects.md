@@ -1,5 +1,3 @@
-# School subjects
-
 ## Planning
 
 ### 2023-2024

@@ -1,8 +1,4 @@
-# Git rebase
-
 A [git](git.md) rebase adds one or multiple [git-commit](git-commit.md)s from a [git-branch](git-branch.md) on top of another [git-branch](git-branch.md).
-
-### Usage
 
 The most simple use case for a rebase is when a remote [git-branch](git-branch.md) somebody is also locally working on has new changes.
 If somebody is working on [git-branch](git-branch.md) `main`, but `origin/main` has new [git-commit](git-commit.md)s, the command `git pull origin main` can be executed to make a merge [git-commit](git-commit.md) which adds the new [git-commit](git-commit.md)s on `origin/main` to the local `main` branch.

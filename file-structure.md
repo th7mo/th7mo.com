@@ -1,5 +1,3 @@
-# File structure
-
 The [second-brain](second-brain.md) has the most simple file structure possible.
 It does not contain any directories and only uses [markdown](markdown.md) as a file format.
 

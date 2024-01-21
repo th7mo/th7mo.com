@@ -1,5 +1,3 @@
-# SSH key
-
 A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
 SSH keys can be used to authenticate to those repository hosting services.
 

@@ -1,5 +1,3 @@
-# Email
-
 I use my own custom domain `th7mo.com` for my emails.
 [stalwart](stalwart.md) is used to manage my email server.
 I use the following email addresses:

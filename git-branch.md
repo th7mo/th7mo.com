@@ -1,6 +1,4 @@
-# Git branch
-
-A [git](git.md) branch is a path of [git-commit](git-commit.md)s.
+A [git](git.md) branch is a path of one or more [git-commit](git-commit.md)s.
 Different branches allow developers to work on the same piece of code on isolated environments.
 
 When working alone on a small project a single `main` branch works perfect most of the time.

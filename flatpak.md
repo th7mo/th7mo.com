@@ -1,5 +1,3 @@
-# Flatpak
-
 Some proprietary applications or applications are not provided by the Debian repository.
 In those cases it could be better to install the [Flatpak](https://flatpak.org/) packaged version of that application.
 [Steam](https://store.steampowered.com/) and [Parsec](https://parsec.app/) are examples of applications that are ugly to install on Debian and should be isolated using Flatpak.
@@ -21,7 +19,7 @@ Refer to the [Flatpak website](https://flatpak.org/) for how to install applicat
 
 When the Flatpak applications are installed, most application launchers are not able to find them.
 This is because the Flatpak applications are not in a `$PATH` directory.
-To make those application launchers find the Flatpak applications, it is possible to create [symbolic-link](symbolic-link.md)s to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
+To make those application launchers find the Flatpak applications, it is possible to create a [symbolic-link](symbolic-link.md) to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
 
 ```sh
 ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}

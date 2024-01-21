@@ -1,10 +1,9 @@
-# Markdown
-
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that uses plain text formatting to write structured documents.
 The [second-brain](second-brain.md) uses the Markdown format to store information.
 Markdown provides universal readability, regardless of platform or tooling.
 Markdown also allows easy history tracking, collaboration and reviewing with [Git](git.md). 
 The Markdown format is very established and is not sensitive to major technological shifts.
+
 ## Syntax
 
 Markdown uses reserved symbols to mark the styling of text or give text a special meaning.
@@ -32,7 +31,6 @@ It is recommended to not number the headings manually.
 - Surround text with single asterisks (`*`) to make text *italic*.
 - Surround text with double asterisks (`**`) to make text **bold**.
 - Surround text with double tildes (`~~`) to make text ~~strike-through~~.
-
 
 ### Lists
 

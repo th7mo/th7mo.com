@@ -1,7 +1,7 @@
 A cross-reference is a connection to another part of the content.
 For the [second-brain](second-brain.md) a cross-reference is a connection between two [note](note.md)s.
 
-# Cross-referencing another note
+## Cross-referencing another note
 
 There are two popular methods to cross-reference other [markdown](markdown.md) files.
 The first one is the [markdown](markdown.md) syntax using `[{title}]({file-name})`.
@@ -27,7 +27,7 @@ To check if cross-references are formatted properly, use the following [regular-
 
 If this search shows results, there are cross-references using an undesired forward slash.
 
-# Cross-referencing a heading of another note
+## Cross-referencing a heading of another note
 
 For a more specific cross-reference it is also possible to cross-reference a heading of other [note](note.md).
 This can be achieved by specifying the heading in `lower-kabab-case` after a `#` as divider:
@@ -42,7 +42,7 @@ The `#` hash character can indicate that only a section of a [note](note.md) is 
 > Do not cross-reference another [note](note.md) inside a heading.
 > This is because a cross-reference to a heading that also has a cross-reference, is ugly to handle.
 
-# Cross-referencing a future note
+## Cross-referencing a future note
 
 It is recommended to create cross-references to a [note](note.md) that does not exist yet but is desired to be written in the future.
 [obsidian](obsidian.md) and other applications warn about the non-existing [note](note.md).

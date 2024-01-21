@@ -1,12 +1,9 @@
-# Maintaining
-
 This [note](note.md) provides rules to make the writing of the entire [second-brain](second-brain.md) consistent.
 
 ## Formatting
 
 - Use the rules described in the [markdown](markdown.md) [note](note.md).
 - Every [markdown](markdown.md) file name must be written in `lowercase-kabab-case`.
-- Start the document with a heading 1 (`#`) with the name of the [markdown](markdown.md) file.
 - Capitalize the first character of the [note](note.md) title.
 - Only one heading 1 is allowed in the entire [note](note.md).
 - When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.

@@ -1,5 +1,3 @@
-# License plates
-
 **Bus**: `15-VZJ-1`
 
 **Suzuki White**: `19-HNF-7`

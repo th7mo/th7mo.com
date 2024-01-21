@@ -1,5 +1,3 @@
-# Git commit
-
 [git](git.md) commits are snapshots of a [git](git.md) repository.
 
 Commits should be short.

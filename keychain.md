@@ -1,5 +1,3 @@
-# Keychain
-
 Another option to add an [ssh-key](ssh-key.md) to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
 
 ## Installation

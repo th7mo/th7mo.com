@@ -1,5 +1,3 @@
-# Git worktree
-
 > [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
 

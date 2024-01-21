@@ -1,5 +1,3 @@
-# NetworkManager
-
 [NetworkManager](https://networkmanager.dev) is a program for connecting to internet.
 It is only needed for wireless connections.
 
@@ -36,7 +34,7 @@ nmcli device wifi connect {SSID} password {password}
 - `{SSID}` is the name (unique ID) of the Wi-Fi network.
 - `{password}` is the password of the Wi-Fi network.
 
-### Eduroam
+## Eduroam
 
 It is not possible to connect to the eduroam network using NetworkManager without custom configuration.
 For more information reference about how to the following:

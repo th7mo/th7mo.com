@@ -1,5 +1,3 @@
-# Stalwart
-
 [Stalwart](https://stalw.art/) is a mail server written in Rust.
 Stalwart can be used for hosting [email](email.md) on an own server.
 
