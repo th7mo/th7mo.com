@@ -1,5 +1,5 @@
 A [second-brain](second-brain.md) is a place to gather all somebody's thoughts.
-The thoughts, ideas, things somebody needs [to-do](to-do.md) or wants [to-watch](to-watch.md), [recipe-book](recipe-book.md) references to good books or articles, or documentation that is important to somebody.
+The thoughts, ideas, things somebody needs [to-do](to-do.md) or wants [to-watch](to-watch.md), a [recipe-book](recipe-book.md), references to good books or articles, or documentation that is important to somebody.
 It is the place for documenting important information and made decisions.
 
 The [second-brain](second-brain.md) has a flat [file-structure](file-structure.md) without directories.
