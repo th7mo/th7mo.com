@@ -16,6 +16,8 @@ Use the following prefixes for commit message titles:
 - `test: ` for adding or fixing tests.
 - `bump: ` for incrementing version numbers of dependencies.
 
+The [commitlint](https://github.com/conventional-changelog/commitlint) project explains this in more detail.
+
 It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
 
 ## Reverting commits
