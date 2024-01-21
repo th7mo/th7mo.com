@@ -1,12 +1,12 @@
 # Maintaining
 
-This [note](note.md) provides rules to make the writing of the entire [second-brain](/second-brain.md) consistent.
+This [note](note.md) provides rules to make the writing of the entire [second-brain](second-brain.md) consistent.
 
 ## Formatting
 
-- Use the rules described in the [markdown](/markdown.md) [note](note.md).
-- Every [markdown](/markdown.md) file name must be written in `lowercase-kabab-case`.
-- Start the document with a heading 1 (`#`) with the name of the [markdown](/markdown.md) file.
+- Use the rules described in the [markdown](markdown.md) [note](note.md).
+- Every [markdown](markdown.md) file name must be written in `lowercase-kabab-case`.
+- Start the document with a heading 1 (`#`) with the name of the [markdown](markdown.md) file.
 - Capitalize the first character of the [note](note.md) title.
 - Only one heading 1 is allowed in the entire [note](note.md).
 - When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
@@ -17,7 +17,7 @@ This [note](note.md) provides rules to make the writing of the entire [second-br
 ## Language
 
 Try to avoid first and second person writing.
-This [second-brain](/second-brain.md) should be mostly informative.
+This [second-brain](second-brain.md) should be mostly informative.
 This improves the ability to make more [note](note.md)s publicly available.
 It is allowed to use first or second person when writing personal [note](note.md)s.
 
@@ -27,7 +27,7 @@ The only exception are words that do not have a proper English equivalent.
 ## Terminology
 
 **Note**:
-Every [markdown](/markdown.md) file in the [second-brain](/second-brain.md) is a [note](note.md).
+Every [markdown](markdown.md) file in the [second-brain](second-brain.md) is a [note](note.md).
 Use the term 'note' instead of page, article or document.
 
 **Execute**:
@@ -39,7 +39,7 @@ Use the term directory instead of folder.
 
 ## See also
 
-- The [second-brain](/second-brain.md) setup of David Luhr.
-  He also uses [git](/git.md) and [markdown](/markdown.md) to store his [second-brain](/second-brain.md).
+- The [second-brain](second-brain.md) setup of David Luhr.
+  He also uses [git](git.md) and [markdown](markdown.md) to store his [second-brain](second-brain.md).
   He explains his setup on his [personal website](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
-- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public [second-brain](/second-brain.md).
+- There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public [second-brain](second-brain.md).

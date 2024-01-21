@@ -7,7 +7,7 @@ When only one SSH key is needed to configure, the section that covers [Multiple 
 
 ## Generate a new SSH key
 
-Create a new SSH key using the [ssh-keygen](/ssh-keygen.md) tool.
+Create a new SSH key using the [ssh-keygen](ssh-keygen.md) tool.
 
 ## Adding the SSH key 
 
@@ -42,8 +42,8 @@ This process can be automated by having this command in the shell initialization
  
 ### Option 2 (preferred): use Keychain
 
-The [keychain](/keychain.md) tool has better tooling for adding SSH keys.
-Refer to [keychain](/keychain.md#add-an-ssh-key-to-keychain) for how to add an SSH key to [keychain](/keychain.md).
+The [keychain](keychain.md) tool has better tooling for adding SSH keys.
+Refer to [keychain](keychain.md#add-an-ssh-key-to-keychain) for how to add an SSH key to [keychain](keychain.md).
 
 ## Managing multiple SSH keys
 
@@ -58,11 +58,11 @@ Verify that all SSH keys are loaded by executing the command:
 ssh-add -l
 ```
 
-if [keychain](/keychain.md) is used see [keychain#List-loaded-ssh-keys](/keychain.md#list-loaded-ssh-keys)
+if [keychain](keychain.md) is used see [keychain#List-loaded-ssh-keys](keychain.md#list-loaded-ssh-keys)
 
 ### Create or modify the .ssh/config file
 
-To tell [git](/git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
+To tell [git](git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
 Make a host entry with the following settings for each key:
 
 ```sh
@@ -83,7 +83,7 @@ Host bitbucket.com                        # Use this name in the remote URL
 > Make the `Host` name the same has the `HostName`.
 > When those are the same there is no need to update any existing remotes because the URL stays the same.
 
-When using multiple [git](/git.md) identities, also follow the section [git#Multiple-git-identities](/git.md#multiple-git-identities).
+When using multiple [git](git.md) identities, also follow the section [git#Multiple-git-identities](git.md#multiple-git-identities).
 
 ### Update the existing remotes
 
@@ -102,7 +102,7 @@ Example for this repository when `Host` is named `github` instead of `github.com
 git remote set-url origin git@github:th7mo/second-brain.git
 ```
 
-Make sure that the local [gitconfig](/gitconfig.md) has the correct `user.name` and `user.email` for authentication.
+Make sure that the local [gitconfig](gitconfig.md) has the correct `user.name` and `user.email` for authentication.
 
 ## See also
 

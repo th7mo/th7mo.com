@@ -1,6 +1,6 @@
 # Keychain
 
-Another option to add an [ssh-key](/ssh-key.md) to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
+Another option to add an [ssh-key](ssh-key.md) to the ssh-agent is to use the [Keychain](https://www.funtoo.org/Funtoo:Keychain) command.
 
 ## Installation
 
@@ -12,7 +12,7 @@ sudo apt install keychain
 
 ## Add an SSH key to Keychain
 
-To add a private [ssh-key](/ssh-key.md) to Keychain, execute:
+To add a private [ssh-key](ssh-key.md) to Keychain, execute:
 
 ```sh
 keychain ~/.ssh/id_ed25519

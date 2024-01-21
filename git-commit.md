@@ -1,6 +1,6 @@
 # Git commit
 
-[git](/git.md) commits are snapshots of a [git](/git.md) repository.
+[git](git.md) commits are snapshots of a [git](git.md) repository.
 
 Commits should be short.
 Commit messages can have a short summary, and an optional longer explanation after an empty line.
@@ -22,7 +22,7 @@ It is important to not create to many prefixes because too many categories defea
 
 ## Reverting commits
 
-It is possible to revert changes without modifying the [git](/git.md) history.
+It is possible to revert changes without modifying the [git](git.md) history.
 This makes reverting commits a safer option than resetting commits.
 To revert a commit execute the following command:
 

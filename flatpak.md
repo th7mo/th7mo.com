@@ -21,7 +21,7 @@ Refer to the [Flatpak website](https://flatpak.org/) for how to install applicat
 
 When the Flatpak applications are installed, most application launchers are not able to find them.
 This is because the Flatpak applications are not in a `$PATH` directory.
-To make those application launchers find the Flatpak applications, it is possible to create [symbolic-link](/symbolic-link.md)s to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
+To make those application launchers find the Flatpak applications, it is possible to create [symbolic-link](symbolic-link.md)s to the `/usr/bin/` directory (or any other directory included in the `$PATH` variable).
 
 ```sh
 ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}
@@ -38,4 +38,4 @@ Now application launchers (and the terminal) are able to find the Flatpak applic
 ## See also
 
 - The Gentoo article about [Flatpak](https://wiki.gentoo.org/wiki/Flatpak).
-- I learned about [symbolic-link](/symbolic-link.md)ing of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
+- I learned about [symbolic-link](symbolic-link.md)ing of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
