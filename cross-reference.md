@@ -42,7 +42,7 @@ The `#` hash character can indicate that only a section of a [note](note.md) is 
 > Do not cross-reference another [note](note.md) inside a heading.
 > This is because a cross-reference to a heading that also has a cross-reference, is ugly to handle.
 
-# Cross-referencing future a future note
+# Cross-referencing a future note
 
 It is recommended to create cross-references to a [note](note.md) that does not exist yet.
 [obsidian](obsidian.md) shows the non-existing [note](note.md).
