@@ -44,6 +44,6 @@ The `#` hash character can indicate that only a section of a [note](note.md) is 
 
 # Cross-referencing a future note
 
-It is recommended to create cross-references to a [note](note.md) that does not exist yet.
-[obsidian](obsidian.md) shows the non-existing [note](note.md).
+It is recommended to create cross-references to a [note](note.md) that does not exist yet but is desired to be written in the future.
+[obsidian](obsidian.md) and other applications warn about the non-existing [note](note.md).
 With this workflow it is easy to fill in gaps of knowledge.
