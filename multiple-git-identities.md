@@ -6,7 +6,7 @@ The `includeIf` option is used to specify when a [gitconfig](gitconfig.md) file 
 
 For example:
 
-```sh
+```ini
 [includeIf "gitdir:~/work/"]
     path = ~/work/.gitconfig
 ```
