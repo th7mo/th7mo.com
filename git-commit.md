@@ -21,7 +21,7 @@ Use the following prefixes for commit message titles:
 The [commitlint](https://github.com/conventional-changelog/commitlint) project explains this convention in more detail.
 
 > [!IMPORTANT]
-> It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
+> Do not introduce to many prefix categories because it defeats the purpose if categorizing commits.
 
 ## Reverting commits
 
