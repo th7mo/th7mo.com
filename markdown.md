@@ -65,6 +65,10 @@ Add a programming language name after the first three backticks to indicate to M
 {three backticks}
 ```
 
+## YAML front matter
+
+For the [second-brain](second-brain.md) it is allowed to use [yaml-front-matter](yaml-front-matter.md).
+
 ## See also
 
 - The original [Markdown specification](https://daringfireball.net/projects/markdown/).
