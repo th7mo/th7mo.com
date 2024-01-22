@@ -1,8 +1,10 @@
 [git](git.md) commits are snapshots of a [git](git.md) repository.
-
 Commits should be short.
-Commit messages can have a short summary, and an optional longer explanation after an empty line.
-Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/). 
+
+## Commit message
+
+A commit message can have a short summary, and an optional longer explanation after an empty line.
+Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/) advocates. 
 Emojis do not provide any benefit to the commit message.
 There are still a lot of tools that lack proper emoji support.
 It is also way more difficult to filter or search commit messages when they use emojis for describing the commit.
@@ -16,9 +18,10 @@ Use the following prefixes for commit message titles:
 - `test: ` for adding or fixing tests.
 - `bump: ` for incrementing version numbers of dependencies.
 
-The [commitlint](https://github.com/conventional-changelog/commitlint) project explains this in more detail.
+The [commitlint](https://github.com/conventional-changelog/commitlint) project explains this convention in more detail.
 
-It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
+> [!IMPORTANT]
+> It is important to not create to many prefixes because too many categories defeat the purpose if categorizing commits.
 
 ## Reverting commits
 
