@@ -18,7 +18,8 @@ Use the following prefixes for commit message titles:
 - `test: ` for adding or fixing tests.
 - `bump: ` for incrementing version numbers of dependencies.
 
-The [commitlint](https://github.com/conventional-changelog/commitlint) project explains this convention in more detail.
+A good convention to use is [conventional commits](https://www.conventionalcommits.org).
+The [commitlint](https://github.com/conventional-changelog/commitlint) project expands on this and adds more types.
 
 > [!IMPORTANT]
 > Do not introduce to many prefix categories because it defeats the purpose if categorizing commits.
@@ -49,3 +50,7 @@ It also adds the reverts to the staging area.
 > For more safety use the `--no-commit` flag.
 > It allows for reviewing the reverted changes before the commit is made.
 > To abort the revert execute `git revert --abort`
+
+## See also
+
+A [Medium article](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08) that explains the most common commit prefixes.
