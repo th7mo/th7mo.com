@@ -5,7 +5,6 @@ Every [note](note.md) is located at the root of the repository.
 The filenames of [note](note.md)s have a naming convention mentioned in [maintaining#Formatting](maintaining.md#formatting).
 
 ## Why
-
 The [note](note.md)s in the [second-brain](second-brain.md) have a complex relation to each other.
 There is not a simple file structure solution because the [note](note.md)s are very different in nature.
 It would be very difficult to create a file structure that does not require a lot of maintenance.

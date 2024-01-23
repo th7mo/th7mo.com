@@ -5,13 +5,11 @@ When working alone on a small project a single `main` branch works perfect most 
 Add a new `feat/` branch when it is desired to test in isolation or when doing an entire overhaul/refactor of a project.
 
 Use `lower-kabab-case` for naming branches, and use an underscore `_` for including an issue in the branch name:
-
 ```
 feat/add-primary-navigation-component_#29
 ```
 
 or for [Jira](https://www.atlassian.com/software/jira) tickets:
-
 ```
 fix/navigation-overflow-on-mobile_APP-43
 ```

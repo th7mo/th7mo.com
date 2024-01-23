@@ -13,6 +13,5 @@ A better alternative is to move configuration files into a separate directory li
 To make sure installed programs still have access to the configuration files, [symbolic-link](symbolic-link.md)s to the configuration files can be made using [stow](stow.md).
 
 ## History
-
 That dotfiles are invisible was an accident, because a long time ago UNIX decided to hide the `.` and `..` directories because they exist in every directory.
 They only checked if the first character of the file (or directory) name was a dot `.`, and hid it when that was the case. 

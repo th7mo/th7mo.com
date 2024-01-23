@@ -5,11 +5,9 @@ Markdown also allows easy history tracking, collaboration and reviewing with [Gi
 The Markdown format is very established and is not sensitive to major technological shifts.
 
 ## Syntax
-
 Markdown uses reserved symbols to mark the styling of text or give text a special meaning.
 
 ### Headings
-
 Markdown allows a non-hierarchical structure of headings.
 It is recommended however to start with a level one heading and only increment it with a maximum of one when introducing a subheading.
 
@@ -27,23 +25,20 @@ It is recommended to not number the headings manually.
 ```
 
 ### Text styling
-
-- Surround text with single asterisks `*` to make text *italic*.
-- Surround text with double asterisks `**` to make text **bold**.
-- Surround text with double tildes `~~` to make text ~~strike-through~~.
+* Surround text with single asterisks `*` to make text *italic*.
+* Surround text with double asterisks `**` to make text **bold**.
+* Surround text with double tildes `~~` to make text ~~strike-through~~.
 
 ### Lists
-
-Prefix a list item with the hyphen `-` symbol to make it an unordered list:
+Prefix a list item with the asterisk `*` symbol to make it an unordered list:
 
 ```md
-- item
-- item
-- item
+* item
+* item
+* item
 ```
 
-Alternatively an unordered list can be made using the asterisk `*` or addition `+` symbol.
-Using an asterisk `*` symbol is discouraged because it is also used for making text bold or italic.
+Alternatively an unordered list can be made using the hyphen `-` or addition `+` symbol.
 Using an addition `+` symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
 
 Prefix a list item with a number and a period `.` to make it an ordered list:
@@ -54,8 +49,18 @@ Prefix a list item with a number and a period `.` to make it an ordered list:
 3. item
 ```
 
-### Inline code and code blocks
+It is also possible to create a numbered list with only the prefix `1.`:
 
+```md
+1. item
+1. item
+1. item
+```
+
+Most modern renderers will correctly number the list.
+It is not recommended tho, because it makes it harder to read when editing the Markdown.
+
+### Inline code and code blocks
 To create a code block surround the code between two lines with three backticks.
 Add a programming language name after the first three backticks to indicate to Markdown processors that syntax highlighting can be used for that code block:
 
@@ -66,10 +71,9 @@ Add a programming language name after the first three backticks to indicate to M
 ```
 
 ## YAML front matter
-
 For the [second-brain](second-brain.md) it is allowed to use [yaml-front-matter](yaml-front-matter.md).
 
 ## See also
-- The original [Markdown specification](https://daringfireball.net/projects/markdown/).
-- The new and improved [CommonMark specification](https://commonmark.org/).
-- Good recommendations for Markdown [Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+* The original [Markdown specification](https://daringfireball.net/projects/markdown/).
+* The new and improved [CommonMark specification](https://commonmark.org/).
+* Good recommendations for Markdown [Basic Syntax](https://www.markdownguide.org/basic-syntax/).
