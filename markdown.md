@@ -39,6 +39,7 @@ Prefix a list item with the asterisk `*` symbol to make it an unordered list:
 ```
 
 Alternatively an unordered list can be made using the hyphen `-` or addition `+` symbol.
+The asterisk `*` symbol is preferred because it looks the most like a real bullet point.
 Using an addition `+` symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
 
 Prefix a list item with a number and a period `.` to make it an ordered list:
