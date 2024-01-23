@@ -70,7 +70,6 @@ Add a programming language name after the first three backticks to indicate to M
 For the [second-brain](second-brain.md) it is allowed to use [yaml-front-matter](yaml-front-matter.md).
 
 ## See also
-
 - The original [Markdown specification](https://daringfireball.net/projects/markdown/).
 - The new and improved [CommonMark specification](https://commonmark.org/).
 - Good recommendations for Markdown [Basic Syntax](https://www.markdownguide.org/basic-syntax/).
