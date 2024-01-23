@@ -13,8 +13,7 @@ It is recommended however to start with a level one heading and only increment i
 
 Prefix a line with a hash `#` symbol to make it a heading.
 The amount of hashes defines the heading level.
-It is recommended to not number the headings manually.
-
+It is recommended to not number the headings manually:
 ```md
 # Heading 1
 ## Heading 2
@@ -24,6 +23,8 @@ It is recommended to not number the headings manually.
 ###### Heading 6
 ```
 
+It is good practice (but not required) to have an empty line before a heading.
+
 ### Text styling
 * Surround text with single asterisks `*` to make text *italic*.
 * Surround text with double asterisks `**` to make text **bold**.
@@ -31,7 +32,6 @@ It is recommended to not number the headings manually.
 
 ### Lists
 Prefix a list item with the asterisk `*` symbol to make it an unordered list:
-
 ```md
 * item
 * item
@@ -43,7 +43,6 @@ The asterisk `*` symbol is preferred because it looks the most like a real bulle
 Using an addition `+` symbol is discouraged because it takes more effort to type on most keyboards and is not an intuitive symbol.
 
 Prefix a list item with a number and a period `.` to make it an ordered list:
-
 ```md
 1. item
 2. item
@@ -51,7 +50,6 @@ Prefix a list item with a number and a period `.` to make it an ordered list:
 ```
 
 It is also possible to create a numbered list with only the prefix `1.`:
-
 ```md
 1. item
 1. item
@@ -64,7 +62,6 @@ It is not recommended tho, because it makes it harder to read when editing the M
 ### Inline code and code blocks
 To create a code block surround the code between two lines with three backticks.
 Add a programming language name after the first three backticks to indicate to Markdown processors that syntax highlighting can be used for that code block:
-
 ```
 {three backticks}{language}
 {place code here}
@@ -73,6 +70,10 @@ Add a programming language name after the first three backticks to indicate to M
 
 ## YAML front matter
 For the [second-brain](second-brain.md) it is allowed to use [yaml-front-matter](yaml-front-matter.md).
+
+## Exporting Markdown
+Sometimes it is required to convert Markdown to other file formats like `.pdf` or `.docx`.
+The tool [pandoc](pandoc.md) can be used to convert Markdown to a lot of other file formats.
 
 ## See also
 * The original [Markdown specification](https://daringfireball.net/projects/markdown/).
