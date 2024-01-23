@@ -53,4 +53,5 @@ It also adds the reverts to the staging area.
 
 ## See also
 
-A [Medium article](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08) that explains the most common commit prefixes.
+- A [Medium article](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08) that explains the most common commit prefixes.
+- A [GitHub Gist](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13) about conventional commit messages.
