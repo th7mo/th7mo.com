@@ -5,7 +5,6 @@ Notes can be [cross-reference](cross-reference.md)d.
 Notes should be small, and split up if it has multiple responsibilities.
 
 ## Renaming
-
 Sometimes it is necessary to rename a note, or a heading inside a note.
 
 > [!WARNING]

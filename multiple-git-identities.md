@@ -5,7 +5,6 @@ This can be done by creating another [gitconfig](gitconfig.md) anywhere, and ref
 The `includeIf` option is used to specify when a [gitconfig](gitconfig.md) file should be active.
 
 For example:
-
 ```ini
 [includeIf "gitdir:~/work/"]
     path = ~/work/.gitconfig

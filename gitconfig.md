@@ -11,20 +11,19 @@ Every [git](git.md) repository contains a `.git/config` file, which can be used 
 
 The `.gitconfig` files use the `ini` format.
 A simple `.gitconfig` file could look like this:
-
 ```ini
 [user]
-	email = thimo@th7mo.com
-	name = th7mo
+    email = thimo@th7mo.com
+    name = th7mo
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 [alias]
-	b  = branch
-	c  = commit -m
-	s  = status
-	f  = fetch
-	sw = switch
-	w  = worktree
+    b  = branch
+    c  = commit -m
+    s  = status
+    f  = fetch
+    sw = switch
+    w  = worktree
 ```

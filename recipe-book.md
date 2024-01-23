@@ -2,18 +2,14 @@ This is my recipe book.
 The recipes are in alphabetical order for easy indexing.
 
 ## Protein shake (chocolate)
-
 ### Ingredients
-
 These ingredients are sufficient for 2 portions:
-
-- 375ml vla
-- 450ml yoghurt
-- 450ml milk
-- 6 scoops chocolate protein powder 
+* 375ml vla
+* 450ml yoghurt
+* 450ml milk
+* 6 scoops chocolate protein powder 
 
 ### Instructions
-
 1. Put the milk in the blender.
 2. Add 2 scoops of protein powder.
 3. Add the vla.
@@ -23,21 +19,17 @@ These ingredients are sufficient for 2 portions:
 9. Stir with a spoon and blend again for ~60 seconds.
 
 ## Burritos
-
 ### Ingredients
-
 These ingredients are sufficient for 4 portions:
-
-- 800g chicken
-- 200g grated cheese
-- 400ml creme fraiche
-- 2 bell peppers
-- 1 onion
-- 2 packs Burritos (Knorr)
-- Wraps
+* 800g chicken
+* 200g grated cheese
+* 400ml creme fraiche
+* 2 bell peppers
+* 1 onion
+* 2 packs Burritos (Knorr)
+* Wraps
 
 ### Instructions
-
 1. Cut the chicken and dice the bell peppers and onion.
 2. Set the oven to 180-190 degrees Celsius.
 3. Put the chicken with wok oil into a pan.
