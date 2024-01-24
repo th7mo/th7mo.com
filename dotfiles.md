@@ -16,7 +16,7 @@ To make sure installed programs still have access to the configuration files, [s
 That dotfiles are invisible was an accident, because a long time ago Unix decided to hide the `.` and `..` directories because they exist in every directory.
 They only checked if the first character of the file (or directory) name was a dot `.`, and hid it when that was the case:
 ```go
-if fileName[0] == '.' {
+if fileName[0] == "." {
     hideFile()
 }
 ```
@@ -24,7 +24,7 @@ if fileName[0] == '.' {
 This results in every file starting with a dot to be hidden.
 What they should have done is the following:
 ```go
-if fileName == '.' || fileName == '..' {
+if fileName == "." || fileName == ".." {
     hideFile()
 }
 ```
