@@ -12,9 +12,11 @@ Set Z shell as the default shell by executing the following command:
 ```sh
 chsh -s $(which zsh)
 ```
+* `$(which zsh)` evaluates to the path where `zsh` is located.
 
 ## Configuration
 Z shell is configured via the `.zshrc` file.
+It is recommended to put the `.zshrc` file inside the [dotfiles](dotfiles.md) repository to keep configuration backed up.
 
 ## Oh My Zsh
 A popular framework for managing a Z shell configuration is [Oh My Zsh](https://ohmyz.sh/).

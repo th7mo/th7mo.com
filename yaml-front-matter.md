@@ -18,4 +18,6 @@ lang: NL
 # Introduction
 ```
 
+[pandoc](pandoc.md) uses the YAML front matter to insert various pieces of metadata into the generated document.
+
 The `lang: NL` field is used by the `ltex-ls` language server to check the language of the current buffer.
