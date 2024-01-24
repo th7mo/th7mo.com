@@ -25,6 +25,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### Plugins
 This sections explains how to install and enable various plugins for Oh My Zsh.
+All the available plugins for Oh My Zsh can be found at their [GitHub repository](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins).
 
 #### Autosuggestions
 Install the [git](git.md) repository for [Z shell autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
