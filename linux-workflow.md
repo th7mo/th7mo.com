@@ -30,3 +30,7 @@ It is used in combination with [tmux](tmux.md) for multiple terminal instances.
 ## Applications
 Prefer applications available in the Debian repository over anything else.
 When the Debian repository does not provide a specific application, a [flatpak](flatpak.md) packaged application is a good alternative.
+
+## Shell
+I use [z-shell](z-shell.md) as my shell.
+It makes it easier than Bash to add custom plugins using Oh My Zsh.
