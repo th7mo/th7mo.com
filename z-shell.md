@@ -8,7 +8,7 @@ Install the Z shell by executing the following command:
 sudo apt install zsh
 ```
 
-Enable the Z shell by executing the following command:
+Set Z shell as the default shell by executing the following command:
 ```sh
 chsh -s $(which zsh)
 ```
@@ -17,7 +17,6 @@ chsh -s $(which zsh)
 Z shell is configured via the `.zshrc` file.
 
 ## Oh My Zsh
-
 A popular framework for managing a Z shell configuration is [Oh My Zsh](https://ohmyz.sh/).
 Install Oh My Zsh by executing the following command:
 ```sh
@@ -28,7 +27,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 This sections explains how to install and enable various plugins for Oh My Zsh.
 
 #### Autosuggestions
-Install the [git](git.md) repository:
+Install the [git](git.md) repository for [Z shell autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
