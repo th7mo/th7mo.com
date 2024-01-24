@@ -2,7 +2,7 @@
 > This might be replaced with a [git](git.md) `--bare` repository using a worktree implementation.
 
 Dotfiles are files prefixed with a dot `.`.
-They are hidden by default on UNIX-based operating systems.
+They are hidden by default on Unix-based operating systems.
 Dotfiles are used to store any type of configuration.
 All the user configuration is stored in dotfiles somewhere in or under the `~/` home directory.
 A lot of applications store their configuration in the `~/.config/` directory.
@@ -13,5 +13,5 @@ A better alternative is to move configuration files into a separate directory li
 To make sure installed programs still have access to the configuration files, [symbolic-link](symbolic-link.md)s to the configuration files can be made using [stow](stow.md).
 
 ## History
-That dotfiles are invisible was an accident, because a long time ago UNIX decided to hide the `.` and `..` directories because they exist in every directory.
+That dotfiles are invisible was an accident, because a long time ago Unix decided to hide the `.` and `..` directories because they exist in every directory.
 They only checked if the first character of the file (or directory) name was a dot `.`, and hid it when that was the case. 
