@@ -24,11 +24,9 @@ The only exception are words that do not have a proper English equivalent.
 * **Note**:
   Every [markdown](markdown.md) file in the [second-brain](second-brain.md) is a [note](note.md).
   Use the term 'note' instead of page, article or document.
-
 * **Execute**:
   When writing commands with the triple backtick syntax, use the term execute instead of run.
   For example: "Execute the following command:" instead of "Run the following command:".
-
 * **Directory**:
   Use the term directory instead of folder.
 
