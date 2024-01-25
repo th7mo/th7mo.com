@@ -3,11 +3,11 @@ The recipes are in alphabetical order for easy indexing.
 
 ## Protein shake (chocolate)
 ### Ingredients
-These ingredients are sufficient for 2 portions:
-* 375ml vla
-* 450ml yoghurt
-* 450ml milk
-* 6 scoops chocolate protein powder 
+These ingredients are sufficient for 1 portion:
+* 150ml vla
+* 150ml yoghurt
+* 150ml milk
+* 2 scoops chocolate protein powder 
 
 ### Instructions
 1. Put the milk in the blender.
