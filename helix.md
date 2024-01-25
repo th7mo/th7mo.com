@@ -1,4 +1,5 @@
-[Helix](https://helix-editor.com/) is a text editor.
+[Helix](https://helix-editor.com/) is a text editor run in the terminal.
+Helix also works in the [tty](tty.md).
 It is inspired by [Vim](https://www.vim.org/) and [Kakoune](https://kakoune.org/).
 Helix can be run from the terminal with the `hx` command.
 Some Linux distributions provide Helix with the `helix` command.
