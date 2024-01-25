@@ -18,4 +18,4 @@ A single feature branch should ideally only solve one issue, so adding an issue 
 
 It is perfectly fine to have a long branch name.
 A more descriptive name is always better.
-[Bash](https://www.gnu.org/software/bash/) and other shells have branch autocompletion for Git branches and for graphical interfaces the branch name length does not matter either.
+[Bash](https://www.gnu.org/software/bash/) and other shells have branch autocompletion for [git](git.md) branches and for graphical interfaces the branch name length does not matter either.

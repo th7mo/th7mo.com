@@ -1,7 +1,7 @@
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that uses plain text formatting to write structured documents.
 The [second-brain](second-brain.md) uses the Markdown format to store information.
 Markdown provides universal readability, regardless of platform or tooling.
-Markdown also allows easy history tracking, collaboration and reviewing with [Git](git.md). 
+Markdown also allows easy history tracking, collaboration and reviewing with [git](git.md). 
 The Markdown format is very established and is not sensitive to major technological shifts.
 
 ## Syntax
