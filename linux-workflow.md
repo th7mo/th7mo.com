@@ -23,7 +23,7 @@ It is also the default desktop environment for Debian.
 It is popular, minimalistic (from a design perspective), very polished, and has little customization options (for the better).
 
 ## Text editor
-The [Helix](https://helix-editor.com/) text editor is pretty new, but is one of the few text editors that just works out of the box.
+The [helix](helix.md) text editor is pretty new, but is one of the few text editors that just works out of the box.
 File navigation, syntax highlighting and LSP support are built-in, and almost nobody their configuration file is longer than 30 lines.
 It is used in combination with [tmux](tmux.md) for multiple terminal instances.
 

@@ -11,8 +11,8 @@ sudo apt install stow
 Mirror what the `~/` directory structure should be exactly inside the `~/dotfiles/` directory, because Stow will make [symbolic-link](symbolic-link.md)s in directories following the same hierarchy.
 The name of the Stow directory can be anything, but in this note the name `dotfiles` will be used.
 
-For example: [Helix](https://helix-editor.com/) wants a `config.toml` file located at `~/.config/helix/config.toml`.
-If the `config.toml` file is located at `~/dotfiles/.config/helix/config.toml`, Stow will create a [symbolic-link](symbolic-link.md) to where Helix wants to read the configuration file.
+For example: [helix](helix.md) wants a `config.toml` file located at `~/.config/helix/config.toml`.
+If the `config.toml` file is located at `~/dotfiles/.config/helix/config.toml`, Stow will create a [symbolic-link](symbolic-link.md) to where [helix](helix.md) wants to read the configuration file.
 
 To create [symbolic-link](symbolic-link.md)s for all the files in the `~/dotfiles/` directory to the `~/` directory, execute the following command:
 ```sh
