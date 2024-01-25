@@ -6,5 +6,5 @@ For more guidelines see [maintaining](maintaining.md).
 
 I use [Debian](https://www.debian.org/) Linux as my operating system.
 The [linux-workflow](linux-workflow.md) note explains why.
-The technical [note](note.md)s are written with this in mind, and do not take Microsoft Windows or macOS into account.
+Technical [note](note.md)s are written with this in mind, and do not take Microsoft Windows or macOS into account.
 They also do not take Arch or Red Hat based distributions into account.
