@@ -12,7 +12,8 @@ Legacy addresses:
 
 ## New situation - Yet to implement
 <!-- TODO -->
-> [!NOTE]> The new situation still needs to be implemented.
+> [!NOTE]
+> The new situation still needs to be implemented.
 > This is not done yet.
 > 
 > * The old situation needs to be removed.
