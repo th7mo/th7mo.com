@@ -1,6 +1,6 @@
-A symbolic link, often called a 'symlink', is a file that serves as a reference or pointer to another file or directory.
+A symbolic link, often called a 'symlink', is a file that serves as a reference/pointer to another file or directory.
 
-With Unix based systems the `ln` command with the `-s` flag can be used to create symbolic link:
+With Unix based systems the `ln` (link) command with the `-s` (soft) flag can be used to create symbolic link:
 ```sh
 ln -s {target_path} {link_path}
 ```
