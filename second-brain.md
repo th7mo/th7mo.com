@@ -6,7 +6,7 @@ The thoughts, ideas, things somebody needs [to-do](to-do.md) or wants [to-watch]
 It is the place for documenting important information and made decisions.
 
 The Second Brain has a flat [file-structure](file-structure.md) without directories.
-The [note](note.md)s inside the Second Brain can [cross-reference](cross-reference.md) other [note](note.md)s.
+The [note](note.md)s inside the Second Brain can [wikilink](wikilink.md) other [note](note.md)s.
 The Second Brain relies on the [markdown](markdown.md) using only plain text.
 It uses [git](git.md) as a version control system.
 This keeps the repository (and its history) small and searchable.

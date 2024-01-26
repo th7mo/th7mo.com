@@ -12,10 +12,10 @@ It would be very difficult to create a file structure that does not require a lo
 Although it is not intuitive, it is fine to have a thousand [note](note.md) in a single directory.
 Also, there is no real benefit to categorizing the [note](note.md)s.
 It would result in more overhead and complexity.
-Moving [note](note.md) to different directories would invalidate every [cross-reference](cross-reference.md) to that [note](note.md).
+Moving [note](note.md) to different directories would invalidate every [wikilink](wikilink.md) to that [note](note.md).
 
 When searching for a [note](note.md), just search for the filename of that [note](note.md).
 Because the [second-brain](second-brain.md) uses just plain text in all [note](note.md)s, searching for a word in all the [note](note.md)s is also a good option.
 
-The benefit for not using directories is that it makes a [cross-reference](cross-reference.md) to any other [note](note.md) easy.
+The benefit for not using directories is that it makes a [wikilink](wikilink.md) to any other [note](note.md) easy.
 The path to another [note](note.md) is always `/{name-of-note}`.
