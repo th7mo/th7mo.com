@@ -17,6 +17,7 @@ The following code example shows the syntax for a wikilink to this note:
 
 Only the first character of the wikilink name is *case-insensitive*.
 This allows for proper capitalizing the first character of a sentence.
+It also allows to properly capitalize wikilinks when the link text represents something that should be capitalized by default.
 
 ## Link to a note heading
 To link to a heading in another note, append a `#` and the heading name to the note name:

@@ -7,10 +7,10 @@ Dotfiles are used to store any type of configuration.
 All the user configuration is stored in dotfiles somewhere in or under the [[home-directory]].
 A lot of applications store their configuration in the `~/.config/` directory.
 
-It is a good idea to make a [[git]] repository to back up and sync configuration files.
+It is a good idea to make a [[Git]] repository to back up and sync configuration files.
 However, it is not recommended to make a Git repository directly in the home directory.
 A better alternative is to move configuration files into a separate directory like `~/dotfiles/`.
-To make sure installed programs still have access to the configuration files, [[symbolic-link]]s to the configuration files can be made using [[stow]].
+To make sure installed programs still have access to the configuration files, [[symbolic-link]]s to the configuration files can be made using [[Stow]].
 
 ## History
 That dotfiles are invisible was an accident[^1].
