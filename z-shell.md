@@ -1,5 +1,5 @@
-The Z shell (Zsh) is a Unix shell like Bash or Fish.
-It is based on the Bourne Shell (sh) and Bash.
+The Z shell (Zsh) is a Unix shell like [bash](bash.md) or Fish.
+It is based on the Bourne Shell (sh) and [bash](bash.md).
 It is an enhancement on top of those shells.
 A popular framework used on top of the Z shell is [oh-my-zsh](oh-my-zsh.md).
 

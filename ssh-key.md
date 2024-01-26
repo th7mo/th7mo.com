@@ -29,7 +29,7 @@ Add the private SSH key previously generated to the ssh-agent by executing the f
 ssh-add ~/.ssh/id_ed25519
 ```
 
-This process can be automated by having this command in the shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
+This process can be automated by having this command in the [bash](bash.md) or [z-shell](z-shell.md) configuration file.
  
 ### Option 2 (preferred): use Keychain
 The [keychain](keychain.md) tool has better tooling for adding SSH keys.

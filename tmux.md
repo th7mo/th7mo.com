@@ -4,7 +4,7 @@ It is used to manage terminal windows and sessions.
 Tmux can be configured in the `~/.tmux.conf` file.
 It is recommended to keep the configuration file inside the [dotfiles](dotfiles.md) repository to keep configuration backed up.
 
-Tmux can be launched when starting a terminal application by `exec tmux` inside the `~/.bashrc` file.
+Tmux can be launched when starting a terminal application by `exec tmux` inside the [bash](bash.md) or [z-shell](z-shell.md) configuration file.
 
 The tmux configuration can be reloaded by executing the following command inside tmux:
 ```sh

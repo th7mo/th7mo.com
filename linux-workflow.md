@@ -33,4 +33,4 @@ When the Debian repository does not provide a specific application, a [flatpak](
 
 ## Shell
 I use [z-shell](z-shell.md) as my shell.
-It makes it easier than Bash to add custom plugins using Oh My Zsh.
+It makes it easier than [bash](bash.md) to add custom plugins using [oh-my-zsh](oh-my-zsh.md).

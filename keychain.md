@@ -12,7 +12,7 @@ To add a private [ssh-key](ssh-key.md) to Keychain, execute:
 keychain ~/.ssh/id_ed25519
 ```
 
-This process can be automated by having this command in the shell initialization file (`~/.bash_profile`, `.profile` or `~/.zshrc`).
+This process can be automated by having this command in the [bash](bash.md) or [z-shell](z-shell.md) configuration file.
 
 Keychain has the benefit of starting ssh-agent if it has not already been started, and can be used to add GPG keys.
 

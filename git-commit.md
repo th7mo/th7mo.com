@@ -23,28 +23,7 @@ The [commitlint](https://github.com/conventional-changelog/commitlint) project e
 > Do not introduce to many prefix categories because it defeats the purpose if categorizing commits.
 
 ## Reverting commits
-It is possible to revert changes without modifying the [git](git.md) history.
-This makes reverting commits a safer option than resetting commits.
-To revert a commit execute the following command:
-```sh
-git revert {commit-hash}
-```
-
-Unlike `git reset`, the `git revert` command only reverts the changes of a specified commit, and will not revert the commits that came after the specified commit.
-
-The `git revert` command also accepts a range of commits:
-```sh
-git revert --no-commit {commit-hash}..HEAD
-git commit -m "revert: {reason for reverting}"
-```
-
-The `git revert` command above reverts all changes from the `{commit-hash}` up to and including where `HEAD` is.
-It also adds the reverts to the staging area.
-
-> [!TIP]
-> For more safety use the `--no-commit` flag.
-> It allows for reviewing the reverted changes before the commit is made.
-> To abort the revert execute `git revert --abort`
+See [git-revert](git-revert.md) for how to reverse changes stored in a commit.
 
 ## See also
 * A [Medium article](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08) that explains the most common commit prefixes.
