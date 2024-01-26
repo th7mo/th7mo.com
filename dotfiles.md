@@ -1,4 +1,4 @@
-> [!NOTE]
+> [!NOTE]<!-- TODO -->
 > The implementation for symlinking might be replaced with a `--bare` repository using a worktree implementation.
 
 Dotfiles are files prefixed with a dot `.`
