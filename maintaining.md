@@ -30,6 +30,22 @@ The only exception are words that do not have a proper English equivalent.
 * **Directory**:
   Use the term directory instead of folder.
 
+## Special blockquotes
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
 ## See also
 * The [second-brain](second-brain.md) setup of David Luhr.
   He also uses [git](git.md) and [markdown](markdown.md) to store his [second-brain](second-brain.md).

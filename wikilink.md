@@ -1,24 +1,20 @@
-A wikilink is a link from one [[note]] to another note in the [[second-brain]].
+A wikilink is a link from one [[note]]s to another note in the [[second-brain]].
 
-## Syntax
-When cross-referencing another note, make the link name the same as the file name of the note.
-For this note the file name is "cross-reference".
-Because the [[file-structure]] has no directories, every note can be cross-referenced just by referencing the file name.
-
-For example: the complete syntax to cross-reference this note from anywhere in the Second Brain is: 
-```
-[cross-reference](cross-reference.md)
+## Link a note
+A wikilink is the name of a note surrounded by double square brackets:
+```md
+[[{name-of-note}]]
 ```
 
-To check if cross-references are formatted properly, use the following [[regular-expression]]:
-```regex
-\(/
+The following code example shows the syntax for a wikilink to this note:
+```md
+[[wikilink]]
 ```
 
-If this search shows results, there are cross-references using an undesired forward slash.
-
-## Duplicate cross-referencing notes
-A cross-reference should appear only *once* in a note.
+## Amount of wikilinks
+A wikilink for a note should appear only *once* in a note.
+This makes the note more readable and makes for a simple rule to follow.
+It is also easier to write, especially in technical notes where there can be a lot of mentions of another note.
 
 ## Cross-referencing a heading of another note
 For a more specific cross-reference it is also possible to cross-reference a heading of other note.
@@ -40,7 +36,10 @@ However, they are more pleasant to read, write and maintain.
 There are tools available that convert wikilinks into regular Markdown links.
 If the Second Brain ever gets ported into a different (file) format, a converter can be used to preserve compatibility.
 
-## Cross-referencing a future note
+## Linking future notes
 It is recommended to create cross-references to a note that does not exist yet but is desired to be written in the future.
 [[obsidian]] and other applications warn about the non-existing note.
 With this workflow it is easy to fill in gaps of knowledge.
+
+## See also
+* The [Wikipedia article](https://en.wikipedia.org/wiki/Help:Link) about wikilinks.
