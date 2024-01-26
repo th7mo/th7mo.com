@@ -11,7 +11,7 @@ Legacy addresses:
 * `media@th7mo.com`, currently used for media platforms (Spotify, Tidal, Discord, Instagram, Snapchat, Reddit)
 
 ## New situation - Yet to implement
-> [!NOTE](WIP)
+> [!WIP]
 > The new situation still needs to be implemented.
 > This is not done yet.
 > 
