@@ -2,10 +2,10 @@ A wikilink is a link from one [[note]] to another note in the [[second-brain]].
 
 > [!IMPORTANT]
 > [[Markdown#Headings]] are not allowed to have wikilinks.
-> This is because wikilinks to headings that have wikilinks are difficult to handle.
+> This is because handling wikilinks to headings that have wikilinks is difficult.
 
 ## Link to a note
-A wikilink is the name of a note surrounded by double square brackets:
+A wikilink is created by enclosing the name of a note by double square brackets:
 ```md
 [[{name-of-note}]]
 ```
@@ -42,10 +42,14 @@ It is allowed however to have multiple wikilinks to the same note if the wikilin
 This makes the note more readable and makes for a simple rule to follow.
 It is also easier to write, especially in technical notes where there can be a lot of mentions of other notes.
 
+A wikilink should be placed at the first mention of the concept it will link to.
+An except to this rule are markers that indicate that a note needs adjustments.
+This is due their temporary nature.
+
 ## Compatibility
 Wikilinks are not part of the official [[Markdown]] specification.
 They are also not well-supported either.
-However, they are more pleasant to read, write and maintain.
+However, they are more pleasant to read, write and maintain than regular Markdown links.
 There are tools available that convert wikilinks into regular Markdown links.
 If the Second Brain ever gets ported into a different (file) format, a converter can be used to preserve compatibility.
 
