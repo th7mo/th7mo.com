@@ -8,9 +8,9 @@ This [note](note.md) provides rules to make the writing of the entire [second-br
 * Only one heading 1 is allowed in the entire [note](note.md).
 * When writing commands using the triple backtick syntax, never prefix the command with `$` or `#`.
   Write the command without any prefixes, so it can easily be copied to the terminal.
-* Use the `> [!NOTE]<!-- TODO -->` GitHub Flavored Markdown syntax for explaining that a section is work in progress.
-  It will render the blockquote as a proper note, without the HTML comment behind it.
-  The comment suffix can be used to quickly search all things that need revision.
+* Use the `<!-- TODO -->` mark before a `> [!NOTE]` GitHub Flavored Markdown syntax for explaining that a section is work in progress.
+  It will render the blockquote as a proper note, without the HTML comment before it.
+  The prefixing comment can be used to quickly search all things that need revision.
 * Use the work in progress indicator as close to the source as possible, so the reader knows that a part of the [note](note.md) is not finished or needs adjustment.
 
 ## Language

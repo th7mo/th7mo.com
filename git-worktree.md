@@ -1,4 +1,5 @@
-> [!NOTE]<!-- TODO -->
+<!-- TODO -->
+> [!NOTE]
 > This section will be explained when I actually included work trees in my own workflow.
 
 [git](git.md) worktrees make [git-branch](git-branch.md)es directories at the root of the repository.

@@ -2,7 +2,8 @@
 It is used for the [second-brain](second-brain.md) to keep track of changes and preserve history.
 It also allows for easy editing on different devices, like phones.
 
-> [!NOTE]<!-- TODO -->
+<!-- TODO -->
+> [!NOTE]
 > This note is not complete yet.
 > The Git workflow (branch strategy) can have a better explanation.
 > 
