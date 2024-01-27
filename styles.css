@@ -1,5 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 10rem 1rem;
     margin: auto;
     max-width: 40rem;
+}
+
+code {
+    padding: 1px 3px;
+    border-radius: 2px;
+    background-color: #eee;
+}
+
+pre code {
+    display: block;
+    padding: 10px;
+    border: 1px solid #bbb;
+    width: 100%;
 }
