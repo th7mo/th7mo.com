@@ -1,6 +1,7 @@
 This [[note]] provides rules to make the writing of the entire [[second-brain]] consistent.
 
-<!-- TODO: Complete rewrite using Wikipedia, ArchWiki and Gentoo wiki as inspiration. -->
+
+<!-- TODO: Complete rewrite using Wikipedia, Webring, ArchWiki and Gentoo wiki as inspiration. -->
 
 ## Formatting
 * Use the rules described in the [[Markdown]] note.
@@ -54,4 +55,6 @@ The only exception are words that do not have a proper English equivalent.
 * The Second Brain setup of David Luhr.
   He also uses [[Git]] and Markdown to store his Second Brain.
   He explains his setup on his [personal website](https://luhr.co/blog/2023/04/21/my-custom-second-brain-setup-part-2-how-it-works/).
+* The [webring](https://webring.xxiivv.com/#random) website.
+  It contains a lot of websites that have a minimalist philosophy.
 * There is also a [GitHub repository](https://github.com/KasperZutterman/Second-Brain) that contains a list of people their public Second Brain.

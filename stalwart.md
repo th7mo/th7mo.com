@@ -34,10 +34,12 @@ Repeat this command for every port listed above.
 ## DNS
 Stalwart generates keys needed to add to the DNS configuration.
 
-* `@` | `MX` | `mx.th7mo.com.` (trailing dot `.`)
-* `stalwart._domainkey` | `TXT` | `{generated-DKIM1-key}` (including quotes)
-* `_dmarc` | `TXT` | `{generated-DMARC1-key}` (including quotes) 
-* `@` | `TXT` | `{generated-spf1-key}` (something like ` "v=spf1 a:mail.th7mo.com mx -all ra=postmaster" `)
+Key                   | Field | Value
+----------------------|-------|-------------
+`@`                   | `MX`  | `mx.th7mo.com.` (trailing dot `.`)
+`stalwart._domainkey` | `TXT` | `{generated-DKIM1-key}` (including quotes)
+`_dmarc`              | `TXT` | `{generated-DMARC1-key}` (including quotes) 
+`@`                   | `TXT` | `{generated-spf1-key}` (something like `"v=spf1 a:mail.th7mo.com mx -all ra=postmaster"`)
 
 ## Add account to email client
 ### Gmail (mobile)
