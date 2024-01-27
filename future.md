@@ -17,19 +17,26 @@ This [[note]] is like a drawing board where I plan the future of the Second Brai
 
 ## Clarify
 * What ways can I edit this project?
+  ANSWER: HTML so whatever you like
 * Jargon: How to name this project and its parts (now second brain and notes).
+  ANSWER: Digital Garden, find out the rest.
 * How do I keep it simple?
+  Use a markup language
 * How to deploy/convert to a website
+  ANSWER: Just make a website
 * Which format for storing while preserving portability? 
   * Markdown
   * WikiText
-  * Plain HTML with a global stylesheet targeting HTML tags?
+  * Plain HTML with a global stylesheet targeting HTML tags? !THIS ONE
   * A programming language
   * Flavoured Markdown
   * Other markup language?
 * Can I pull off only using plain text to keep the Git history small?
+  ANSWER: You should.
 * Should I allow emojis?
+  ANSWER: If they are only an enhancement and not a dependency, yes.
 * How to make it something special for a CV?
+  You don't
 
 ## Things learned
 I could treat this as a 'regular' website.

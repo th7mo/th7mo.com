@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My digital garden 🌿</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <h1>Helix</h1>
+  <p>
+    <a href="https://helix-editor.com/">Helix</a> is a text editor run in the terminal.
+    Helix also works in the [[tty]].
+    It is inspired by [Vim](https://www.vim.org/) and [Kakoune](https://kakoune.org/).
+    Helix can be run from the terminal with the <code>hx</code> command.
+    Some Linux distributions provide Helix with the <code>helix</code> command.
+  </p>
+  <p>
+    Helix's editing philosophy is <code>selection -> action</code>, prioritizing safety through text verification before
+    specifying
+    an action.
+  </p>
+
+  <h2>Installation</h2>
+  <p>
+    Because Helix is evolving quickly, the way Helix can be installed can evolve to.
+    To see how to install Helix, follow the [Helix documentation book article about installing
+    Helix](https://docs.helix-editor.com/install.html).
+  </p>
+  <p>
+    At the time of writing (January 2024) Helix can be installed on Debian using an AppImage:
+    Download the official Helix AppImage from the [latest releases](https://github.com/helix-editor/helix/releases/)
+    page.
+  </p>
+  <pre>
+    <code>
+      mv helix-*.AppImage /usr/local/bin/hx
+      chmod +x hx
+    </code>
+  </pre>
+  <p>
+    Helix can be run now with the <code>hx</code> command (if <code>/usr/local/bin/</code> directory is in the
+    <a href="./path-variable.html">path variable</a>).
+  </p>
+
+  <h2>Configuration</h2>
+  <p>
+    Helix relies on two primary configuration files: <code>~/.config/helix/config.toml</code> for general settings and
+    <code>~/.config/helix/languages.toml</code> for Language Server Protocol (LSP) configuration.
+    Due to built-in functionality, Helix configurations are typically compact.
+    It is recommended to include the <code>config.toml</code> and <code>languages.toml</code> files inside the
+    [[dotfiles]] repository for backup.
+  </p>
+
+  <h2>Clipboard</h2>
+  <p>
+    Helix can copy to the system clipboard with <code>Space+y</code>.
+  </p>
+
+  <h3>Wayland</h3>
+  <p>
+    When running <a href="https://wayland.freedesktop.org/">Wayland</a> as a desktop environment, make sure to install
+    <code>wl-clipboard</code>:
+  </p>
+  <pre>
+    <code>sudo apt install wl-clipboard</code>
+  </pre>
+
+  <h3>Xorg</h3>
+  <p>
+    When running <a href="https://www.x.org/wiki/">Xorg</a> as a desktop environment, make sure to install
+    <code>xclip</code>:
+  </p>
+  <pre>
+    <code>sudo apt install xclip</code>
+  </pre>
+</body>
+
+</html>
