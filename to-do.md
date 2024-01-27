@@ -7,3 +7,4 @@
 * Split notes to only 1 concept per note
 * Create note for footnotes.
 * Explain somewhere that unofficial Markdown syntax is okay when it only enhances something that is already readable in the first place.
+* Fix `<code>` blocks
