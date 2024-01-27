@@ -1,4 +1,4 @@
-A popular framework for managing [z-shell](z-shell.md) configuration is [Oh My Zsh](https://ohmyz.sh/).
+A popular framework for managing [[z-shell]] configuration is [Oh My Zsh](https://ohmyz.sh/).
 
 ## Installation
 Install Oh My Zsh by executing the following command:

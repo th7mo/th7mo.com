@@ -1,7 +1,7 @@
-The Z shell (Zsh) is a Unix shell like [bash](bash.md) or Fish.
-It is based on the Bourne Shell (sh) and [bash](bash.md).
+The Z shell (Zsh) is a Unix shell like [[bash]] or Fish.
+It is based on the Bourne Shell (sh) and [[bash]].
 It is an enhancement on top of those shells.
-A popular framework used on top of the Z shell is [oh-my-zsh](oh-my-zsh.md).
+A popular framework used on top of the Z shell is [[oh-my-zsh]]
 
 ## Installation
 Install the Z shell by executing the following command:
@@ -18,4 +18,4 @@ chsh -s $(which zsh)
 
 ## Configuration
 Z shell is configured via the `.zshrc` file.
-It is recommended to put the `.zshrc` file inside the [dotfiles](dotfiles.md) repository to keep configuration backed up.
+It is recommended to put the `.zshrc` file inside the [[dotfiles]] repository to keep configuration backed up.

@@ -1,4 +1,4 @@
-This [note](note.md) describes a solid Linux workflow stack, using reliable, stable and future-proof software.
+This [[note]] describes a solid Linux workflow stack, using reliable, stable and future-proof software.
 
 ## Philosophy
 An operating system should serve the user, not the other way around.
@@ -23,14 +23,14 @@ It is also the default desktop environment for Debian.
 It is popular, minimalistic (from a design perspective), very polished, and has little customization options (for the better).
 
 ## Text editor
-The [helix](helix.md) text editor is pretty new, but is one of the few text editors that just works out of the box.
+The [[Helix]] text editor is pretty new, but is one of the few text editors that just works out of the box.
 File navigation, syntax highlighting and LSP support are built-in, and almost nobody their configuration file is longer than 30 lines.
-It is used in combination with [tmux](tmux.md) for multiple terminal instances.
+It is used in combination with [[tmux]] for multiple terminal instances.
 
 ## Applications
 Prefer applications available in the Debian repository over anything else.
 When the Debian repository does not provide a specific application, a [flatpak](flatpak.md) packaged application is a good alternative.
 
 ## Shell
-I use [z-shell](z-shell.md) as my shell.
-It makes it easier than [bash](bash.md) to add custom plugins using [oh-my-zsh](oh-my-zsh.md).
+I use [[z-shell]] as my shell.
+It makes it easier than [[bash]] to add custom plugins using [[oh-my-zsh]].

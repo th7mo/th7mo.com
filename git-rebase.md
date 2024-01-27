@@ -1,28 +1,28 @@
-A [git](git.md) rebase adds one or multiple [git-commit](git-commit.md)s from a [git-branch](git-branch.md) on top of another [git-branch](git-branch.md).
+A [[Git]] rebase adds one or multiple [[git-commit]]s from a [[git-branch]] on top of another branch.
 
-The most simple use case for a rebase is when a remote [git-branch](git-branch.md) somebody is also locally working on has new changes.
-If somebody is working on [git-branch](git-branch.md) `main`, but `origin/main` has new [git-commit](git-commit.md)s, the command `git pull origin main` can be executed to make a merge [git-commit](git-commit.md) which adds the new [git-commit](git-commit.md)s on `origin/main` to the local `main` branch.
+The most simple use case for a rebase is when a [[git-remote]] branch somebody is also locally working on has new changes.
+If somebody is working on branch `main`, but `origin/main` has new commits, the command `git pull origin main` can be executed to make a merge commits which adds the new commits on `origin/main` to the local `main` branch.
 
-To preserve a clean [git-commit](git-commit.md) history, an alternative approach would be a `git rebase`.
+To preserve a clean commit history, an alternative approach would be a `git rebase`.
 
 First, fetch the remote to download contents from the remote repository:
 ```sh
 git fetch
 ```
 
-If new changes have been made to the remote [git-branch](git-branch.md), include those remote changes by rebasing the [git-commit](git-commit.md) made on top of the local [git-branch](git-branch.md) as if they were made locally:
+If new changes have been made to the remote branch, include those remote changes by rebasing the commit made on top of the local branch as if they were made locally:
 ```sh
 git rebase origin main
 ```
 
-Now all the new [git-commit](git-commit.md)s made on the remote `main` [git-branch](git-branch.md) will be applied to the local `main` [git-branch](git-branch.md).
+Now all the new commits made on the remote `main` branch will be applied to the local `main` branch.
 
 A shorthand for this workflow is the `pull` command with the `--rebase` flag:
 ```sh
 git pull --rebase {remote-name} {branch-name}
 ```
 
-The `--rebase` flag can be omitted when the `pull.rebase` option is configured in the [gitconfig.md](gitconfig.md):
+The `--rebase` flag can be omitted when the `pull.rebase` option is configured in the [[gitconfig]]:
 ```ini
 [pull]
     rebase = true

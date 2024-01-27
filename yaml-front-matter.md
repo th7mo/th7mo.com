@@ -1,4 +1,4 @@
-A [markdown](markdown.md) file can have YAML front matter.
+A [[Markdown]] file can have YAML front matter.
 YAML front matter is indicated with the following syntax:
 ```md
 ---
@@ -18,6 +18,6 @@ lang: NL
 # Introduction
 ```
 
-[pandoc](pandoc.md) uses the YAML front matter to insert various pieces of metadata into the generated document.
+[[Pandoc]] uses the YAML front matter to insert various pieces of metadata into the generated document.
 
 The `lang: NL` field is used by the `ltex-ls` language server to check the language of the current buffer.

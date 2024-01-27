@@ -1,5 +1,5 @@
 [Helix](https://helix-editor.com/) is a text editor run in the terminal.
-Helix also works in the [tty](tty.md).
+Helix also works in the [[tty]].
 It is inspired by [Vim](https://www.vim.org/) and [Kakoune](https://kakoune.org/).
 Helix can be run from the terminal with the `hx` command.
 Some Linux distributions provide Helix with the `helix` command.
@@ -17,12 +17,12 @@ mv helix-*.AppImage /usr/local/bin/hx       # rename to hx
 chmod +x hx                                 # change permission for executable mode
 ```
 
-Helix can be run now with the `hx` command (if `/usr/local/bin/` directory is `$PATH`).
+Helix can be run now with the `hx` command (if `/usr/local/bin/` directory is the [[path-variable]]).
 
 ## Configuration
 Helix relies on two primary configuration files: `~/.config/helix/config.toml` for general settings and `~/.config/helix/languages.toml` for Language Server Protocol (LSP) configuration.
 Due to built-in functionality, Helix configurations are typically compact.
-It is recommended to include the `config.toml` and `languages.toml` files inside the [dotfiles](dotfiles.md) repository for backup.
+It is recommended to include the `config.toml` and `languages.toml` files inside the [[dotfiles]] repository for backup.
 
 ## Clipboard
 Helix can copy to the system clipboard with `Space+y`.

@@ -15,9 +15,9 @@ It would result in more overhead and complexity and could never properly represe
 When searching for a note, just search for the filename of that note.
 Because the Second Brain uses just plain text in all notes, searching for a word in all the notes is also a good option.
 
-The benefit for not using directories is that it makes a plain Markdown link to any other [note](note.md) easy.
-The path to another note is always `/{name-of-note}`.
+The benefit for not using directories is that it makes a plain Markdown links to others note easy.
+The relative link to another note is always `./{name-of-note}`.
 
 > [!NOTE]
-> Although the Second Brain uses [[wikilink]]s that do not require a path, it is still important have a flat file structure for converting wikilinks to plain Markdown links.
-> This preserve compatibility.
+> Although the Second Brain uses [[wikilink]]s that do not require a path, it is still important have a flat file structure.
+> This preserve compatibility when converting wikilinks to plain Markdown links.

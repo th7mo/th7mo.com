@@ -1,5 +1,5 @@
 [Git](https://git-scm.com/) is a version control system.
-It is used for the [second-brain](second-brain.md) to keep track of changes and preserve history.
+It is used for the [[second-brain]] to keep track of changes and preserve history.
 It also allows for easy editing on different devices, like phones.
 
 <!-- TODO -->
@@ -19,24 +19,24 @@ sudo apt install git
 ```
 
 ## Configuration
-All the configuration for Git is stored in [gitconfig](gitconfig.md) files.
+All the configuration for Git is stored in [[gitconfig]] files.
 
 ## Usage
-A [git-commit](git-commit.md) creates a snapshot of the current state of a Git repository.
-Git uses [git-branch](git-branch.md)es for collaborate work and diverging from the default environment.
+A [[git-commit]] creates a snapshot of the current state of a Git repository.
+Git uses [[git-branch]]es for collaborate work and diverging from the default environment.
 
 ## Pull request / Merge request
-The [git-rebase](git-rebase.md) option is also a good option for pull requests.
+The [[git-rebase]] option is also a good option for pull requests.
 
 > [!TIP]
-> Do not squash [git-commit](git-commit.md)s or merge a pull request using the `squash` option, unless the [git-commit](git-commit.md) messages are not providing any information.
+> Do not squash commits or merge a pull request using the `squash` option, unless the commit messages are not providing any usefull information.
 > It is always better to leave as much history as possible for later debugging of code.
 
 ## Worktrees
-[git-worktree](git-worktree.md)s can be used to switch between [git-branch](git-branch.md)es without committing or stashing changes. 
+[[Git-worktree]]s can be used to switch between branches without committing or stashing changes. 
 
 ## Multiple Git identities
-See [multiple-git-identities](multiple-git-identities.md) for how to configure multiple Git identities.
+See [[multiple-git-identities]] for how to configure multiple Git identities.
 
 ## See also
 * A [Reddit thread](https://www.reddit.com/r/git/comments/wwapum/comment/ilkdpzv/) about worktrees.

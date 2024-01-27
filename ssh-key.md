@@ -1,13 +1,13 @@
 A method to access and write data to GitHub, GitLab and Bitbucket is the Secure Shell Protocol (SSH).
 SSH keys can be used to authenticate to those repository hosting services.
 
-When only one SSH key is needed to configure, the section that covers [Multiple SSH keys](#managing-multiple-ssh-keys) can be ignored.
+When only one SSH key is needed to configure, the section that covers [[#Managing multiple SSH keys]] can be ignored.
 
 ## Generate a new SSH key
-Create a new SSH key using the [ssh-keygen](ssh-keygen.md) tool.
+Create a new SSH key using the [[ssh-keygen]] tool.
 
 ## Adding the SSH key 
-The previous command generated two files (unless another file name or path was specified at the [Generate a new SSH key](#generate-a-new-ssh-key) section):
+The previous command generated two files (unless another file name or path was specified at the [[#Generate a new SSH key]] section):
 * `~/.ssh/id_ed25519` (private key)
 * `~/.ssh/id_ed25519.pub` (public key)
 
@@ -29,26 +29,26 @@ Add the private SSH key previously generated to the ssh-agent by executing the f
 ssh-add ~/.ssh/id_ed25519
 ```
 
-This process can be automated by having this command in the [bash](bash.md) or [z-shell](z-shell.md) configuration file.
+This process can be automated by having this command in the [[bash]] or [[z-shell]] configuration file.
  
 ### Option 2 (preferred): use Keychain
-The [keychain](keychain.md) tool has better tooling for adding SSH keys.
-Refer to [keychain](keychain.md#add-an-ssh-key-to-keychain) for how to add an SSH key to [keychain](keychain.md).
+The [[Keychain]] tool has better tooling for adding SSH keys.
+Refer to [[Keychain#Add an SSH key to Keychain]] for how to add an SSH key to Keychain.
 
 ## Managing multiple SSH keys
 When two or more SSH keys are used, more steps are required to let SSH know which key to use when.
 
 ### Add both the SSH keys to the ssh-agent
-Use one of the options explained in [the previous subsection](#adding-the-private-ssh-key-to-the-ssh-agent) for each SSH key.
+Use one of the options explained in [[#Adding the private SSH key to the ssh-agent]] for each SSH key.
 Verify that all SSH keys are loaded by executing the command:
 ```sh
 ssh-add -l
 ```
 
-if [keychain](keychain.md) is used see [keychain#List-loaded-ssh-keys](keychain.md#list-loaded-ssh-keys)
+if Keychain is used see [[Keychain#List loaded SSH keys]]
 
 ### Create or modify the .ssh/config file
-To tell [git](git.md) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
+To tell [[Git]] which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
 Make a host entry with the following settings for each key:
 ```sh
 Host github.com                           # Use this name in the remote URL
@@ -68,7 +68,7 @@ Host bitbucket.com                        # Use this name in the remote URL
 > Make the `Host` name the same has the `HostName`.
 > When those are the same there is no need to update any existing remotes because the URL stays the same.
 
-When using multiple [git](git.md) identities, also follow the section [git#Multiple-git-identities](git.md#multiple-git-identities).
+When using multiple Git identities, also follow [[multiple-git-identities]].
 
 ### Update the existing remotes
 When the `Host` name has the same name as the `HostName`, this section can be skipped.
@@ -84,7 +84,7 @@ Example for this repository when `Host` is named `github` instead of `github.com
 git remote set-url origin git@github:th7mo/second-brain.git
 ```
 
-Make sure that the local [gitconfig](gitconfig.md) has the correct `user.name` and `user.email` for authentication.
+Make sure that the local [[gitconfig]] has the correct `user.name` and `user.email` for authentication.
 
 ## See also
 * For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).

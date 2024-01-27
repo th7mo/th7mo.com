@@ -1,7 +1,7 @@
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that uses plain text formatting to write structured documents.
-The [second-brain](second-brain.md) uses the Markdown format to store information.
+The [[second-brain]] uses the Markdown format to store information.
 Markdown provides universal readability, regardless of platform or tooling.
-Markdown also allows easy history tracking, collaboration and reviewing with [git](git.md). 
+Markdown also allows easy history tracking, collaboration and reviewing with [[Git]]. 
 The Markdown format is very established and is not sensitive to major technological shifts.
 
 ## Syntax
@@ -69,11 +69,11 @@ Add a programming language name after the first three backticks to indicate to M
 ```
 
 ## YAML front matter
-For the [second-brain](second-brain.md) it is allowed to use [yaml-front-matter](yaml-front-matter.md).
+For the Second Brain it is allowed to use [[yaml-front-matter]].
 
 ## Exporting Markdown
 Sometimes it is required to convert Markdown to other file formats like `.pdf` or `.docx`.
-The tool [pandoc](pandoc.md) can be used to convert Markdown to a lot of other file formats.
+The tool [[Pandoc]] can be used to convert Markdown to a lot of other file formats.
 
 ## See also
 * The original [Markdown specification](https://daringfireball.net/projects/markdown/).
