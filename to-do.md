@@ -9,3 +9,4 @@
 * Explain somewhere that unofficial Markdown syntax is okay when it only enhances something that is already readable in the first place.
 * Make a page for http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html
 * Write a good HTML guide
+* `styles.css` remove `./` prefix on all html pages.
