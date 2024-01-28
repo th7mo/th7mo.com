@@ -1,5 +1,11 @@
 :root {
     --color-border: #bbb;
+    --color-blue-light: #e6f0fc;
+    --color-blue-dark: #086ddd;
+    --color-green-light: #e6fcec;
+    --color-green-dark: green;
+    --color-red-light: #fce6e7;
+    --color-red-dark: #dd082c;
 }
 
 * {
@@ -20,7 +26,46 @@ a:hover {
     text-decoration: underline;
 }
 
-code {
+div.note,
+div.tip,
+div.warning {
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+div.note header,
+div.tip header,
+div.warning header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+div.note {
+    background-color: var(--color-blue-light);
+}
+
+div.note header {
+    color: var(--color-blue-dark);
+}
+
+div.tip {
+    background-color: var(--color-green-light);
+}
+
+div.tip header {
+    color: var(--color-green-dark);
+}
+
+div.warning {
+    background-color: var(--color-red-light);
+}
+
+div.warning header {
+    color: var(--color-red-dark);
+}
+
+code,
+kbd {
     padding: 1px 3px;
     border-radius: 3px;
     background-color: #eee;
@@ -28,9 +73,16 @@ code {
 
 pre code {
     display: block;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid var(--color-border);
     width: 100%;
+}
+
+kbd {
+    border: 1px solid var(--color-border);
+    font-weight: bold;
+    box-shadow: 1px 1px 0 0 #aaa;
+    line-height: 1.2;
 }
 
 hr {

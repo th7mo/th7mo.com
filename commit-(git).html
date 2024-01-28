@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My digital garden 🌿</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Commit (Git)</h1>
+    <p>
+      A commit is a snapshot of a <a href="git.html">Git</a> repository.
+      Commits should be short, representing an <a href="atomic.html">atomic</a> change.
+    </p>
+
+    <h2>Commit message</h2>
+    <p>
+      A commit message can have a short summary, and an optional longer explanation after an empty line.
+      Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/) advocates. 
+      Emojis do not provide any benefit to the commit message.
+      There are still a lot of tools that lack proper emoji support.
+      It is also way more difficult to filter or search commit messages when they use emojis for describing the commit.
+    </p>
+    <p>Use the following prefixes for commit message titles:</p>
+    <ul>
+      <li><code>feat:</code> for new functionality.</li>
+      <li><code>fix:</code> for reworking existing code to solve bugs.</li>
+      <li><code>refact:</code> for refactoring code.</li>
+      <li><code>docs:</code> for adding documentation.</li>
+      <li><code>test:</code> for adding or fixing tests.</li>
+      <li><code>bump:</code> for incrementing version numbers of dependencies.</li>
+    </ul>
+    <p>
+      A good convention to use is <a href="https://www.conventionalcommits.org">conventional commits</a>.
+      The <a href="https://github.com/conventional-changelog/commitlint">commitlint</a>
+      project expands on this and adds more types.
+    </p>
+
+> [!IMPORTANT]
+> Do not introduce to many prefix categories because it defeats the purpose if categorizing commits.
+
+## Reverting commits
+See [[git-revert]] for how to reverse changes stored in a commit.
+
+## See also
+* A [Medium article](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08) that explains the most common commit prefixes.
+* A [GitHub Gist](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13) about conventional commit messages.
+  </main>
+</body>
+
+</html>
+
