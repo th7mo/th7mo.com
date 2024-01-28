@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My digital garden 🌱</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Flatpak</h1>
+    <p>
+      Some proprietary applications or applications are not provided by the Debian repository.
+      In those cases it could be better to install the Flatpak packaged version of that application.
+      Steam and Parsec are examples of applications that are ugly to install on Debian and
+      should be isolated using Flatpak.
+    </p>
+
+    <h2>Installation</h2>
+    <p>The Debian package for Flatpak is <code>flatpak</code>. Install Flatpak with the following command:</p>
+    <pre><code>sudo apt install flatpak</code></pre>
+
+    <h2>Usage</h2>
+    <p>
+      Refer to the <a href="https://flatpak.org/">Flatpak website</a> for how to install applications using Flatpak.
+    </p>
+
+    <h2>Make application launchers find Flatpak applications</h2>
+    <p>
+      When the Flatpak applications are installed, most application launchers are not able to find them.
+      This is because the Flatpak applications are not in a directory listed in the <code>$PATH</code> variable.
+      To make those application launchers find the Flatpak applications,
+      it is possible to create a <a href="symbolic-link.html">symbolic link</a> to 
+      the <code>/usr/bin/</code> directory (or any other directory included in the <code>$PATH</code> variable)[^1].
+    </p>
+    <pre><code>ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}</code></pre>
+    <p> For example for Steam:</p>
+    <pre><code> ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam</code></pre>
+    <p>
+      Now application launchers (and the terminal) are able to find the Flatpak application,
+      because it is added to the <code>$PATH</code> variable.
+    </p>
+    <h2>See also</h2>
+    <ul>
+      <li>The <a href="https://wiki.gentoo.org/wiki/Flatpak">Gentoo article</a> about Flatpak.</li>
+    </ul>
+
+[^1]: I learned about [[symbolic-link]] of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
+  </main>
+</body>
+
+</html>
