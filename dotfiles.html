@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My digital garden 🌿</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Dotfiles</h1>
+    <!-- TODO: The implementation for symlinking might be replaced with a `--bare` repository using a worktree implementation. -->
+    <p>
+      Files prefixed with a dot <code>.</code> are called dotfiles.
+      They are hidden by default on <a href="unix.html">Unix</a>-based operating systems.
+      Dotfiles are used to store any type of configuration.
+      All the user configuration is stored in dotfiles somewhere in or under the 
+      <a href="home-directory.html">home directory</a>.
+      A lot of applications store their configuration in the <code>~/.config/</code> directory.
+    </p>
+    <p>
+      It is a good idea to make a <a href="git.html">Git</a> repository to back up and sync configuration files.
+      However, it is not recommended to make a Git repository directly in the home directory.
+      A better alternative is to move configuration files into a separate directory like <code>~/dotfiles/</code>.
+      To make sure installed programs still have access to the configuration files,
+      <a href="symbolic-link.html">symbolic-links</a> to the configuration files
+      can be made using <a href="stow.html">Stow</a>.
+    </p>
+
+    <h2>History</h2>
+    <p>
+      That dotfiles are invisible was an accident<a href="#footnote-1"><sup>[1]</sup></a>.
+      A long time ago Unix decided to hide the <code>.</code> and <code>..</code> directories because they exist in every directory.
+      They only checked if the first character of the file (or directory) name was a dot <code>.</code>, and hid it when that was the case:
+    </p>
+
+<pre><code>if fileName[0] == "." {
+    hideFile()
+}
+</code></pre>
+
+    <p>
+      This results in every file starting with a dot to be hidden.
+      What they should have done is check if the filename is <code>.</code> or <code>..</code> instead:
+    </p>
+
+<pre><code>if fileName == "." || fileName == ".." {
+    hideFile()
+}
+</code></pre>
+
+    <hr>
+
+    <ol>
+    <li id="footnote-1"> 
+      <a href="http://xahlee.info/UnixResource_dir/writ/unix_origin_of_dot_filename.html">
+        Rob Pike on the Origin of Unix Dot File Names
+      </a>
+    </li>
+    </ol>
+  </main>
+</body>
+
+</html>

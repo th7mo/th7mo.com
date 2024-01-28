@@ -1,22 +1,40 @@
+:root {
+    --color-border: #bbb;
+}
+
 * {
     box-sizing: border-box;
 }
 
-body {
+main {
     padding: 10rem 1rem;
     margin: auto;
     max-width: 40rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 code {
     padding: 1px 3px;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: #eee;
 }
 
 pre code {
     display: block;
     padding: 10px;
-    border: 1px solid #bbb;
+    border: 1px solid var(--color-border);
     width: 100%;
+}
+
+hr {
+    margin: 3rem 0 1.5rem 0;
+    border: none;
+    border-top: 1px solid var(--color-border);
 }
