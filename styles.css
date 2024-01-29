@@ -24,10 +24,6 @@
     box-sizing: border-box;
 }
 
-title::after {
-    content: " 🌱";
-}
-
 body {
     line-height: 1.5;
     font-family: "Fira Sans", system-ui;
