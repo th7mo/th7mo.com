@@ -15,16 +15,17 @@
     <h1>Commit (Git)</h1>
     <p>
       A commit is a snapshot of a <a href="git.html">Git</a> repository.
-      Commits should be short, representing an <a href="atomic.html">atomic</a> change.
+      Commits should be short, ideally representing an <a href="atomic.html">atomic</a> change.
     </p>
 
     <h2>Commit message</h2>
     <p>
       A commit message can have a short summary, and an optional longer explanation after an empty line.
-      Do not use emoji's in commit messages like [gitmoji](https://gitmoji.dev/) advocates. 
+      Do not use emoji's in commit messages like
+      <a href="https://gitmoji.dev/">the gitmoji project</a> tries to achieve. 
       Emojis do not provide any benefit to the commit message.
       There are still a lot of tools that lack proper emoji support.
-      It is also way more difficult to filter or search commit messages when they use emojis for describing the commit.
+      It is also way more difficult to filter or search commit messages when they use emojis for categorizing commits.
     </p>
     <p>Use the following prefixes for commit message titles:</p>
     <ul>
@@ -37,17 +38,20 @@
     </ul>
     <p>
       A good convention to use is <a href="https://www.conventionalcommits.org">conventional commits</a>.
-      The <a href="https://github.com/conventional-changelog/commitlint">commitlint</a>
-      project expands on this and adds more types.
+      The <a href="https://github.com/conventional-changelog/commitlint">commitlint project</a>
+      expands on this and adds more categories.
     </p>
     <p>
       It is important to not introduce to many prefix categories.
       This will defeat the purpose if categorizing commits.
     </p>
 
-    <h2>Reverting commits</h2>
-    <!-- TODO: This can be done better -->
-    <p>See <a href="revert-(git).html">revert (git)</a> for how to reverse changes stored in a commit.</p>
+    <h2>Undo commits</h2>
+    <p>
+      Sometimes it is desired to undo changes made by one or multiple commits.
+      Prefer <a href="revert-(git).html">reverting</a> over <a href="reset-(git).html">resetting</a> commits
+      to preserve the git history.
+    </p>
 
     <h2>See also</h2>
     <ul>

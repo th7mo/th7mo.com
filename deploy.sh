@@ -1,3 +1,3 @@
 #!/bin/bash
 
-scp *.html *.css root@th7mo.com:/var/www/th7mo/
+scp src/*.html src/*.css src/*.ico root@th7mo.com:/var/www/th7mo/
