@@ -4,3 +4,7 @@
 
 # I only use Obsidian to see this project in a graph view.
 .obsidian
+
+# This repo does not host the fonts it uses, so download them yourself
+*.woff
+*.woff2
