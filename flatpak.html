@@ -35,7 +35,8 @@
       This is because the Flatpak applications are not in a directory listed in the <code>$PATH</code> variable.
       To make those application launchers find the Flatpak applications,
       it is possible to create a <a href="symbolic-link.html">symbolic link</a> to 
-      the <code>/usr/bin/</code> directory (or any other directory included in the <code>$PATH</code> variable)[^1].
+      the <code>/usr/bin/</code> directory (or any other directory included in the <code>$PATH</code> variable)
+      <a href="#footnote-1"><sup>[1]</sup></a>.
     </p>
     <pre><code>ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}</code></pre>
     <p> For example for Steam:</p>
@@ -49,7 +50,15 @@
       <li>The <a href="https://wiki.gentoo.org/wiki/Flatpak">Gentoo article</a> about Flatpak.</li>
     </ul>
 
-[^1]: I learned about [[symbolic-link]] of Flatpak installed applications from this from a very specific [GitHub Gist](https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22).
+    <hr>
+    <ol>
+      <li id="footnote-1">
+        I learned about <a href="symbolic-link.html">symbolic linking</a> of Flatpak installed applications 
+        from this from a very specific <a href="https://gist.github.com/curioswati/668e9e120ddd4b6f8d07dc28b5780d22">
+        GitHub Gist</a>.
+      </li>
+    </ol>
+
   </main>
 </body>
 
