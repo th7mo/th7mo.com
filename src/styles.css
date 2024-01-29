@@ -38,11 +38,6 @@ main {
 a,
 a:visited {
     color: var(--color-foam);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 a[href^="http"]::after {
