@@ -40,7 +40,7 @@
 
 body {
     line-height: 1.5;
-    font-family: "Fira Sans", system-ui;
+    font-family: "Fira Sans", system-ui, ui-sans-serif;
     color: var(--color-text);
     background: var(--color-base);
 }
@@ -76,7 +76,7 @@ code,
 pre,
 kbd,
 samp {
-    font-family: "Fira Mono";
+    font-family: "Fira Mono", ui-monospace;
 }
 
 code,
