@@ -58,6 +58,13 @@ main {
     padding: 3rem 0 10rem 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
 a,
 a:visited {
     color: var(--color-foam);
@@ -68,11 +75,11 @@ a[href^="http"]::after {
     content: " ↗";
 }
 
-a:not(nav a):not([href^="http"])::before {
+a:not(nav a):not(sup a):not([href^="http"])::before {
     content: "{";
 }
 
-a:not(nav a):not([href^="http"])::after {
+a:not(nav a):not(sup a):not([href^="http"])::after {
     content: "}";
 }
 
