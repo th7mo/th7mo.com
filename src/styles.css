@@ -61,10 +61,19 @@ main {
 a,
 a:visited {
     color: var(--color-foam);
+    text-decoration: none;
 }
 
 a[href^="http"]::after {
     content: " ↗";
+}
+
+a:not(nav a):not([href^="http"])::before {
+    content: "{";
+}
+
+a:not(nav a):not([href^="http"])::after {
+    content: "}";
 }
 
 blockquote {
