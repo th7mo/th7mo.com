@@ -70,7 +70,12 @@ blockquote {
     margin-left: 0;
     padding-left: 1rem;
     border-left: 0.4rem solid var(--color-subtle);
+}
+
+em,
+blockquote {
     font-style: italic;
+    font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
 }
 
 code,
@@ -103,5 +108,5 @@ kbd {
 hr {
     margin: 3rem 0 1.5rem 0;
     border: none;
-    border-top: 1px solid var(--color-overlay);
+    border-top: 2px solid var(--color-overlay);
 }

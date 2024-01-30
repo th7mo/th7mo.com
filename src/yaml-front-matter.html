@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The digital garden of a minimalist" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YAML front matter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <main>
+    <h1>YAML front matter</h1>
+    <p>
+      A <a href="markdown.html">Markdown</a> file can have YAML front matter.
+      YAML front matter is indicated with the following syntax:
+    </p>
+<pre><code>---
+{YAML-here}
+---
+</code></pre>
+    <p>
+      In the YAML front matter metadata about the document can be stored.
+      Information about the author, title, language and date of the document are the most used pieces of metadata:
+    </p>
+<pre><code>---
+author: "Thimo van Velzen"
+title: "Intership Report Pre-final"
+lang: NL
+---
+
+# Introduction
+</code></pre>
+    <p>
+      <a href="pandoc.html">Pandoc</a> uses the YAML front matter to
+      insert various pieces of metadata into the generated document.
+    </p>
+    <p>
+      The <code>lang:</code> field is used by the <code>ltex-ls</code> language server
+      to check the language of the current buffer.
+    </p>
+  </main>
+</body>
+
+</html>
