@@ -63,8 +63,12 @@ pre code {
 
 a,
 a:visited {
-    color: var(--color-foam);
+    color: var(--color-pine);
     text-decoration: none;
+}
+
+a:not(nav a) {
+    font-weight: bold;
 }
 
 a[href^="http"]::after {
