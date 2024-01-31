@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The digital garden of a minimalist" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Keychain</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ol>
+        <li><a href="index.html">th7mo</a></li>
+        <li><a href="overview.html">garden</a></li>
+        <li class="budding">keychain</li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Keychain</h1>
+    <p>
+      <a href="https://www.funtoo.org/Funtoo:Keychain">Keychain</a>
+      can be used to add <a href="ssh-key.html">SSH keys</a> to the ssh-agent.
+    </p>
+
+    <h2>Installation</h2>
+    <p>Keychain does not come pre-installed on most systems, so first install Keychain:</p>
+    <pre><code>sudo apt install keychain</code></pre>
+
+    <h2 id="add-an-ssh-key-to-keychain">Add an SSH key to Keychain</h2>
+    <p>To add a private SSH key to Keychain, execute:</p>
+    <pre><code>keychain ~/.ssh/id_ed25519</code></pre>
+    <p>
+      This process can be automated by having this command in the <a href="bash.html">Bash</a> or [[z-shell]] 
+      configuration file.
+    </p>
+    <p>
+      Keychain has the benefit of starting ssh-agent if it has not already been started,
+      and can be used to add GPG keys.
+    </p>
+
+    <h2>List loaded SSH keys</h2>
+    <p>Use the <code>-l</code> flag to list all the loaded SSH keys:</code>
+    <pre><code>keychain -l</code></pre>
+  </main>
+</body>
+
+</html>

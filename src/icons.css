@@ -17,6 +17,10 @@
     content: url("evergreen.svg");
 }
 
+a[href^="#"]:not([href^="#footnote-"])::before {
+    content: "§";
+}
+
 a[href^="http"]::after {
     content: url("external-link.svg");
 }
