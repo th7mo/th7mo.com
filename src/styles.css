@@ -1,4 +1,7 @@
 @import url("colors.css");
+@import url("icons.css");
+@import url("code.css");
+@import url("navigation.css");
 
 *,
 *::before,
@@ -30,25 +33,6 @@ h4 {
     line-height: 1.2;
 }
 
-.seedling::before,
-.budding::before,
-.evergreen::before {
-    padding-right: 0.4rem;
-
-}
-
-.seedling::before {
-    content: url("seedling.svg");
-}
-
-.budding::before {
-    content: url("budding.svg");
-}
-
-.evergreen::before {
-    content: url("evergreen.svg");
-}
-
 ol,
 ul {
     padding-left: 2rem;
@@ -59,34 +43,6 @@ ol,
 ul,
 pre code {
     margin: 1rem 0;
-}
-
-a,
-a:visited {
-    color: var(--color-pine);
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-@media (prefers-color-scheme:dark) {
-
-    a,
-    a:visited {
-        color: var(--color-foam);
-    }
-}
-
-a:not(nav a) {
-    font-weight: bold;
-}
-
-a[href^="http"]::after {
-    content: url("external-link.svg");
-}
-
-a:not(nav a):not(sup a):not([href^="http"])::before {
-    padding-right: 0.2rem;
-    content: url("evergreen.svg");
 }
 
 blockquote {
@@ -101,53 +57,8 @@ blockquote {
     font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
 }
 
-code,
-kbd {
-    padding: 1px 3px;
-    border-radius: 3px;
-    background-color: var(--color-overlay);
-}
-
-pre {
-    white-space: pre-wrap;
-}
-
-pre code {
-    display: block;
-    padding: 1rem;
-    background-color: var(--color-surface);
-}
-
-kbd {
-    display: inline-block;
-    min-width: 1.3rem;
-    text-align: center;
-    border: 1px solid var(--color-overlay);
-    font-weight: bold;
-    box-shadow: 1px 1px 0 0 var(--color-subtle);
-}
-
 hr {
     margin: 3rem 0 1.5rem 0;
     border: none;
     border-top: 2px solid var(--color-overlay);
-}
-
-nav a,
-nav a:visited {
-    color: var(--color-text);
-    text-decoration: none;
-}
-
-nav ol {
-    display: flex;
-    padding: 0;
-    align-items: baseline;
-    list-style: none;
-}
-
-nav ol li:not(:last-child)::after {
-    padding: 0.7rem;
-    content: '/';
-    color: var(--color-subtle);
 }

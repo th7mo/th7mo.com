@@ -1,0 +1,25 @@
+code,
+kbd {
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: var(--color-overlay);
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+pre code {
+    display: block;
+    padding: 1rem;
+    background-color: var(--color-surface);
+}
+
+kbd {
+    display: inline-block;
+    min-width: 1.3rem;
+    text-align: center;
+    border: 1px solid var(--color-overlay);
+    font-weight: bold;
+    box-shadow: 1px 1px 0 0 var(--color-subtle);
+}

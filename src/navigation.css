@@ -1,0 +1,37 @@
+a,
+a:visited {
+    color: var(--color-pine);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (prefers-color-scheme:dark) {
+
+    a,
+    a:visited {
+        color: var(--color-foam);
+    }
+}
+
+a:not(nav a) {
+    font-weight: bold;
+}
+
+nav a,
+nav a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ol {
+    display: flex;
+    padding: 0;
+    align-items: baseline;
+    list-style: none;
+}
+
+nav ol li:not(:last-child)::after {
+    padding: 0.7rem;
+    content: '/';
+    color: var(--color-subtle);
+}
