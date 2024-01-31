@@ -1,4 +1,20 @@
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 25 25" width="12" height="12">
-  <path d="M12.21 16.47A12.63 12.63 0 00.81 7.31a.3.3 0 00-.31.33 11.67 11.67 0 0012 10h.06a11.67 11.67 0 0012-10 .3.3 0 00-.31-.33 12.63 12.63 0 00-11.4 9.16.3.3 0 01-.64 0z" fill="#31748f"></path>
+  <defs>
+    <style>
+      :root {
+        --color-pine: #286983;
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root {
+          --color-pine: #31748f;
+        }
+      }
+      .seedling {
+        fill: var(--color-pine);
+      }
+    </style>
+  </defs>
+  <path class="seedling" d="M12.21 16.47A12.63 12.63 0 00.81 7.31a.3.3 0 00-.31.33 11.67 11.67 0 0012 10h.06a11.67 11.67 0 0012-10 .3.3 0 00-.31-.33 12.63 12.63 0 00-11.4 9.16.3.3 0 01-.64 0z"></path>
   <path fill="none" d="M0 0h25v25H0z"></path>
 </svg>
