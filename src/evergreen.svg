@@ -3,15 +3,17 @@
     <style>
       :root {
         --color-pine: #286983;
+        --color-foam: #9ccfd8;
+      }
+
+      .evergreen {
+        fill: var(--color-pine);
       }
 
       @media (prefers-color-scheme:dark) {
-        :root {
-          --color-pine: #31748f;
+        .evergreen {
+          fill: var(--color-foam);
         }
-      }
-      .evergreen {
-        fill: var(--color-pine);
       }
     </style>
   </defs>

@@ -3,15 +3,17 @@
     <style>
       :root {
         --color-pine: #286983;
+        --color-foam: #9ccfd8;
+      }
+
+      .seedling {
+        fill: var(--color-pine);
       }
 
       @media (prefers-color-scheme:dark) {
-        :root {
-          --color-pine: #31748f;
+        .seedling {
+          fill: var(--color-foam);
         }
-      }
-      .seedling {
-        fill: var(--color-pine);
       }
     </style>
   </defs>

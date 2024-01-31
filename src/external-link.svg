@@ -3,15 +3,17 @@
     <style>
       :root {
         --color-pine: #286983;
+        --color-foam: #9ccfd8;
+      }
+
+      .vector {
+        stroke: var(--color-pine);
       }
 
       @media (prefers-color-scheme:dark) {
-        :root {
-          --color-pine: #31748f;
+        .vector {
+          stroke: var(--color-foam);
         }
-      }
-      .vector {
-        stroke: var(--color-pine);
       }
     </style>
   </defs>

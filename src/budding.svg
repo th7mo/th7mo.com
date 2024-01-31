@@ -3,15 +3,17 @@
     <style>
       :root {
         --color-pine: #286983;
+        --color-foam: #9ccfd8;
+      }
+
+      .budding {
+        fill: var(--color-pine);
       }
 
       @media (prefers-color-scheme:dark) {
-        :root {
-          --color-pine: #31748f;
+        .budding {
+          fill: var(--color-foam);
         }
-      }
-      .budding {
-        fill: var(--color-pine);
       }
     </style>
   </defs>
