@@ -76,11 +76,8 @@ a[href^="http"]::after {
 }
 
 a:not(nav a):not(sup a):not([href^="http"])::before {
-    content: "{";
-}
-
-a:not(nav a):not(sup a):not([href^="http"])::after {
-    content: "}";
+    padding-right: 0.2rem;
+    content: url("evergreen.svg");
 }
 
 blockquote {
