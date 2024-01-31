@@ -70,6 +70,25 @@ h4 {
     line-height: 1.2;
 }
 
+.seedling::before,
+.budding::before,
+.evergreen::before {
+    padding-right: 0.4rem;
+
+}
+
+.seedling::before {
+    content: url("seedling.svg");
+}
+
+.budding::before {
+    content: url("budding.svg");
+}
+
+.evergreen::before {
+    content: url("evergreen.svg");
+}
+
 ol,
 ul {
     padding-left: 2rem;
