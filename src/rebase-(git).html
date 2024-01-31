@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The digital garden of a minimalist" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rebase (Git)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ol>
+        <li><a href="index.html">th7mo</a></li>
+        <li><a href="overview.html">garden</a></li>
+        <li>rebase (git)</li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Rebase (Git)</h1>
+    <p>
+      A <a href="git.html">Git</a> rebase adds one or multiple <a href="commit-(git).html">commits</a> from a
+      <a href="branch-(git).html">branch</a> on top of another branch.
+    </p>
+    <p>
+      The most simple use case for a rebase is when a <a href="remote-(git).html">remote</a> branch somebody is also
+      locally working on has new changes.
+      First, fetch the remote to download contents from the remote repository:
+    </p>
+    <pre><code>git fetch</code></pre>
+    <p>
+      If new changes have been made to the remote branch, include those remote changes by rebasing the commit
+      made on top of the local branch as if they were made locally:
+    </p>
+    <pre><code>git rebase origin main</code></pre>
+    <p>
+      Now all the new commits made on the remote <code>origin/main</code> branch will be applied to the
+      local <code>main</code> branch.
+    </p>
+    <p>A shorthand for this workflow is the <code>pull</code> command with the <code>--rebase</code> flag:</p>
+    <pre><code>git pull --rebase {remote-name} {branch-name}</code></pre>
+    <p>
+      The <code>--rebase</code> flag can be omitted when the <code>pull.rebase</code> option is configured
+      in the <a href="gitconfig.html">gitconfig</a>:
+<pre><code>[pull]
+    rebase = true
+</code></pre>
+  </main>
+</body>
+
+</html>
