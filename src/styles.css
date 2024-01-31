@@ -18,10 +18,6 @@ body {
     padding: 5rem 1rem 0 1rem;
 }
 
-.vector {
-    stroke: var(--color-foam);
-}
-
 main {
     padding: 3rem 0 10rem 0;
 }
