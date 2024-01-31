@@ -40,8 +40,12 @@
     }
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -50,7 +54,7 @@ body {
     color: var(--color-text);
     background: var(--color-base);
     margin: auto;
-    max-width: 40rem;
+    max-width: 57.5ch;
     padding: 5rem 1rem 0 1rem;
 }
 
@@ -62,7 +66,20 @@ h1,
 h2,
 h3,
 h4 {
+    margin: 2rem 0 1rem 0;
     line-height: 1.2;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+p,
+ol,
+ul,
+pre code {
+    margin: 1rem 0;
 }
 
 a,
@@ -84,7 +101,6 @@ a:not(nav a):not(sup a):not([href^="http"])::after {
 }
 
 blockquote {
-    margin-left: 0;
     padding-left: 1rem;
     border-left: 0.4rem solid var(--color-subtle);
 }
@@ -110,7 +126,6 @@ pre {
 pre code {
     display: block;
     padding: 1rem;
-    width: 100%;
     background-color: var(--color-surface);
 }
 
@@ -138,7 +153,6 @@ nav a:visited {
 nav ol {
     display: flex;
     padding: 0;
-    margin: 0;
     align-items: baseline;
     list-style: none;
 }
