@@ -5,6 +5,18 @@ kbd {
     background-color: var(--color-overlay);
 }
 
+code.lang-sh::before {
+    font-weight: bold;
+    color: var(--color-pine);
+    content: "$ ";
+}
+
+@media (prefers-color-scheme:dark) {
+    code.lang-sh::before {
+        color: var(--color-foam);
+    }
+}
+
 pre {
     white-space: pre-wrap;
 }

@@ -31,14 +31,14 @@
 
     <h2>Installation</h2>
     <p>Keychain does not come pre-installed on most systems, so first install Keychain:</p>
-    <pre><code>sudo apt install keychain</code></pre>
+    <pre><code class="lang-sh">sudo apt install keychain</code></pre>
 
     <h2 id="add-an-ssh-key-to-keychain">Add an SSH key to Keychain</h2>
     <p>To add a private SSH key to Keychain, execute:</p>
-    <pre><code>keychain ~/.ssh/id_ed25519</code></pre>
+    <pre><code class="lang-sh">keychain ~/.ssh/id_ed25519</code></pre>
     <p>
-      This process can be automated by having this command in the <a href="bash.html">Bash</a> or [[z-shell]] 
-      configuration file.
+      This process can be automated by having this command in the <a href="bash.html">Bash</a> or
+      <a href="zsh.html">Zsh</a> configuration file.
     </p>
     <p>
       Keychain has the benefit of starting ssh-agent if it has not already been started,
@@ -47,7 +47,7 @@
 
     <h2>List loaded SSH keys</h2>
     <p>Use the <code>-l</code> flag to list all the loaded SSH keys:</code>
-    <pre><code>keychain -l</code></pre>
+    <pre><code class="lang-sh">keychain -l</code></pre>
   </main>
 </body>
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The digital garden of a minimalist" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zsh</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ol>
+        <li><a href="index.html">th7mo</a></li>
+        <li><a href="overview.html">garden</a></li>
+        <li class="seedling">zsh</li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Zsh</h1>
+    <p>
+      The Z shell (Zsh) is a Unix shell like <a href="Bash">Bash</a> or Fish.
+      It is based on the Bourne Shell (sh) and Bash.
+      It is an enhancement on top of those shells.
+      A popular framework used on top of the Z shell is <a href="oh-my-zsh.html">Oh My Zsh</a>.
+    </p>
+
+    <h2>Installation</h2>
+    <p>Install the Z shell by executing the following command:</p>
+    <pre><code class="lang-sh">sudo apt install zsh</code></pre>
+    <p>Set Z shell as the default shell by executing the following command:</p>
+    <pre><code class="lang-sh">chsh -s $(which zsh)</code></pre>
+    <p>
+      <code>$(which zsh)</code> evaluates to the path where <code>zsh</code> is located.
+      This will most likely be <code>/usr/bin/zsh</code>.
+
+    <h2>Configuration</h2>
+    <p>
+      Z shell is configured via the <code>.zshrc</code> file.
+      It is recommended to put the <code>.zshrc</code> file inside the <a href="dotfiles.html">dotfiles</a> repository
+      to keep configuration backed up.
+    </p>
+  </main>
+</body>
+
+</html>

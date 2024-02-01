@@ -28,7 +28,7 @@
 
     <h2>Installation</h2>
     <p>NGINX can be installed by executing the following command:</p>
-    <pre><code>sudo apt install nginx</code></pre>
+    <pre><code class="lang-sh">sudo apt install nginx</code></pre>
 
     <h2>Configuration</h2>
     <p>
@@ -106,7 +106,7 @@
       When to configuration is complete, make a symbolic link to
       the <code>/etc/nginx/sites-enabled/</code> directory:
     </p>
-    <pre><code>ln -s /etc/nginx/sites-available/{config-file} /etc/nginx/sites-enabled/</code></pre>
+    <pre><code class="lang-sh">ln -s /etc/nginx/sites-available/{config-file} /etc/nginx/sites-enabled/</code></pre>
     <p>
       Only when a symbolic link is present in the <code>sites-enabled/</code> directory NGINX actually serves
       the website to users.
@@ -118,7 +118,7 @@
       Run <code>nginx -t</code> to verify if the configuration file is correct to NGINX.
       If the configuration is correct, execute the following command to restart NGINX:
     </p>
-    <pre><code>sudo systemctl restart nginx</code></pre>
+    <pre><code class="lang-sh">sudo systemctl restart nginx</code></pre>
     
     <h2>See also</h2>
     <ul>
