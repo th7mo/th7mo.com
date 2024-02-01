@@ -1,41 +1,41 @@
 :root {
-    --color-base: #faf4ed;
-    --color-surface: #fffaf3;
-    --color-overlay: #f2e9e1;
-    --color-muted: #9893a5;
-    --color-subtle: #797593;
-    --color-text: #575279;
+    --rose-pine-base: #faf4ed;
+    --rose-pine-surface: #fffaf3;
+    --rose-pine-overlay: #f2e9e1;
+    --rose-pine-text: #575279;
+    /** I only use one of those, but I see myself use more in the future */
+    --rose-pine-love: #b4637a;
+    --rose-pine-gold: #ea9d34;
+    --rose-pine-rose: #d7827e;
+    --rose-pine-pine: #286983;
+    --rose-pine-foam: #56949f;
+    --rose-pine-iris: #907aa9;
 
-    --color-love: #b4637a;
-    --color-gold: #ea9d34;
-    --color-rose: #d7827e;
-    --color-pine: #286983;
-    --color-foam: #56949f;
-    --color-iris: #907aa9;
-
-    --color-highlight-low: #f4ede8;
-    --color-highlight-med: #dfdad9;
-    --color-highlight-high: #cecacd;
+    --color-primary: var(--rose-pine-pine);
+    --color-background: var(--rose-pine-base);
+    --color-surface: var(--rose-pine-surface);
+    --color-overlay: var(--rose-pine-overlay);
+    --color-text: var(--rose-pine-text);
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --color-base: #191724;
-        --color-surface: #1f1d2e;
-        --color-overlay: #26233a;
-        --color-muted: #6e6a86;
-        --color-subtle: #908caa;
-        --color-text: #e0def4;
+        --rose-pine-base: #191724;
+        --rose-pine-surface: #1f1d2e;
+        --rose-pine-overlay: #26233a;
+        --rose-pine-text: #e0def4;
+        /** I only use one of those, but I see myself use more in the future */
+        --rose-pine-love: #eb6f92;
+        --rose-pine-gold: #f6c177;
+        --rose-pine-rose: #ebbcba;
+        --rose-pine-pine: #31748f;
+        --rose-pine-foam: #9ccfd8;
+        --rose-pine-iris: #c4a7e7;
 
-        --color-love: #eb6f92;
-        --color-gold: #f6c177;
-        --color-rose: #ebbcba;
-        --color-pine: #31748f;
-        --color-foam: #9ccfd8;
-        --color-iris: #c4a7e7;
-
-        --color-highlight-low: #21202e;
-        --color-highlight-med: #403d52;
-        --color-highlight-high: #524f67;
+        --color-primary: var(--rose-pine-foam);
+        --color-background: var(--rose-pine-base);
+        --color-surface: var(--rose-pine-surface);
+        --color-overlay: var(--rose-pine-overlay);
+        --color-text: var(--rose-pine-text);
     }
 }

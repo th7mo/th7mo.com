@@ -7,14 +7,8 @@ kbd {
 
 code.lang-sh::before {
     font-weight: bold;
-    color: var(--color-pine);
+    color: var(--color-primary);
     content: "$ ";
-}
-
-@media (prefers-color-scheme:dark) {
-    code.lang-sh::before {
-        color: var(--color-foam);
-    }
 }
 
 pre {
@@ -31,7 +25,6 @@ kbd {
     display: inline-block;
     min-width: 1.3rem;
     text-align: center;
-    border: 1px solid var(--color-overlay);
     font-weight: bold;
-    box-shadow: 1px 1px 0 0 var(--color-subtle);
+    box-shadow: 1px 1px 0 0 var(--color-text);
 }

@@ -1,16 +1,8 @@
 a,
 a:visited {
-    color: var(--color-pine);
+    color: var(--color-primary);
     text-decoration: none;
     white-space: nowrap;
-}
-
-@media (prefers-color-scheme:dark) {
-
-    a,
-    a:visited {
-        color: var(--color-foam);
-    }
 }
 
 a:not(nav a) {
@@ -33,5 +25,4 @@ nav ol {
 nav ol li:not(:last-child)::after {
     padding: 0.7rem;
     content: '/';
-    color: var(--color-subtle);
 }
