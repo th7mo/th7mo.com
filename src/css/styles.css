@@ -1,7 +1,26 @@
-@import url("colors.css");
-@import url("icons.css");
-@import url("code.css");
-@import url("navigation.css");
+/* Rose Pine Dawn */
+:root {
+    /* pine */
+    --color-primary: #286983;
+
+    --color-base: #faf4ed;
+    --color-surface: #fffaf3;
+    --color-overlay: #f2e9e1;
+    --color-text: #575279;
+}
+
+/* Rose Pine */
+@media (prefers-color-scheme:dark) {
+    :root {
+        /* foam */
+        --color-primary: #9ccfd8;
+
+        --color-base: #191724;
+        --color-surface: #1f1d2e;
+        --color-overlay: #26233a;
+        --color-text: #e0def4;
+    }
+}
 
 *,
 *::before,
@@ -18,7 +37,7 @@ body {
     line-height: 1.5;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     color: var(--color-text);
-    background: var(--color-background);
+    background: var(--color-base);
 }
 
 main {
@@ -36,6 +55,35 @@ h4 {
 ol,
 ul {
     padding-left: 2rem;
+}
+
+a,
+a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a:not(nav a) {
+    font-weight: bold;
+}
+
+nav a,
+nav a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ol {
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+}
+
+nav ol li:not(:last-child)::after {
+    padding: 0.7rem;
+    content: '/';
 }
 
 p,
@@ -60,4 +108,66 @@ blockquote {
 hr {
     margin: 3rem 0 1.5rem 0;
     border: 1px solid var(--color-overlay);
+}
+
+code,
+kbd {
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: var(--color-overlay);
+}
+
+code.lang-sh::before {
+    content: "$ ";
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+pre code {
+    padding: 1rem;
+    display: block;
+    background-color: var(--color-surface);
+}
+
+kbd {
+    display: inline-block;
+    min-width: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 1px 0 0 var(--color-text);
+}
+
+.seedling::before,
+.budding::before,
+.evergreen::before {
+    padding-right: 0.4rem;
+}
+
+.seedling::before {
+    content: url("../svg/seedling.svg");
+}
+
+.budding::before {
+    content: url("../svg/budding.svg");
+}
+
+.evergreen::before {
+    content: url("../svg/evergreen.svg");
+}
+
+a[href^="http"]::after {
+    content: url("../svg/external-link.svg");
+}
+
+a[href^="#"]:not([href^="#footnote-"])::before {
+    content: "§";
+}
+
+a:not(nav a):not(sup a):not([href^="http"])::before {
+    padding-right: 0.2rem;
+    content: url("../svg/evergreen.svg");
 }
