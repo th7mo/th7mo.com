@@ -34,7 +34,7 @@
 
     <h2>Configuration</h2>
     <p>
-      NGINX configuration files are in <code>/etc/nginx/</code>.
+      NGINX configuration files live inside the <code>/etc/nginx/</code> directory.
       The two main subdirectories in there are <code>/etc/nginx/sites-available/</code> and 
       <code>/etc/nginx/sites-enabled/</code>.
       The idea is that you can make a site configuration file in <code>sites-available</code> and when it's ready,
@@ -74,7 +74,7 @@
         the default file specified at <code>index</code>.
       </li>
       <li><code>listen 80 ;</code> specifies NGINX to listen for connections at port 80 for IPv4.</li>
-      <li><code>listen [::]:80;</code> specifies the same but for IPv6.</li>
+      <li><code>listen [::]:80 ;</code> specifies the same but for IPv6.</li>
     </ul>
     <p>
       All these components are required for the most minimal configuration.
@@ -86,7 +86,7 @@
     <p>
       One of the most common use cases for redirecting subdomains is the <code>www</code> subdomain.
       Firstly make sure proper DNS configuration is set up for the subdomain.
-      The <code>if {}</code> block makes it possible to redirect subdomains:
+      The <code>if</code> statement is used to check and to redirect subdomains:
     </p>
 <pre><code>server {
     server_name th7mo.com www.th7mo.com ;
@@ -117,7 +117,7 @@
     <h2>Load changes</h2>
     <p>
       Every time the configuration for NGINX changes, NGINX needs to be restarted for changes to take effect.
-      Run <code>nginx -t</code> to verify if the configuration file is correct to NGINX.
+      Run <code>nginx -t</code> to verify if the configuration file is correct according to NGINX.
       If the configuration is correct, execute the following command to restart NGINX:
     </p>
     <pre><code class="lang-sh">sudo systemctl restart nginx</code></pre>
