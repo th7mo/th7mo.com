@@ -30,22 +30,23 @@
       <a href="reset-(git).html">resetting</a> commits.
       To revert a commit execute the following command:
     </p>
-    <pre><code>git revert {commit-hash}</code></pre>
+    <pre><code class="lang-sh">git revert {commit-hash}</code></pre>
     <p>
       Unlike <code>git reset</code>, the <code>git revert</code> command only reverts the changes of a specified commit,
       and will not revert the commit that came after the specified commit.
     </p>
-    <p> The <code>git revert</code> command also accepts a range of commits:</p>
-<pre><code>git revert --no-commit {commit-hash}..HEAD
-git commit -m "revert: {reason for reverting}"
-</code></pre>
+    <p>The <code>git revert</code> command also accepts a range of commits:</p>
+    <pre><code class="lang-sh">git revert --no-commit {commit-hash}..HEAD</code></pre>
+    <pre><code class="lang-sh">git commit -m "revert: {reason for reverting}"</code></pre>
     <p>
       The <code>git revert</code> command above reverts all changes from the <code>{commit-hash}</code> up to and
       including where <code>HEAD</code> is.
       It also adds the files that have reverts to the <a href="staging-area-(git).html">staging area</a>.
       For more safety use the <code>--no-commit</code> flag.
       It allows for reviewing the reverted changes before the commit is made.
-      To abort the revert execute <code>git revert --abort</code>.
+      To abort the revert execute:
+    </p>
+    <pre><code class="lang-sh">git revert --abort</code></pre>
   </main>
 </body>
 
