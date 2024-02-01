@@ -33,14 +33,15 @@
 }
 
 body {
-    font-size: 1.1rem;
     margin: auto;
     padding: 5rem 1rem 0 1rem;
     max-width: 57.5ch;
-    line-height: 1.5;
-    font-family: "Zilla Slab", serif;
     color: var(--color-text);
     background: var(--color-base);
+    hyphens: auto;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-family: "Zilla Slab", serif;
 }
 
 main {
