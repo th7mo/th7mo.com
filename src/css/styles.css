@@ -51,7 +51,9 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     margin: 2rem 0 1rem 0;
     line-height: 1.2;
     font-weight: bold;
@@ -92,11 +94,12 @@ nav ol li:not(:last-child)::after {
     content: '/';
 }
 
-p,
+p:not(:last-child),
 ol,
 ul,
+blockquote,
 pre code {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 blockquote {
@@ -105,13 +108,9 @@ blockquote {
 }
 
 em,
-blockquote {
-    font-style: italic;
-}
-
+blockquote,
 nav ol li:last-child {
     font-style: italic;
-    font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
 }
 
 hr {
