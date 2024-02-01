@@ -5,19 +5,19 @@
 }
 
 .seedling::before {
-    content: url("seedling.svg");
+    content: url("../svg/seedling.svg");
 }
 
 .budding::before {
-    content: url("budding.svg");
+    content: url("../svg/budding.svg");
 }
 
 .evergreen::before {
-    content: url("evergreen.svg");
+    content: url("../svg/evergreen.svg");
 }
 
 a[href^="http"]::after {
-    content: url("external-link.svg");
+    content: url("../svg/external-link.svg");
 }
 
 a[href^="#"]:not([href^="#footnote-"])::before {
@@ -26,5 +26,5 @@ a[href^="#"]:not([href^="#footnote-"])::before {
 
 a:not(nav a):not(sup a):not([href^="http"])::before {
     padding-right: 0.2rem;
-    content: url("evergreen.svg");
+    content: url("../svg/evergreen.svg");
 }
