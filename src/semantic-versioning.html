@@ -30,21 +30,21 @@
       Version software when publishing changes.
       Any modifications must be released as a new version.
       A good convention for versioning software is <a href="https://semver.org/">semver</a>.
-      A version number consists of three components:
+      A semantic version number consists of three components:
     </p>
     <pre><code>{MAJOR}.{MINOR}.{PATCH}</code></pre>
-    <p>Increase the:</p>
+    <p>Increment the:</p>
     <ul>
       <li><code>{MAJOR}</code> version when an incompatible API change is made.</li>
       <li><code>{MINOR}</code> version when a backward compatible <em>new functionality</em> is added.</li>
       <li><code>{PATCH}</code> version when a backward compatible <em>bug fix</em> is made.</li>
     </ul>
     <p>
-      The <code>{PATCH}</code> version must be reset to 0 when increasing the <code>{MINOR}</code> version.
-      The <code>{MINOR}</code> and <code>{PATCH}</code> must be
-      reset to 0 when increasing the <code>{MAJOR}</code> version.
+      When the <code>{MINOR}</code> version is incremented, reset the <code>{PATCH}</code> version to zero.
+      When the <code>{MAJOR}</code> version is incremented, reset
+      both the <code>{MINOR}</code> and <code>{PATCH}</code> versions to zero.
     </p>
-    <p>The <code>{MAJOR}</code> version 0 can be used when in development.</p>
+    <p>The <code>{MAJOR}</code> version zero is used when software is not used in production yet.</p>
   </main>
 </body>
 
