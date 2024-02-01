@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The digital garden of a minimalist" />
+  <meta name="description" content="The digital garden of a minimalist">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Semantic versioning</title>
   <link rel="stylesheet" href="styles.css">
@@ -34,9 +34,14 @@
     <p>Increase the:</p>
     <ul>
       <li><code>{MAJOR}</code> version when an incompatible API change is made.</li>
-      <li><code>{MINOR}</code> version when a backward compatible *new functionality* is added.</li>
-      <li><code>{PATCH}</code> version when a backward compatible *bug fix* is made.</li>
+      <li><code>{MINOR}</code> version when a backward compatible <em>new functionality</em> is added.</li>
+      <li><code>{PATCH}</code> version when a backward compatible <em>bug fix</em> is made.</li>
     </ul>
+    <p>
+      The <code>{PATCH}</code> version must be reset to 0 when increasing the <code>{MINOR}</code> version.
+      The <code>{MINOR}</code> and <code>{PATCH}</code> must be
+      reset to 0 when increasing the <code>{MAJOR}</code> version.
+    </p>
     <p>The <code>{MAJOR}</code> version 0 can be used when in development.</p>
   </main>
 </body>
