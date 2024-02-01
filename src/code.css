@@ -6,9 +6,9 @@ kbd {
 }
 
 code.lang-sh::before {
-    font-weight: bold;
-    color: var(--color-primary);
     content: "$ ";
+    color: var(--color-primary);
+    font-weight: bold;
 }
 
 pre {
@@ -16,8 +16,8 @@ pre {
 }
 
 pre code {
-    display: block;
     padding: 1rem;
+    display: block;
     background-color: var(--color-surface);
 }
 

@@ -2,7 +2,6 @@
 .budding::before,
 .evergreen::before {
     padding-right: 0.4rem;
-
 }
 
 .seedling::before {
@@ -17,12 +16,12 @@
     content: url("evergreen.svg");
 }
 
-a[href^="#"]:not([href^="#footnote-"])::before {
-    content: "§";
-}
-
 a[href^="http"]::after {
     content: url("external-link.svg");
+}
+
+a[href^="#"]:not([href^="#footnote-"])::before {
+    content: "§";
 }
 
 a:not(nav a):not(sup a):not([href^="http"])::before {

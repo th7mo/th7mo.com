@@ -16,8 +16,8 @@ nav a:visited {
 }
 
 nav ol {
-    display: flex;
     padding: 0;
+    display: flex;
     align-items: baseline;
     list-style: none;
 }
