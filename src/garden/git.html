@@ -1,0 +1,62 @@
+<!-- maturity: budding -->
+<h1>Git</h1>
+<p>
+  <a href="https://git-scm.com/">Git</a> is a version control system.
+  It is used for the <a href="digital-garden">digital garden</a> to keep track of changes and preserve history.
+  It also allows for accessible collaboration.
+</p>
+
+<!-- TODO:
+This note is not complete yet.
+The Git workflow (branch strategy) can have a better explanation.
+
+The terms used in the worktree section is inconsistent, and there should be a warning about only executing commands in the bare workspace `{repository-name}/.git/`
+
+There is also a way to do not rely on GNU Stow but use a bare repository to manage dotfiles.
+This needs to be researched first.
+-->
+<h2>Installation</h2>
+<p>Install Git by executing the following command:</p>
+<pre><code class="lang-sh">sudo apt install git</code></pre>
+
+<h2>Configuration</h2>
+<p>All the configuration for Git is stored in <a href="gitconfig.html">gitconfig</a> files.</p>
+
+<h2>Usage</h2>
+<p>
+  A <a href="commit-(git).html">commit</a> creates a snapshot of the current state of a Git repository.
+  Git uses <a href="branch-(git).html">branches</a> for collaborate work and diverging from the default environment.
+</p>
+
+<h2>Pull request / Merge request</h2>
+<p>The <a href="rebase-(git).html">rebase</a> strategy is also a good option for pull requests.</p>
+<p>
+  Do not squash commits or merge a pull request using the <a href="squash-(git).html">squash</a> strategy,
+  unless the commit messages are not providing any useful information.
+  It is always better to leave as much history as possible for later debugging of code.
+</p>
+
+<h2>Worktrees</h2>
+<p>
+  <a href="worktree-(git).html">Worktrees</a> can be used to switch between branches
+  without committing or stashing changes. 
+</p>
+
+<h2>Multiple Git identities</h2>
+<p>
+  See <a href="multiple-identities-(git).html">multiple git identities</a>
+  for how to configure multiple Git identities.
+</p>
+
+<h2>See also</h2>
+<ul>
+  <li>
+    A <a href="https://www.reddit.com/r/git/comments/wwapum/comment/ilkdpzv/">Reddit thread</a>
+    about worktrees.
+  </li>
+  <li>
+    A <a href="https://medium.com/ngconf/git-worktrees-in-use-f4e516512feb">Medium article</a>
+    about worktrees.
+  </li>
+  <li>The <a href="https://git-scm.com/docs/git-worktree">Git documentation</a> about worktrees.</li>
+</ul>

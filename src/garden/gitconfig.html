@@ -1,0 +1,36 @@
+<!-- maturity: evergreen -->
+<h1>Gitconfig</h1>
+<p>
+  <a href="git.html">Git</a> is configured with <code>.gitconfig</code> files.
+  The main configuration file is located in the <a href="home-directory">home directory</a>
+  (<code>~/.gitconfig</code>).
+  A <code>.gitconfig</code> file stores all Git configuration like a <code>user.name</code> and
+  <code>user.email</code> that is used for each <a href="commit-(git).html">commit</a>.
+  It also stores custom <a href="alias.html">aliases</a> and <a href="branch-(git).html">branch</a>
+  handling preferences.
+</p>
+<p>
+  Every Git repository contains a <code>.git/config</code> file, which can be used to overwrite values
+  specified in the default <code>~/.gitconfig</code> file.
+  It is recommended to put all <code>.gitconfig</code> files in the <a href="dotfiles.html">dotfiles</a> repository.
+  This will make sure the Git configuration is backed up.
+</p>
+<p>
+  The <code>.gitconfig</code> files use the <code>ini</code> file format.
+  A simple <code>.gitconfig</code> file could look like this:
+</p>
+<pre><code>[user]
+    email = thimo@th7mo.com
+    name = th7mo
+[init]
+    defaultBranch = main
+[push]
+    autoSetupRemote = true
+[alias]
+    b  = branch
+    c  = commit -m
+    s  = status
+    f  = fetch
+    sw = switch
+    w  = worktree
+</code></pre>

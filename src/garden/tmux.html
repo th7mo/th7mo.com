@@ -1,0 +1,28 @@
+<!-- maturity: seedling -->
+<h1>Tmux</h1>
+<p>
+  <a href="https://github.com/tmux/tmux">Tmux</a> is a terminal multiplexer.
+  It is used to manage terminal windows and sessions.
+</p>
+
+<h2>Installation</h2>
+<p>Tmux can be installed by executing the following command:</p>
+<pre><code class="lang-sh">sudo apt install tmux</code></pre>
+
+<h2>Configuration</h2>
+<p>
+  Tmux can be configured in the <code>~/.tmux.conf</code> file.
+  It is recommended to keep the configuration file inside the <a href="dotfiles.html">dotfiles</a> repository
+  to keep configuration backed up.
+</p>
+<p>
+  Tmux can be launched when starting a terminal application by <code>exec tmux</code> inside the
+  <a href="bash.html">Bash</a> or <a href="zsh.html">Zsh</a> configuration file.
+</p>
+<p>
+  The tmux configuration can be reloaded by executing the following command inside tmux:
+</p>
+<pre><code>source-file ~/.tmux.conf</code></pre>
+
+<h2>Name capitalization</h2>
+<p>The tmux developers chose to not capitalize the 't' of tmux, so tmux should be written all lowercase.</p>

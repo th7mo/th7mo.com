@@ -1,0 +1,38 @@
+<!-- maturity: evergreen -->
+<h1>Stow</h1>
+<p>
+  <a href="https://www.gnu.org/software/stow/">Stow</a> is a utility that simplifies the process
+  of making <a href="symbolic-link.html">symbolic links</a>.
+  It can be used to easily manage <a href="dotfiles.html">dotfiles</a>.
+</p>
+
+<h2>Installation</h2>
+<p>Install Stow by executing the following command:</p>
+<pre><code class="lang-sh">sudo apt install stow</code></pre>
+
+<h2>Usage</h2>
+<p>
+  Mirror what the <a href="home-directory.html">home directory</a> structure should be exactly inside the
+  <code>~/dotfiles/</code> directory, because Stow will make
+  symbolic links in directories following the same hierarchy.
+  The name of the Stow directory can be anything, but here the name <code>dotfiles</code> will be used.
+</p>
+<p>
+  For example: <a href="helix.html">Helix</a> wants a <code>config.toml</code> file located at
+  <code>~/.config/helix/config.toml</code>.
+  If the <code>config.toml</code> file is located at <code>~/dotfiles/.config/helix/config.toml</code>,
+  Stow will create a symbolic link to where Helix wants to read the configuration file.
+</p>
+<p>
+  To create symbolic links for all the files in the <code>~/dotfiles/</code> directory to the
+  home directory, execute the following command:
+<pre><code class="lang-sh">stow ~/dotfiles/</code></pre>
+<p>Or in the repository <strong>at root level</strong>:</p>
+<pre><code class="lang-sh">stow .</code></pre>
+<p>
+  Be careful with where to execute Stow commands.
+  Only execute <code>stow .</code> <strong>at the root</strong> of the repository, otherwise the symbolic links
+  will be incorrect.
+  Also be careful when removing symbolic links and make sure to have a backup of the original configuration files
+  (dotfiles).
+</p>

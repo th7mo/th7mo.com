@@ -1,0 +1,21 @@
+<!-- maturity: budding -->
+<h1>Semantic versioning</h1>
+<p>
+  Version software when publishing changes.
+  Any modifications must be released as a new version.
+  A good convention for versioning software is <a href="https://semver.org/">semver</a>.
+  A semantic version number consists of three components:
+</p>
+<pre><code>{MAJOR}.{MINOR}.{PATCH}</code></pre>
+<p>Increment the:</p>
+<ul>
+  <li><code>{MAJOR}</code> version when an incompatible API change is made.</li>
+  <li><code>{MINOR}</code> version when a backward compatible <em>new functionality</em> is added.</li>
+  <li><code>{PATCH}</code> version when a backward compatible <em>bug fix</em> is made.</li>
+</ul>
+<p>
+  When the <code>{MINOR}</code> version is incremented, reset the <code>{PATCH}</code> version to zero.
+  When the <code>{MAJOR}</code> version is incremented, reset
+  both the <code>{MINOR}</code> and <code>{PATCH}</code> versions to zero.
+</p>
+<p>The <code>{MAJOR}</code> version zero is used when software is not used in production yet.</p>

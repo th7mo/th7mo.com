@@ -1,0 +1,105 @@
+<!-- maturity: seedling -->
+<h1>NGINX</h1>
+<p>Websites can be hosted with <a href="https://www.nginx.com/">NGINX</a>.</p>
+
+<h2>Installation</h2>
+<p>NGINX can be installed by executing the following command:</p>
+<pre><code class="lang-sh">sudo apt install nginx</code></pre>
+
+<h2>Configuration</h2>
+<p>
+  NGINX configuration files live inside the <code>/etc/nginx/</code> directory.
+  The two main subdirectories in there are <code>/etc/nginx/sites-available/</code> and 
+  <code>/etc/nginx/sites-enabled/</code>.
+  The idea is that you can make a site configuration file in <code>sites-available</code> and when it's ready,
+  you make a <a href="symbolic-link.html">symbolic link</a> to it
+  in <code>sites-enabled/</code> which will activate it.
+</p>
+<p>
+  Make a configuration file for each domain. It is recommended to name the configuration file
+  <code>{domain-name-without-top-level-domain}.conf</code>.
+  For this website the configuration file could be <code>th7mo.conf</code>.
+  A minimal configuration looks like this:
+</p>
+<pre><code>server {
+    server_name th7mo.com ;
+    root /var/www/th7mo ;
+    index index.html ;
+
+    location / {
+        try_files $uri $uri/ =404 ;
+    }
+
+    listen 80 ;
+    listen [::]:80 ;
+}
+</code></pre>
+<ul>
+  <li><code>server_name</code> is the domain and base path of the website.</li>
+  <li><code>root</code> is the root of the project files. This directory should contain the website source code.</li>
+  <li>
+    <code>index</code> specifies the file that represents the landing page of the website
+    (when navigating to the address specified in <code>server_name</code>)
+  </li>
+  <li>
+    <code>location /</code> is a block that specifies NGINX how to look up files.
+    The line below specifies to look in the <code>root</code> directory and throw a 
+    <a href="404-not-found.html">404 Not Found</a> error if failing to find
+    the default file specified at <code>index</code>.
+  </li>
+  <li><code>listen 80 ;</code> specifies NGINX to listen for connections at port 80 for IPv4.</li>
+  <li><code>listen [::]:80 ;</code> specifies the same but for IPv6.</li>
+</ul>
+<p>
+  All these components are required for the most minimal configuration.
+  Without the <code>listen</code> for <strong>both IP protocols</strong> certbot <strong>can not</strong>
+  generate SSL certificates.
+</p>
+
+<h3>Redirecting subdomains</h3>
+<p>
+  One of the most common use cases for redirecting subdomains is the <code>www</code> subdomain.
+  Firstly make sure proper DNS configuration is set up for the subdomain.
+  The <code>if</code> statement is used to check and to redirect subdomains:
+</p>
+<pre><code>server {
+    server_name th7mo.com www.th7mo.com ;
+    if ($host = www.th7mo.com) {
+        return 301 https://th7mo.com$request_uri;
+    }
+
+    # all other configuration below ...
+</code></pre>
+<p>
+  In the example above both <code>th7mo.com</code> and <code>www.th7mo.com</code> are specified in the 
+  <code>server_name</code> field.
+  In the <code>if</code> statement we check and redirect if the visitor of the website visits
+  <code>www.th7mo.com</code> to <code>https://th7mo.com</code> with the path that comes after it.
+</p>
+
+<h3>Link the configuration</h3>
+<p>
+  When to configuration is complete, make a symbolic link to
+  the <code>/etc/nginx/sites-enabled/</code> directory:
+</p>
+<pre><code class="lang-sh">ln -s /etc/nginx/sites-available/{config-file} /etc/nginx/sites-enabled/</code></pre>
+<p>
+  Only when a symbolic link is present in the <code>sites-enabled/</code> directory NGINX actually serves
+  the website to users.
+</p>
+
+<h2>Load changes</h2>
+<p>
+  Every time the configuration for NGINX changes, NGINX needs to be restarted for changes to take effect.
+  Run <code>nginx -t</code> to verify if the configuration file is correct according to NGINX.
+  If the configuration is correct, execute the following command to restart NGINX:
+</p>
+<pre><code class="lang-sh">sudo systemctl restart nginx</code></pre>
+
+<h2>See also</h2>
+<ul>
+  <li>
+    Most of the information here I learned from Luke Smith. He explains how to set up NGINX at his
+    <a href="https://landchad.net/basic/nginx/">landchad.net</a> website.
+  </li>
+</ul>

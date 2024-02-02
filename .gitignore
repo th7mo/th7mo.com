@@ -8,3 +8,5 @@
 # This repo does not host the fonts it uses, so download them yourself
 *.woff
 *.woff2
+
+dist

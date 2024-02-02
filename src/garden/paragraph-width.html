@@ -1,0 +1,34 @@
+<!-- maturity: evergreen -->
+<h1>Paragraph width</h1>
+<p>
+  Paragraphs should be in between 50 and 70 characters of width<sup><a href="#footnote-1">[1]</a></sup>.
+  Too wide paragraphs will make readers take big horizontal movements when starting a new line.
+  Too small paragraphs break the flow of reading text.
+</p>
+<p>
+  When working with <a href="css.html">CSS</a> the <code>ch</code> unit can be used to achieve this.
+  The <code>ch</code> unit <a href="https://drafts.csswg.org/css-values-3/#ch">is defined as</a>:
+</p>
+<blockquote>
+  <p>Equal to the used advance measure of the “0” (ZERO, U+0030) glyph found in the font used to render it. </p>
+</blockquote>
+<p>
+  In proportional typefaces, <code>1ch</code> is <em>usually</em> around 20% wider than the average
+  character width<sup><a href="#footnote-2">[2]</a></sup>.
+  This makes the optimal paragraph width in CSS between <code>40ch</code> and <code>60ch</code>:
+</p>
+<pre><code>p {
+    max-width: 55ch;
+}
+</code></pre>
+<hr>
+<ol>
+  <li id="footnote-1">
+    This is said on most platforms,
+    like <a href="https://baymard.com/blog/line-length-readability">Baymard Institute</a>.
+  </li>
+  <li id="footnote-2">
+    According to <a href="https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/">
+    this blog post</a> about the <code>ch</code> unit.
+  </li>
+</ol>
