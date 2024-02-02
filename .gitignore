@@ -1,12 +1,24 @@
-.idea/
-*.iml
-.vscode
+# custom
+.obsidian/
 
-# I only use Obsidian to see this project in a graph view.
-.obsidian
+# build output
+dist/
 
-# This repo does not host the fonts it uses, so download them yourself
-*.woff
-*.woff2
+# generated types
+.astro/
 
-dist
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store

@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Thimo van Velzen">
-  <meta name="keywords" content="HTML, CSS, digital-garden, garden, wiki, second-brain, minimalist">
-  <meta name="description" content="The digital garden of a minimalist">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Digital Garden</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ol>
-        <li><a href="index.html">th7mo</a></li>
-      </ol>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Welcome! 🌱</h1>
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Digital garden" maturity="evergreen" homepage>
+<h1>Welcome! 🌱</h1>
     <p>This is my digital garden.</p>
     <blockquote>
       <p>
@@ -43,7 +22,4 @@
       The garden can be viewed in a light and dark color scheme (I highly recommend the light color scheme).
       The color scheme automatically adjusts to the browser's color scheme preference.
     </p>
-  </main>
-</body>
-
-</html>
+</Layout>

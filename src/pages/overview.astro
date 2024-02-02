@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Thimo van Velzen">
-  <meta name="keywords" content="HTML, CSS, digital-garden, garden, wiki, second-brain, minimalist">
-  <meta name="description" content="The digital garden of a minimalist">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Overview</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ol>
-        <li><a href="index.html">th7mo</a></li>
-        <li>garden</li>
-      </ol>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Overview</h1>
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="garden" maturity="seedling" overview>
+<h1>Overview</h1>
     <p>
       The <a href="digital-garden.html">digital garden</a> has a no particular structure.
       For easy indexing the <a href="plant.html">plants</a> are listed in alphabetical order.
@@ -160,7 +138,4 @@
     <ul>
       <li><a href="zsh.html">Zsh</a></li>
     </ul>
-  </main>
-</body>
-
-</html>
+</Layout>
