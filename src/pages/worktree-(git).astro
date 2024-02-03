@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Worktree (Git)" maturity="seedling">
+<!-- TODO: This section will be explained when I actually included work trees in my own workflow. -->
+<p>
+    <a href="git.html">Git</a> worktrees make <a href="branch-(git).html">branches</a> directories at the root of the repository.
+    Instead of switching branches, just switch directories.
+</p>
+
+<h2>Make a directory</h2>
+<pre><code is:raw>mkdir {repository-name}</code></pre>
+
+<h2>Clone a repository without checking out a branch</h2>
+<p>Clone the repository from inside the repository directory:</p>
+<pre><code is:raw>cd {repository-name}</code></pre>
+<p>
+    After that clone the repository without worktrees:
+    (The <code>--bare</code> flag specifies to only clone the essential git files)
+</p>
+<pre><code is:raw>git clone --bare {git-remote-url}</code></pre>
+<p><code is:raw>{git-remote-url}</code> can be a HTTPS or SSH URL.</p>
+
+<h2>Add a worktree</h2>
+<p>Only add worktrees from the bare repository, so navigate to the bare repository:</p>
+<pre><code is:raw>cd {repository-name}/.git/</code></pre>
+<p>Now add a worktree to the root of the repository:</p>
+<pre><code is:raw>git worktree add ../{branch-name}</code></pre>
+<p>Now the directory structure should look something like this (as an example this repository has been used):</p>
+<pre><code>digital-garden
+├── digital-garden/.git/
+└── main/
+</code></pre>
+<p>To switch to branch <code>main</code>, simply <code>cd main</code>.
+
+<h2>Add a worktree with a new branch</h2>
+<p>Make sure to be in the bare repository when managing worktrees:</p>
+<pre><code is:raw>git worktree add -b {new-branch-name} ../{worktree-name}</code></pre>
+<ul>
+    <li><code is:raw>{branch-name}</code> is the name of the new branch.</li>
+    <li><code is:raw>{worktree-name}</code> is the name of directory (worktree).</li>
+</ul>
+
+<h2>Add a worktree based on a remote branch</h2>
+<pre><code is:raw>git worktree add {worktree-name} {remote-branch-name}</code></pre>
+<p>
+    When the worktree commit log does not line up with the remote commit log for that specific branch,
+    it is probably because <code is:raw>{remote-branch-name}</code> was not the correct remote branch name when
+    executing the <code>git worktree add</code> command.
+</p>
+
+<h2>Remove a worktree</h2>
+<p>Remove worktrees from the bare repository:</p>
+<pre><code is:raw>cd {repository-name}/.git/</code></pre>
+<p>Remove a worktree by executing the following command:</p>
+<pre><code is:raw>git worktree remove {worktree-name}</code></pre>
+
+<h2>See also</h2>
+<ul>
+    <li>For a full reference to worktrees see the official
+    <a href="https://git-scm.com/docs/git-worktree">Git worktree documentation</a>.
+</ul>
+</Layout>
