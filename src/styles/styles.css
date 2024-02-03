@@ -45,7 +45,7 @@ body {
     background: var(--color-base);
     hyphens: auto;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-family: "Zilla Slab", serif;
 }
 
@@ -117,7 +117,7 @@ blockquote {
 }
 
 em,
-blockquote,
+blockquote p,
 nav ol li:last-child {
     font-style: italic;
 }
