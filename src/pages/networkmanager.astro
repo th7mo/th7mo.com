@@ -1,4 +1,7 @@
-<!-- maturity: seedling -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="NetworkManager" maturity="seedling">
 <h1>NetworkManager</h1>
 <p>
   <a href="https://networkmanager.dev">NetworkManager</a> is a program for connecting to internet.
@@ -25,10 +28,10 @@
 <p>To list the available Wi-Fi networks execute:</p>
 <pre><code class="lang-sh">nmcli device wifi list</code></pre>
 <p>To connect to a Wi-Fi network using <code>nmcli</code> execute:</p>
-<pre><code class="lang-sh">nmcli device wifi connect {SSID} password {password}</code></pre>
+<pre><code is:raw class="lang-sh">nmcli device wifi connect {SSID} password {password}</code></pre>
 <ul>
-  <li><code>{SSID}</code> is the name (unique ID) of the Wi-Fi network.
-  <li><code>{password}</code> is the password of the Wi-Fi network.
+  <li><code is:raw>{SSID}</code> is the name (unique ID) of the Wi-Fi network.
+  <li><code is:raw>{password}</code> is the password of the Wi-Fi network.
 </ul>
 
 <h2>Eduroam</h2>
@@ -54,3 +57,4 @@
   <li>The <a href="https://wiki.archlinux.org/title/NetworkManager">Arch Wiki article</a> about NetworkManager.</li>
   <li>The website of <a href="https://networkmanager.dev/docs/">NetworkManager</a>.</li>
 </ul>
+</Layout>

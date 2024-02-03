@@ -1,4 +1,7 @@
-<!-- maturity: budding -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Branch (Git)" maturity="budding">
 <h1>Branch (Git)</h1>
 <p>
   A <a href="git.html">Git</a> branch is a path of one or more <a href="commit-(git).html">commits</a>.
@@ -6,7 +9,7 @@
 </p>
 <p>
   When working alone on a small project a single <code>main</code> branch works perfect most of the time.
-  Add a new <code>feat/{feature-name}</code> branch when it is desired to test in isolation or when
+  Add a new <code is:raw>feat/{feature-name}</code> branch when it is desired to test in isolation or when
   doing an entire project refactoring.
 </p>
 <p>
@@ -26,3 +29,4 @@
   <a href="bash.html">Bash</a>, <a href="zsh.html">Zsh</a> and other shells have branch autocompletion for
   git branches and for graphical interfaces the branch name length does not matter either.
 </p>
+</Layout>

@@ -1,4 +1,7 @@
-<!-- maturity: seedling -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="NGINX" maturity="seedling">
 <h1>NGINX</h1>
 <p>Websites can be hosted with <a href="https://www.nginx.com/">NGINX</a>.</p>
 
@@ -17,11 +20,11 @@
 </p>
 <p>
   Make a configuration file for each domain. It is recommended to name the configuration file
-  <code>{domain-name-without-top-level-domain}.conf</code>.
+  <code is:raw>{domain-name-without-top-level-domain}.conf</code>.
   For this website the configuration file could be <code>th7mo.conf</code>.
   A minimal configuration looks like this:
 </p>
-<pre><code>server {
+<pre><code is:raw>server {
     server_name th7mo.com ;
     root /var/www/th7mo ;
     index index.html ;
@@ -62,13 +65,14 @@
   Firstly make sure proper DNS configuration is set up for the subdomain.
   The <code>if</code> statement is used to check and to redirect subdomains:
 </p>
-<pre><code>server {
+<pre><code is:raw>server {
     server_name th7mo.com www.th7mo.com ;
     if ($host = www.th7mo.com) {
         return 301 https://th7mo.com$request_uri;
     }
 
     # all other configuration below ...
+}
 </code></pre>
 <p>
   In the example above both <code>th7mo.com</code> and <code>www.th7mo.com</code> are specified in the 
@@ -82,7 +86,7 @@
   When to configuration is complete, make a symbolic link to
   the <code>/etc/nginx/sites-enabled/</code> directory:
 </p>
-<pre><code class="lang-sh">ln -s /etc/nginx/sites-available/{config-file} /etc/nginx/sites-enabled/</code></pre>
+<pre><code is:raw class="lang-sh">ln -s /etc/nginx/sites-available/{config-file} /etc/nginx/sites-enabled/</code></pre>
 <p>
   Only when a symbolic link is present in the <code>sites-enabled/</code> directory NGINX actually serves
   the website to users.
@@ -103,3 +107,4 @@
     <a href="https://landchad.net/basic/nginx/">landchad.net</a> website.
   </li>
 </ul>
+</Layout>

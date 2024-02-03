@@ -1,4 +1,7 @@
-<!-- maturity: evergreen -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Paragraph width" maturity="evergreen">
 <h1>Paragraph width</h1>
 <p>
   Paragraphs should be in between 50 and 70 characters of width<sup><a href="#footnote-1">[1]</a></sup>.
@@ -17,7 +20,7 @@
   character width<sup><a href="#footnote-2">[2]</a></sup>.
   This makes the optimal paragraph width in CSS between <code>40ch</code> and <code>60ch</code>:
 </p>
-<pre><code>p {
+<pre><code is:raw>p {
     max-width: 55ch;
 }
 </code></pre>
@@ -32,3 +35,4 @@
     this blog post</a> about the <code>ch</code> unit.
   </li>
 </ol>
+</Layout>

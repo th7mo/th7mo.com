@@ -1,10 +1,13 @@
-<!-- maturity: budding -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="YAML front matter" maturity="seedling">
 <h1>YAML front matter</h1>
 <p>
   A <a href="markdown.html">Markdown</a> file can have YAML front matter.
   YAML front matter is indicated with the following syntax:
 </p>
-<pre><code>---
+<pre><code is:raw>---
 {YAML-here}
 ---
 </code></pre>
@@ -28,3 +31,4 @@ lang: NL
   The <code>lang:</code> field is used by the <code>ltex-ls</code> language server
   to check the language of the current buffer.
 </p>
+</Layout>

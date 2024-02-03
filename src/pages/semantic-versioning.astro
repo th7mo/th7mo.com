@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Semantic versioning" maturity="budding">
+<h1>Semantic versioning</h1>
+<p>
+  Version software when publishing changes.
+  Any modifications must be released as a new version.
+  A good convention for versioning software is <a href="https://semver.org/">semver</a>.
+  A semantic version number consists of three components:
+</p>
+<pre><code is:raw>{MAJOR}.{MINOR}.{PATCH}</code></pre>
+<p>Increment the:</p>
+<ul>
+  <li><code is:raw>{MAJOR}</code> version when an incompatible API change is made.</li>
+  <li><code is:raw>{MINOR}</code> version when a backward compatible <em>new functionality</em> is added.</li>
+  <li><code is:raw>{PATCH}</code> version when a backward compatible <em>bug fix</em> is made.</li>
+</ul>
+<p>
+  When the <code is:raw>{MINOR}</code> version is incremented, reset the <code is:raw>{PATCH}</code> version to zero.
+  When the <code is:raw>{MAJOR}</code> version is incremented, reset
+  both the <code is:raw>{MINOR}</code> and <code is:raw>{PATCH}</code> versions to zero.
+</p>
+<p>The <code is:raw>{MAJOR}</code> version zero is used when software is not used in production yet.</p>
+</Layout>

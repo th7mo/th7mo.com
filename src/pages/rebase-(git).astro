@@ -1,4 +1,7 @@
-<!-- maturity: budding -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Rebase (Git)" maturity="budding"></Layout>
 <h1>Rebase (Git)</h1>
 <p>
   A <a href="git.html">Git</a> rebase adds one or multiple <a href="commit-(git).html">commits</a> from a
@@ -20,7 +23,7 @@
   local <code>main</code> branch.
 </p>
 <p>A shorthand for this workflow is the <code>pull</code> command with the <code>--rebase</code> flag:</p>
-<pre><code class="lang-sh">git pull --rebase {remote-name} {branch-name}</code></pre>
+<pre><code is:raw class="lang-sh">git pull --rebase {remote-name} {branch-name}</code></pre>
 <p>
   The <code>--rebase</code> flag can be omitted when the <code>pull.rebase</code> option is configured
   in the <a href="gitconfig.html">gitconfig</a>:

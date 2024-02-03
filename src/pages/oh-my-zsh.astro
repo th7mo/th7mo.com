@@ -1,4 +1,7 @@
-<!-- maturity: seedling -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Oh My Zsh" maturity="seedling">
 <h1>Oh My Zsh</h1>
 <p>
   A popular framework for managing <a href="zsh.html">Zsh</a> configuration is
@@ -20,10 +23,11 @@
 <p>
   Install the <a href="git.html">Git</a> repository for
   <a href="https://github.com/zsh-users/zsh-autosuggestions">Zsh autosuggestions</a>:
-  <pre><code class="lang-sh">git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions</code></pre>
+  <pre><code is:raw class="lang-sh">git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions</code></pre>
 <p>To enable autosuggestions, add it to the plugins list in <code>.zshrc</code>:</p>
 <pre><code>plugins=(
     # other plugins...
     zsh-autosuggestions
 )
 </code></pre>
+</Layout>

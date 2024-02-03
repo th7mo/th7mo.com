@@ -6,7 +6,7 @@ interface Props {
 	overview?: boolean;
 }
 
-const { title, maturity, homepage, overview } = Astro.props;
+const frontmatter = Astro.props;
 import '../styles/styles.css';
 ---
 
@@ -19,7 +19,7 @@ import '../styles/styles.css';
 		<meta name="description" content="The digital garden of a minimalist">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>{title}</title>
+		<title>{frontmatter.title}</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 	  </head>
 	<body>
@@ -27,8 +27,10 @@ import '../styles/styles.css';
 			<nav>
 			  <ol>
 				<li><a href="index.html">th7mo</a></li>
-				{!homepage && <li><a href="overview.html">garden</a></li>}
-				{!homepage && !overview && <li class={maturity}>{title}</li>}
+				{!frontmatter.homepage && <li><a href="overview.html">garden</a></li>}
+				{!frontmatter.homepage && !frontmatter.overview && 
+					<li class={frontmatter.maturity}>{frontmatter.title.toLowerCase()}</li>
+				}
 			  </ol>
 			</nav>
 		  </header>

@@ -1,4 +1,7 @@
-<!-- maturity: seedling -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Dotfiles" maturity="seedling">
 <h1>Dotfiles</h1>
 <!-- TODO: The implementation for symlinking might be replaced with a `--bare` repository using a worktree implementation. -->
 <p>
@@ -24,7 +27,7 @@
   A long time ago Unix decided to hide the <code>.</code> and <code>..</code> directories because they exist in every directory.
   They only checked if the first character of the file (or directory) name was a dot <code>.</code>, and hid it when that was the case:
 </p>
-<pre><code>if fileName[0] == "." {
+<pre><code is:raw>if fileName[0] == "." {
     hideFile()
 }
 </code></pre>
@@ -32,7 +35,7 @@
   This results in every file starting with a dot to be hidden.
   What they should have done is check if the filename is <code>.</code> or <code>..</code> instead:
 </p>
-<pre><code>if fileName == "." || fileName == ".." {
+<pre><code is:raw>if fileName == "." || fileName == ".." {
     hideFile()
 }
 </code></pre>
@@ -46,3 +49,4 @@
     </a>
   </li>
 </ol>
+</Layout>

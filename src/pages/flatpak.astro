@@ -1,4 +1,7 @@
-<!-- maturity: evergreen -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Flatpak" maturity="evergreen">
 <h1>Flatpak</h1>
 <p>
   Some proprietary applications or applications are not provided by the Debian repository.
@@ -26,7 +29,7 @@
   the <code>/usr/bin/</code> directory (or any other directory included in the
   <code>$PATH</code> variable)<sup><a href="#footnote-1">[1]</a></sup>.
 </p>
-<pre><code class="lang-sh">ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}</code></pre>
+<pre><code is:raw class="lang-sh">ln -s /var/lib/flatpak/exports/bin/{installed-flatpak-name} /usr/bin/{custom-name}</code></pre>
 <p> For example for Steam:</p>
 <pre><code class="lang-sh">ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam</code></pre>
 <p>
@@ -46,3 +49,4 @@
     GitHub Gist</a>.
   </li>
 </ol>
+</Layout>

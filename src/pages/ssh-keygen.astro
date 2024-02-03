@@ -1,10 +1,13 @@
-<!-- maturity: budding -->
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="ssh-keygen" maturity="budding">
 <h1>ssh-keygen</h1>
 <p>
   <code>ssh-keygen</code> is a command line tool to create <a href="ssh-key">SSH keys</a>.
   To generate a new SSH key execute the following command:
 </p>
-<pre><code class="lang-sh">ssh-keygen -t ed25519 -C {email}</code></pre>
+<pre><code is:raw class="lang-sh">ssh-keygen -t ed25519 -C {email}</code></pre>
 <ul>
   <li>The <code>-t</code> flag specifies the type of key to generate.</li>
   <li>
@@ -14,7 +17,7 @@
     <code>ssh-add -l</code> or <a href="keychain.html#list-loaded-ssh-keys">Keychain</a>.
   </li>
   <li>
-    <code>{email}</code> is the email address used for GitHub or Bitbucket, configured as <code>user.email</code>
+    <code is:raw>{email}</code> is the email address used for GitHub or Bitbucket, configured as <code>user.email</code>
     in the <a href="gitconfig.html">gitconfig</a> file.
 </ul>
 <p>
@@ -23,3 +26,4 @@
   The default directory for storing SSH keys is <code>~/.ssh/</code>.
   Press <kbd>Enter</kbd> until the file is generated.
 </p>
+</Layout>
