@@ -1,41 +1,40 @@
 ---
 interface Props {
-	title: string;
-	maturity: string;
-	homepage?: boolean;
-	overview?: boolean;
+title: string;
+maturity: string;
+homepage?: boolean;
+overview?: boolean;
 }
 
 const frontmatter = Astro.props;
 import '../styles/styles.css';
 ---
-
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="author" content="Thimo van Velzen">
-		<meta name="keywords" content="HTML, CSS, digital-garden, garden, wiki, second-brain, minimalist">
-		<meta name="description" content="The digital garden of a minimalist">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>{frontmatter.title}</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-	  </head>
-	<body>
-		<header>
-			<nav>
-			  <ol>
-				<li><a href="index.html">th7mo</a></li>
-				{!frontmatter.homepage && <li><a href="overview.html">garden</a></li>}
-				{!frontmatter.homepage && !frontmatter.overview && 
-					<li class={frontmatter.maturity}>{frontmatter.title.toLowerCase()}</li>
-				}
-			  </ol>
-			</nav>
-		  </header>
-		  <main>
-			<slot />
-		  </main>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Thimo van Velzen">
+        <meta name="keywords" content="HTML, CSS, Astro, digital-garden, garden, wiki, second-brain, minimalist, simple">
+        <meta name="description" content="The digital garden of a minimalist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{frontmatter.title}</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="index.html">th7mo</a></li>
+                    {!frontmatter.homepage && <li><a href="overview.html">garden</a></li>}
+                    {!frontmatter.homepage && !frontmatter.overview &&
+                        <li class={frontmatter.maturity}>{frontmatter.title.toLowerCase()}</li>
+                    }
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <slot />
+        </main>
+    </body>
 </html>
