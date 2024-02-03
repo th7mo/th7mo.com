@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Lorem Ipsum" maturity="seedling">
+<h2>A heading 2</h2>
+<h3>A heading 3</h3>
+<h4>A heading 4</h4>
+<h5>A heading 5</h5>
+<p>With some text before</p>
+<h6>A heading 6</h6>
+<p>With some text after</p>
+<p>
+    Lorem Ipsum is placeholder text for previewing layouts.
+    It is used for the <a href="digital-garden.html">digital garden</a> to stress-test its features in a sandbox environment.
+</p>
+
+<h2>Lines</h2>
+<h3>Inline styling</h3>
+<p>
+    This is text that has <em>text with italics</em> and it has <strong>text that is strong</strong>
+    and <em><strong>italic and strong</em></strong>
+    and <em><strong><s>italic and strong and strikethrough</s></em></strong>
+    and <code>inline code</code>
+    and <s>strikethrough</s> text
+    and some<sup>sup</sup> text
+    and some<sub>sup</sub> text.
+</p>
+<h4>Links</h4>
+<p>
+    <a href="https://google.com">External Link</a> and <a href="index.html">internal link</a>
+    and <a href="#anchor">section link</a>
+    and footnote<sup><a href="#footnote-">[1]</sup></a>
+    and multiple footnotes<sup><a href="#footnote-">[1]</sup></a><sup><a href="#footnote-">[2]</sup></a><sup><a href="#footnote-">[3]</sup></a>
+    and <a href="index.html">internal <code>with code</code> link</a>.
+</p>
+<h3>Long lines</h3>
+<p>
+    pneumonoultramicroscopicsilicovolcanoconiosis pseudopseudohypoparathyroidism floccinaucinihilipilification antidisestablishmentarianism supercalifragilisticexpialidocious incomprehensibilities strengths euouae unimaginatively honorificabilitudinitatibus.
+</p>
+
+<h2>Blockquotes</h2>
+<h3>Normal</h3>
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+
+<h3>Multiple after eachother</h3>
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+
+<h3>Codeblock</h3>
+<blockquote>
+<p>The following codeblock:</p>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></pre>
+</blockquote>
+<h3>Nested</h3>
+<blockquote>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </blockquote>
+</blockquote>
+<h3>Nested with multiple elements</h3>
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </blockquote>
+</blockquote>
+
+<h3>Triple nested</h3>
+<blockquote>
+    <blockquote>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+
+<h3>With lists</h3>
+<blockquote>
+    <ul>
+        <li>level 1</li>
+        <ul>
+            <li>level 2</li>
+            <ul>
+                <li>level 3</li>
+                <ul>
+                    <li>level 4</li>
+                    <ul>
+                        <li>level 5</li>
+                        <ul>
+                            <li>level 6</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</blockquote>
+
+<h2>Lists</h2>
+<h3>Unordened</h3>
+<ul>
+    <li>level 1</li>
+    <ul>
+        <li>level 2</li>
+        <ul>
+            <li>level 3</li>
+            <ul>
+                <li>level 4</li>
+                <ul>
+                    <li>level 5</li>
+                    <ul>
+                        <li>level 6</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</ul>
+
+<h3>Ordered</h3>
+<ol>
+    <li>level 1</li>
+    <ol>
+        <li>level 2</li>
+        <ol>
+            <li>level 3</li>
+            <ol>
+                <li>level 4</li>
+                <ol>
+                    <li>level 5</li>
+                    <ol>
+                        <li>level 6</li>
+                    </ol>
+                </ol>
+            </ol>
+        </ol>
+    </ol>
+</ol>
+<ol>
+    <li>with <code>inline code</code>
+    <li>and <pre><code>and codeblocks</code></pre></li>
+    <li>and <blockquote><p>a blockquote</p></blockquote></li>
+</Layout>
