@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro"
+const pages = await Astro.glob("./*.astro");
 ---
 <Layout title="Garden" maturity="seedling" h1="The Garden" overview>
 <p>
   The <a href="digital-garden.html">digital garden</a> has a no particular structure.
-  For easy indexing the <a href="plant.html">plants</a> are listed in alphabetical order.
+  For easy indexing the {pages.length - 3} <a href="plant.html">plants</a> are listed in alphabetical order.
 </p>
 <hr>
 <h2>A</h2>

@@ -3,19 +3,11 @@ import Layout from "../layouts/Layout.astro"
 ---
 <Layout title="Lorem Ipsum" maturity="seedling">
 <p>
-    Lorem Ipsum is placeholder text for previewing layouts.
     It is used for the <a href="digital-garden.html">digital garden</a> to stress-test its features in a sandbox environment.
+    Lorem Ipsum is placeholder text for previewing layouts.
 </p>
-<h2>A heading 2, in the case it ever is so long that it needs to be wrapped to the next sentence</h2>
-<h3>A heading 3</h3>
-<h4>A heading 4</h4>
-<h5>A heading 5 (if this heading is used, the structure is wrong)</h5>
-<p>With some text before</p>
-<h6>A heading 6 (if this heading is used, the structure is wrong)</h6>
-<p>With some text after</p>
 
-<h2>Lines</h2>
-<h3>Inline styling</h3>
+<h2>Inline formatting</h2>
 <p>
     This is text that has <em>text with italics</em> and it has <strong>text that is strong</strong>
     and <em><strong>italic and strong</em></strong>
@@ -171,6 +163,7 @@ import Layout from "../layouts/Layout.astro"
 <pre><code>&lt;html class="foo"&gt;bar&lt;/html&gt;</code></pre>
 <h3>Shell</h3>
 <pre><code class="lang-sh">sudo apt update</code></pre>
+<pre><code class="lang-sh">sudo apt update a long line that wrappes around to the next line if it is even longer than this</code></pre>
 <h3>Nested</h3>
 <pre><code>The outer code block <pre><code>The inner code block</code></pre>
 </code></pre>

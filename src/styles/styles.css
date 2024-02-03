@@ -47,6 +47,7 @@ body {
     line-height: 1.5;
     font-size: 1.125rem;
     font-family: "Zilla Slab", serif;
+    font-weight: 500;
 }
 
 main {
@@ -89,6 +90,7 @@ nav ol {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     user-select: none;
 }

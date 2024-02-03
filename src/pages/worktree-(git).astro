@@ -9,23 +9,23 @@ import Layout from "../layouts/Layout.astro"
 </p>
 
 <h2>Make a directory</h2>
-<pre><code is:raw>mkdir {repository-name}</code></pre>
+<pre><code is:raw class="lang-sh">mkdir {repository-name}</code></pre>
 
 <h2>Clone a repository without checking out a branch</h2>
 <p>Clone the repository from inside the repository directory:</p>
-<pre><code is:raw>cd {repository-name}</code></pre>
+<pre><code is:raw class="lang-sh">cd {repository-name}</code></pre>
 <p>
     After that clone the repository without worktrees:
     (The <code>--bare</code> flag specifies to only clone the essential git files)
 </p>
-<pre><code is:raw>git clone --bare {git-remote-url}</code></pre>
+<pre><code is:raw class="lang-sh">git clone --bare {git-remote-url}</code></pre>
 <p><code is:raw>{git-remote-url}</code> can be a HTTPS or SSH URL.</p>
 
 <h2>Add a worktree</h2>
 <p>Only add worktrees from the bare repository, so navigate to the bare repository:</p>
-<pre><code is:raw>cd {repository-name}/.git/</code></pre>
+<pre><code is:raw class="lang-sh">cd {repository-name}/.git/</code></pre>
 <p>Now add a worktree to the root of the repository:</p>
-<pre><code is:raw>git worktree add ../{branch-name}</code></pre>
+<pre><code is:raw class="lang-sh">git worktree add ../{branch-name}</code></pre>
 <p>Now the directory structure should look something like this (as an example this repository has been used):</p>
 <pre><code>digital-garden
 ├── digital-garden/.git/
@@ -35,14 +35,14 @@ import Layout from "../layouts/Layout.astro"
 
 <h2>Add a worktree with a new branch</h2>
 <p>Make sure to be in the bare repository when managing worktrees:</p>
-<pre><code is:raw>git worktree add -b {new-branch-name} ../{worktree-name}</code></pre>
+<pre><code is:raw class="lang-sh">git worktree add -b {new-branch-name} ../{worktree-name}</code></pre>
 <ul>
     <li><code is:raw>{branch-name}</code> is the name of the new branch.</li>
     <li><code is:raw>{worktree-name}</code> is the name of directory (worktree).</li>
 </ul>
 
 <h2>Add a worktree based on a remote branch</h2>
-<pre><code is:raw>git worktree add {worktree-name} {remote-branch-name}</code></pre>
+<pre><code is:raw class="lang-sh">git worktree add {worktree-name} {remote-branch-name}</code></pre>
 <p>
     When the worktree commit log does not line up with the remote commit log for that specific branch,
     it is probably because <code is:raw>{remote-branch-name}</code> was not the correct remote branch name when
@@ -51,9 +51,9 @@ import Layout from "../layouts/Layout.astro"
 
 <h2>Remove a worktree</h2>
 <p>Remove worktrees from the bare repository:</p>
-<pre><code is:raw>cd {repository-name}/.git/</code></pre>
+<pre><code is:raw class="lang-sh">cd {repository-name}/.git/</code></pre>
 <p>Remove a worktree by executing the following command:</p>
-<pre><code is:raw>git worktree remove {worktree-name}</code></pre>
+<pre><code is:raw class="lang-sh">git worktree remove {worktree-name}</code></pre>
 
 <h2>See also</h2>
 <ul>
