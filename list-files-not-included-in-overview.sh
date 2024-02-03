@@ -1,16 +1,22 @@
 #!/bin/bash
 
-ls src/*.html | grep -Ev '404-not-found.html|template.html|overview.html' | sed 's/src\///' | sort > /tmp/all_files
-grep -o '<a href="[^"]*' src/overview.html | grep -Ev '404-not-found.html|template.html|overview.html' | sed 's/<a href="//' | sort > /tmp/overview_files
+# Set the paths
+pages_directory="src/pages"
+overview_file="src/pages/overview.astro"
+exception_file="404-not-found"
 
-missing_files=$(comm -23 /tmp/all_files /tmp/overview_files)
+# Get a list of all Astro files in src/pages/
+astro_files=($(find "$pages_directory" -name "*.astro"))
 
-if [ -n "$missing_files" ]; then
-  echo "Missing files:"
-  echo "$missing_files" | sed 's/^/  - /'
-else
-  echo "All HTML files are listed in src/overview.html"
-fi
+# Extract the file names without the path and extension
+astro_file_names=()
+for file in "${astro_files[@]}"; do
+  astro_file_names+=("$(basename "$file" .astro)")
+done
 
-# Clean up temporary files
-rm /tmp/all_files /tmp/overview_files
+# Check each Astro file against the overview.astro, excluding the exception file
+for file_name in "${astro_file_names[@]}"; do
+  if [[ "$file_name" != "$exception_file" ]]; then
+    grep -q "$file_name" "$overview_file" || echo "Not listed in overview: $file_name"
+  fi
+done
