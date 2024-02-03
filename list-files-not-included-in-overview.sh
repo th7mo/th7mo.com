@@ -15,8 +15,18 @@ for file in "${astro_files[@]}"; do
 done
 
 # Check each Astro file against the overview.astro, excluding the exception file
+missing_files=()
 for file_name in "${astro_file_names[@]}"; do
   if [[ "$file_name" != "$exception_file" ]]; then
-    grep -q "$file_name" "$overview_file" || echo "Not listed in overview: $file_name"
+    grep -q "$file_name" "$overview_file" || missing_files+=("$file_name")
   fi
 done
+
+# Print results
+if [ ${#missing_files[@]} -eq 0 ]; then
+  echo "All files are listed in $overview_file."
+else
+  for missing_file in "${missing_files[@]}"; do
+    echo "Not listed in $overview_file: $missing_file"
+  done
+fi
