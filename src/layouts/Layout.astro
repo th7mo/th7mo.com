@@ -9,6 +9,7 @@ h1?: string;
 
 const frontmatter = Astro.props;
 import '../styles/styles.css';
+import { AstroFont } from 'astro-font';
 ---
 <!doctype html>
 <html lang="en">
@@ -21,6 +22,37 @@ import '../styles/styles.css';
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{frontmatter.title}</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <AstroFont
+          config={[
+            {
+              src: [],
+              preload: false,
+              display: "swap",
+              fallback: "sans-serif",
+              name: "JetBrains Mono",
+              cssVariable: "font-mono",
+              googleFontsURL: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800',
+            },
+            {
+                src: [],
+                preload: false,
+                display: "swap",
+                fallback: "serif",
+                name: "Roboto Slab",
+                cssVariable: "font-primary",
+                googleFontsURL: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900',
+            },
+            {
+              src: [],
+              preload: false,
+              display: "swap",
+              fallback: "serif",
+              name: "Zilla Slab",
+              cssVariable: "font-secondary",
+              googleFontsURL: 'https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700',
+            },
+          ]}
+        />
     </head>
     <body>
         <header>
