@@ -229,7 +229,19 @@ a:not(nav a):not(sup a):not([href^="http"])::before {
 
 #overview li a {
     background-color: var(--color-surface);
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+    font-weight: bold;
     border-radius: 5px;
     padding: 1rem; 
     display: block;
+    transition: all 0.15s;
+}
+
+#overview li a::before {
+    content: "";
+}
+
+#overview li a:hover {
+    background-color: var(--color-overlay);
 }
