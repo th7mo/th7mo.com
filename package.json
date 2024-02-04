@@ -11,7 +11,7 @@
     "check-overview": "bash scripts/list-files-not-included-in-overview.sh",
     "astro": "astro"
   },
-  "dependencies": {
+  "devDependencies": {
     "astro": "4.3.2"
   }
 }

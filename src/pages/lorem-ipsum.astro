@@ -20,7 +20,7 @@ import Layout from "../layouts/Layout.astro"
 <h4>Links</h4>
 <p>
     <a href="https://google.com">External Link</a> and <a href="index.html">internal link</a>
-    and <a href="#anchor">section link</a>
+    and <a href="#lists">section link</a>
     and footnote<sup><a href="#footnote-">[1]</sup></a>
     and multiple footnotes<sup><a href="#footnote-">[1]</sup></a><sup><a href="#footnote-">[2]</sup></a><sup><a href="#footnote-">[3]</sup></a>
     and <a href="index.html">internal <code>with code</code> link</a>.
@@ -94,7 +94,7 @@ import Layout from "../layouts/Layout.astro"
     </ul>
 </blockquote>
 
-<h2>Lists</h2>
+<h2 id="lists">Lists</h2>
 <h3>Unordened</h3>
 <ul>
     <li>level 1</li>
@@ -149,6 +149,9 @@ import Layout from "../layouts/Layout.astro"
     bar();
 }
 </code></pre>
+<h3>Long lines</h3>
+<pre><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
+<pre><code>sh -c "$(curl -fsSL jfioewjfiewfoewfojewofoiepwqfewnfionqweuifhewqiofewqiofjewjfiewqjofpjewofjewqfjewqofjwqofjewqioj</code></pre>
 <h3>Two after each other</h3>
 <pre><code is:raw>public foo() {
     bar();
