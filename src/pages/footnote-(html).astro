@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Footnote (HTML)" maturity="seedling">
+<p>
+    Footnotes references can be created in HTML with the <code>&lt;a&gt;</code> tag wrapped inside the <code>&lt;sup&gt;</code> tag
+    to make the footnote float at the top of the line:
+</p>
+<pre><code>some words&lt;sup&gt;&lt;a href="#footnote-1"&gt;[1]&lt;/a&gt;&lt;/sup&gt;</code></pre>
+<p>This will render to: some words<sup><a href="#footnote-1">[1]</a></sup>.</p>
+<p>
+    In this example the footnote with id <code>footnote-1</code> is linked.
+    It is recommended to come up with a standard prefix for footnotes to distinct footnotes from regular links in CSS:
+</p>
+<pre><code is:raw>a[href^="footnote-"] {
+    # styling for footnotes only
+}
+</code></pre>
+<p>Below the main content the footnotes can be listed in an ordered list:</p>
+<pre><code># main content
+&lt;hr&gt;
+&lt;ol&gt;
+    &lt;li id="footnote-1"&gt;A footnote explanation.&lt;/li&gt;
+    &lt;li id="footnote-2"&gt;Another footnote explanation.&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<hr>
+<ol>
+    <li id="footnote-1">This is only an example footnote</li>
+</ol>
+</Layout>
