@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "npm run build && scp -r dist/* root@th7mo.com:/var/www/garden.th7mo/ && npm run check-overview",
-    "check-overview": "bash scripts/list-files-not-included-in-overview.sh",
+    "deploy": "npm run build && scp -r dist/* root@th7mo.com:/var/www/garden.th7mo/",
     "astro": "astro"
   },
   "devDependencies": {
