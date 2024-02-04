@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Color scheme (CSS)" maturity="budding">
+<p>
+    A CSS color scheme for a website can be stored in CSS variables.
+    Usually the variables for the color scheme are stored in the <code>:root</code> pseudo-class:
+</p>
+<pre><code is:raw>:root {
+    --color-text: black;
+    --color-base: white;
+}
+</code></pre>
+<p>Now everywhere in the CSS the text color can be accessed with <code>var(--color-text)</code>.
+<h2>Color scheme based on browser preference</h2>
+<p>
+    Users express their preference by toggling light or dark mode (or follow OS preference) in the browser settings.
+    The <code>prefers-color-scheme</code> CSS media feature is used to detect if a light or dark color scheme is preferred<sup><a href="#footnote-1">[1]</a></sup>.
+    The media feature can be leveraged to overwrite the CSS variables that store the color scheme colors:
+</p>
+<pre><code is:raw>@media (prefers-color-scheme:dark) {
+    :root {
+        --color-text: white;
+        --color-base: black;
+    }
+}
+</code></pre>
+
+<hr>
+<ul>
+    <li>
+        This is explained in detail at the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">MDN web docs</a>.
+    </li>
+</ul>
+</Layout>
