@@ -54,6 +54,7 @@ body {
     color: var(--color-text);
     background: var(--color-base);
     hyphens: auto;
+    -webkit-hyphens: auto;
     overflow-wrap: break-word;
     line-height: 1.5;
     font-family: var(--font-primary);
@@ -104,6 +105,7 @@ nav ol {
     flex-wrap: wrap;
     list-style: none;
     user-select: none;
+    -webkit-user-select: none;
     font-family: var(--font-secondary);
     font-size: 1.175rem;
     font-weight: 500;
@@ -134,10 +136,7 @@ blockquote {
 
 em,
 blockquote p {
-    font-family: var(--font-secondary);
-    font-weight: 500;
-    font-size: 1.125rem;
-    font-style: italic;
+    font: italic 500 1.125rem var(--font-secondary);
 }
 
 nav ol li:last-child {
@@ -222,18 +221,17 @@ a:not(nav a):not(sup a):not([href^="http"])::before {
     margin-top: 2rem;
     display: grid;
     padding: 0;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     list-style: none;
 }
 
 #overview li a {
     background-color: var(--color-surface);
     color: var(--color-text);
-    font-family: var(--font-secondary);
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 1rem; 
+    font: bold 1.1rem var(--font-secondary);
+    border-radius: 0.3rem;
+    padding: 0.85rem; 
     display: block;
     transition: all 0.15s;
 }
