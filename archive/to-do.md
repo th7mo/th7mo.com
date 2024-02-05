@@ -10,3 +10,4 @@
 * Technical dept: make all title props the same as the file name
   * Remove all files from server that have `()` in name
   * Rewrite 'Naming' chapter of `plant.astro`
+* 3.5rem for `<h1>` on mobile is too big
