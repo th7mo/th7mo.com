@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro"
 ---
 <Layout title="Color scheme (CSS)" maturity="budding">
 <p>
-    A CSS color scheme for a website can be stored in CSS variables.
+    A CSS color scheme for websites should be stored in CSS variables.
     Usually the variables for the color scheme are stored in the <code>:root</code> pseudo-class:
 </p>
 <pre><code is:raw>:root {
@@ -11,11 +11,15 @@ import Layout from "../layouts/Layout.astro"
     --color-base: white;
 }
 </code></pre>
-<p>Now everywhere in the CSS the text color can be accessed with <code>var(--color-text)</code>.
+<p>Now everywhere in the stylesheet the <code>--color-text</code> can be accessed with <code>var(--color-text)</code>:</p>
+<pre><code is:raw>p {
+    color: var(--color-text);
+}
+</code></pre>
 <h2>Color scheme based on browser preference</h2>
 <p>
-    Users express their preference by toggling light or dark mode (or follow OS preference) in the browser settings.
-    The <code>prefers-color-scheme</code> CSS media feature is used to detect if a light or dark color scheme is preferred<sup><a href="#footnote-1">[1]</a></sup>.
+    Users express their color scheme preference by toggling light or dark mode (or 'automatic') in their browser settings.
+    The <code>prefers-color-scheme</code> CSS media feature detects if a light or dark color scheme is preferred<sup><a href="#footnote-1">[1]</a></sup>.
     The media feature can be leveraged to overwrite the CSS variables that store the color scheme
     colors<sup><a href="#footnote-2">[2]</a></sup>:
 </p>
@@ -26,9 +30,7 @@ import Layout from "../layouts/Layout.astro"
     }
 }
 </code></pre>
-<p>
-    The same media feature can be used inside HTML to load a dark or light favicon based on the color scheme preference:
-</p>
+<p>The same media feature can be used inside HTML to load a dark or light favicon based on the color scheme preference:</p>
 <pre><code>&lt;head&gt;
     &lt;link
         rel="icon"
