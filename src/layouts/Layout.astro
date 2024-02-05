@@ -8,7 +8,6 @@ h1?: string;
 }
 
 const frontmatter = Astro.props;
-import '../styles/styles.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -21,6 +20,7 @@ import '../styles/styles.css';
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{frontmatter.title}</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="/styles/styles.css"> 
     </head>
     <body>
         <header>
