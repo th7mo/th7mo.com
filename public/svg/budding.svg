@@ -10,9 +10,9 @@
       }
 
       @media (prefers-color-scheme:dark) {
-        /* Mozilla Light Gray 40 */
+        /* Mozilla White */
         :root {
-          --color-text: #cfcfd8;
+          --color-text: #fff;
         }
       }
     </style>

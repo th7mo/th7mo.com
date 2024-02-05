@@ -25,11 +25,12 @@
     --layout-xl: 6rem;
     --layout-2xl: 12rem;
 
-    --title-md: 3rem;
-    --title-xs: 1.75rem;
-    --title-2xs: 1.5rem;
     --title-3xs: 1.125rem;
+    --title-2xs: 1.5rem;
+    --title-xs: 1.75rem;
+    --title-md: 3rem;
 
+    --body-xs: 0.75rem;
     --body-sm: 0.875rem;
     --body-md: 1rem;
     --body-lg: 1.125rem;
@@ -259,12 +260,16 @@ a[href^="#"]:not([href^="#footnote-"])::before {
     content: "§";
 }
 
+a[href^="#footnote-"] {
+    text-decoration: none;
+}
+
 li[id^="footnote-"] {
     font-size: var(--body-sm);
 }
 
-a[href^="#footnote-"] {
-    text-decoration: none;
+li[id^="footnote-"] :is(code, kbd) {
+    font-size: var(--body-xs);
 }
 
 a:not(nav a):not(sup a):not([href^="http"])::before {
