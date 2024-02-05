@@ -30,13 +30,13 @@ const frontmatter = Astro.props;
                     <li><a href="index.html">th7mo</a></li>
                     {!frontmatter.homepage && <li><a href="overview.html">garden</a></li>}
                     {!frontmatter.homepage && !frontmatter.overview &&
-                        <li class={frontmatter.maturity}>{frontmatter.title.toLowerCase()}</li>
+                        <li class={frontmatter.maturity}>{frontmatter.title.toLowerCase().split(" (")[0].replace(" ", "-")}</li>
                     }
                 </ol>
             </nav>
         </header>
         <main>
-            <h1>{frontmatter.h1 ? frontmatter.h1 : frontmatter.title}</h1>
+            <h1 class={frontmatter.h1 && "custom"}>{frontmatter.h1 ? frontmatter.h1 : frontmatter.title.toLowerCase().split(" (")[0].replace(" ", "-")}</h1>
             <slot />
         </main>
     </body>

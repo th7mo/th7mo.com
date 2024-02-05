@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
 ---
-<Layout title="Rebase (Git)" maturity="budding"></Layout>
+<Layout title="Rebase (Git)" maturity="budding">
 <p>
-  A <a href="git.html">Git</a> rebase adds one or multiple <a href="commit-(git).html">commits</a> from a
-  <a href="branch-(git).html">branch</a> on top of another branch.
+  A <a href="git.html">Git</a> rebase adds one or multiple <a href="commit.html">commits</a> from a
+  <a href="branch.html">branch</a> on top of another branch.
 </p>
 <p>
-  The most simple use case for a rebase is when a <a href="remote-(git).html">remote</a> branch somebody is also
+  The most simple use case for a rebase is when a <a href="remote.html">remote</a> branch somebody is also
   locally working on has new changes.
   First, fetch the remote to download contents from the remote repository:
 </p>
@@ -30,3 +30,4 @@ import Layout from "../layouts/Layout.astro"
 <pre><code>[pull]
     rebase = true
 </code></pre>
+</Layout>

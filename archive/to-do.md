@@ -7,3 +7,4 @@
 * Explain somewhere that unofficial Markdown syntax is okay when it only enhances something that is already readable in the first place.
 * Make a page for http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html (codeblocks use pre and code)
 * Write a good HTML guide
+* Technical dept: make all title props the same as the file name
