@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
     /* Mozilla Black */
-    --color-text: #000;
+    --color-foreground: #000;
     /* Mozilla White */
-    --color-base: #fff;
+    --color-background: #fff;
     /* Mozilla Light Gray 10 */
     --color-surface: #f9f9fb;
     /* Mozilla Light Gray 20 */
@@ -12,15 +14,15 @@
 
     --font-primary: "Roboto Slab", serif;
     --font-secondary: "Zilla Slab", serif;
-    --font-mono: "Jetbrains Mono", monospace;
+    --font-mono: "JetBrains Mono", monospace;
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
         /* Mozilla Light Gray 40 */
-        --color-text: #cfcfd8;
+        --color-foreground: #cfcfd8;
         /* Mozilla Black */
-        --color-base: #000;
+        --color-background: #000;
         /* Mozilla Dark Gray 80 */
         --color-surface: #1c1b22;
         /* Mozilla Dark Gray 70 */
@@ -28,43 +30,60 @@
     }
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
-}
-
-*::before,
-*::after {
-    white-space: nowrap;
-}
-
-:focus {
-    outline: 2px solid var(--color-text);
-}
-
-:focus:not(:focus-visible) {
-    outline: none;
+    color: var(--color-foreground);
 }
 
 body {
-    margin: auto;
-    padding: 5rem 1rem 0 1rem;
-    max-width: 60ch;
-    color: var(--color-text);
-    background: var(--color-base);
+    overflow-wrap: break-word;
     hyphens: auto;
     -webkit-hyphens: auto;
-    overflow-wrap: break-word;
+    margin: auto;
+    max-width: 60ch;
+    background: var(--color-background);
     line-height: 1.5;
     font-size: 1.125rem;
     font-family: var(--font-primary);
 }
 
 main {
-    padding: 3rem 0 10rem 0;
+    padding-bottom: 10rem;
+}
+
+header {
+    position: sticky;
+    padding: 1rem 0;
+    margin: 5rem 0;
+    background-color: var(--color-background);
+    top: 0;
+}
+
+nav ol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    font: 500 1.175rem var(--font-secondary);
+}
+
+nav ol li:not(:last-child)::after {
+    padding: 0 0.7rem;
+    content: "/";
+}
+
+nav ol li:last-child {
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
 }
 
 h1,
@@ -73,8 +92,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-secondary);
     margin: 2rem 0 1rem 0;
+    font-family: var(--font-secondary);
     line-height: 1.2;
 }
 
@@ -82,47 +101,19 @@ h1 {
     font-size: 2.25rem;
 }
 
-a,
-a:visited {
-    color: var(--color-text);
-    text-decoration: none;
+:focus {
+    outline: 2px solid var(--color-foreground);
 }
 
-a:not(nav a) {
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+a,
+a:visited {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-}
-
-header {
-    position: sticky;
-    padding: 1rem 0;
-    top: 0;
-    background-color: var(--color-base);
-}
-
-nav a,
-nav a:visited {
-    color: var(--color-text);
-
-}
-
-nav ol {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    user-select: none;
-    -webkit-user-select: none;
-    font-family: var(--font-secondary);
-    font-size: 1.175rem;
-    font-weight: 500;
-}
-
-nav ol li:not(:last-child)::after {
-    padding: 0.7rem;
-    content: '/';
 }
 
 ol,
@@ -140,7 +131,7 @@ pre code {
 
 blockquote {
     padding-left: 1rem;
-    border-left: 0.4rem solid var(--color-text);
+    border-left: 0.4rem solid var(--color-foreground);
 }
 
 em,
@@ -148,13 +139,10 @@ blockquote p {
     font: italic 500 1.225rem var(--font-secondary);
 }
 
-nav ol li:last-child {
-    font-style: italic;
-}
 
 hr {
-    margin: 3rem 0 1.5rem 0;
-    border: 1px solid var(--color-text);
+    margin: 3rem 0 1.5rem;
+    border: 1px solid var(--color-foreground);
 }
 
 code,
@@ -162,9 +150,8 @@ kbd {
     padding: 0 0.25rem;
     display: inline-block;
     border-radius: 5px;
-    font-size: 0.9rem;
     background-color: var(--color-overlay);
-    font-family: var(--font-mono);
+    font: 0.9rem var(--font-mono);
 }
 
 code.lang-sh::before {
@@ -187,7 +174,7 @@ kbd {
     min-width: 1.3rem;
     text-align: center;
     font-weight: bold;
-    box-shadow: 1px 1px 0 0 var(--color-text);
+    box-shadow: 1px 1px 0 0 var(--color-foreground);
     font-size: 0.85rem;
 }
 
@@ -233,7 +220,7 @@ a:not(nav a):not(sup a):not([href^="http"])::before {
 
 #overview li a {
     background-color: var(--color-surface);
-    color: var(--color-text);
+    color: var(--color-foreground);
     font: bold 1.1rem var(--font-secondary);
     padding: 0.85rem;
     display: block;
