@@ -12,6 +12,28 @@
     /* Mozilla Light Gray 20 */
     --color-overlay: #f0f0f4;
 
+    --border-radius-xs: 2px;
+    --border-radius-sm: 5px;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    --layout-md: 3rem;
+    --layout-lg: 4rem;
+    --layout-xl: 6rem;
+    --layout-2xl: 12rem;
+
+    --title-md: 3rem;
+    --title-xs: 1.75rem;
+    --title-2xs: 1.5rem;
+    --title-3xs: 1.125rem;
+
+    --body-sm: 0.875rem;
+    --body-md: 1rem;
+    --body-lg: 1.125rem;
+
     --font-primary: "Roboto Slab", serif;
     --font-secondary: "Zilla Slab", serif;
     --font-mono: "JetBrains Mono", monospace;
@@ -19,8 +41,8 @@
 
 @media (prefers-color-scheme:dark) {
     :root {
-        /* Mozilla Light Gray 40 */
-        --color-foreground: #cfcfd8;
+        /* Mozilla White */
+        --color-foreground: #fff;
         /* Mozilla Black */
         --color-background: #000;
         /* Mozilla Dark Gray 80 */
@@ -42,38 +64,40 @@ body {
     hyphens: auto;
     -webkit-hyphens: auto;
     margin: auto;
-    max-width: 60ch;
+    max-width: 62.5ch;
+    padding: 0 var(--spacing-md);
     background: var(--color-background);
     line-height: 1.5;
-    font-size: 1.125rem;
+    font-size: var(--body-md);
     font-family: var(--font-primary);
 }
 
 main {
-    padding-bottom: 10rem;
+    padding-bottom: var(--layout-2xl);
 }
 
 header {
     position: sticky;
-    padding: 1rem 0;
-    margin: 5rem 0;
+    padding: var(--spacing-md) 0;
+    margin: var(--layout-xl) 0;
     background-color: var(--color-background);
     top: 0;
 }
 
 nav ol {
-    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     user-select: none;
     -webkit-user-select: none;
-    font: 500 1.175rem var(--font-secondary);
+    font-weight: 500;
+    font-size: var(--body-lg);
+    font-family: var(--font-secondary);
 }
 
 nav ol li:not(:last-child)::after {
-    padding: 0 0.7rem;
+    padding: 0 var(--spacing-sm);
     content: "/";
 }
 
@@ -89,16 +113,36 @@ nav a {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-    margin: 2rem 0 1rem 0;
+h4 {
     font-family: var(--font-secondary);
+}
+
+h1,
+h2 {
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    line-height: 1;
+}
+
+h3,
+h4 {
+    margin: var(--spacing-md) 0 var(--spacing-sm);
     line-height: 1.2;
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: var(--title-md);
+}
+
+h2 {
+    font-size: var(--title-xs);
+}
+
+h3 {
+    font-size: var(--title-2xs);
+}
+
+h4 {
+    font-size: var(--title-3xs);
 }
 
 :focus {
@@ -118,40 +162,44 @@ a:visited {
 
 ol,
 ul {
-    padding-left: 2rem;
+    padding-left: var(--spacing-lg);
 }
 
-p,
-ol,
-ul,
-blockquote,
-pre code {
-    margin-bottom: 1rem;
+p:not(:last-child),
+ol:not(:last-child),
+ul:not(:last-child),
+blockquote:not(:last-child),
+pre:not(:last-child) {
+    margin-bottom: var(--spacing-md);
 }
 
 blockquote {
-    padding-left: 1rem;
-    border-left: 0.4rem solid var(--color-foreground);
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-md);
+    border-left: var(--spacing-sm) solid var(--color-foreground);
 }
 
 em,
 blockquote p {
-    font: italic 500 1.225rem var(--font-secondary);
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--body-lg);
+    font-family: var(--font-secondary);
 }
 
 
 hr {
-    margin: 3rem 0 1.5rem;
+    margin: var(--spacing-lg) 0 var(--spacing-md);
     border: 1px solid var(--color-foreground);
 }
 
 code,
 kbd {
-    padding: 0 0.25rem;
+    padding: 0 var(--spacing-xs);
     display: inline-block;
-    border-radius: 5px;
+    border-radius: var(--border-radius-sm);
     background-color: var(--color-overlay);
-    font: 0.9rem var(--font-mono);
+    font-size: var(--body-sm);
+    font-family: var(--font-mono);
 }
 
 code.lang-sh::before {
@@ -164,9 +212,9 @@ pre {
 }
 
 pre code {
-    padding: 1rem;
+    padding: var(--spacing-md);
     display: block;
-    border-radius: 2px;
+    border-radius: var(--border-radius-xs);
     background-color: var(--color-surface);
 }
 
@@ -175,13 +223,12 @@ kbd {
     text-align: center;
     font-weight: bold;
     box-shadow: 1px 1px 0 0 var(--color-foreground);
-    font-size: 0.85rem;
 }
 
 .seedling::before,
 .budding::before,
 .evergreen::before {
-    padding-right: 0.4rem;
+    padding-right: var(--spacing-sm);
 }
 
 .seedling::before {
@@ -204,29 +251,35 @@ a[href^="#"]:not([href^="#footnote-"])::before {
     content: "§";
 }
 
+li[id^="footnote-"] {
+    font-size: var(--body-sm);
+}
+
 a:not(nav a):not(sup a):not([href^="http"])::before {
-    padding-right: 0.2rem;
+    padding-right: var(--spacing-xs);
 
 }
 
 #overview {
-    margin-top: 2rem;
+    margin-top: var(--spacing-lg);
     display: grid;
     padding: 0;
-    gap: 0.75rem;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     list-style: none;
 }
 
 #overview li a {
     background-color: var(--color-surface);
     color: var(--color-foreground);
-    font: bold 1.1rem var(--font-secondary);
-    padding: 0.85rem;
+    font-weight: bold;
+    font-size: var(--body-lg);
+    font-family: var(--font-secondary);
+    padding: var(--spacing-md);
     display: block;
     transition: all 0.15s;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: var(--border-radius-xs);
 }
 
 #overview li a::before {
