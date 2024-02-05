@@ -8,3 +8,5 @@
 * Make a page for http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html (codeblocks use pre and code)
 * Write a good HTML guide
 * Technical dept: make all title props the same as the file name
+  * Remove all files from server that have `()` in name
+  * Rewrite 'Naming' chapter of `plant.astro`
