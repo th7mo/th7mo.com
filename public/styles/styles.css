@@ -145,10 +145,6 @@ h1 {
     font-size: var(--title-lg);
 }
 
-h1:not(.custom)::before {
-    content: "/";
-}
-
 h2 {
     font-size: var(--title-xs);
 }
