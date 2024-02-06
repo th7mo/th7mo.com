@@ -7,7 +7,7 @@ overview?: boolean;
 h1?: string;
 }
 
-const frontmatter = Astro.props;
+const { title, maturity, homepage, overview, h1 } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -18,7 +18,7 @@ const frontmatter = Astro.props;
         <meta name="description" content="The digital garden of a minimalist">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{frontmatter.title}</title>
+        <title>{title}</title>
         <link rel="icon" href="favicon-black.ico" media="(prefers-color-scheme: light)">
         <link rel="icon" href="favicon-white.png" media="(prefers-color-scheme: dark)">
         <link rel="stylesheet" href="/styles/styles.css"> 
@@ -28,15 +28,15 @@ const frontmatter = Astro.props;
             <nav>
                 <ol>
                     <li><a href="index.html">th7mo</a></li>
-                    {!frontmatter.homepage && <li><a href="overview.html">garden</a></li>}
-                    {!frontmatter.homepage && !frontmatter.overview &&
-                        <li class={frontmatter.maturity}>{frontmatter.title.toLowerCase().split(" (")[0].replace(" ", "-")}</li>
+                    {!homepage && <li><a href="overview.html">garden</a></li>}
+                    {!homepage && !overview &&
+                        <li class={maturity}>{title}</li>
                     }
                 </ol>
             </nav>
         </header>
         <main>
-            <h1 class={frontmatter.h1 && "custom"}>{frontmatter.h1 ? frontmatter.h1 : frontmatter.title.toLowerCase().split(" (")[0].replace(" ", "-")}</h1>
+            <h1>{h1 ? h1 : title}</h1>
             <slot />
         </main>
     </body>
