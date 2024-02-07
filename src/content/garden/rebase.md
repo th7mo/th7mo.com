@@ -1,15 +1,15 @@
 ---
-title:
+title: "Rebase"
 ---
 
-A [Git](git.html) rebase adds one or multiple [commits](commit.html)
-from a [branch](branch.html) on top of another branch.
+A [Git](git) rebase adds one or multiple [commits](commit)
+from a [branch](branch) on top of another branch.
 
-The most simple use case for a rebase is when a [remote](remote.html)
+The most simple use case for a rebase is when a [remote](remote)
 branch somebody is also locally working on has new changes. First, fetch
 the remote to download contents from the remote repository:
 
-``` lang-sh
+```sh
 git fetch
 ```
 
@@ -17,7 +17,7 @@ If new changes have been made to the remote branch, include those remote
 changes by rebasing the commit made on top of the local branch as if
 they were made locally:
 
-``` lang-sh
+```sh
 git rebase origin main
 ```
 
@@ -32,7 +32,9 @@ git pull --rebase {remote-name} {branch-name}
 ```
 
 The `--rebase` flag can be omitted when the `pull.rebase` option is
-configured in the [gitconfig](gitconfig.html):
+configured in the [gitconfig](gitconfig):
 
-    [pull]
-        rebase = true
+```ini
+[pull]
+    rebase = true
+```

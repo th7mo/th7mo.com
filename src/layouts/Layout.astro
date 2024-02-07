@@ -1,43 +1,303 @@
 ---
+import Head from './Head.astro';
+import Header from './Header.astro';
+
 interface Props {
-title: string;
-maturity: string;
-homepage?: boolean;
-overview?: boolean;
-h1?: string;
+    title: string;
+    h1?: string;
 }
 
-const { title, maturity, homepage, overview, h1 } = Astro.props;
+const { title, h1 } = Astro.props;
+import '@fontsource/zilla-slab/500.css';
+import '@fontsource/zilla-slab/500-italic.css';
+import '@fontsource/zilla-slab/700.css';
+import '@fontsource-variable/jetbrains-mono';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/inter/slnt.css';
 ---
+
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Thimo van Velzen">
-        <meta name="keywords" content="HTML, CSS, Astro, digital-garden, garden, wiki, second-brain, minimalist, simple">
-        <meta name="description" content="The digital garden of a minimalist">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{title}</title>
-        <link rel="icon" href="favicon-black.ico" media="(prefers-color-scheme: light)">
-        <link rel="icon" href="favicon-white.png" media="(prefers-color-scheme: dark)">
-        <link rel="stylesheet" href="/styles/styles.css"> 
-    </head>
+    <Head title={title} />
     <body>
-        <header>
-            <nav>
-                <ol>
-                    <li><a href="index.html">th7mo</a></li>
-                    {!homepage && <li><a href="overview.html">garden</a></li>}
-                    {!homepage && !overview &&
-                        <li class={maturity}>{title}</li>
-                    }
-                </ol>
-            </nav>
-        </header>
+        <Header />
         <main>
             <h1>{h1 ? h1 : title}</h1>
             <slot />
         </main>
     </body>
 </html>
+
+<style is:global>
+    :root {
+        /* Mozilla Black */
+        --color-foreground: #000;
+        /* Mozilla White */
+        --color-background: #fff;
+        /* Mozilla Light Gray 10 */
+        --color-surface: #f9f9fb;
+        /* Mozilla Light Gray 20 */
+        --color-overlay: #f0f0f4;
+
+        --border-radius-xs: 2px;
+        --border-radius-sm: 5px;
+
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 2rem;
+
+        --layout-md: 3rem;
+        --layout-lg: 4rem;
+        --layout-xl: 6rem;
+        --layout-2xl: 12rem;
+
+        --title-3xs: 1.125rem;
+        --title-2xs: 1.5rem;
+        --title-xs: 1.75rem;
+        --title-md: 3rem;
+        --title-lg: 3.5rem;
+
+        --body-xs: 0.75rem;
+        --body-sm: 0.875rem;
+        --body-md: 1rem;
+        --body-lg: 1.125rem;
+
+        --font-primary: "Inter Variable", sans-serif;
+        --font-secondary: "Zilla Slab", serif;
+        --font-mono: "JetBrains Mono Variable", monospace;
+    }
+
+    @media (prefers-color-scheme:dark) {
+        :root {
+            /* Mozilla White */
+            --color-foreground: #fff;
+            /* Mozilla Black */
+            --color-background: #000;
+            /* Mozilla Dark Gray 80 */
+            --color-surface: #1c1b22;
+            /* Mozilla Dark Gray 70 */
+            --color-overlay: #2b2a33;
+        }
+    }
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        color: var(--color-foreground);
+    }
+
+    a::before {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    ::selection {
+        color: var(--color-background);
+        background-color: var(--color-foreground);
+    }
+
+    body {
+        overflow-wrap: break-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        margin: auto;
+        max-width: 57.5ch;
+        padding: 0 var(--spacing-md);
+        background: var(--color-background);
+        line-height: 1.5;
+        font-size: var(--body-md);
+        font-family: var(--font-primary);
+    }
+
+    main {
+        padding-bottom: var(--layout-2xl);
+    }
+
+    header {
+        position: sticky;
+        padding: var(--spacing-md) 0;
+        margin: var(--layout-xl) 0;
+        background-color: var(--color-background);
+        top: 0;
+    }
+
+    header nav ol {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        user-select: none;
+        -webkit-user-select: none;
+        font-weight: 500;
+        font-size: var(--body-lg);
+        font-family: var(--font-secondary);
+    }
+
+    header nav ol li:not(:last-child)::after {
+        padding: 0 var(--spacing-sm);
+        content: "/";
+    }
+
+    header nav ol li:last-child {
+        font-style: italic; 
+    }
+
+    header nav a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-secondary);
+    }
+
+    h1,
+    h2 {
+        margin: var(--spacing-lg) 0 var(--spacing-md);
+        line-height: 1;
+    }
+
+    h3,
+    h4 {
+        margin: var(--spacing-md) 0 var(--spacing-sm);
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: var(--title-lg);
+    }
+
+    h2 {
+        font-size: var(--title-xs);
+    }
+
+    h3 {
+        font-size: var(--title-2xs);
+    }
+
+    h4 {
+        font-size: var(--title-3xs);
+    }
+
+    :focus {
+        outline: 2px solid var(--color-foreground);
+    }
+
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    a,
+    a:visited {
+        font-weight: 700;
+        text-decoration-thickness: 1.5px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    ol,
+    ul {
+        padding-left: var(--spacing-lg);
+    }
+
+    p:not(:last-child),
+    ol:not(:last-child),
+    ul:not(:last-child),
+    blockquote:not(:last-child),
+    pre:not(:last-child) {
+        margin-bottom: var(--spacing-md);
+    }
+
+    blockquote {
+        padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-md);
+        border-left: var(--spacing-sm) solid var(--color-foreground);
+    }
+
+    em,
+    blockquote p {
+        font-style: italic;
+        font-weight: 500;
+        font-size: var(--body-lg);
+        font-family: var(--font-secondary);
+    }
+
+
+    hr {
+        margin: var(--spacing-lg) 0 var(--spacing-md);
+        border: 1px solid var(--color-foreground);
+    }
+
+    code,
+    kbd {
+        padding: 0 var(--spacing-xs);
+        display: inline-block;
+        border-radius: var(--border-radius-sm);
+        background-color: var(--color-overlay);
+        font-size: var(--body-sm);
+        font-family: var(--font-mono);
+    }
+
+    pre code {
+        overflow: auto;
+        background-color: var(--color-surface);
+        display: block;
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-xs);
+    }
+
+    kbd {
+        min-width: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 1px 1px 0 0 var(--color-foreground);
+    }
+
+    .seedling::before,
+    .budding::before,
+    .evergreen::before {
+        padding-right: var(--spacing-sm);
+    }
+
+    .seedling::before {
+        content: url("/svg/seedling.svg");
+    }
+
+    .budding::before {
+        content: url("/svg/budding.svg");
+    }
+
+    .evergreen::before {
+        content: url("/svg/evergreen.svg");
+    }
+
+    a[href^="http"]::after {
+        content: url("/svg/external-link.svg");
+    }
+
+    a[href^="#"]:not([href^="#user-content-fn"])::before {
+        content: "§";
+    }
+
+    a[href^="#user-content-fn"] {
+        text-decoration: none;
+    }
+
+    a[href^="#user-content-fn"]:not(a[href^="#user-content-fnref"])::before {
+        content: "[";
+    }
+
+    a[href^="#user-content-fn"]:not(a[href^="#user-content-fnref"])::after {
+        content: "]";
+    }
+
+    a:not(nav a):not(sup a):not([href^="http"])::before {
+        padding-right: var(--spacing-xs);
+    }
+</style>

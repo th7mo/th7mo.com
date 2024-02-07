@@ -1,0 +1,16 @@
+---
+const path = Astro.url.pathname;
+---
+
+<header>
+    <nav>
+        <ol>
+            <li><a href="/">th7mo</a></li>
+            {
+                path.split("/").filter(part => part !== "").map((pathPart, index, array) => (
+                    <li><a href={`/${array.slice(0, index + 1).join("/")}`}>{pathPart}</a></li>
+                ))
+            }
+        </ol>
+    </nav>
+</header>

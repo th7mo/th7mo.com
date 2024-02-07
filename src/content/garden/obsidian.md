@@ -1,9 +1,9 @@
 ---
-title:
+title: "Obsidian"
 ---
 
 [Obsidian](https://obsidian.md/) is a note-taking tool. Notes created in
-Obsidian use the [Markdown](markdown.html) format. The Obsidian way of
+Obsidian use the [Markdown](markdown) format. The Obsidian way of
 note-taking stimulates to link notes together and keep notes atomic (a
 single topic/concept per note). This can be done with wiki links or
 regular Markdown links.

@@ -1,5 +1,5 @@
 ---
-title:
+title: "Recipe book"
 ---
 
 This is my recipe book. The recipes are in alphabetical order for easy

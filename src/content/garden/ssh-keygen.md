@@ -1,5 +1,5 @@
 ---
-title:
+title: "ssh-keygen"
 ---
 
 `ssh-keygen` is a command line tool to create [SSH keys](ssh-key). To
@@ -14,12 +14,12 @@ ssh-keygen -t ed25519 -C {email}
     but recommended. It will help indicate which SSH key belongs to
     which [email address](email-address) when using `ssh-add -l` or
     [Keychain](keychain.html#list-loaded-ssh-keys).
--   `{email}`{is:raw=""} is the email address used for GitHub or
+-   `{email}` is the email address used for GitHub or
     Bitbucket, configured as `user.email` in the
-    [gitconfig](gitconfig.html) file.
+    [gitconfig](gitconfig) file.
 
-When prompted to \"Enter a file in which to save the key\", press
-[Enter]{.kbd} to accept the default file location. Otherwise, if a
+When prompted to "Enter a file in which to save the key", press
+<kbd>Enter</kbd> to accept the default file location. Otherwise, if a
 different name or located is desired, a custom name can be specified.
 The default directory for storing SSH keys is `~/.ssh/`. Press
-[Enter]{.kbd} until the file is generated.
+<kbd>Enter</kbd> until the file is generated.

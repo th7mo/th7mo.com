@@ -1,29 +1,24 @@
 ---
-title:
+title: "Oh My Zsh"
 ---
 
-A popular framework for managing [Zsh](zsh.html) configuration is [Oh My
+A popular framework for managing [Zsh](zsh) configuration is [Oh My
 Zsh](https://ohmyz.sh/).
 
 ## Installation
-
 Install Oh My Zsh by executing the following command:
 
-``` lang-sh
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Plugins
-
 This sections explains how to install and enable various plugins for Oh
 My Zsh. All the available plugins for Oh My Zsh can be found at their
-[GitHub
-repository](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins).
+[GitHub repository](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins).
 
 ### Autosuggestions
-
-Install the [Git](git.html) repository for [Zsh
-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
+Install the [Git](git) repository for [Zsh autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
 
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -31,7 +26,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 To enable autosuggestions, add it to the plugins list in `.zshrc`:
 
-    plugins=(
-        # other plugins...
-        zsh-autosuggestions
-    )
+```ini
+plugins=(
+    # other plugins...
+    zsh-autosuggestions
+)
+```

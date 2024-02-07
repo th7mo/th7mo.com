@@ -156,11 +156,11 @@ public foo() {
 
 ### Shell
 
-``` lang-sh
+```sh
 sudo apt update
 ```
 
-``` lang-sh
+```sh
 sudo apt update a long line that wrappes around to the next line if it is even longer than this
 ```
 

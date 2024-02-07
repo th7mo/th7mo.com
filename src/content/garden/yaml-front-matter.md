@@ -1,11 +1,11 @@
 ---
-title:
+title: "YAML front matter"
 ---
 
-A [Markdown](markdown.html) file can have YAML front matter. YAML front
+A [Markdown](markdown) file can have YAML front matter. YAML front
 matter is indicated with the following syntax:
 
-```
+```yaml
 ---
 {YAML-here}
 ---
@@ -15,15 +15,17 @@ In the YAML front matter metadata about the document can be stored.
 Information about the author, title, language and date of the document
 are the most used pieces of metadata:
 
-    ---
-    author: "Thimo van Velzen"
-    title: "Intership Report Pre-final"
-    lang: NL
-    ---
+```yaml
+---
+author: "Thimo van Velzen"
+title: "Intership Report Pre-final"
+lang: NL
+---
 
-    # Introduction
+# Introduction
+```
 
-[Pandoc](pandoc.html) uses the YAML front matter to insert various
+[Pandoc](pandoc) uses the YAML front matter to insert various
 pieces of metadata into the generated document.
 
 The `lang:` field is used by the `ltex-ls` language server to check the
