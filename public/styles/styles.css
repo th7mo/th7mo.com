@@ -262,7 +262,7 @@ a[href^="http"]::after {
     content: url("/svg/external-link.svg");
 }
 
-a[href^="#"]:not([href^="#footnote-"])::before {
+a[href^="#"]:not([href^="#footnote-"]):not([href^="#user-content"])::before {
     content: "§";
 }
 

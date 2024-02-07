@@ -1,0 +1,32 @@
+---
+const { frontmatter } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Thimo van Velzen">
+        <meta name="keywords" content="HTML, CSS, Astro, digital-garden, garden, wiki, second-brain, minimalist, simple">
+        <meta name="description" content="The digital garden of a minimalist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{frontmatter.title}</title>
+        <link rel="stylesheet" href="/styles/styles.css"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="index.html">th7mo</a></li>
+                    <li><a href="overview.html">garden</a></li>
+                    <li>{frontmatter.title}</li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <h1>{frontmatter.title}</h1>
+            <p>{frontmatter.description}</p>
+            <slot />
+        </main>
+    </body>
+</html>
