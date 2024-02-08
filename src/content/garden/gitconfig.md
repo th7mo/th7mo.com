@@ -1,5 +1,6 @@
 ---
 title: "Gitconfig"
+description: "Git's solution for storing user configuration"
 ---
 
 [Git](git) is configured with `.gitconfig` files.

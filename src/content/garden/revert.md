@@ -1,5 +1,6 @@
 ---
 title: "Revert"
+description: "Undoing made changes stored in Git commits"
 ---
 
 It is possible to revert changes without modifying the [Git](git)

@@ -1,5 +1,6 @@
 ---
 title: "Flatpak"
+description: "A utility for software deployment and package management for Linux."
 ---
 
 Some proprietary applications or applications are not provided by the Debian repository.

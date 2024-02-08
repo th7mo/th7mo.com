@@ -1,5 +1,6 @@
 ---
 title: "Zsh"
+description: "An extended Bourne shell with many improvements"
 ---
 
 The Z shell (Zsh) is a Unix shell like [Bash](bash) or Fish. It is based

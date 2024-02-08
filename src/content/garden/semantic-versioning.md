@@ -1,5 +1,6 @@
 ---
 title: "Semantic versioning"
+description: "How to version API's and published software"
 ---
 
 Version software when publishing changes. Any modifications must be

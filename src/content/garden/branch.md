@@ -1,5 +1,6 @@
 ---
 title: "Branch"
+description: "A distinct path of development within a Git repository"
 ---
 
 A [Git](git) branch is a path of one or more [commits](commit).

@@ -1,5 +1,6 @@
 ---
 title: "Footnote"
+description: "How to create footnotes in HTML"
 ---
 
 Footnotes references can be created in HTML with the `<a>` tag wrapped inside the `<sup>` tag to make the footnote float at the top of the line:

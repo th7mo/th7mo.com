@@ -1,5 +1,6 @@
 ---
 title: "Recipe book"
+description: "A collection of all my recipes"
 ---
 
 This is my recipe book. The recipes are in alphabetical order for easy

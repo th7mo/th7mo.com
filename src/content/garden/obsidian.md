@@ -1,5 +1,6 @@
 ---
 title: "Obsidian"
+description: "Personal knowledge base and note-taking software application"
 ---
 
 [Obsidian](https://obsidian.md/) is a note-taking program.

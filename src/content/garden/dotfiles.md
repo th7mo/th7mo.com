@@ -1,5 +1,6 @@
 ---
 title: "Dotfiles"
+description: "A method to managing configuration files"
 ---
 
 Files prefixed with a dot `.` are called dotfiles.

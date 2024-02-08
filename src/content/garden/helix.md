@@ -1,5 +1,6 @@
 ---
 title: "Helix"
+description: "A post-modern text editor"
 ---
 
 Helix is a text editor run in the terminal.

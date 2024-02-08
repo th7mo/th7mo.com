@@ -4,7 +4,8 @@ import { z, defineCollection } from "astro:content";
 const plantsCollection = defineCollection({
     type: 'content',
     schema: z.object({
-      title: z.string()
+      title: z.string(),
+      description: z.string()
     })
 });
 // Export a single `collections` object to register your collection(s)

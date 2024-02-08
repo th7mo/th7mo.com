@@ -1,5 +1,6 @@
 ---
 title: "NGINX"
+description: "A webserver solution for hosting websites"
 ---
 
 Websites can be hosted with [NGINX](https://www.nginx.com/).

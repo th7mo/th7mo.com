@@ -1,5 +1,6 @@
 ---
 title: "Color scheme"
+description: "Managing color schemes on websites using HTML and CSS"
 ---
 
 A website's color scheme should be stored in CSS custom properties.

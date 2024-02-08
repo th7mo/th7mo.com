@@ -1,5 +1,6 @@
 ---
 title: "Symbolic link"
+description: "A file that points to another resource"
 ---
 
 A symbolic link, often called a 'symlink', is a file that serves as a

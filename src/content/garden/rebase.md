@@ -1,5 +1,6 @@
 ---
 title: "Rebase"
+description: "A strategy to merge Git branches"
 ---
 
 A [Git](git) rebase adds one or multiple [commits](commit)

@@ -1,5 +1,6 @@
 ---
 title: "Git identities"
+description: "Managing multiple Git identities"
 ---
 
 When having a personal and a work identity for [Git](git) there is

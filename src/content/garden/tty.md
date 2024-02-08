@@ -1,5 +1,6 @@
 ---
 title: "TTY"
+description: "The default Linux terminal"
 ---
 
 When a Linux desktop environment does not work, Linux falls back to the

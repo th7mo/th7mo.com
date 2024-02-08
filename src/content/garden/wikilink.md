@@ -1,5 +1,6 @@
 ---
 title: "Wikilink"
+description: "A bidirectional link between two resources"
 ---
 
 A wikilink is a [bidirectional link](https://maggieappleton.com/bidirectionals)

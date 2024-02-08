@@ -1,5 +1,6 @@
 ---
 title: "Oh My Zsh"
+description: "A framework for managing Zsh"
 ---
 
 A popular framework for managing [Zsh](zsh) configuration is [Oh My

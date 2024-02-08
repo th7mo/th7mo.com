@@ -15,7 +15,10 @@ const plants = await getCollection("garden");
 <ol>
     {plants.map((plant) => (
         <li>
-            <a href={`garden/${plant.slug}`}>{plant.slug}</a>
+            <a href={`garden/${plant.slug}`}>{plant.data.title}
+                <p>{plant.data.description}</p>
+            </a>
+
         </li>
     ))}
 </ol>
@@ -40,6 +43,15 @@ const plants = await getCollection("garden");
         transition: all 0.15s;
         text-decoration: none;
         border-radius: var(--border-radius-xs);
+        height: 100%;
+    }
+
+    li p {
+        font-size: var(--body-md);
+        opacity: 0.5;
+        font-weight: normal;
+        text-align: start;
+        hyphens: none;
     }
 
     li a::before {

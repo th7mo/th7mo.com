@@ -1,5 +1,6 @@
 ---
 title: "ssh-keygen"
+description: "A command line tool for creating SSH keys"
 ---
 
 `ssh-keygen` is a command line tool to create [SSH keys](ssh-key). To

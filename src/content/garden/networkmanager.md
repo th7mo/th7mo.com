@@ -1,5 +1,6 @@
 ---
 title: "NetworkManager"
+description: "Managing wireless internet connections on Linux"
 ---
 
 [NetworkManager](https://networkmanager.dev) is a program for connecting
