@@ -25,5 +25,5 @@ most likely be `/usr/bin/zsh`.
 
 ## Configuration
 Z shell is configured via the `.zshrc` file. It is recommended to put
-the `.zshrc` file inside the [dotfiles](dotfiles.html) repository to
-keep configuration backed up.
+the `.zshrc` file inside the [dotfiles](dotfiles.html) repository to keep
+configuration backed up.

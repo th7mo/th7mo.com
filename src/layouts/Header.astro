@@ -14,3 +14,39 @@ const path = Astro.url.pathname;
         </ol>
     </nav>
 </header>
+
+<style>
+    header {
+        top: 0;
+        position: sticky;
+        padding: var(--spacing-md) 0;
+        margin: var(--layout-xl) 0;
+        background-color: var(--color-background);
+    }
+
+    ol {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        list-style: none;
+        user-select: none;
+        -webkit-user-select: none;
+        font-weight: 500;
+        font-size: var(--body-lg);
+        font-family: var(--font-secondary);
+    }
+
+    li:not(:last-child)::after {
+        padding: 0 var(--spacing-sm);
+        content: "/";
+    }
+
+    li:last-child {
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+</style>

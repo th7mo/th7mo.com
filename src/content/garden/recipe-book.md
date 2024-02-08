@@ -23,8 +23,8 @@ These ingredients are sufficient for 1 portion:
 3.  Add the vla.
 4.  Add 4 scoops of protein powder
 5.  Add the yoghurt.
-6.  Blend for \~60 seconds.
-7.  Stir with a spoon and blend again for \~60 seconds.
+6.  Blend for ~60 seconds.
+7.  Stir with a spoon and blend again for ~60 seconds.
 
 ## Burritos
 
