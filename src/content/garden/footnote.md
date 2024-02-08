@@ -15,14 +15,14 @@ It is recommended to come up with a standard prefix for footnotes to distinct fo
 
 ```css
 a[href^="footnote-"] {
-    // styling for footnotes only
+    /* styling for footnotes only */
 }
 ```
 
 Below the main content the footnotes can be listed in an ordered list:
 
 ```html
-    // main content
+    <!-- main content -->
     <hr>
     <ol>
         <li id="footnote-1">A footnote explanation.</li>

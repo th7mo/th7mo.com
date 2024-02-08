@@ -79,6 +79,18 @@ import '@fontsource/gentium-book-plus/700.css';
         }
     }
 
+    span[style^="color:var(--astro-code-token-keyword)"] {
+        font-weight: 800;
+    }
+
+    span[style^="color:var(--astro-code-token-function)"] {
+        font-weight: 800;
+    }
+
+    span[style^="color:var(--astro-code-token-comment)"] {
+        font-style: italic;
+    }
+
     * {
         margin: 0;
         box-sizing: border-box;
@@ -112,7 +124,6 @@ import '@fontsource/gentium-book-plus/700.css';
     main {
         padding-bottom: var(--layout-2xl);
     }
-
 
     h1,
     h2,
@@ -169,7 +180,7 @@ import '@fontsource/gentium-book-plus/700.css';
     a,
     a:visited {
         font-weight: bold;
-        text-decoration-thickness: 1.5px;
+        text-decoration-thickness: 1.2px;
     }
 
     a:hover {
@@ -212,6 +223,10 @@ import '@fontsource/gentium-book-plus/700.css';
         background-color: var(--color-overlay);
         font-size: var(--body-sm);
         font-family: var(--font-mono);
+    }
+
+    pre {
+        background-color: transparent !important;
     }
 
     pre code {

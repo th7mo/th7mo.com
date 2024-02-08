@@ -9,19 +9,14 @@ for previewing layouts.
 ## Inline formatting
 This is text that has *text with italics* and it has **text that is
 strong** and ***italic and strong*** and ***~~italic, strong and strikethrough~~***
-and `inline code` and ~~strikethrough~~ text and some^sup^ text and some~sup~ text.
+and `inline code` and ~~strikethrough~~ text and some<sup>sup</sup> text and some<sub>sub</sub> text.
 
 #### Links
 [External Link](https://google.com) and [internal link](index) and
-[section link](#lists) and footnote
+[section link](#lists) and footnote[^1] [^2].
 
-[\[1\]](#footnote-) and multiple footnotes
-
-[\[1\]](#footnote-)
-
-[\[2\]](#footnote-)
-
-[\[3\]](#footnote-) and [internal `with code` link](index).
+[^1]: This is an example footnote.
+[^2]: This is also an example footnote.
 
 ### Long lines
 pneumonoultramicroscopicsilicovolcanoconiosis
@@ -124,7 +119,7 @@ level 5
 
 ### Regular
 
-```
+```javascript
 public foo() {
     bar();
 }
@@ -132,19 +127,23 @@ public foo() {
 
 ### Long lines
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-    sh -c "$(curl -fsSL jfioewjfiewfoewfojewofoiepwqfewnfionqweuifhewqiofewqiofjewjfiewqjofpjewofjewqfjewqofjwqofjewqioj
+```sh
+sh -c "$(curl -fsSL jfioewjfiewfoewfojewofoiepwqfewnfionqweuifhewqiofewqiofjewjfiewqjofpjewofjewqfjewqofjwqofjewqioj)"
+```
 
 ### Two after each other
 
-```
+```javascript
 public foo() {
     bar();
 }
 ```
 
-```
+```javascript
 public foo() {
     bar();
 }
@@ -152,7 +151,9 @@ public foo() {
 
 ### HTML
 
-    <html class="foo">bar</html>
+```html
+<html class="foo">bar</html>
+```
 
 ### Shell
 
@@ -163,7 +164,3 @@ sudo apt update
 ```sh
 sudo apt update a long line that wrappes around to the next line if it is even longer than this
 ```
-
-### Nested
-
-    The outer code block The inner code block

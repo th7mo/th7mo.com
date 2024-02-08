@@ -58,7 +58,7 @@ is not an intuitive symbol.
 Prefix a list item with a number and a period to make it an ordered list
 item:
 
-```
+```md
 1. item
 2. item
 3. item
@@ -66,7 +66,7 @@ item:
 
 It is also possible to create a numbered list with only the prefix `1.`:
 
-```
+```md
 1. item
 1. item
 1. item
@@ -88,7 +88,7 @@ backticks. Add a programming language name after the first three
 backticks to indicate to Markdown processors that syntax highlighting
 can be used for that code block:
 
-~~~
+~~~md
 ```javascript
 public foo() {
     bar()
