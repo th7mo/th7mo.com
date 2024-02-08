@@ -2,7 +2,6 @@
 title: "Flatpak"
 ---
 
-## Test
 Some proprietary applications or applications are not provided by the Debian repository.
 In those cases it could be better to install the Flatpak packaged version of that application.
 Steam and Parsec are examples of applications that are ugly to install on Debian and should be isolated using Flatpak.
