@@ -20,7 +20,7 @@ p {
 }
 ```
 
-## Color scheme based on browser preference
+## Browser preference
 Users express their color scheme preference by toggling light or dark mode (or 'automatic') in their browser settings.
 The `prefers-color-scheme` CSS media feature detects if a light or dark color scheme is preferred[^1].
 The media feature can be leveraged to overwrite the CSS variables that store the color scheme colors[^2]:

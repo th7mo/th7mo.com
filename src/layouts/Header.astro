@@ -8,7 +8,7 @@ const path = Astro.url.pathname;
             <li><a href="/">th7mo</a></li>
             {
                 path.split("/").filter(part => part !== "").map((pathPart, index, array) => (
-                    <li><a href={`/${array.slice(0, index + 1).join("/")}`}>{pathPart}</a></li>
+                    <li><a href={`/${array.slice(0, index + 1).join("/")}`}>{pathPart.replaceAll("-", " ")}</a></li>
                 ))
             }
         </ol>
