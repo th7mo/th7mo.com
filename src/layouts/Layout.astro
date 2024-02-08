@@ -63,9 +63,6 @@ import '@fontsource-variable/inter/slnt.css';
         --body-md: 1rem;
         --body-lg: 1.125rem;
 
-        --screen-xs: 320px;
-        --screen-sm: 450px;
-
         --font-primary: "Inter Variable", sans-serif;
         --font-secondary: "Zilla Slab", serif;
         --font-mono: "JetBrains Mono Variable", monospace;
@@ -106,7 +103,7 @@ import '@fontsource-variable/inter/slnt.css';
         hyphens: auto;
         -webkit-hyphens: auto;
         margin: auto;
-        max-width: 75ch;
+        max-width: 57.5ch;
         padding: 0 var(--spacing-md);
         background: var(--color-background);
         line-height: 1.5;
@@ -115,17 +112,9 @@ import '@fontsource-variable/inter/slnt.css';
     }
 
     main {
-        margin-bottom: var(--layout-2xl);
-        padding: var(--layout-lg) var(--layout-md);
-        background-color: var(--color-surface);
-        border-radius: var(--border-radius-sm);
+        padding-bottom: var(--layout-2xl);
     }
 
-    @media screen and (max-width: 450px) {
-        main {
-            padding: var(--layout-lg) var(--spacing-md);
-        }
-    }
 
     h1,
     h2,
@@ -136,6 +125,7 @@ import '@fontsource-variable/inter/slnt.css';
 
     h1,
     h2 {
+        margin: var(--spacing-lg) 0 var(--spacing-md);
         line-height: 1;
     }
 
@@ -146,13 +136,11 @@ import '@fontsource-variable/inter/slnt.css';
     }
 
     h1 {
-        margin-bottom: var(--layout-md);
-        font-size: var(--title-md);
+        font-size: var(--title-lg);
     }
 
     h2 {
         font-size: var(--title-xs);
-        margin: var(--spacing-lg) 0 var(--spacing-md);
     }
 
     h3 {
@@ -174,6 +162,7 @@ import '@fontsource-variable/inter/slnt.css';
     a,
     a:visited {
         font-weight: 700;
+        text-decoration-thickness: 1.5px;
     }
 
     a:hover {
@@ -224,7 +213,7 @@ import '@fontsource-variable/inter/slnt.css';
 
     pre code {
         overflow: auto;
-        background-color: var(--color-overlay);
+        background-color: var(--color-surface);
         display: block;
         padding: var(--spacing-md);
         border-radius: var(--border-radius-xs);
