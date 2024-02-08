@@ -2,8 +2,8 @@
 title: "Color scheme"
 ---
 
-A CSS color scheme for websites should be stored in CSS variables.
-Usually the variables for the color scheme are stored in the `:root` pseudo-class:
+A website's color scheme should be stored in CSS custom properties.
+It is common practice to define custom properties on the `:root` pseudo-class for global reference:
 
 ```css
 :root {
@@ -12,7 +12,7 @@ Usually the variables for the color scheme are stored in the `:root` pseudo-clas
 }
 ```
 
-Now everywhere in the stylesheet the `--color-text` can be accessed with `var(--color-text)`:
+With the code example above the text color can be referenced with `var(--color-text)`:
 
 ```css
 p {
@@ -21,9 +21,9 @@ p {
 ```
 
 ## Browser preference
-Users express their color scheme preference by toggling light or dark mode (or 'automatic') in their browser settings.
-The `prefers-color-scheme` CSS media feature detects if a light or dark color scheme is preferred[^1].
-The media feature can be leveraged to overwrite the CSS variables that store the color scheme colors[^2]:
+Users express their color scheme preference by choosing light mode, dark mode or 'automatic' in their browser settings.
+The `prefers-color-scheme` CSS media feature indicates if a light or dark color scheme is preferred[^1].
+This media feature can be utilized to overwrite the CSS variables that store the color scheme colors[^2]:
 
 ```css
 @media (prefers-color-scheme:dark) {
@@ -34,10 +34,10 @@ The media feature can be leveraged to overwrite the CSS variables that store the
 }
 ```
 
-[^1]: This is explained in detail at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
+[^1]: This is explained in detail in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
 [^2]: This also works inside `<style>` tags in SVG files.
 
-The same media feature can be used inside HTML to load a dark or light favicon based on the color scheme preference:
+The same media feature can be used inside HTML to show a light or dark favicon based on the color scheme preference:
 
 ```html
 <head>
@@ -54,4 +54,4 @@ The same media feature can be used inside HTML to load a dark or light favicon b
 </head>
 ```
 
-The black favicon is used when light mode is preferred and the white favicon is used when dark mode is preferred.
+The black favicon is shown when light mode is selected, while the white favicon shown in dark mode.
