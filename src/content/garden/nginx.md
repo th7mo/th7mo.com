@@ -15,7 +15,7 @@ sudo apt install nginx
 NGINX configuration files live inside the `/etc/nginx/` directory.
 The two main subdirectories in there are `/etc/nginx/sites-available/` and `/etc/nginx/sites-enabled/`.
 The idea is that you can make a site configuration file in `sites-available` and when it's ready,
-you make a [symbolic link](symbolic-link.html) to it in `sites-enabled/` which will activate it.
+you make a [symbolic link](symbolic-link) to it in `sites-enabled/` which will activate it.
 
 Make a configuration file for each domain.
 It is recommended to name the configuration file `{domain-name-without-top-level-domain}.conf`.
@@ -38,9 +38,12 @@ server {
 ```
 
 * `server_name` is the domain and base path of the website.
-* `root` is the root of the project files. This directory should contain the website source code.
-* `index` specifies the file that represents the landing page of the website (when navigating to the address specified in `server_name`)
-* `location /` is a block that specifies NGINX how to look up files. The line below specifies to look in the `root` directory and throw a [404 Not Found](404-not-found.html) error if failing to find the default file specified at `index`.
+* `root` is the root of the project files. 
+  This directory should contain the website source code.
+* `index` specifies the file that represents the landing page of the website
+  (when navigating to the address specified in `server_name`)
+* `location /` is a block that specifies NGINX how to look up files.
+   The line below specifies to look in the `root` directory and throw a [404 Not Found](404-not-found) error if failing to find the default file specified at `index`.
 * `listen 80 ;` specifies NGINX to listen for connections at port 80 for IPv4.
 * `listen [::]:80 ;` specifies the same but for IPv6.
 
@@ -61,8 +64,10 @@ server {
 }
 ```
 
-In the example above both `th7mo.com` and `www.th7mo.com` are specified in the `server_name` field.
-In the `if` statement we check and redirect if the visitor of the website visits `www.th7mo.com` to `https://th7mo.com` with the path that comes after it.
+In the example above both `th7mo.com` and `www.th7mo.com`
+are specified in the `server_name` field.
+In the `if` statement we check and redirect if the visitor of the website
+visits `www.th7mo.com` to `https://th7mo.com` with the path that comes after it.
 
 ### Link the configuration
 When to configuration is complete, make a symbolic link to the `/etc/nginx/sites-enabled/` directory:

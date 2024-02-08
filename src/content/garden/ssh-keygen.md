@@ -13,7 +13,7 @@ ssh-keygen -t ed25519 -C {email}
 -   The `-C` flag adds a comment to the SSH key. This flag is optional
     but recommended. It will help indicate which SSH key belongs to
     which [email address](email-address) when using `ssh-add -l` or
-    [Keychain](keychain.html#list-loaded-ssh-keys).
+    [Keychain](keychain#list-loaded-ssh-keys).
 -   `{email}` is the email address used for GitHub or
     Bitbucket, configured as `user.email` in the
     [gitconfig](gitconfig) file.

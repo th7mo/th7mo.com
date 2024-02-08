@@ -4,12 +4,11 @@ title: "Wikilink"
 
 A wikilink is a [bidirectional link](https://maggieappleton.com/bidirectionals)
 from one article to another article.
-Wikilinks are the default method to link two resources
-(articles) in [Obsidian](obsidian) and
-[Wikipedia](https://www.wikipedia.org/).
+Wikilinks are the default method to link two resources (articles)
+ in [Obsidian](obsidian) and [Wikipedia](https://www.wikipedia.org/).
 
-## Link to a article
-A wikilink is created by enclosing the name of a article by double
+## Link to an article
+A wikilink is created by enclosing the name of an article by double
 square brackets:
 
 ```md
@@ -21,7 +20,7 @@ This allows for proper capitalizing the first character of a sentence.
 It also allows to properly capitalize wikilinks when the link text
 represents something that should be capitalized by default.
 
-## Link to a article heading
+## Link to an article heading
 To link to a heading in another article, append a `#` and the heading
 name to the article name:
 
