@@ -9,7 +9,6 @@ Some Linux distributions provide Helix with the `helix` command.
 
 Helix's editing philosophy is `selection -> action`,
 prioritizing safety through text verification before specifying an action.
-> How should this look??
 
 ## Installation
 Because Helix is evolving quickly, the way Helix can be installed can evolve to.
