@@ -1,20 +1,19 @@
 {
-  "name": "garden",
-  "type": "module",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "devDependencies": {
-    "astro": "4.3.5"
-  },
-  "dependencies": {
-    "@fontsource-variable/inter": "5.0.16",
-    "@fontsource-variable/jetbrains-mono": "5.0.19",
-    "@fontsource/zilla-slab": "5.0.8"
-  }
+    "name": "garden",
+    "type": "module",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "devDependencies": {
+        "astro": "4.3.5"
+    },
+    "dependencies": {
+        "@fontsource/gentium-book-plus": "5.0.8",
+        "@fontsource-variable/jetbrains-mono": "5.0.19"
+    }
 }

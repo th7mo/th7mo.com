@@ -8,12 +8,9 @@ interface Props {
 }
 
 const { title, h1 } = Astro.props;
-import '@fontsource/zilla-slab/500.css';
-import '@fontsource/zilla-slab/500-italic.css';
-import '@fontsource/zilla-slab/700.css';
 import '@fontsource-variable/jetbrains-mono';
-import '@fontsource-variable/inter';
-import '@fontsource-variable/inter/slnt.css';
+import '@fontsource/gentium-book-plus/400.css';
+import '@fontsource/gentium-book-plus/700.css';
 ---
 
 <!doctype html>
@@ -63,8 +60,9 @@ import '@fontsource-variable/inter/slnt.css';
         --body-md: 1rem;
         --body-lg: 1.125rem;
 
-        --font-primary: "Inter Variable", sans-serif;
-        --font-secondary: "Zilla Slab", serif;
+
+        --body-custom: 1.25rem;
+        --font-primary: "Gentium Book Plus", sans-serif;
         --font-mono: "JetBrains Mono Variable", monospace;
     }
 
@@ -103,11 +101,11 @@ import '@fontsource-variable/inter/slnt.css';
         hyphens: auto;
         -webkit-hyphens: auto;
         margin: auto;
-        max-width: 57.5ch;
+        max-width: 62.5ch;
         padding: 0 var(--spacing-md);
         background: var(--color-background);
         line-height: 1.5;
-        font-size: var(--body-md);
+        font-size: var(--body-custom);
         font-family: var(--font-primary);
     }
 
@@ -120,7 +118,6 @@ import '@fontsource-variable/inter/slnt.css';
     h2,
     h3,
     h4 {
-        font-family: var(--font-secondary);
     }
 
     h1,
@@ -151,6 +148,16 @@ import '@fontsource-variable/inter/slnt.css';
         font-size: var(--title-3xs);
     }
 
+    p {
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 450px) {
+        p {
+            text-align: start;
+        }
+    }
+
     :focus {
         outline: 2px solid var(--color-foreground);
     }
@@ -161,7 +168,7 @@ import '@fontsource-variable/inter/slnt.css';
 
     a,
     a:visited {
-        font-weight: 700;
+        font-weight: bold;
         text-decoration-thickness: 1.5px;
     }
 
@@ -190,9 +197,6 @@ import '@fontsource-variable/inter/slnt.css';
     em,
     blockquote p {
         font-style: italic;
-        font-weight: 500;
-        font-size: var(--body-lg);
-        font-family: var(--font-secondary);
     }
 
 
@@ -204,7 +208,6 @@ import '@fontsource-variable/inter/slnt.css';
     code,
     kbd {
         padding: 0 var(--spacing-xs);
-        display: inline-block;
         border-radius: var(--border-radius-sm);
         background-color: var(--color-overlay);
         font-size: var(--body-sm);
