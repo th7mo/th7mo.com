@@ -16,7 +16,7 @@ A better alternative is to move configuration files into a separate directory li
 ## History
 That dotfiles are invisible was an accident[^1].
 A long time ago Unix decided to hide the `.` and `..` directories because they exist in every directory.
-They only checked if the first character of the file (or directory) name was a dot `.`,
+They only checked if the first character of a file or directory name was a dot `.`,
 and hid it when that was the case:
 
 ```go
@@ -27,7 +27,7 @@ if fileName[0] == "." {
 
 [^1]: [Rob Pike on the Origin of Unix Dot File Names](http://xahlee.info/UnixResource_dir/writ/unix_origin_of_dot_filename.html)
 
-This results in every file starting with a dot to be hidden.
+This results in every file and directory starting with a dot to be hidden.
 What they should have done is check if the filename is `.` or `..` instead:
 
 ```go

@@ -244,24 +244,6 @@ import '@fontsource/gentium-book-plus/700.css';
         box-shadow: 1px 1px 0 0 var(--color-foreground);
     }
 
-    .seedling::before,
-    .budding::before,
-    .evergreen::before {
-        padding-right: var(--spacing-sm);
-    }
-
-    .seedling::before {
-        content: url("/svg/seedling.svg");
-    }
-
-    .budding::before {
-        content: url("/svg/budding.svg");
-    }
-
-    .evergreen::before {
-        content: url("/svg/evergreen.svg");
-    }
-
     a[href^="http"]::after {
         content: url("/svg/external-link.svg");
     }
@@ -280,9 +262,5 @@ import '@fontsource/gentium-book-plus/700.css';
 
     a[href^="#user-content-fn"]:not(a[href^="#user-content-fnref"])::after {
         content: "]";
-    }
-
-    a:not(nav a):not(sup a):not([href^="http"])::before {
-        padding-right: var(--spacing-xs);
     }
 </style>
