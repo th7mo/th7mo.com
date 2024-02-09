@@ -6,26 +6,7 @@ description: "A collection of all my recipes"
 This is my recipe book. The recipes are in alphabetical order for easy
 indexing.
 
-## Protein shake (chocolate)
-### Ingredients
-These ingredients are sufficient for 1 portion:
-
-* 150ml vla
-* 150ml yoghurt
-* 150ml milk
-* 2 scoops chocolate protein powder
-
-### Instructions
-1. Put the milk in the blender.
-2. Add 2 scoops of protein powder.
-3. Add the vla.
-4. Add 4 scoops of protein powder
-5. Add the yoghurt.
-6. Blend for ~60 seconds.
-7. Stir with a spoon and blend again for ~60 seconds.
-
 ## Burritos
-### Ingredients
 These ingredients are sufficient for 4 portions:
 
 * 800g chicken
@@ -36,7 +17,6 @@ These ingredients are sufficient for 4 portions:
 * 2 packs Burritos (Knorr)
 * Wraps
 
-### Instructions
 1.  Cut the chicken and dice the bell peppers and onion.
 2.  Set the oven to 180-190 degrees Celsius.
 3.  Put the chicken with wok oil into a pan.
@@ -54,8 +34,23 @@ These ingredients are sufficient for 4 portions:
 11. Put the cheese over the wraps.
 12. Put the wraps for 7 to 10 minutes in the oven.
 
+## Protein shake (chocolate)
+These ingredients are sufficient for 1 portion:
+
+* 150ml vla
+* 150ml yoghurt
+* 150ml milk
+* 2 scoops chocolate protein powder
+
+1. Put the milk in the blender.
+2. Add 2 scoops of protein powder.
+3. Add the vla.
+4. Add 4 scoops of protein powder
+5. Add the yoghurt.
+6. Blend for ~60 seconds.
+7. Stir with a spoon and blend again for ~60 seconds.
+
 ## Thai wok with rice
-### Ingredients
 These ingredients are sufficient for 2 portions:
 * 500g/600g chicken
 * 400g Thai wok-vegetables 
@@ -63,7 +58,6 @@ These ingredients are sufficient for 2 portions:
 * 30g/50g Cashew nuts
 * 10g friend onions
 
-### Instructions
 1. Put the chicken with wok oil into a wok pan.
 2. Cook the rice in another pan for 8 minutes.
 3. Cook the chicken 4 minutes.
