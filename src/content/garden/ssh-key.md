@@ -36,7 +36,7 @@ ssh-add ~/.ssh/id_ed25519
 ```
 
 This process can be automated by having this command in the [Bash](bash) or [Zsh](zsh) configuration file.
- 
+
 ### Option 2 (preferred): use Keychain
 The [Keychain](keychain) tool has better tooling for adding SSH keys.
 Refer to [Add an SSH key to Keychain](keychain#add-an-ssh-key-to-keychain) for how to add an SSH key to Keychain.
@@ -53,22 +53,22 @@ ssh-add -l
 
 if Keychain is used reference [List loaded SSH keys](keychain#list-loaded-ssh-keys).
 
-### Create or modify the .ssh/config file
+### Create or modify the SSH configuration
 To tell [Git](git) which SSH key to use when interacting with the remote repository, we need to configure the `~/.ssh/config` file. 
 Make a host entry with the following settings for each key:
 
 ```sh
 Host github.com
-	HostName github.com
-	User user_name
-	IdentityFile ~/.ssh/id_ed25519-personal
-	IdentitiesOnly yes
+    HostName github.com
+    User user_name
+    IdentityFile ~/.ssh/id_ed25519-personal
+    IdentitiesOnly yes
 
 Host bitbucket.com
-	HostName bitbucket.org
-	User user_name
-	IdentityFile ~/.ssh/id_ed25519-work
-	IdentitiesOnly yes
+    HostName bitbucket.org
+    User user_name
+    IdentityFile ~/.ssh/id_ed25519-work
+    IdentitiesOnly yes
 ```
 
 Make the `Host` name the same has the `HostName`.
@@ -97,5 +97,5 @@ Make sure that the local [gitconfig](gitconfig) has the correct `user.name` and 
 ## See also
 * For a more detailed explanation reference the GitHub article [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 * For a more detailed explanation for multiple SSH keys reference:
-	* [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
-	* [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).
+    * [Managing multiple Bitbucket user SSH keys on one device](https://support.atlassian.com/bitbucket-cloud/docs/managing-multiple-bitbucket-user-ssh-keys-on-one-device/).
+    * [Multiple SSH Keys settings for different Bitbucket Cloud Accounts](https://confluence.atlassian.com/bbkb/multiple-ssh-keys-settings-for-different-bitbucket-cloud-accounts-1168847503.html).

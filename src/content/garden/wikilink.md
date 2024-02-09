@@ -5,8 +5,8 @@ description: "A bidirectional link between two resources"
 
 A wikilink is a [bidirectional link](https://maggieappleton.com/bidirectionals)
 from one article to another article.
-Wikilinks are the default method to link two resources (articles)
- in [Obsidian](obsidian) and [Wikipedia](https://www.wikipedia.org/).
+[Obsidian](obsidian) and [Wikipedia](https://www.wikipedia.org/)
+use wikilinks to link their resources to each other.
 
 ## Link to an article
 A wikilink is created by enclosing the name of an article by double
