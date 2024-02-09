@@ -1,6 +1,6 @@
 ---
 title: "Lorem ipsum"
-description: "A stress-test for all the features"
+description: "A stress-test for the th7mo.com website"
 ---
 
 It is used for the [digital garden](digital-garden) to stress-test

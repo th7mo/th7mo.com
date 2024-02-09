@@ -36,8 +36,8 @@ For example for Steam:
 ln -s /var/lib/flatpak/exports/bin/com.valvesoftware.Steam /usr/bin/steam
 ```
 
-Now application launchers (and the terminal) are able to find the Flatpak application,
-because it is added to the `$PATH` variable.
+Flatpak-packaged applications can now be found by application launchers and the terminal,
+as they are added to the `$PATH` variable.
 
 ## See also
 * The [Gentoo article](https://wiki.gentoo.org/wiki/Flatpak) about Flatpak.
