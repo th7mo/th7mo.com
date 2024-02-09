@@ -1,6 +1,6 @@
 ---
 title: "Linux workflow"
-description: "A solid future proof Linux workflow stack"
+description: "A stable Linux workflow stack"
 ---
 
 This note describes a solid Linux workflow stack, using reliable, stable and future-proof software.

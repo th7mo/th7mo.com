@@ -1,6 +1,6 @@
 ---
 title: "Home directory"
-description: "The directory on a file-system for a specific user"
+description: "A special directory on a file-system"
 ---
 
 The home directory of a regular user is found at `/home/{username}/`,

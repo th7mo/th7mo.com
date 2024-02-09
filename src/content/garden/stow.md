@@ -3,7 +3,7 @@ title: "Stow"
 description: "A symlink farm manager for managing dotfiles"
 ---
 
-[Stow](https://www.gnu.org/software/stow/) is a utility that simplifies
+[GNU Stow](https://www.gnu.org/software/stow/) is a utility that simplifies
 the process of making [symbolic links](symbolic-link). It can be
 used to easily manage [dotfiles](dotfiles).
 
