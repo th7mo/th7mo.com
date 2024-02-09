@@ -1,6 +1,6 @@
 ---
 title: "Commit"
-description: "Snapshots of Git repository"
+description: "A snapshot of the repository's currently staged changes"
 ---
 
 A commit is a snapshot of a [Git](git) repository. Commits should be short, ideally representing an [atomic](atomic) change.

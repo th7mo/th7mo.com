@@ -1,6 +1,6 @@
 ---
 title: "Dotfiles"
-description: "A method to managing configuration files"
+description: "The hidden configuration files in Linux"
 ---
 
 Files prefixed with a dot `.` are called dotfiles.
