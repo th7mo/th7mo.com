@@ -59,3 +59,7 @@ These ingredients are sufficient for 4 portions:
 10. Divide the food over the wraps and roll them up.
 11. Put the cheese over the wraps.
 12. Put the wraps for 7 to 10 minutes in the oven.
+
+## Thai wok with rice
+
+* [https://www.euroma.nl/gerechten/thaise-wokschotel-met-kip-en-roerbakgroente/](https://www.euroma.nl/gerechten/thaise-wokschotel-met-kip-en-roerbakgroente/)
