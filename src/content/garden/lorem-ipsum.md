@@ -13,7 +13,7 @@ strong** and ***italic and strong*** and ***~~italic, strong and strikethrough~~
 and `inline code` and ~~strikethrough~~ text and some<sup>sup</sup> text and some<sub>sub</sub> text.
 
 #### Links
-[External Link](https://google.com) and [internal link](index) and
+[External Link](https://google.com) and [internal link](plant) and
 [section link](#lists) and footnote[^1] [^2].
 
 [^1]: This is an example footnote.
