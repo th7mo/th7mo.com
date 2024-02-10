@@ -104,7 +104,7 @@ metadata about the Markdown file
 ## Exporting Markdown
 Sometimes it is required to convert Markdown to other file formats like
 PDF or `.docx`. The tool Pandoc can be used to convert Markdown to a lot
-of other file formats. item
+of other file formats.
 
 ## See also
 * The original [Markdown specification](https://daringfireball.net/projects/markdown/).
