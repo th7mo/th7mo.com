@@ -1,15 +1,16 @@
 ---
 interface Props {
     title: string;
+    description: string;
 }
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Thimo van Velzen">
     <meta name="keywords" content="HTML, CSS, Astro, digital-garden, garden, wiki, second-brain, minimalist, simple">
-    <meta name="description" content="The digital garden of a minimalist">
+    <meta name="description" content={description}>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{title}</title>

@@ -4,10 +4,11 @@ import Header from './Header.astro';
 
 interface Props {
     title: string;
+    description: string;
     h1?: string;
 }
 
-const { title, h1 } = Astro.props;
+const { title, description, h1 } = Astro.props;
 import '@fontsource-variable/jetbrains-mono';
 import '@fontsource/gentium-book-plus/400.css';
 import '@fontsource/gentium-book-plus/700.css';
@@ -15,7 +16,7 @@ import '@fontsource/gentium-book-plus/700.css';
 
 <!doctype html>
 <html lang="en">
-    <Head title={title} />
+    <Head title={title} description={description}/>
     <body>
         <Header />
         <main>
