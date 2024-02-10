@@ -4,7 +4,8 @@ description: "A popular distributed version control system"
 ---
 
 [Git](https://git-scm.com/) is a version control system.
-It is used for the [digital garden](digital-garden) to keep track of changes and preserve history. It also allows for accessible collaboration.
+It is used for the [digital garden](digital-garden) to keep track of changes and preserve history.
+It also allows for accessible collaboration.
 
 ## Installation
 Install Git by executing the following command:
@@ -23,7 +24,7 @@ Git uses [branches](branch) for collaborate work and diverging from the default 
 ## Pull request / Merge request
 The [rebase](rebase) strategy is also a good option for pull requests.
 
-Do not squash commits or merge a pull request using the [squash](squash) strategy,
+Do not [squash](squash) commits or merge a pull request using the squash strategy,
 unless the commit messages are not providing any useful information.
 It is always better to leave as much history as possible for later debugging of code.
 
