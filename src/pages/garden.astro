@@ -4,7 +4,10 @@ import { getCollection } from "astro:content";
 const plants = await getCollection("garden");
 ---
 
-<Layout title="The Garden" description="The digital garden of a minimalist">
+<Layout
+    title="The Garden"
+    description="The digital garden of a minimalist"
+>
 <p>
     The <a href="garden/digital-garden">digital garden</a> has a no particular structure.
     Search for one of the {plants.length} <a href="garden/plant">plants</a>

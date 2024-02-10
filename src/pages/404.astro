@@ -1,12 +1,14 @@
 ---
-const title = "Plant Not Found"
-const description = "The fallback page for pages that do not exist yet"
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title={title} h1="Plant Not Found!" description={description}>
+<Layout 
+    title="Plant Not Found"
+    description="The fallback page for pages that do not exist yet"
+    h1="Plant Not Found!"
+>
 <p>
-    It looks like this idea is not planted yet... <br>
+    It looks like this idea is not planted yet...<br>
     Go back to the <a href="/garden">overview</a>
     to see all available <a href="garden/plant">plants</a>.
 </p>
