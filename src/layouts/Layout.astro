@@ -9,9 +9,20 @@ interface Props {
 }
 
 const { title, description, h1 } = Astro.props;
-import '@fontsource-variable/jetbrains-mono';
-import '@fontsource/gentium-book-plus/400.css';
-import '@fontsource/gentium-book-plus/700.css';
+
+import '@fontsource/source-serif-pro/200.css';
+import '@fontsource/source-serif-pro/300.css';
+import '@fontsource/source-serif-pro/400.css';
+import '@fontsource/source-serif-pro/600.css';
+import '@fontsource/source-serif-pro/700.css';
+import '@fontsource/source-serif-pro/900.css';
+import '@fontsource/source-serif-pro/200-italic.css';
+import '@fontsource/source-serif-pro/300-italic.css';
+import '@fontsource/source-serif-pro/400-italic.css';
+import '@fontsource/source-serif-pro/600-italic.css';
+import '@fontsource/source-serif-pro/700-italic.css';
+import '@fontsource/source-serif-pro/900-italic.css';
+import '@fontsource/courier-prime';
 ---
 
 <!doctype html>
@@ -56,15 +67,14 @@ import '@fontsource/gentium-book-plus/700.css';
         --title-md: 3rem;
         --title-lg: 3.5rem;
 
-        --body-xs: 0.75rem;
-        --body-sm: 0.875rem;
-        --body-md: 1rem;
-        --body-lg: 1.125rem;
+        --body-xs: 1rem;
+        --body-sm: 1.125rem;
+        --body-md: 1.25rem;
+        --body-lg: 1.375rem;
 
 
-        --body-custom: 1.25rem;
-        --font-primary: "Gentium Book Plus", sans-serif;
-        --font-mono: "JetBrains Mono Variable", monospace;
+        --font-primary: "Source Serif Pro", sans-serif;
+        --font-mono: "Courier Prime", monospace;
     }
 
     @media (prefers-color-scheme:dark) {
@@ -104,6 +114,10 @@ import '@fontsource/gentium-book-plus/700.css';
         text-decoration: none;
     }
 
+    h1, h2, h3 {
+        font-weight: 900;
+    }
+
     ::selection {
         color: var(--color-background);
         background-color: var(--color-foreground);
@@ -118,7 +132,7 @@ import '@fontsource/gentium-book-plus/700.css';
         padding: 0 var(--spacing-md);
         background: var(--color-background);
         line-height: 1.5;
-        font-size: var(--body-custom);
+        font-size: var(--body-md);
         font-family: var(--font-primary);
     }
 
@@ -126,9 +140,13 @@ import '@fontsource/gentium-book-plus/700.css';
         padding-bottom: var(--layout-2xl);
     }
 
+    h1, h2, h3 {
+        font-weight: 900;
+    }
+
     h1,
     h2 {
-        margin: calc(2 * var(--body-custom)) 0 var(--body-custom);
+        margin: calc(2 * var(--body-md)) 0 var(--body-md);
         line-height: 1;
     }
 
@@ -216,7 +234,7 @@ import '@fontsource/gentium-book-plus/700.css';
         padding: 0 var(--spacing-xs);
         border-radius: var(--border-radius-sm);
         background-color: var(--color-overlay);
-        font-size: var(--body-sm);
+        font-size: var(--body-xs);
         font-family: var(--font-mono);
     }
 

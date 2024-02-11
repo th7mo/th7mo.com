@@ -31,6 +31,7 @@ const path = Astro.url.pathname;
         list-style: none;
         user-select: none;
         -webkit-user-select: none;
+        font-size: var(--body-lg);
     }
 
     li:not(:last-child)::after {
@@ -39,12 +40,12 @@ const path = Astro.url.pathname;
     }
 
     li:last-child a {
-        font-weight: bold;
+        font-weight: 900;
     }
 
     a {
         text-decoration: none;
-        font-weight: normal;
+        font-weight: 300;
     }
 
     a:hover {
