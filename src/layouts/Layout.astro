@@ -251,11 +251,11 @@ import '@fontsource/gentium-book-plus/700.css';
         text-decoration: none;
     }
 
-    a[href^="#user-content-fn"]:not(a[href^="#user-content-fnref"])::before {
+    a[href^="#user-content-fn"]:not([href^="#user-content-fnref"])::before {
         content: "[";
     }
 
-    a[href^="#user-content-fn"]:not(a[href^="#user-content-fnref"])::after {
+    a[href^="#user-content-fn"]:not([href^="#user-content-fnref"])::after {
         content: "]";
     }
 </style>
