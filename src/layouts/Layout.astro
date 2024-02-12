@@ -22,7 +22,10 @@ import '@fontsource/source-serif-pro/400-italic.css';
 import '@fontsource/source-serif-pro/600-italic.css';
 import '@fontsource/source-serif-pro/700-italic.css';
 import '@fontsource/source-serif-pro/900-italic.css';
-import '@fontsource/courier-prime';
+import '@fontsource/courier-prime/400.css';
+import '@fontsource/courier-prime/700.css';
+import '@fontsource/courier-prime/400-italic.css';
+import '@fontsource/courier-prime/700-italic.css';
 ---
 
 <!doctype html>
@@ -39,9 +42,7 @@ import '@fontsource/courier-prime';
 
 <style is:global>
     :root {
-        /* Mozilla Black */
         --color-foreground: #000;
-        /* Mozilla White */
         --color-background: #fff;
         /* Mozilla Light Gray 10 */
         --color-surface: #f9f9fb;
@@ -61,26 +62,23 @@ import '@fontsource/courier-prime';
         --layout-xl: 6rem;
         --layout-2xl: 12rem;
 
-        --title-3xs: 1.125rem;
-        --title-2xs: 1.5rem;
-        --title-xs: calc(var(--body-md) * 1.618);
-        --title-md: calc(var(--title-xs) * 1.618);
+        --title-sm: calc(var(--body-md) * 1.618);
+        --title-md: calc(var(--title-sm) * 1.618);
         --title-lg: calc(var(--title-md) * 1.618);
 
-        --body-xs: 0.90rem;
-        --body-sm: 1.00rem;
-        --body-md: 1.10rem;
-        --body-lg: 1.25rem;
+        --body-xs: calc(var(--body-sm) / 1.125);
+        --body-sm: calc(var(--body-md) / 1.125);
+        --body-md: 1.125rem;
+        --body-lg: calc(var(--body-md) * 1.125);
 
         --font-primary: "Source Serif Pro", serif;
+        --font-heading: "Libre Bodoni Variable", serif;
         --font-mono: "Courier Prime", monospace;
     }
 
     @media (prefers-color-scheme:dark) {
         :root {
-            /* Mozilla White */
             --color-foreground: #fff;
-            /* Mozilla Black */
             --color-background: #000;
             /* Mozilla Dark Gray 80 */
             --color-surface: #1c1b22;
@@ -113,10 +111,6 @@ import '@fontsource/courier-prime';
         text-decoration: none;
     }
 
-    h1, h2, h3, h4 {
-        font-weight: 900;
-    }
-
     ::selection {
         color: var(--color-background);
         background-color: var(--color-foreground);
@@ -127,7 +121,7 @@ import '@fontsource/courier-prime';
         hyphens: auto;
         -webkit-hyphens: auto;
         margin: auto;
-        max-width: 65ch;
+        max-width: 70ch;
         padding: 0 var(--spacing-md);
         background: var(--color-background);
         line-height: 1.618;
@@ -139,32 +133,35 @@ import '@fontsource/courier-prime';
         padding-bottom: var(--layout-2xl);
     }
 
+    h1, h2, h3 {
+        font-family: var(--font-primary);
+        hyphens: none;
+    }
+
     h1,
     h2 {
-        margin: calc(2 * var(--body-md)) 0 var(--body-md);
+        margin: calc(2 * var(--body-md) * 1.618) 0 calc(var(--body-md) * 1.618);
         line-height: 1;
     }
 
-    h3,
-    h4 {
-        margin: var(--spacing-md) 0 var(--spacing-sm);
+    h3 {
+        margin: calc(2 * var(--body-md)) 0 var(--body-md);
         line-height: 1.2;
+        font-weight: 700;
     }
 
     h1 {
         font-size: var(--title-lg);
+        font-weight: 900;
     }
 
     h2 {
-        font-size: var(--title-xs);
+        font-size: var(--title-md);
+        font-weight: 700;
     }
 
     h3 {
-        font-size: var(--title-2xs);
-    }
-
-    h4 {
-        font-size: var(--title-3xs);
+        font-size: var(--title-sm);
     }
 
     p {

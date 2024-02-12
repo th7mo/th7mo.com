@@ -5,8 +5,6 @@ description: "A framework for managing Zsh configuration"
 
 A popular framework for managing [Zsh](zsh) configuration is
 [Oh My Zsh](https://ohmyz.sh/).
-
-## Installation
 Install Oh My Zsh by executing the following command:
 
 ```sh

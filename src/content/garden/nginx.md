@@ -4,8 +4,6 @@ description: "A webserver solution for hosting websites"
 ---
 
 Websites can be hosted with [NGINX](https://www.nginx.com/).
-
-## Installation
 NGINX can be installed by executing the following command:
 
 ```sh

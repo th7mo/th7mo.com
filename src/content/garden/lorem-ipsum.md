@@ -99,13 +99,13 @@ honorificabilitudinitatibus.
 
 ### With blocks
 
-1.  with `inline code`
+1. with `inline code`
 
-2.  and
+2. and some code blocks:
 
-        and codeblocks
+        and code blocks
 
-3.  and
+3. and some blockquotes:
 
     > a blockquote
 

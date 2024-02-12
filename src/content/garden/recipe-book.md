@@ -40,15 +40,15 @@ These ingredients are sufficient for 1 portion:
 * 150ml vla
 * 150ml yoghurt
 * 150ml milk
-* 2 scoops chocolate protein powder
+* 2 scoops chocolate protein powder (Weight Gainer)
 
 1. Put the milk in the blender.
 2. Add 2 scoops of protein powder.
 3. Add the vla.
 4. Add 4 scoops of protein powder
 5. Add the yoghurt.
-6. Blend for ~60 seconds.
-7. Stir with a spoon and blend again for ~60 seconds.
+6. Blend for around 60 seconds.
+7. Stir with a spoon and blend again for around 60 seconds.
 
 ## Thai wok with rice
 These ingredients are sufficient for 2 portions:
@@ -56,10 +56,10 @@ These ingredients are sufficient for 2 portions:
 * 400g Thai wok-vegetables 
 * 250g brown rice
 * 30g/50g Cashew nuts
-* 10g friend onions
+* 10g fried onions
 
 1. Put the chicken with wok oil into a wok pan.
 2. Cook the rice in another pan for 8 minutes.
 3. Cook the chicken 4 minutes.
 4. Add the wok-vegetables in the wok pan with chicken.
-5. Cook the chicken with vegetables another 4 minutes.
+5. Cook the chicken with vegetables for another 4 minutes.

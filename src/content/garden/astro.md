@@ -11,8 +11,6 @@ Astro in its most simple setup is a static site generator
 like [Hugo](https://gohugo.io/) or [Jekyll](https://jekyllrb.com/).
 Without JavaScript, Astro only generates HTML and [CSS](css) files.
 
-## Installation
-
 The most popular method to create a new Astro project is with `npm`:
 
 ```sh

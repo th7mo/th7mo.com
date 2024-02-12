@@ -1,5 +1,5 @@
 ---
-title: "NetworkManager"
+title: "Network Manager"
 description: "Managing wireless internet connections on Linux"
 ---
 
