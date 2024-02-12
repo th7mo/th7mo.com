@@ -63,9 +63,9 @@ import '@fontsource/courier-prime';
 
         --title-3xs: 1.125rem;
         --title-2xs: 1.5rem;
-        --title-xs: 1.75rem;
-        --title-md: 3rem;
-        --title-lg: 3.5rem;
+        --title-xs: calc(var(--body-md) * 1.618);
+        --title-md: calc(var(--title-xs) * 1.618);
+        --title-lg: calc(var(--title-md) * 1.618);
 
         --body-xs: 0.90rem;
         --body-sm: 1.00rem;
@@ -130,7 +130,7 @@ import '@fontsource/courier-prime';
         max-width: 65ch;
         padding: 0 var(--spacing-md);
         background: var(--color-background);
-        line-height: 1.5;
+        line-height: 1.618;
         font-size: var(--body-md);
         font-family: var(--font-primary);
     }
