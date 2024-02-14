@@ -52,19 +52,19 @@ import '@fontsource/courier-prime/700-italic.css';
         --border-radius-xs: 2px;
         --border-radius-sm: 5px;
 
-        --spacing-xs: 0.25rem;
-        --spacing-sm: 0.5rem;
-        --spacing-md: 1rem;
-        --spacing-lg: 2rem;
+        --spacing-xs: calc(var(--spacing-sm) / 1.618);
+        --spacing-sm: calc(var(--spacing-md) / 1.618);
+        --spacing-md: var(--body-md);
+        --spacing-lg: calc(var(--spacing-md) * 1.618);
 
         --layout-md: 3rem;
         --layout-lg: 4rem;
         --layout-xl: 6rem;
         --layout-2xl: 12rem;
 
-        --title-sm: calc(var(--body-md) * 1.618);
-        --title-md: calc(var(--title-sm) * 1.618);
-        --title-lg: calc(var(--title-md) * 1.618);
+        --title-sm: calc(var(--body-md) * 1.4);
+        --title-md: calc(var(--title-sm) * 1.4);
+        --title-lg: calc(var(--title-md) * 1.4);
 
         --body-xs: calc(var(--body-sm) / 1.125);
         --body-sm: calc(var(--body-md) / 1.125);
@@ -72,7 +72,7 @@ import '@fontsource/courier-prime/700-italic.css';
         --body-lg: calc(var(--body-md) * 1.125);
 
         --font-primary: "Source Serif Pro", serif;
-        --font-heading: "Libre Bodoni Variable", serif;
+        --font-heading: "Source Serif Pro", serif;
         --font-mono: "Courier Prime", monospace;
     }
 
@@ -87,28 +87,11 @@ import '@fontsource/courier-prime/700-italic.css';
         }
     }
 
-    span[style^="color:var(--astro-code-token-keyword)"] {
-        font-weight: bold;
-    }
-
-    span[style^="color:var(--astro-code-token-function)"] {
-        font-weight: bold;
-    }
-
-    span[style^="color:var(--astro-code-token-comment)"] {
-        font-style: italic;
-    }
-
     * {
         margin: 0;
         box-sizing: border-box;
         padding: 0;
         color: var(--color-foreground);
-    }
-
-    a::before {
-        display: inline-block;
-        text-decoration: none;
     }
 
     ::selection {
@@ -124,7 +107,7 @@ import '@fontsource/courier-prime/700-italic.css';
         max-width: 70ch;
         padding: 0 var(--spacing-md);
         background: var(--color-background);
-        line-height: 1.618;
+        line-height: 1.5;
         font-size: var(--body-md);
         font-family: var(--font-primary);
     }
@@ -135,17 +118,16 @@ import '@fontsource/courier-prime/700-italic.css';
 
     h1, h2, h3 {
         font-family: var(--font-primary);
+        margin: calc(var(--body-md) * 2) 0 var(--body-md);
         hyphens: none;
     }
 
     h1,
     h2 {
-        margin: calc(2 * var(--body-md) * 1.618) 0 calc(var(--body-md) * 1.618);
         line-height: 1;
     }
 
     h3 {
-        margin: calc(2 * var(--body-md)) 0 var(--body-md);
         line-height: 1.2;
         font-weight: 700;
     }
@@ -172,6 +154,18 @@ import '@fontsource/courier-prime/700-italic.css';
         p {
             text-align: start;
         }
+
+        h1 {
+            font-size: var(--title-md);
+        }
+
+        h2 {
+            font-size: var(--title-sm);
+        }
+
+        h3 {
+            font-size: var(--body-lg);
+        }
     }
 
     :focus {
@@ -186,6 +180,11 @@ import '@fontsource/courier-prime/700-italic.css';
     a:visited {
         font-weight: bold;
         text-decoration-thickness: 1.2px;
+    }
+
+    a::before {
+        display: inline-block;
+        text-decoration: none;
     }
 
     a:hover {
@@ -267,5 +266,17 @@ import '@fontsource/courier-prime/700-italic.css';
 
     a[href^="#user-content-fn"]:not([href^="#user-content-fnref"])::after {
         content: "]";
+    }
+
+    span[style^="color:var(--astro-code-token-keyword)"] {
+        font-weight: bold;
+    }
+
+    span[style^="color:var(--astro-code-token-function)"] {
+        font-weight: bold;
+    }
+
+    span[style^="color:var(--astro-code-token-comment)"] {
+        font-style: italic;
     }
 </style>
