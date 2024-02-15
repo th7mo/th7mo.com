@@ -57,9 +57,10 @@ These ingredients are sufficient for 2 portions:
 * 250g brown rice
 * 30g/50g Cashew nuts
 * 10g fried onions
+* sweet sour wok sauce
 
 1. Put the chicken with wok oil into a wok pan.
 2. Cook the rice in another pan for 8 minutes.
 3. Cook the chicken 4 minutes.
 4. Add the wok-vegetables in the wok pan with chicken.
-5. Cook the chicken with vegetables for another 4 minutes.
+5. Cook the chicken with vegetables and sweet sour sauce for another 4 minutes.
