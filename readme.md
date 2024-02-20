@@ -1,11 +1,12 @@
-This repository is my Digital Garden.
-The digital garden is hosted at [garden.th7mo.com](https://garden.th7mo.com).
-It is built with HTML and CSS.
-Intentionally without JavaScript.
-It uses [Astro](https://astro.build/) as a static site generator to add the boilerplate HTML to every content file.
+This repository is website infrastructure for [th7mo.com](https://th7mo.com).
+The content is stored as a submodule at
+[github.com/th7mo/notes](https://github.com/th7mo/notes).
+The website is built with HTML and CSS.
+Intentionally shipped without any JavaScript.
+The website uses [Astro](https://astro.build/) as a static site generator
+to add the boilerplate HTML to every content file.
 
-## 🧞 Commands
-
+## Astro Commands
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
