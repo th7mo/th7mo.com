@@ -7,7 +7,8 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "update": "cd src/content/notes && git fetch && git rebase origin/main && cd .. && cd $(git root) && git add src/content/* && git commit -m 'update content' && git push"
     },
     "devDependencies": {
         "astro": "4.4.0"
