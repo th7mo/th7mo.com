@@ -1,0 +1,3 @@
+[submodule "src/content/notes"]
+	path = src/content/notes
+	url = git@github.com:th7mo/notes.git
