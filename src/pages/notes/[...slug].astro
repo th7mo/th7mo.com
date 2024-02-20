@@ -4,9 +4,9 @@ import GardenLayout from '../../layouts/GardenLayout.astro';
 
 export async function getStaticPaths() {
     const notes = await getCollection('notes');
-    return notes.map(entry => {
+    return notes.map(entry => ({
         params: { slug: entry.slug }, props: { entry },
-    });
+    }));
 }
 
 const { entry } = Astro.props;
