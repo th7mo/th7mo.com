@@ -1,25 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import { getCollection } from "astro:content";
-const plants = await getCollection("garden");
+const notes = await getCollection("notes");
 ---
 
 <Layout
-    title="The Garden"
+    title="The Notes"
     description="The digital garden of a minimalist"
 >
 <p>
-    The <a href="garden/digital-garden">digital garden</a> has a no particular structure.
-    Search for one of the {plants.length} <a href="garden/plant">plants</a>
+    The <a href="notes/digital-garden">digital garden</a> has a no particular structure.
+    Search for one of the {notes.length} <a href="notes/plant">plants</a>
     with <kbd>Ctrl</kbd> + <kbd>f</kbd>
     or cycle through with <kbd>Tab</kbd> :
 </p>
 
 <ol>
-    {plants.map((plant) => (
+    {notes.map((note) => (
         <li>
-            <a href={`garden/${plant.slug}`}>{plant.data.title}
-                <p>{plant.data.description}</p>
+            <a href={`notes/${note.slug}`}>{note.data.title}
+                <p>{note.data.description}</p>
             </a>
 
         </li>

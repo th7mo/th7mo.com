@@ -3,15 +3,16 @@ import { getCollection } from 'astro:content';
 import GardenLayout from '../../layouts/GardenLayout.astro';
 
 export async function getStaticPaths() {
-    const plants = await getCollection('garden');
-        return plants.map(entry => ({
+    const notes = await getCollection('notes');
+    return notes.map(entry => {
         params: { slug: entry.slug }, props: { entry },
-    }));
+    });
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
+
 <GardenLayout frontmatter={entry.data}>
     <Content />
 </GardenLayout>
