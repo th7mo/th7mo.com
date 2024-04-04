@@ -11,7 +11,7 @@
         "update": "cd src/content/notes && git fetch && git rebase origin/main && cd .. && cd $(git root) && git add src/content/* && git commit -m 'update content' && git push"
     },
     "devDependencies": {
-        "astro": "4.5.5"
+        "astro": "4.5.15"
     },
     "dependencies": {
         "@fontsource/courier-prime": "5.0.19",
