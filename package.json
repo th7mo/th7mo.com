@@ -14,7 +14,7 @@
         "astro": "4.5.5"
     },
     "dependencies": {
-        "@fontsource/courier-prime": "5.0.19",
+        "@fontsource/courier-prime": "5.0.20",
         "@fontsource/source-serif-pro": "5.0.8"
     }
 }
