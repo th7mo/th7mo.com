@@ -5,7 +5,8 @@ const notes = defineCollection({
     type: 'content',
     schema: z.object({
       title: z.string(),
-      description: z.string()
+      description: z.string(),
+      isPublic: z.boolean()
     })
 });
 // Export a single `collections` object to register your collection(s)
