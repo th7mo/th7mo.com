@@ -10,16 +10,10 @@ interface Props {
 
 const { title, description, h1 } = Astro.props;
 
-import '@fontsource/source-serif-pro/200.css';
-import '@fontsource/source-serif-pro/300.css';
 import '@fontsource/source-serif-pro/400.css';
-import '@fontsource/source-serif-pro/600.css';
 import '@fontsource/source-serif-pro/700.css';
 import '@fontsource/source-serif-pro/900.css';
-import '@fontsource/source-serif-pro/200-italic.css';
-import '@fontsource/source-serif-pro/300-italic.css';
 import '@fontsource/source-serif-pro/400-italic.css';
-import '@fontsource/source-serif-pro/600-italic.css';
 import '@fontsource/source-serif-pro/700-italic.css';
 import '@fontsource/source-serif-pro/900-italic.css';
 import '@fontsource/courier-prime/400.css';
@@ -180,7 +174,7 @@ import '@fontsource/courier-prime/700-italic.css';
 
     a,
     a:visited {
-        font-weight: bold;
+        font-weight: 700;
         text-decoration-thickness: 1.2px;
     }
 
@@ -246,7 +240,7 @@ import '@fontsource/courier-prime/700-italic.css';
     kbd {
         min-width: 1.3rem;
         text-align: center;
-        font-weight: bold;
+        font-weight: 700;
         box-shadow: 1px 1px 0 0 var(--color-foreground);
     }
 
@@ -271,11 +265,11 @@ import '@fontsource/courier-prime/700-italic.css';
     }
 
     span[style^="color:var(--astro-code-token-keyword)"] {
-        font-weight: bold;
+        font-weight: 700;
     }
 
     span[style^="color:var(--astro-code-token-function)"] {
-        font-weight: bold;
+        font-weight: 700;
     }
 
     span[style^="color:var(--astro-code-token-comment)"] {
