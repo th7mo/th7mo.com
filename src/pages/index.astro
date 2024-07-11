@@ -1,4 +1,6 @@
 ---
-import Notes from "./notes.astro"
-return Astro.redirect('/notes')
+const baseUrlWithTrailingForwardSlash = Astro.url.href;
 ---
+<head>
+  <meta http-equiv='refresh' content={`0; URL=${baseUrlWithTrailingForwardSlash}notes`}>
+</head>
