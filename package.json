@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "@fontsource/courier-prime": "5.0.20",
+        "@fontsource/dm-serif-display": "^5.0.20",
         "@fontsource/source-serif-pro": "5.0.8"
     }
 }
