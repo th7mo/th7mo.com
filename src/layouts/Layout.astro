@@ -10,6 +10,7 @@ interface Props {
 
 const { title, description, h1 } = Astro.props;
 
+import '@fontsource-variable/playfair-display';
 import '@fontsource/source-serif-pro/400.css';
 import '@fontsource/source-serif-pro/700.css';
 import '@fontsource/source-serif-pro/900.css';
@@ -20,7 +21,6 @@ import '@fontsource/courier-prime/400.css';
 import '@fontsource/courier-prime/700.css';
 import '@fontsource/courier-prime/400-italic.css';
 import '@fontsource/courier-prime/700-italic.css';
-import '@fontsource/dm-serif-display';
 ---
 
 <!doctype html>
@@ -67,7 +67,7 @@ import '@fontsource/dm-serif-display';
         --body-lg: calc(var(--body-md) * 1.125);
 
         --font-primary: "Source Serif Pro", serif;
-        --font-heading: "DM Serif Display", serif;
+        --font-heading: "Playfair Display Variable", serif;
         --font-mono: "Courier Prime", monospace;
     }
 
@@ -121,25 +121,22 @@ import '@fontsource/dm-serif-display';
     h1,
     h2 {
         line-height: 1;
-    }
-
-    h3 {
-        line-height: 1.2;
-        font-weight: 700;
-    }
-
-    h1 {
-        font-size: var(--title-lg);
         font-weight: 900;
-    }
-
-    h2 {
-        font-size: var(--title-md);
-        font-weight: 700;
     }
 
     h3 {
         font-size: var(--title-sm);
+        line-height: 1.2;
+        font-weight: 700;
+        font-weight: 800;
+    }
+
+    h1 {
+        font-size: var(--title-lg);
+    }
+
+    h2 {
+        font-size: var(--title-md);
     }
 
     p {
