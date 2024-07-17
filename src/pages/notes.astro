@@ -69,4 +69,15 @@ const notes = await getCollection("notes", ({ data }) => {
     li a:hover {
         background-color: var(--color-overlay);
     }
+
+    @media screen and (max-width: 450px) {
+        p {
+            font-size: var(--body-sm);
+            text-align: start;
+        }
+
+        h1 {
+            font-size: var(--title-md);
+        }
+    }
 </style>
