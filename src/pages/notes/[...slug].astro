@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import GardenLayout from '../../layouts/GardenLayout.astro';
+import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
     const notes = await getCollection('notes');
@@ -10,9 +10,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const { title, description } = entry.data;
 const { Content } = await entry.render();
 ---
 
-<GardenLayout frontmatter={entry.data}>
+<Layout title={title} description={description}>
     <Content />
-</GardenLayout>
+</Layout>

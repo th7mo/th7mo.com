@@ -1,29 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import { getCollection } from "astro:content";
+
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;
 });
+const description = "A collection of my scattered thoughts."
 ---
 
-<Layout
-    title="My Notes"
-    description="A collection of my scattered thoughts"
->
-<p>
-    A collection of my scattered thoughts.
-</p>
+<Layout title="My Notes" description={description}>
+    <p>{description}</p>
 
-<ol>
-    {notes.map((note) => (
-        <li>
-            <a href={`notes/${note.slug}`}>{note.data.title}
-                <p>{note.data.description}</p>
-            </a>
-
-        </li>
-    ))}
-</ol>
+    <ol>
+        {notes.map((note) => (
+            <li>
+                <a href={`notes/${note.slug}`}>{note.data.title}
+                    <p>{note.data.description}</p>
+                </a>
+            </li>
+        ))}
+    </ol>
 </Layout>
 
 <style>
@@ -72,7 +68,6 @@ const notes = await getCollection("notes", ({ data }) => {
     @media screen and (max-width: 450px) {
         p {
             font-size: var(--body-sm);
-            text-align: start;
         }
 
         h1 {
