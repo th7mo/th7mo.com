@@ -44,7 +44,8 @@ import '@fontsource/courier-prime/700-italic.css';
         --color-overlay: #f0f0f4;
 
         --border-radius-xs: 2px;
-        --border-radius-sm: 5px;
+        --border-radius-sm: 3px;
+        --border-radius-md: 5px;
 
         --spacing-xs: calc(var(--spacing-sm) / 1.618);
         --spacing-sm: calc(var(--spacing-md) / 1.618);
@@ -213,11 +214,12 @@ import '@fontsource/courier-prime/700-italic.css';
 
     code,
     kbd {
-        padding: 0 var(--spacing-xs);
+        padding: 2px var(--spacing-xs);
         border-radius: var(--border-radius-sm);
         background-color: var(--color-overlay);
         font-size: var(--body-xs);
         font-family: var(--font-mono);
+        vertical-align: middle;
     }
 
     pre {
