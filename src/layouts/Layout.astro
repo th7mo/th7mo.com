@@ -47,6 +47,7 @@ import '@fontsource/courier-prime/700-italic.css';
         --border-radius-sm: 3px;
         --border-radius-md: 5px;
 
+        --spacing-2xs: calc(var(--spacing-xs) / 1.618);
         --spacing-xs: calc(var(--spacing-sm) / 1.618);
         --spacing-sm: calc(var(--spacing-md) / 1.618);
         --spacing-md: var(--body-md);
@@ -214,7 +215,7 @@ import '@fontsource/courier-prime/700-italic.css';
 
     code,
     kbd {
-        padding: 2px var(--spacing-xs);
+        padding: 2px var(--spacing-2xs);
         border-radius: var(--border-radius-sm);
         background-color: var(--color-overlay);
         font-size: var(--body-xs);
