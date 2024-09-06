@@ -13,7 +13,7 @@
         "astro": "4.11.5"
     },
     "dependencies": {
-        "@fontsource-variable/playfair-display": "5.0.25",
+        "@fontsource-variable/playfair-display": "5.0.26",
         "@fontsource/courier-prime": "5.0.20",
         "@fontsource/source-serif-pro": "5.0.8"
     }
