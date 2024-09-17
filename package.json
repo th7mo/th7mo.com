@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "@fontsource-variable/playfair-display": "5.1.0",
-        "@fontsource/courier-prime": "5.0.22",
+        "@fontsource/courier-prime": "5.1.0",
         "@fontsource/source-serif-pro": "5.1.0"
     }
 }
