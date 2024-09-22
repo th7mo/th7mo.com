@@ -1,0 +1,41 @@
+---
+const { note } = Astro.props;
+---
+<a href={`notes/${note.slug}`}>{note.data.title}
+    <p>{note.data.description}</p>
+</a>
+
+<style>
+    a {
+        background-color: var(--color-surface);
+        color: var(--color-foreground);
+        font-family: var(--font-secondary);
+        padding: var(--spacing-md);
+        display: block;
+        transition: all 0.15s;
+        text-decoration: none;
+        border-radius: var(--border-radius-xs);
+        height: 100%;
+    }
+
+    a,
+    a:visited {
+        font-weight: 900;
+    }
+
+
+    p {
+        font-size: var(--body-sm);
+        font-weight: 300;
+        text-align: start;
+        hyphens: none;
+    }
+
+    a::before {
+        content: "";
+    }
+
+    a:hover {
+        background-color: var(--color-overlay);
+    }
+</style>

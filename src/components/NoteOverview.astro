@@ -1,0 +1,23 @@
+---
+import NoteItem from "./NoteItem.astro";
+const { notes } = Astro.props;
+---
+
+<ol>
+    {notes.map((note) => (
+        <li>
+            <NoteItem note={note}></NoteItem>
+        </li>
+    ))}
+</ol>
+
+<style>
+    ol {
+        margin-top: var(--spacing-lg);
+        display: grid;
+        padding: 0;
+        gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        list-style: none;
+    }
+</style>

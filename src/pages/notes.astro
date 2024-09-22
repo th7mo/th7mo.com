@@ -1,6 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import NoteOverview from "../components/NoteOverview.astro";
 
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;
@@ -10,61 +11,10 @@ const description = "A collection of my scattered thoughts."
 
 <Layout title="My Notes" description={description}>
     <p>{description}</p>
-
-    <ol>
-        {notes.map((note) => (
-            <li>
-                <a href={`notes/${note.slug}`}>{note.data.title}
-                    <p>{note.data.description}</p>
-                </a>
-            </li>
-        ))}
-    </ol>
+    <NoteOverview notes={notes}></NoteOverview>
 </Layout>
 
 <style>
-    ol {
-        margin-top: var(--spacing-lg);
-        display: grid;
-        padding: 0;
-        gap: var(--spacing-md);
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        list-style: none;
-    }
-
-    li a {
-        background-color: var(--color-surface);
-        color: var(--color-foreground);
-        font-family: var(--font-secondary);
-        padding: var(--spacing-md);
-        display: block;
-        transition: all 0.15s;
-        text-decoration: none;
-        border-radius: var(--border-radius-xs);
-        height: 100%;
-    }
-
-    li a,
-    li a:visited {
-        font-weight: 900;
-    }
-
-
-    li p {
-        font-size: var(--body-sm);
-        font-weight: 300;
-        text-align: start;
-        hyphens: none;
-    }
-
-    li a::before {
-        content: "";
-    }
-
-    li a:hover {
-        background-color: var(--color-overlay);
-    }
-
     @media screen and (max-width: 450px) {
         p {
             font-size: var(--body-sm);
