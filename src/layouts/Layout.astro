@@ -2,24 +2,19 @@
 import Head from './Head.astro';
 import Breadcrumb from './Breadcrumb.astro';
 
-interface Props {
-    title: string;
-    description: string;
-}
-
-const { title, description } = Astro.props;
-
 import '@fontsource-variable/playfair-display';
+
 import '@fontsource/source-serif-pro/400.css';
 import '@fontsource/source-serif-pro/700.css';
-import '@fontsource/source-serif-pro/900.css';
 import '@fontsource/source-serif-pro/400-italic.css';
 import '@fontsource/source-serif-pro/700-italic.css';
-import '@fontsource/source-serif-pro/900-italic.css';
+
 import '@fontsource/courier-prime/400.css';
 import '@fontsource/courier-prime/700.css';
 import '@fontsource/courier-prime/400-italic.css';
 import '@fontsource/courier-prime/700-italic.css';
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
