@@ -7,6 +7,7 @@ import '../styles/base.css';
 import '../styles/links.css';
 import '../styles/headings.css';
 import '../styles/code.css';
+import '../styles/misc.css';
 
 import '@fontsource-variable/playfair-display';
 
@@ -34,7 +35,7 @@ const { title, description } = Astro.props;
     </body>
 </html>
 
-<style is:global>
+<style>
     body {
         overflow-y: scroll;
         overflow-wrap: break-word;
@@ -51,34 +52,5 @@ const { title, description } = Astro.props;
 
     main {
         padding-bottom: var(--layout-2xl);
-    }
-
-    ol,
-    ul {
-        padding-left: var(--spacing-lg);
-    }
-
-    p:not(:last-child),
-    ol:not(:last-child),
-    ul:not(:last-child),
-    blockquote:not(:last-child),
-    pre:not(:last-child) {
-        margin-bottom: var(--spacing-md);
-    }
-
-    blockquote {
-        padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-md);
-        border-left: var(--spacing-sm) solid var(--color-foreground);
-    }
-
-    em,
-    blockquote p {
-        font-style: italic;
-    }
-
-
-    hr {
-        margin: var(--spacing-lg) 0 var(--spacing-md);
-        border: 1px solid var(--color-foreground);
     }
 </style>
