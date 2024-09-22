@@ -6,10 +6,12 @@ import NoteOverview from "../components/NoteOverview.astro";
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;
 });
-const description = "A collection of my scattered thoughts."
+const title = "My Notes";
+const description = "A collection of my scattered thoughts.";
 ---
 
-<Layout title="My Notes" description={description}>
+<Layout title={title} description={description}>
+    <h1>{title}</h1>
     <p>{description}</p>
     <NoteOverview notes={notes}></NoteOverview>
 </Layout>
