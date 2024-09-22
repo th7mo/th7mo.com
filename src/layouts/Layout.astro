@@ -2,6 +2,8 @@
 import Head from './Head.astro';
 import Breadcrumb from './Breadcrumb.astro';
 
+import '../styles/variables.css';
+import '../styles/base.css';
 import '../styles/links.css';
 import '../styles/headings.css';
 import '../styles/code.css';
@@ -33,66 +35,6 @@ const { title, description } = Astro.props;
 </html>
 
 <style is:global>
-    :root {
-        --color-foreground: #000;
-        --color-background: #fff;
-        /* Mozilla Light Gray 10 */
-        --color-surface: #f9f9fb;
-        /* Mozilla Light Gray 20 */
-        --color-overlay: #f0f0f4;
-
-        --border-radius-xs: 2px;
-        --border-radius-sm: 3px;
-        --border-radius-md: 5px;
-
-        --spacing-2xs: calc(var(--spacing-xs) / 1.618);
-        --spacing-xs: calc(var(--spacing-sm) / 1.618);
-        --spacing-sm: calc(var(--spacing-md) / 1.618);
-        --spacing-md: var(--body-md);
-        --spacing-lg: calc(var(--spacing-md) * 1.618);
-
-        --layout-md: 3rem;
-        --layout-lg: 4rem;
-        --layout-xl: 6rem;
-        --layout-2xl: 12rem;
-
-        --title-sm: calc(var(--body-md) * 1.4);
-        --title-md: calc(var(--title-sm) * 1.4);
-        --title-lg: calc(var(--title-md) * 1.4);
-
-        --body-xs: calc(var(--body-sm) / 1.125);
-        --body-sm: calc(var(--body-md) / 1.125);
-        --body-md: 1.125rem;
-        --body-lg: calc(var(--body-md) * 1.125);
-
-        --font-primary: "Source Serif Pro", serif;
-        --font-heading: "Playfair Display Variable", serif;
-        --font-mono: "Courier Prime", monospace;
-    }
-
-    @media (prefers-color-scheme:dark) {
-        :root {
-            --color-foreground: #fff;
-            --color-background: #000;
-            /* Mozilla Dark Gray 80 */
-            --color-surface: #1c1b22;
-            /* Mozilla Dark Gray 70 */
-            --color-overlay: #2b2a33;
-        }
-    }
-
-    * {
-        margin: 0;
-        box-sizing: border-box;
-        padding: 0;
-        color: var(--color-foreground);
-    }
-
-    ::selection {
-        color: var(--color-background);
-        background-color: var(--color-foreground);
-    }
-
     body {
         overflow-y: scroll;
         overflow-wrap: break-word;
@@ -109,14 +51,6 @@ const { title, description } = Astro.props;
 
     main {
         padding-bottom: var(--layout-2xl);
-    }
-
-    :focus {
-        outline: 2px solid var(--color-foreground);
-    }
-
-    :focus:not(:focus-visible) {
-        outline: none;
     }
 
     ol,
