@@ -1,0 +1,47 @@
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    margin: calc(var(--body-md) * 2) 0 var(--body-md);
+    hyphens: none;
+}
+
+h1,
+h2 {
+    line-height: 1;
+}
+
+h3 {
+    font-size: var(--title-sm);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--title-lg);
+}
+
+h2 {
+    font-size: var(--title-md);
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: var(--title-md);
+    }
+
+    h2 {
+        font-size: var(--title-sm);
+    }
+
+    h3 {
+        font-size: var(--body-lg);
+    }
+
+    p {
+        font-size: var(--body-sm);
+        text-align: start;
+    }
+}

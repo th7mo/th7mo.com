@@ -2,6 +2,10 @@
 import Head from './Head.astro';
 import Breadcrumb from './Breadcrumb.astro';
 
+import '../styles/links.css';
+import '../styles/headings.css';
+import '../styles/code.css';
+
 import '@fontsource-variable/playfair-display';
 
 import '@fontsource/source-serif-pro/400.css';
@@ -107,75 +111,12 @@ const { title, description } = Astro.props;
         padding-bottom: var(--layout-2xl);
     }
 
-    h1, h2, h3 {
-        font-family: var(--font-heading);
-        font-weight: 900;
-        margin: calc(var(--body-md) * 2) 0 var(--body-md);
-        hyphens: none;
-    }
-
-    h1,
-    h2 {
-        line-height: 1;
-    }
-
-    h3 {
-        font-size: var(--title-sm);
-        line-height: 1.2;
-    }
-
-    h1 {
-        font-size: var(--title-lg);
-    }
-
-    h2 {
-        font-size: var(--title-md);
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    @media screen and (max-width: 450px) {
-        p {
-            font-size: var(--body-sm);
-            text-align: start;
-        }
-
-        h1 {
-            font-size: var(--title-md);
-        }
-
-        h2 {
-            font-size: var(--title-sm);
-        }
-
-        h3 {
-            font-size: var(--body-lg);
-        }
-    }
-
     :focus {
         outline: 2px solid var(--color-foreground);
     }
 
     :focus:not(:focus-visible) {
         outline: none;
-    }
-
-    a,
-    a:visited {
-        font-weight: 700;
-        text-decoration-thickness: 1.2px;
-    }
-
-    a::before {
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: none;
     }
 
     ol,
@@ -205,66 +146,5 @@ const { title, description } = Astro.props;
     hr {
         margin: var(--spacing-lg) 0 var(--spacing-md);
         border: 1px solid var(--color-foreground);
-    }
-
-    code,
-    kbd {
-        padding: 2px var(--spacing-2xs);
-        border-radius: var(--border-radius-sm);
-        background-color: var(--color-overlay);
-        font-size: var(--body-xs);
-        font-family: var(--font-mono);
-        vertical-align: middle;
-    }
-
-    pre {
-        background-color: transparent !important;
-    }
-
-    pre code {
-        overflow: auto;
-        background-color: var(--color-surface);
-        display: block;
-        padding: var(--spacing-md);
-        border-radius: var(--border-radius-xs);
-    }
-
-    kbd {
-        min-width: 1.3rem;
-        text-align: center;
-        font-weight: 700;
-        box-shadow: 1px 1px 0 0 var(--color-foreground);
-    }
-
-    a[href^="http"]::after {
-        content: url("/svg/external-link.svg");
-    }
-
-    a[href^="#"]:not([href^="#user-content-fn"])::before {
-        content: "§";
-    }
-
-    a[href^="#user-content-fn"] {
-        text-decoration: none;
-    }
-
-    a[href^="#user-content-fn"]:not([href^="#user-content-fnref"])::before {
-        content: "[";
-    }
-
-    a[href^="#user-content-fn"]:not([href^="#user-content-fnref"])::after {
-        content: "]";
-    }
-
-    span[style^="color:var(--astro-code-token-keyword)"] {
-        font-weight: 700;
-    }
-
-    span[style^="color:var(--astro-code-token-function)"] {
-        font-weight: 700;
-    }
-
-    span[style^="color:var(--astro-code-token-comment)"] {
-        font-style: italic;
     }
 </style>
