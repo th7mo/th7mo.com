@@ -1,6 +1,7 @@
 ---
 const { note } = Astro.props;
 ---
+
 <a href={`notes/${note.slug}`}>{note.data.title}
     <p>{note.data.description}</p>
 </a>
@@ -23,19 +24,18 @@ const { note } = Astro.props;
         font-weight: 900;
     }
 
-
-    p {
-        font-size: var(--body-sm);
-        font-weight: 300;
-        text-align: start;
-        hyphens: none;
-    }
-
     a::before {
         content: "";
     }
 
     a:hover {
         background-color: var(--color-overlay);
+    }
+
+    p {
+        font-size: var(--body-sm);
+        font-weight: 300;
+        text-align: start;
+        hyphens: none;
     }
 </style>
