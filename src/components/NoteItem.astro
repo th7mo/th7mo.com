@@ -2,7 +2,7 @@
 const { note } = Astro.props;
 ---
 
-<a href={`notes/${note.slug}`}>{note.data.title}
+<a href={`${Astro.url.pathname}/${note.slug}`}>{note.data.title}
     <p>{note.data.description}</p>
 </a>
 
@@ -22,10 +22,6 @@ const { note } = Astro.props;
     a,
     a:visited {
         font-weight: 700;
-    }
-
-    a::before {
-        content: "";
     }
 
     a:hover {
