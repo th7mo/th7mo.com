@@ -5,7 +5,7 @@ const { notes } = Astro.props;
 const groupedNotes = {};
 
 notes.forEach(note => {
-  let firstLetter = note.slug.charAt(0).toUpperCase();
+  let firstLetter = note.slug.charAt(0).toLowerCase();
   if (!groupedNotes[firstLetter]) {
     groupedNotes[firstLetter] = [];
   }
@@ -14,7 +14,7 @@ notes.forEach(note => {
 ---
 
 {Object.entries(groupedNotes).map(([firstLetter, notes]) => (
-    <h2 id={firstLetter}>{firstLetter}</h2>
+    <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
     <ol>
         {notes.map((note) => (
             <li>

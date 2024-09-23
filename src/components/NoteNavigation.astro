@@ -1,0 +1,46 @@
+---
+const { notes } = Astro.props;
+
+const letters = [];
+notes.forEach((note) => {
+    let letter = note.slug.charAt(0).toLowerCase();
+    if (letters.length === 0 || letters[letters.length - 1] !== letter) {
+        letters.push(letter);
+    }
+});
+---
+
+<ol>
+    {letters.map((letter) => (
+        <li>
+            <a href={`notes#${letter}`}>{letter.toUpperCase()}</a>
+        </li>
+    ))}
+</ol>
+
+<style>
+    ol {
+        margin-top: var(--spacing-lg);
+        display: grid;
+        padding: 0;
+        gap: var(--spacing-sm);
+        grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: var(--color-surface);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.15s;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    a:hover {
+        background-color: var(--color-overlay);
+    }
+
+</style>
