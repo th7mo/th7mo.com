@@ -14,7 +14,7 @@ notes.forEach(note => {
 ---
 
 {Object.entries(groupedNotes).map(([firstLetter, notes]) => (
-    <h2>{firstLetter}</h2>
+    <h2 id={firstLetter}>{firstLetter}</h2>
     <ol>
         {notes.map((note) => (
             <li>
