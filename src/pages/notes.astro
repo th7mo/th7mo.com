@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getCollection } from "astro:content";
 import NoteOverview from "../components/NoteOverview.astro";
+import { getCollection } from "astro:content";
 
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;
