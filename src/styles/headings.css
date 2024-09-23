@@ -40,8 +40,7 @@ p {
         font-size: var(--body-lg);
     }
 
-    p, main li {
-        font-size: var(--body-sm);
+    p {
         text-align: start;
     }
 }
