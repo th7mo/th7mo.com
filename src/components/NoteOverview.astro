@@ -1,15 +1,28 @@
 ---
 import NoteItem from "./NoteItem.astro";
+
 const { notes } = Astro.props;
+const groupedNotes = {};
+
+notes.forEach(note => {
+  let firstLetter = note.slug.charAt(0).toUpperCase();
+  if (!groupedNotes[firstLetter]) {
+    groupedNotes[firstLetter] = [];
+  }
+  groupedNotes[firstLetter].push(note);
+});
 ---
 
-<ol>
-    {notes.map((note) => (
-        <li>
-            <NoteItem note={note}></NoteItem>
-        </li>
-    ))}
-</ol>
+{Object.entries(groupedNotes).map(([firstLetter, notes]) => (
+    <h2>{firstLetter}</h2>
+    <ol>
+        {notes.map((note) => (
+            <li>
+                <NoteItem note={note}></NoteItem>
+            </li>
+        ))}
+    </ol>
+))}
 
 <style>
     ol {

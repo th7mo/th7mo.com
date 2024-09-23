@@ -1,9 +1,7 @@
 :root {
     --color-foreground: #000;
     --color-background: #fff;
-    /* Mozilla Light Gray 10 */
     --color-surface: #f9f9fb;
-    /* Mozilla Light Gray 20 */
     --color-overlay: #f0f0f4;
 
     --border-radius-xs: 2px;
@@ -39,9 +37,7 @@
     :root {
         --color-foreground: #fff;
         --color-background: #000;
-        /* Mozilla Dark Gray 80 */
         --color-surface: #1c1b22;
-        /* Mozilla Dark Gray 70 */
         --color-overlay: #2b2a33;
     }
 }
