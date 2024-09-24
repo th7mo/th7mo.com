@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NoteNavigation from "../components/NoteNavigation.astro";
+import NoteOverview from "../components/NoteOverview.astro";
+
+const { title, description, notes } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <NoteNavigation notes={notes}></NoteNavigation>
+    <NoteOverview notes={notes}></NoteOverview>
+</Layout>

@@ -3,10 +3,10 @@ import NoteOverview from "../layouts/NoteOverview.astro";
 import { getCollection } from "astro:content";
 
 const notes = await getCollection("notes", ({ data }) => {
-    return data.isPublic;
+    return !data.isPublic;
 });
-const title = "My Notes";
-const description = "A collection of my scattered thoughts.";
+const title = "My Hidden Notes";
+const description = "A collection of my more private scattered thoughts.";
 ---
 
 <NoteOverview title={title} description={description} notes={notes}></NoteOverview>
