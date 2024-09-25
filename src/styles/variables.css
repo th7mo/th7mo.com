@@ -1,8 +1,8 @@
 :root {
     --color-foreground: #000;
     --color-background: #fff;
-    --color-surface: #f9f9fb;
-    --color-overlay: #f0f0f4;
+    --color-surface: #f8f8fa;
+    --color-overlay: #efeff3;
 
     --border-radius-xs: 2px;
     --border-radius-sm: 3px;
