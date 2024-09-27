@@ -14,9 +14,9 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
 
 <style>
     ol {
-        margin-top: var(--spacing-lg);
-        display: grid;
+        margin: var(--spacing-lg) 0 calc(2 * var(--spacing-lg)) 0;
         padding: 0;
+        display: grid;
         gap: var(--spacing-sm);
         grid-template-columns: repeat(auto-fill, 3rem);
         justify-content: space-between;

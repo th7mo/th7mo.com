@@ -1,7 +1,7 @@
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 900;
-    margin: calc(var(--body-md) * 2) 0 var(--body-md);
+    margin: calc(2 * var(--body-md)) 0 var(--body-md) 0;
     hyphens: none;
 }
 
