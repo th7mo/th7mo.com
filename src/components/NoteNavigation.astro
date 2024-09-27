@@ -18,7 +18,8 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
         display: grid;
         padding: 0;
         gap: var(--spacing-md);
-        grid-template-columns: repeat(auto-fit, minmax(3rem, max-content));
+        grid-template-columns: repeat(auto-fill, 3rem);
+        justify-content: space-between;
         list-style: none;
     }
 </style>
