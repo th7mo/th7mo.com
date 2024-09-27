@@ -29,7 +29,7 @@
     --body-lg: calc(var(--body-md) * 1.125);
 
     --font-primary: "Source Serif Pro", serif;
-    --font-heading: "Playfair Display Variable", serif;
+    --font-heading: "Playfair Display", serif;
     --font-mono: "Courier Prime", monospace;
 }
 

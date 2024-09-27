@@ -2,24 +2,13 @@
 import Head from "./Head.astro";
 import Breadcrumb from "./Breadcrumb.astro";
 
+import "../styles/fonts.css";
 import "../styles/variables.css";
 import "../styles/base.css";
 import "../styles/links.css";
 import "../styles/headings.css";
 import "../styles/code.css";
 import "../styles/misc.css";
-
-import "@fontsource-variable/playfair-display";
-
-import "@fontsource/source-serif-pro/400.css";
-import "@fontsource/source-serif-pro/700.css";
-import "@fontsource/source-serif-pro/400-italic.css";
-import "@fontsource/source-serif-pro/700-italic.css";
-
-import "@fontsource/courier-prime/400.css";
-import "@fontsource/courier-prime/700.css";
-import "@fontsource/courier-prime/400-italic.css";
-import "@fontsource/courier-prime/700-italic.css";
 
 const { title, description } = Astro.props;
 ---
@@ -35,7 +24,7 @@ const { title, description } = Astro.props;
     </body>
 </html>
 
-<style>
+<style is:global>
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 4.5rem;

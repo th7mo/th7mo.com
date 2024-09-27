@@ -11,10 +11,5 @@
     },
     "devDependencies": {
         "astro": "4.15.9"
-    },
-    "dependencies": {
-        "@fontsource-variable/playfair-display": "5.1.0",
-        "@fontsource/courier-prime": "5.1.0",
-        "@fontsource/source-serif-pro": "5.1.0"
     }
 }
