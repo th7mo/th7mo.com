@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "../styles/variables.css";
 
 const title = "Colors";
 const description = "All the colors used on the this website";
@@ -9,21 +8,21 @@ const description = "All the colors used on the this website";
 <Layout title={title} description={description}>
     <h1>{title}</h1>
     <p>{description}:</p>
-    <ol>
-        <li id="color-foreground">foreground</li>
-        <li id="color-background">background</li>
-        <li id="color-surface">surface</li>
-        <li id="color-overlay">overlay</li>
-    </ol>
+    <ul>
+        <li id="foreground">foreground</li>
+        <li id="background">background</li>
+        <li id="surface">surface</li>
+        <li id="overlay">overlay</li>
+    </ul>
 </Layout>
 
 <style>
-    ol {
+    ul {
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
         list-style: none;
-        padding: 0;
     }
 
     li {
@@ -33,30 +32,28 @@ const description = "All the colors used on the this website";
         align-items: center;
         justify-content: center;
         font-style: italic;
+        border: 1.5px solid var(--color-foreground);
     }
 
-    #color-foreground::selection {
+    #foreground::selection {
         color: var(--color-foreground);
         background-color: var(--color-background);
     }
 
-    #color-foreground {
+    #foreground {
         color: var(--color-background);
         background-color: var(--color-foreground);
     }
 
-    #color-background {
+    #background {
         background-color: var(--color-background);
-        border: 1.5px solid var(--color-foreground);
     }
 
-    #color-surface {
+    #surface {
         background-color: var(--color-surface);
-        border: 1.5px solid var(--color-foreground);
     }
 
-    #color-overlay {
+    #overlay {
         background-color: var(--color-overlay);
-        border: 1.5px solid var(--color-foreground);
     }
 </style>
