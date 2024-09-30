@@ -37,7 +37,7 @@
     :root {
         --color-foreground: #fff;
         --color-background: #000;
-        --color-surface: #1c1b22;
-        --color-overlay: #2b2a33;
+        --color-surface: #1f1e25;
+        --color-overlay: #2e2d36;
     }
 }
