@@ -1,5 +1,5 @@
 ---
-import NoteNavigationItem from "./NoteNavigationItem.astro";
+import AlphabetNavigationLetter from "./AlphabetNavigationLetter.astro";
 
 const { notes } = Astro.props;
 
@@ -8,7 +8,7 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
 
 <ol>
     {letters.map((letter) => (
-        <NoteNavigationItem letter={letter}></NoteNavigationItem>
+        <AlphabetNavigationLetter letter={letter}></AlphabetNavigationLetter>
     ))}
 </ol>
 
