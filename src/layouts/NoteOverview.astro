@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+import AlphabetNavigation from "../components/AlphabetNavigation.astro";
+import NoteCollection from "../components/NoteCollection.astro";
+
+const { title, description, notes } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+    <h1>{title}</h1>
+    <p>{description}.</p>
+    <AlphabetNavigation notes={notes}></AlphabetNavigation>
+    <NoteCollection notes={notes}></NoteCollection>
+</Layout>
