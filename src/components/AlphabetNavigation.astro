@@ -3,22 +3,26 @@ import AlphabetNavigationLetter from "./AlphabetNavigationLetter.astro";
 
 const { notes } = Astro.props;
 
+const alphabetNavigationLetterSize = "2.75rem";
 const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase()))];
 ---
 
 <ol>
     {letters.map((letter) => (
-        <AlphabetNavigationLetter letter={letter}></AlphabetNavigationLetter>
+        <AlphabetNavigationLetter
+            letter={letter}
+            size={alphabetNavigationLetterSize}
+        ></AlphabetNavigationLetter>
     ))}
 </ol>
 
-<style>
+<style define:vars={{ alphabetNavigationLetterSize }}>
     ol {
         margin: var(--spacing-lg) 0 calc(2 * var(--spacing-lg)) 0;
         padding: 0;
         display: grid;
         gap: var(--spacing-sm);
-        grid-template-columns: repeat(auto-fill, 3rem);
+        grid-template-columns: repeat(auto-fill, var(--alphabetNavigationLetterSize));
         justify-content: space-between;
         list-style: none;
     }
