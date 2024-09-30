@@ -13,7 +13,6 @@ pre {
 }
 
 pre code {
-    overflow: auto;
     background-color: var(--color-surface);
     display: block;
     padding: var(--spacing-md);
