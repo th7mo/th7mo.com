@@ -2,38 +2,16 @@
 const { note } = Astro.props;
 ---
 
-<a href={`${Astro.url.pathname}/${note.slug}`}>{note.data.title}
+<a class="navigation-item" href={`${Astro.url.pathname}/${note.slug}`}>{note.data.title}
     <p>{note.data.description}</p>
 </a>
 
 <style>
     a {
-        background-color: var(--color-surface);
-        color: var(--color-foreground);
-        font-family: var(--font-secondary);
         font-size: var(--body-lg);
         padding: var(--spacing-md);
         display: block;
-        transition: all 0.15s;
-        text-decoration: none;
-        border-radius: var(--border-radius-xs);
-        border: 1px solid var(--color-foreground);
         height: 100%;
-    }
-
-    a,
-    a:visited {
-        font-weight: 700;
-    }
-
-    a:hover {
-        background-color: var(--color-overlay);
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-        a:hover {
-            transform: translateY(-1.5px);
-        }
     }
 
     a p {
