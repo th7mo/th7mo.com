@@ -1,5 +1,5 @@
 ---
-import NoteItem from "./NoteItem.astro";
+import NoteNavigationCard from "./NoteNavigationCard.astro";
 
 const { notes } = Astro.props;
 const groupedNotes = {};
@@ -18,7 +18,7 @@ notes.forEach(note => {
     <ol>
         {notes.map((note) => (
             <li>
-                <NoteItem note={note}></NoteItem>
+                <NoteNavigationCard note={note}></NoteNavigationCard>
             </li>
         ))}
     </ol>

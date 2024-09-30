@@ -1,5 +1,7 @@
 ---
-import NoteOverview from "../layouts/NoteOverview.astro";
+import Layout from "../layouts/Layout.astro";
+import NoteOverview from "../components/NoteOverview.astro";
+import AlphabetNavigation from "../components/AlphabetNavigation.astro";
 import { getCollection } from "astro:content";
 
 const notes = await getCollection("notes", ({ data }) => {
@@ -9,4 +11,9 @@ const title = "My Notes";
 const description = "A collection of my scattered thoughts.";
 ---
 
-<NoteOverview title={title} description={description} notes={notes}></NoteOverview>
+<Layout title={title} description={description}>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <AlphabetNavigation notes={notes}></AlphabetNavigation>
+    <NoteOverview notes={notes}></NoteOverview>
+</Layout>
