@@ -22,6 +22,7 @@ const path = Astro.url.pathname;
         padding: var(--spacing-md) 0;
         margin: var(--layout-xl) 0;
         background-color: var(--color-background);
+        z-index: 1;
     }
 
     ol {
@@ -40,12 +41,12 @@ const path = Astro.url.pathname;
     }
 
     li:last-child a {
-        font-weight: 900;
+        font-weight: 700;
     }
 
     a {
+        font-weight: 400;
         text-decoration: none;
-        font-weight: 300;
     }
 
     a:hover {

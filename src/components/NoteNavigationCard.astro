@@ -1,0 +1,23 @@
+---
+const { note } = Astro.props;
+---
+
+<a class="navigation-card" href={`${Astro.url.pathname}/${note.slug}`}>{note.data.title}
+    <p>{note.data.description}</p>
+</a>
+
+<style>
+    a {
+        font-size: var(--body-lg);
+        padding: var(--spacing-md);
+        display: block;
+        height: 100%;
+    }
+
+    a p {
+        font-size: var(--body-sm);
+        font-weight: 400;
+        text-align: start;
+        hyphens: none;
+    }
+</style>
