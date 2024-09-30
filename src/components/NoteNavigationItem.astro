@@ -13,6 +13,7 @@ const { letter } = Astro.props;
         display: flex;
         justify-content: center;
         border-radius: var(--border-radius-xs);
+        border: 1px solid var(--color-foreground);
         align-items: center;
         transition: all 0.15s;
         height: 3rem;
@@ -21,5 +22,11 @@ const { letter } = Astro.props;
 
     a:hover {
         background-color: var(--color-overlay);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        a:hover {
+            transform: translateY(-1.5px);
+        }
     }
 </style>

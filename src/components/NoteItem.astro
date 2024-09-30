@@ -17,6 +17,7 @@ const { note } = Astro.props;
         transition: all 0.15s;
         text-decoration: none;
         border-radius: var(--border-radius-xs);
+        border: 1px solid var(--color-foreground);
         height: 100%;
     }
 
@@ -27,6 +28,12 @@ const { note } = Astro.props;
 
     a:hover {
         background-color: var(--color-overlay);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        a:hover {
+            transform: translateY(-1.5px);
+        }
     }
 
     a p {

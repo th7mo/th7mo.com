@@ -18,6 +18,7 @@ pre code {
     display: block;
     padding: var(--spacing-md);
     border-radius: var(--border-radius-xs);
+    border: 1px solid var(--color-foreground);
 }
 
 kbd {
