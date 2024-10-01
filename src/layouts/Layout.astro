@@ -48,7 +48,7 @@ const { title, description } = Astro.props;
     main {
         /* Make whitespace below main content same as <Breadcrumb> navigation height:
 
-                             ┌ margin-above ┐   ┌ padding-above ┐   ┌ font-size ┐    ┌ padding-below ┐   ┌ margin-below ┐ */
-        padding-bottom: calc(var(--layout-xl) + var(--spacing-md) + var(--body-lg) + var(--spacing-md) + var(--layout-xl));
+                             ┌ margin-above ┐   ┌ padding-above ┐   ┌ line-height*font-size ┐    ┌ padding-below ┐   ┌ margin-below ┐ */
+        padding-bottom: calc(var(--layout-xl) + var(--spacing-md) + calc(1.5 * var(--body-lg)) + var(--spacing-md) + var(--layout-xl));
     }
 </style>
