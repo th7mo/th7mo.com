@@ -2,8 +2,8 @@ This repository is the website infrastructure for [th7mo.com](https://th7mo.com)
 The content is stored as a submodule at
 [github.com/th7mo/notes](https://github.com/th7mo/notes). The website is built
 with HTML and CSS. Intentionally shipped without any JavaScript. The website
-uses [Astro](https://astro.build/) as a static site generator to add the
-boilerplate HTML to every content file.
+uses [Astro](https://astro.build/) as a static site generator to generate a
+webpage for every item in the content collection.
 
 ## Astro Commands
 All commands are run from the root of the project, from a terminal:
@@ -16,3 +16,14 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`                     | Build your production site to `./dist/`          |
 | `npm run astro ...`                 | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help`           | Get help using the Astro CLI                     |
+
+## Design Inspiration
+I got inspired by aspects of the following websites:  
+
+| Source                                            | Inspiration                    |
+|---------------------------------------------------|--------------------------------|
+| [gwern.net](https://gwern.net/)                   | Body Typography & Color scheme |
+| [mellow.dev](https://mellow.dev/)                 | Breadcrumb navigation          |
+| [Mozilla Protocol](https://protocol.mozilla.org/) | Color scheme                   |
+| [Vercel](https://vercel.com/)                     | Color scheme                   |
+| [Zara](https://www.zara.com)                      | Heading Typography             |
