@@ -1,5 +1,4 @@
 table {
-    padding: var(--spacing-md);
     border: 1.5px solid var(--color-foreground);    
     border-collapse: collapse;
     width: 100%;
