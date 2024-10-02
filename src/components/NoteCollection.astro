@@ -3,10 +3,10 @@ import type { CollectionEntry } from "astro:content";
 import NoteNavigationCard from "@components/NoteNavigationCard.astro";
 
 interface Props {
-    notes: CollectionEntry<'notes'>[] 
+    notes: CollectionEntry<"notes">[] 
 }
 const { notes } = Astro.props;
-const groupedNotes: { [key: string]: CollectionEntry<'notes'>[]} = {};
+const groupedNotes: { [key: string]: CollectionEntry<"notes">[]} = {};
 
 notes.forEach(note => {
   let firstLetter = note.slug.charAt(0).toLowerCase();

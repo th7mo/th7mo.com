@@ -8,7 +8,7 @@ import NoteCollection from "@components/NoteCollection.astro";
 interface Props {
     title: string;
     description: string;
-    notes: CollectionEntry<'notes'>[];
+    notes: CollectionEntry<"notes">[];
 }
 const { title, description, notes } = Astro.props;
 ---
