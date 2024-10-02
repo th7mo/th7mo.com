@@ -1,5 +1,13 @@
 a[href^="http"]::after {
-    content: url("/svg/external-link.svg");
+  content: "";
+  background-color: var(--color-foreground);
+  width: var(--body-sm);
+  height: var(--body-sm);
+  display: inline-block;
+  mask: url("/svg/external-link.svg");
+  mask-size: cover;
+  -webkit-mask: url("/svg/external-link.svg");
+  -webkit-mask-size: cover;
 }
 
 a[href^="#"]:not([href^="#user-content-fn"])::before {
