@@ -1,6 +1,6 @@
 ---
-import NoteOverview from "../layouts/NoteOverview.astro";
 import { getCollection } from "astro:content";
+import NoteOverview from "@layouts/NoteOverview.astro";
 
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;

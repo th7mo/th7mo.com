@@ -1,9 +1,15 @@
 ---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    note: CollectionEntry<'notes'>
+}
 const { note } = Astro.props;
+const { title, description } = note.data;
 ---
 
-<a class="navigation-card" href={`${Astro.url.pathname}/${note.slug}`}>{note.data.title}
-    <p>{note.data.description}</p>
+<a class="navigation-card" href={`${Astro.url.pathname}/${note.slug}`}>{title}
+    <p>{description}</p>
 </a>
 
 <style>

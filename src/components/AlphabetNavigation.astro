@@ -1,6 +1,11 @@
 ---
-import AlphabetNavigationLetter from "./AlphabetNavigationLetter.astro";
+import type { CollectionEntry } from "astro:content";
 
+import AlphabetNavigationLetter from "@components/AlphabetNavigationLetter.astro";
+
+interface Props {
+    notes: CollectionEntry<'notes'>[];    
+}
 const { notes } = Astro.props;
 
 const alphabetNavigationLetterSize = "2.9rem";
