@@ -1,5 +1,26 @@
 table {
-    
+    padding: var(--spacing-md);
+    border: 1.5px solid var(--color-foreground);    
+    border-collapse: collapse;
+    width: 100%;
 }
 
+th {
+    padding: var(--spacing-sm);
+    background-color: var(--color-background);
+    border-right: 0.5px solid var(--color-foreground);
+    border-bottom: 1.5px solid var(--color-foreground);
+}
 
+td {
+    padding: var(--spacing-xs);
+    border: 0.5px solid var(--color-foreground);
+}
+
+tr:nth-child(odd) code {
+    background-color: var(--color-surface);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--color-overlay);
+}
