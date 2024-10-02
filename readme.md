@@ -6,6 +6,7 @@ uses [Astro](https://astro.build/) as a static site generator to generate a
 webpage for every item in the content collection.
 
 ## Astro Commands
+
 All commands are run from the root of the project, from a terminal:
 
 | Command                             | Action                                           |
@@ -18,11 +19,12 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help`           | Get help using the Astro CLI                     |
 
 ## Design Inspiration
+
 I got inspired by aspects of the following websites:  
 
 | Source                                            | Inspiration                    |
 |---------------------------------------------------|--------------------------------|
-| [gwern.net](https://gwern.net/)                   | Body Typography & Color scheme |
+| [gwern.net](https://gwern.net/)                   | Body Typography & color scheme |
 | [mellow.dev](https://mellow.dev/)                 | Breadcrumb navigation          |
 | [Mozilla Protocol](https://protocol.mozilla.org/) | Color scheme                   |
 | [Vercel](https://vercel.com/)                     | Color scheme                   |
