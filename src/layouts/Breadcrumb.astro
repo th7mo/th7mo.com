@@ -2,7 +2,7 @@
 const path = Astro.url.pathname;
 const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPart, index, array) => ({
     href: `/${array.slice(0, index + 1).join("/")}`,
-    displayText: pathPart.replaceAll("-", ""),
+    displayText: pathPart.replaceAll("-", " "),
 }));
 ---
 
