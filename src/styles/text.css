@@ -1,3 +1,14 @@
+:root {
+    --title-sm: calc(var(--body-md) * 1.4);
+    --title-md: calc(var(--title-sm) * 1.4);
+    --title-lg: calc(var(--title-md) * 1.4);
+
+    --body-xs: calc(var(--body-sm) / 1.125);
+    --body-sm: calc(var(--body-md) / 1.125);
+    --body-md: 1rem;
+    --body-lg: calc(var(--body-md) * 1.125);
+}
+
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 900;

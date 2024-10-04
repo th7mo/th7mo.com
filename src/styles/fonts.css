@@ -1,3 +1,9 @@
+:root {
+    --font-primary: "Source Serif Pro", serif;
+    --font-heading: "Playfair Display", serif;
+    --font-mono: "Courier Prime", monospace;
+}
+
 @font-face {
     font-family: "Source Serif Pro";
     src: url("/fonts/source-serif-pro-latin-400-normal.woff2") format("woff2");
