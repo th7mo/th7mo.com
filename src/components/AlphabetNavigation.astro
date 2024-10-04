@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from "astro:content";
-
 import AlphabetNavigationLetter from "@components/AlphabetNavigationLetter.astro";
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
 }
 const { notes } = Astro.props;
 
-const alphabetNavigationLetterSize = "2.9rem";
+const ALPHABET_NAVIGATION_LETTER_SIZE = "2.9rem";
 const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase()))];
 ---
 
@@ -16,18 +15,18 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
     {letters.map((letter) => (
         <AlphabetNavigationLetter
             letter={letter}
-            size={alphabetNavigationLetterSize}
+            size={ALPHABET_NAVIGATION_LETTER_SIZE}
         ></AlphabetNavigationLetter>
     ))}
 </ol>
 
-<style define:vars={{ alphabetNavigationLetterSize }}>
+<style define:vars={{ ALPHABET_NAVIGATION_LETTER_SIZE }}>
     ol {
         margin: var(--spacing-lg) 0 calc(2 * var(--spacing-lg)) 0;
         padding: 0;
         display: grid;
         gap: var(--spacing-sm);
-        grid-template-columns: repeat(auto-fill, var(--alphabetNavigationLetterSize));
+        grid-template-columns: repeat(auto-fill, var(--ALPHABET_NAVIGATION_LETTER_SIZE));
         justify-content: space-between;
         list-style: none;
     }
