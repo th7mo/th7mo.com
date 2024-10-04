@@ -12,9 +12,7 @@ const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPar
             <li><a href="/">th7mo</a></li>
             {
                 breadcrumbItems.map((breadcrumbItem) => (
-                    <li>
-                        <a href={breadcrumbItem.href}>{breadcrumbItem.displayText}</a>
-                    </li>
+                    <li><a href={breadcrumbItem.href}>{breadcrumbItem.displayText}</a></li>
                 ))
             }
         </ol>
