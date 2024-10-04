@@ -5,9 +5,7 @@ a[href^="http"]::after {
   height: var(--body-sm);
   display: inline-block;
   mask: url("/svg/external-link.svg");
-  mask-size: cover;
   -webkit-mask: url("/svg/external-link.svg");
-  -webkit-mask-size: cover;
 }
 
 a[href^="#"]:not([href^="#user-content-fn"])::before {
