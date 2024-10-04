@@ -2,8 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
-import Layout from "@layouts/Layout.astro";
-import Note from "@components/Note.astro";
+import Note from "@layouts/Note.astro";
 
 export async function getStaticPaths() {
     const notes = await getCollection("notes", ({ data }) => {
@@ -22,8 +21,6 @@ const { title, description } = entry.data;
 const { Content } = await entry.render();
 ---
 
-<Layout title={title} description={description}>
-    <Note title={title}>
-        <Content />
-    </Note>
-</Layout>
+<Note title={title} description={description}>
+    <Content />
+</Note>
