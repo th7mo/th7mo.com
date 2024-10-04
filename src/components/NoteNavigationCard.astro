@@ -8,7 +8,11 @@ const { note } = Astro.props;
 const { title, description } = note.data;
 ---
 
-<a class="navigation-card" href={`${Astro.url.pathname}/${note.slug}`}>{title}
+<a
+    class="navigation-card"
+    href={`${Astro.url.pathname}/${note.slug}`}
+>
+    {title}
     <p>{description}</p>
 </a>
 
