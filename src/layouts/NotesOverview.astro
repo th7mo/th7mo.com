@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
 import AlphabetNavigation from "@components/AlphabetNavigation.astro";
-import NoteCollection from "@components/NoteCollection.astro";
+import NoteCardCollection from "@components/NoteCardCollection.astro";
 
 interface Props {
     title: string;
@@ -17,5 +17,5 @@ const { title, description, notes } = Astro.props;
     <h1>{title}</h1>
     <p>{description}.</p>
     <AlphabetNavigation notes={notes}></AlphabetNavigation>
-    <NoteCollection notes={notes}></NoteCollection>
+    <NoteCardCollection notes={notes}></NoteCardCollection>
 </Layout>
