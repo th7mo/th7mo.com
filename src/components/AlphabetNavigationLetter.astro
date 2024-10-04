@@ -7,7 +7,12 @@ const { letter, size } = Astro.props;
 ---
 
 <li>
-    <a class="navigation-card" href={`${Astro.url.pathname}#${letter}`}>{letter.toUpperCase()}</a>
+    <a
+        class="navigation-card"
+        href={`${Astro.url.pathname}#${letter}`}
+    >
+        {letter.toUpperCase()}
+    </a>
 </li>
 
 <style define:vars={{ size }}>
@@ -15,7 +20,7 @@ const { letter, size } = Astro.props;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: var(--size);
         width: var(--size);
+        height: var(--size);
     }
 </style>
