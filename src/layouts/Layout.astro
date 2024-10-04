@@ -32,18 +32,23 @@ const { title, description } = Astro.props;
 
 <style>
     html {
-        scroll-behavior: smooth;
         scroll-padding-top: 4.5rem;
     }
 
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-behavior: smooth;
+        }
+    }
+
     body {
+        margin: auto;
+        padding: 0 var(--spacing-md);
         overflow-y: scroll;
         overflow-wrap: break-word;
         hyphens: auto;
         -webkit-hyphens: auto;
-        margin: auto;
         max-width: 75ch;
-        padding: 0 var(--spacing-md);
         background: var(--color-background);
         line-height: 1.5;
         font-size: var(--body-md);
