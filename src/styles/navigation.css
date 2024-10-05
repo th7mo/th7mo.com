@@ -1,3 +1,7 @@
+:root {
+    --alphabet-navigation-letter-size: 2.9rem;    
+}
+
 .navigation-card {
     text-decoration: none;
     background-color: var(--color-surface);

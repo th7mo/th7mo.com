@@ -7,7 +7,6 @@ interface Props {
 }
 const { notes } = Astro.props;
 
-const ALPHABET_NAVIGATION_LETTER_SIZE = "2.9rem";
 const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase()))];
 ---
 
@@ -15,18 +14,17 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
     {letters.map((letter) => (
         <AlphabetNavigationLetter
             letter={letter}
-            size={ALPHABET_NAVIGATION_LETTER_SIZE}
         />
     ))}
 </ol>
 
-<style define:vars={{ ALPHABET_NAVIGATION_LETTER_SIZE }}>
+<style>
     ol {
         margin: var(--spacing-lg) 0 calc(2 * var(--spacing-lg)) 0;
         padding: 0;
         display: grid;
         gap: var(--spacing-sm);
-        grid-template-columns: repeat(auto-fill, var(--ALPHABET_NAVIGATION_LETTER_SIZE));
+        grid-template-columns: repeat(auto-fill, var(--alphabet-navigation-letter-size));
         justify-content: space-between;
         list-style: none;
     }

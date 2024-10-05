@@ -1,9 +1,8 @@
 ---
 interface Props {
     letter: string;
-    size: string;
 }
-const { letter, size } = Astro.props;
+const { letter } = Astro.props;
 ---
 
 <li>
@@ -15,12 +14,12 @@ const { letter, size } = Astro.props;
     </a>
 </li>
 
-<style define:vars={{ size }}>
+<style>
     a {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: var(--size);
-        height: var(--size);
+        width: var(--alphabet-navigation-letter-size);
+        height: var(--alphabet-navigation-letter-size);
     }
 </style>
