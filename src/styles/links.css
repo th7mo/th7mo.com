@@ -4,8 +4,8 @@ a[href^="http"]::after {
   width: var(--body-sm);
   height: var(--body-sm);
   display: inline-block;
-  mask: url("/svg/external-link.svg");
-  -webkit-mask: url("/svg/external-link.svg");
+  mask: url("/images/external-link.svg");
+  -webkit-mask: url("/images/external-link.svg");
 }
 
 a[href^="#"]:not([href^="#user-content-fn"])::before {

@@ -29,3 +29,4 @@ I got inspired by aspects of the following websites:
 | [Mozilla Protocol](https://protocol.mozilla.org/) | Color scheme                   |
 | [Vercel](https://vercel.com/)                     | Color scheme                   |
 | [Zara](https://www.zara.com)                      | Heading Typography             |
+| [GitHub](https://github.com)                      | Tables                         |
