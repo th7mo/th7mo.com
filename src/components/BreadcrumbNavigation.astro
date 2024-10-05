@@ -1,4 +1,6 @@
 ---
+import BreadcrumbNavigationItem from "@components/BreadcrumbNavigationItem.astro";
+
 const path = Astro.url.pathname;
 const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPart, index, array) => ({
     href: `/${array.slice(0, index + 1).join("/")}`,
@@ -9,10 +11,14 @@ const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPar
 <header>
     <nav>
         <ol>
-            <li><a href="/">th7mo</a></li>
+            <BreadcrumbNavigationItem href="/">th7mo</BreadcrumbNavigationItem>
             {
                 breadcrumbItems.map((breadcrumbItem) => (
-                    <li><a href={breadcrumbItem.href}>{breadcrumbItem.displayText}</a></li>
+                    <BreadcrumbNavigationItem
+                        href={breadcrumbItem.href}
+                    >
+                        {breadcrumbItem.displayText}
+                    </BreadcrumbNavigationItem>
                 ))
             }
         </ol>
@@ -37,24 +43,5 @@ const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPar
         user-select: none;
         -webkit-user-select: none;
         font-size: var(--body-lg);
-    }
-
-    li:not(:last-child)::after {
-        padding: 0 var(--spacing-sm);
-        content: "/";
-    }
-
-    li:last-child a {
-        font-weight: 700;
-    }
-
-    a {
-        font-weight: 400;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 1.2px;
     }
 </style>

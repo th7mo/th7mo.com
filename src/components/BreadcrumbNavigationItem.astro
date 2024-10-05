@@ -1,0 +1,29 @@
+---
+interface Props {
+    href: string;
+}
+const { href } = Astro.props;
+---
+
+<li><a href={href}><slot /></a></li>
+
+<style>
+    li:not(:last-child)::after {
+        padding: 0 var(--spacing-sm);
+        content: "/";
+    }
+
+    li:last-child a {
+        font-weight: 700;
+    }
+
+    a {
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1.2px;
+    }
+</style>
