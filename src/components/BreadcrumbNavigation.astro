@@ -11,14 +11,16 @@ const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPar
 <header>
     <nav>
         <ol>
-            <BreadcrumbNavigationItem href="/">th7mo</BreadcrumbNavigationItem>
+            <BreadcrumbNavigationItem
+                href="/"
+                displayText="th7mo"
+            />
             {
-                breadcrumbItems.map((breadcrumbItem) => (
+                breadcrumbItems.map((item) => (
                     <BreadcrumbNavigationItem
-                        href={breadcrumbItem.href}
-                    >
-                        {breadcrumbItem.displayText}
-                    </BreadcrumbNavigationItem>
+                        href={item.href}
+                        displayText={item.displayText}
+                    />
                 ))
             }
         </ol>

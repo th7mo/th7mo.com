@@ -1,11 +1,12 @@
 ---
 interface Props {
     href: string;
+    displayText: string;
 }
-const { href } = Astro.props;
+const { href, displayText } = Astro.props;
 ---
 
-<li><a href={href}><slot /></a></li>
+<li><a href={href}>{displayText}</a></li>
 
 <style>
     li:not(:last-child)::after {
