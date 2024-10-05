@@ -22,11 +22,12 @@ All commands are run from the root of the project, from a terminal:
 
 I got inspired by aspects of the following websites:  
 
-| Source                                            | Inspiration                    |
-|---------------------------------------------------|--------------------------------|
-| [gwern.net](https://gwern.net/)                   | Body Typography & color scheme |
-| [mellow.dev](https://mellow.dev/)                 | Breadcrumb navigation          |
-| [Mozilla Protocol](https://protocol.mozilla.org/) | Color scheme                   |
-| [Vercel](https://vercel.com/)                     | Color scheme                   |
-| [Zara](https://www.zara.com)                      | Heading Typography             |
-| [GitHub](https://github.com)                      | Tables                         |
+| Source                                                                    | Design Inspiration       |
+|---------------------------------------------------------------------------|--------------------------|
+| [gwern.net](https://gwern.net/)                                           | Body font & color scheme |
+| [mellow.dev](https://mellow.dev/)                                         | Breadcrumb navigation    |
+| [Mozilla Protocol](https://protocol.mozilla.org/)                         | Color scheme             |
+| [Vercel](https://vercel.com/)                                             | Color scheme             |
+| [Zara](https://www.zara.com)                                              | Heading font style       |
+| [GitHub](https://github.com)                                              | Tables                   |
+| [The Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/) | Minimalistic philosophy  |
