@@ -16,6 +16,6 @@ const { title, description, notes } = Astro.props;
 <Layout title={title} description={description}>
     <h1>{title}</h1>
     <p>{description}.</p>
-    <AlphabetNavigation notes={notes}></AlphabetNavigation>
-    <NoteCardCollection notes={notes}></NoteCardCollection>
+    <AlphabetNavigation notes={notes} />
+    <NoteCardCollection notes={notes} />
 </Layout>

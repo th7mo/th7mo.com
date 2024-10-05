@@ -21,9 +21,7 @@ notes.forEach(note => {
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
     <ol>
         {notes.map((note) => (
-            <li>
-                <NoteNavigationCard note={note}></NoteNavigationCard>
-            </li>
+            <li><NoteNavigationCard note={note} /></li>
         ))}
     </ol>
 ))}
