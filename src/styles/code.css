@@ -8,7 +8,7 @@ kbd {
 }
 
 pre {
-    background-color: transparent !important;
+    white-space: pre-wrap;
 }
 
 pre code {

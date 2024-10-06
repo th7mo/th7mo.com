@@ -4,9 +4,6 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://th7mo.com",
   markdown: {
-    shikiConfig: {
-      theme: "css-variables",
-      wrap: true
-    }
+    syntaxHighlight: false
   }
 });
