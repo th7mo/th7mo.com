@@ -5,7 +5,7 @@
 
     --body-xs: calc(var(--body-sm) / 1.125);
     --body-sm: calc(var(--body-md) / 1.125);
-    --body-md: 1rem;
+    --body-md: 1.125rem;
     --body-lg: calc(var(--body-md) * 1.125);
 }
 
@@ -39,6 +39,10 @@ p {
 }
 
 @media screen and (max-width: 450px) {
+    :root {
+        --body-md: 1rem;        
+    }
+
     h1 {
         font-size: var(--title-md);
     }
