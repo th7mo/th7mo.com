@@ -25,15 +25,3 @@ kbd {
     font-weight: 700;
     box-shadow: 1px 1px 0 0 var(--color-foreground);
 }
-
-span[style^="color:var(--astro-code-token-keyword)"] {
-    font-weight: 900;
-}
-
-span[style^="color:var(--astro-code-token-function)"] {
-    font-weight: 900;
-}
-
-span[style^="color:var(--astro-code-token-comment)"] {
-    font-style: italic;
-}

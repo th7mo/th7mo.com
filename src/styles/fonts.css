@@ -10,11 +10,3 @@
    font-style: monospace;
    font-display: swap; 
 }
-
-@font-face {
-   font-family: "Iosevka";
-   src: url("/fonts/iosevka-900-normal.woff2") format("woff2");
-   font-weight: 900;
-   font-style: monospace;
-   font-display: swap; 
-}
