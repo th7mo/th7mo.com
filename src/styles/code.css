@@ -3,9 +3,8 @@ kbd {
     padding: 2px var(--spacing-2xs);
     border-radius: var(--border-radius-sm);
     background-color: var(--color-overlay);
-    font-size: var(--body-xs);
+    font-size: calc(var(--body-sm) / 1.04);
     font-family: var(--font-mono);
-    vertical-align: middle;
 }
 
 pre {
@@ -28,11 +27,11 @@ kbd {
 }
 
 span[style^="color:var(--astro-code-token-keyword)"] {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 span[style^="color:var(--astro-code-token-function)"] {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 span[style^="color:var(--astro-code-token-comment)"] {
