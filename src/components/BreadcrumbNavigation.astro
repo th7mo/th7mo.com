@@ -1,7 +1,8 @@
 ---
 import BreadcrumbNavigationItem from "@components/BreadcrumbNavigationItem.astro";
 
-const currentPagePath = Astro.url.pathname.slice(1);
+/* remove forward slashes if first or last character */
+const currentPagePath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const breadcrumbItems = [{ href: "/", displayText: "th7mo" }];
 
 currentPagePath.split("/").forEach((pathPart, index, array) => {
