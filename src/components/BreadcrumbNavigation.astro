@@ -1,20 +1,19 @@
 ---
 import BreadcrumbNavigationItem from "@components/BreadcrumbNavigationItem.astro";
 
-const path = Astro.url.pathname;
-const breadcrumbItems = path.split("/").filter(part => part !== "").map((pathPart, index, array) => ({
-    href: `/${array.slice(0, index + 1).join("/")}`,
-    displayText: pathPart.replaceAll("-", " "),
-}));
+const currentPagePath = Astro.url.pathname.slice(1);
+const breadcrumbItems = [{ href: "/", displayText: "th7mo" }];
+
+currentPagePath.split("/").forEach((pathPart, index, array) => {
+    const href = `/${array.slice(0, index + 1).join("/")}`;
+    const displayText = pathPart.replaceAll("-", " ");
+    breadcrumbItems.push({ href, displayText });
+});
 ---
 
 <header>
     <nav>
         <ol>
-            <BreadcrumbNavigationItem
-                href="/"
-                displayText="th7mo"
-            />
             {breadcrumbItems.map((item) => (
                 <BreadcrumbNavigationItem
                     href={item.href}
