@@ -36,14 +36,14 @@ const description = "All the colors used on this website";
         border: 1.5px solid var(--color-foreground);
     }
 
-    #foreground::selection {
-        color: var(--color-foreground);
-        background-color: var(--color-background);
-    }
-
     #foreground {
         color: var(--color-background);
         background-color: var(--color-foreground);
+
+        &::selection {
+            color: var(--color-foreground);
+            background-color: var(--color-background);
+        }
     }
 
     #background {

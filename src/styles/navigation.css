@@ -8,14 +8,14 @@
     transition: all 0.15s;
     border-radius: var(--border-radius-xs);
     border: 1px solid var(--color-foreground);
-}
 
-.navigation-card:hover {
-    background-color: var(--color-overlay);
-}
+    &:hover {
+        background-color: var(--color-overlay);
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-    .navigation-card:hover {
-        transform: translateY(-1.5px);
+    @media (prefers-reduced-motion: no-preference) {
+        &:hover {
+            transform: translateY(-1.5px);
+        }
     }
 }

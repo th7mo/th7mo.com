@@ -9,14 +9,14 @@ kbd {
 
 pre {
     white-space: pre-wrap;
-}
 
-pre code {
-    background-color: var(--color-surface);
-    display: block;
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius-xs);
-    border: 1px solid var(--color-foreground);
+    & code {        
+        background-color: var(--color-surface);
+        display: block;
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-xs);
+        border: 1px solid var(--color-foreground);
+    }
 }
 
 kbd {

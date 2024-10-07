@@ -9,22 +9,24 @@ const { href, displayText } = Astro.props;
 <li><a href={href}>{displayText}</a></li>
 
 <style>
-    li:not(:last-child)::after {
-        padding: 0 var(--spacing-sm);
-        content: "/";
-    }
+    li {
+        a {
+            font-weight: 400;
+            text-decoration: none;
 
-    li:last-child a {
-        font-weight: 900;
-    }
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 1.2px;
+            }
+        }
 
-    a {
-        font-weight: 400;
-        text-decoration: none;
-    }
+        &:last-child a {
+            font-weight: 900;
+        }
 
-    a:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 1.2px;
+        &:not(:last-child)::after {
+            padding: 0 var(--spacing-sm);
+            content: "/";
+        }
     }
 </style>

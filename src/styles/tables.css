@@ -16,10 +16,12 @@ td {
     border: 0.5px solid var(--color-foreground);
 }
 
-tr:nth-child(odd) code {
-    background-color: var(--color-surface);
-}
+tr {
+    &:nth-child(odd) {
+        background-color: var(--color-overlay);
 
-tr:nth-child(odd) {
-    background-color: var(--color-overlay);
+        & code {
+            background-color: var(--color-surface);
+        }
+    }
 }
