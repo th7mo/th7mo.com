@@ -12,9 +12,7 @@ const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase())
 
 <ol>
     {letters.map((letter) => (
-        <AlphabetNavigationLetter
-            letter={letter}
-        />
+        <AlphabetNavigationLetter {letter} />
     ))}
 </ol>
 

@@ -15,10 +15,7 @@ currentPagePath.split("/").forEach((pathPart, index, array) => {
     <nav>
         <ol>
             {breadcrumbItems.map((item) => (
-                <BreadcrumbNavigationItem
-                    href={item.href}
-                    displayText={item.displayText}
-                />
+                <BreadcrumbNavigationItem {...item} />
             ))}
         </ol>
     </nav>

@@ -17,12 +17,11 @@ interface Props {
     title: string;
     description: string;
 }
-const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-    <Head title={title} description={description} />
+    <Head {...Astro.props} />
     <body>
         <BreadcrumbNavigation />
         <main>
