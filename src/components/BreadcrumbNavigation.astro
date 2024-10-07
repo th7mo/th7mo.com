@@ -6,7 +6,7 @@ const currentPagePath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const breadcrumbItems = [{ href: "/", displayText: "th7mo" }];
 
 currentPagePath.split("/").forEach((pathPart, index, array) => {
-    const href = `/${array.slice(0, index + 1).join("/")}/`;
+    const href = `/${array.slice(0, index + 1).join("/")}`;
     const displayText = pathPart.replaceAll("-", " ");
     breadcrumbItems.push({ href, displayText });
 });
