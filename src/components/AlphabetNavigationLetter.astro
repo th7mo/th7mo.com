@@ -8,7 +8,7 @@ const { letter } = Astro.props;
 <li>
     <a
         class="navigation-card"
-        href={`${Astro.url.pathname.replace(".html", "")}#${letter}`}
+        href={`#${letter}`}
     >
         {letter.toUpperCase()}
     </a>

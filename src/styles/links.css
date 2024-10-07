@@ -8,7 +8,7 @@ a[href^="http"]::after {
   -webkit-mask: url("/images/external-link.svg");
 }
 
-a[href^="#"]:not([href^="#user-content-fn"])::before {
+a[href^="#"]:not([href^="#user-content-fn"]):not(.navigation-card)::before {
     content: "§";
 }
 
