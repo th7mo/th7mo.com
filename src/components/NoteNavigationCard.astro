@@ -9,7 +9,7 @@ const { title, description, slug } = Astro.props;
 
 <a
     class="navigation-card"
-    href={`${Astro.url.pathname}/${slug}`}
+    href={`${Astro.url.pathname.replace(".html", "")}/${slug}`}
 >
     {title}
     <p>{description}</p>
