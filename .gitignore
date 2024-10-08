@@ -4,6 +4,10 @@
 # build output
 dist/
 
+# text editors
+.vscode
+.idea
+
 # generated types
 .astro/
 package-lock.json
