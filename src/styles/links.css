@@ -5,16 +5,29 @@ a:visited {
 
     &:hover {
         text-decoration: none;
+        background-color: var(--color-foreground);
+        color: var(--color-background);
+
+        code {
+            background-color: transparent;
+            color: var(--color-background);
+        }
     }
 
-    &[href^="http"]::after {
-        content: "";
-        background-color: var(--color-foreground);
-        width: var(--body-sm);
-        height: var(--body-sm);
-        display: inline-block;
-        mask: url("/images/external-link.svg");
-        -webkit-mask: url("/images/external-link.svg");
+    &[href^="http"] {
+        &:hover::after {
+            background-color: var(--color-background);
+        }
+
+        &::after {
+            content: "";
+            background-color: var(--color-foreground);
+            width: var(--body-sm);
+            height: var(--body-sm);
+            display: inline-block;
+            mask: url("/images/external-link.svg");
+            -webkit-mask: url("/images/external-link.svg");
+        }
     }
 
     &[href^="#"]:not([href^="#user-content-fn"]):not(.navigation-card)::before {

@@ -22,6 +22,10 @@ const { title, description, slug } = Astro.props;
         display: block;
         height: 100%;
 
+        &:hover p {
+            color: var(--color-background);
+        }
+
         & p {
             font-size: var(--body-sm);
             font-weight: 400;
