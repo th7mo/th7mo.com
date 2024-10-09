@@ -1,9 +1,3 @@
-:root {
-    --border-radius-xs: 2px;
-    --border-radius-sm: 3px;
-    --border-radius-md: 5px;
-}
-
 blockquote {
     padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-md);
     border-left: var(--spacing-sm) solid var(--color-foreground);
