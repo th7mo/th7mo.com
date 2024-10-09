@@ -1,16 +1,13 @@
----
-interface Props {
-    href: string;
-    displayText: string;
-}
-const { href, displayText } = Astro.props;
----
+<script lang="ts">
+    export let href: string;
+    export let displayText: string;
+</script>
 
 <li><a href={href}>{displayText}</a></li>
 
 <style>
     li {
-        a {
+        & a {
             font-weight: 400;
             text-decoration: none;
 

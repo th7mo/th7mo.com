@@ -1,9 +1,6 @@
----
-interface Props {
-    letter: string;
-}
-const { letter } = Astro.props;
----
+<script lang="ts">
+    export let letter: string;
+</script>
 
 <li>
     <a
