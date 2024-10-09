@@ -1,15 +1,12 @@
----
-interface Props {
-    title: string;
-    description: string;
-    slug: string;
-}
-const { title, description, slug } = Astro.props;
----
+<script lang="ts">
+    export let title: string;
+    export let description: string;
+    export let slug: string;
+</script>
 
 <a
     class="navigation-card"
-    href={`${Astro.url.pathname.replace(".html", "")}/${slug}`}
+    href={`/notes/${slug}`}
 >
     {title}
     <p>{description}</p>
