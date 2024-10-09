@@ -12,4 +12,9 @@
         --color-surface: #1f1e25;
         --color-overlay: #2e2d36;
     }
+
+    .astro-code,
+    .astro-code span {
+        color: var(--shiki-dark) !important;
+    }
 }

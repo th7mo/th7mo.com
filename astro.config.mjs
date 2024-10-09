@@ -7,6 +7,11 @@ export default defineConfig({
     format: "file"
   },
   markdown: {
-    syntaxHighlight: false
+    shikiConfig: {
+      themes: {
+        light: "github-light",
+        dark: "github-dark"
+      }
+    }
   }
 });
