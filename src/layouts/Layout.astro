@@ -1,6 +1,6 @@
 ---
 import Head from "@components/Head.svelte";
-import BreadcrumbNavigation from "@components/BreadcrumbNavigation.astro";
+import BreadcrumbNavigation from "@components/BreadcrumbNavigation.svelte";
 
 import "@styles/fonts.css";
 import "@styles/spacing.css";
@@ -19,13 +19,15 @@ interface Props {
     title: string;
     description: string;
 }
+
+const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$/g, "");
 ---
 
 <!doctype html>
 <html lang="en">
     <Head {...Astro.props} />
     <body>
-        <BreadcrumbNavigation />
+        <BreadcrumbNavigation currentPagePath={currentPagePath} />
         <main>
             <slot />
         </main>
