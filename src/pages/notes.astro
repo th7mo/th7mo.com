@@ -1,14 +1,13 @@
 ---
 import { getCollection } from "astro:content";
-import NotesOverview from "@layouts/NotesOverviewLayout.astro";
+import NotesOverviewLayout from "@layouts/NotesOverviewLayout.astro";
 
 const notes = await getCollection("notes", ({ data }) => {
     return data.isPublic;
 });
 ---
 
-<NotesOverview
+<NotesOverviewLayout
     title="My Notes"
-    description="A collection of my scattered thoughts"
     notes={notes}
 />

@@ -7,15 +7,20 @@ import NoteCardCollection from "@components/NoteCardCollection.astro";
 
 interface Props {
     title: string;
-    description: string;
     notes: CollectionEntry<"notes">[];
 }
-const { title, description, notes } = Astro.props;
+const { title, notes } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description="A collection of my scattered thoughts.">
     <h1>{title}</h1>
-    <p>{description}.</p>
+    <p>A collection of my <code>{notes.length}</code> scattered thoughts.</p>
     <AlphabetNavigation notes={notes} />
     <NoteCardCollection notes={notes} />
 </Layout>
+
+<style>
+    code {
+        font-weight: 700;
+    }
+</style>
