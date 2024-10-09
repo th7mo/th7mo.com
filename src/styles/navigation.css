@@ -15,7 +15,7 @@
 
     @media (prefers-reduced-motion: no-preference) {
         &:hover {
-            transform: translateY(-1.5px);
+            transform: translateY(-2px);
         }
     }
 }
