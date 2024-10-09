@@ -29,10 +29,6 @@ h2 {
     font-size: var(--title-md);
 }
 
-p {
-    text-align: justify;
-}
-
 @media screen and (max-width: 450px) {
     :root {
         --body-md: 1rem;        
@@ -48,9 +44,5 @@ p {
 
     h3 {
         font-size: var(--body-lg);
-    }
-
-    p {
-        text-align: start;
     }
 }
