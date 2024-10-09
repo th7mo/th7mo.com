@@ -1,19 +1,16 @@
----
-import type { CollectionEntry } from "astro:content";
-import AlphabetNavigationLetter from "@components/AlphabetNavigationLetter.svelte";
+<script lang="ts">
+    import type { CollectionEntry } from "astro:content";
+    import AlphabetNavigationLetter from "@components/AlphabetNavigationLetter.svelte";
 
-interface Props {
-    notes: CollectionEntry<"notes">[];    
-}
-const { notes } = Astro.props;
+    export let notes: CollectionEntry<"notes">[];  
 
-const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase()))];
----
+    const letters = [...new Set(notes.map(note => note.slug.charAt(0).toLowerCase()))];
+</script>
 
 <ol>
-    {letters.map((letter) => (
+    {#each letters as letter}
         <AlphabetNavigationLetter {letter} />
-    ))}
+    {/each}
 </ol>
 
 <style>
