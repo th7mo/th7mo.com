@@ -3,17 +3,18 @@ import Layout from "@layouts/Layout.astro";
 import NavigationCardList from "@components/NavigationCardList.svelte";
 import NavigationCard from "@components/NavigationCard.svelte";
 
-const title = "127.0.0.1";
-const description = "I don't know what I'm doing";
+const title = "Hi.";
+const description = "I have no idea what I'm doing";
 ---
 
 <Layout title={title} description={description}>
     <p>{description} :)</p>
     <NavigationCardList>
         <NavigationCard title="My Notes" href="/notes" />
-        <NavigationCard title="Colors" href="/colors" />
-        <NavigationCard title="Design inspiration" href="/design-inspiration" />
-        <NavigationCard title="Design choices" href="/design-choices" />
+        <NavigationCard title="Color Palette" href="/color-palette" />
+        <NavigationCard title="Design Inspiration" href="/design-inspiration" />
+        <NavigationCard title="Design Choices" href="/design-choices" />
+        <NavigationCard title="Lorem Ipsum" href="/lorem-ipsum" />
         <NavigationCard title="GitHub" href="https://github.com/th7mo" />
         <NavigationCard title="Vercel" href="https://vercel.com/th7mos-projects/th7mo" />
         <NavigationCard title="ChatGPT" href="https://chatgpt.com/" />

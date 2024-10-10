@@ -23,7 +23,11 @@ a black and white [color scheme](/notes/color-scheme) are:
 
 ## Breadcrumb navigation
 
-* [mellow.dev](https://mellow.dev/)
+I was visiting the [mellow.dev](https://mellow.dev/) website once and
+immediately really liked the breadcrumb navigation on top of the screen. I think
+this is a great implementation of flexible navigation. It not only functions as
+a 'go back to top' button but also allows for navigation up one or multiple
+levels.
 
 ## Link styling on hover
 Since my website uses a black and white color scheme, I found the default
