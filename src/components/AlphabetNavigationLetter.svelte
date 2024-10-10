@@ -31,7 +31,7 @@
 
     @media (prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference) {
         a:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
     }
 </style>
