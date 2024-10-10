@@ -1,7 +1,7 @@
 a,
 a:visited {
     font-weight: 700;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.5px;
     transition: all 0.15s;
 
     &:hover {
@@ -9,17 +9,17 @@ a:visited {
         background-color: var(--color-foreground);
         color: var(--color-background);
 
-        code {
+        code, kbd, em, strong, sup, sub, del {
             background-color: transparent;
             color: var(--color-background);
+        }
+
+        & kbd {
+            box-shadow: none;
         }
     }
 
     &[href^="http"] {
-        &:hover::after {
-            background-color: var(--color-background);
-        }
-
         &::after {
             content: "";
             background-color: var(--color-foreground);
@@ -28,6 +28,10 @@ a:visited {
             display: inline-block;
             mask: url("/images/external-link.svg");
             -webkit-mask: url("/images/external-link.svg");
+        }
+
+        &:hover::after {
+            background-color: var(--color-background);
         }
     }
 

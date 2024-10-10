@@ -16,14 +16,8 @@
         display: block;
         height: 100%;
 
-        &:hover {
-             & p {
-                color: var(--color-background);
-            }
-
-            &::before {
-                background-color: var(--color-background);
-            }
+        &:hover p {
+            color: var(--color-background);
         }
 
         & p {
@@ -41,6 +35,10 @@
             margin-right: 0.5rem;
             mask: url("/images/note.svg");
             -webkit-mask: url("/images/note.svg");
+        }
+
+        &:hover::before {
+            background-color: var(--color-background);
         }
     }
 </style>
