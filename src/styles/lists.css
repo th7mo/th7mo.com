@@ -1,6 +1,6 @@
 ol,
 ul {
-    padding-left: var(--layout-md);
+    padding-left: var(--layout-sm);
 }
 
 ul {

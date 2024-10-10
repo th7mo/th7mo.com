@@ -59,22 +59,6 @@ Some<sup>sup</sup> text
 
 Some<sub>sub</sub> text.
 
-[External Link](https://google.com)
-
-[Internal link](git)
-
-[Internal `code` link](git)
-
-[Internal **bold** link](git)
-
-[Internal ~~strikethrough~~ link](git)
-
-[Internal<sup>sup</sup> link](git)
-
-[Internal <kbd>Input</kbd> link](git)
-
-[Section link](#lists)
-
 A footnote[^1]
 
 A double footnote[^1] [^2].
@@ -91,6 +75,24 @@ Two horizontal rules:
 ---
 
 ---
+
+## Links
+
+[External Link](https://google.com)
+
+[Internal link](git)
+
+[Internal `code` link](git)
+
+[Internal **bold** link](git)
+
+[Internal ~~strikethrough~~ link](git)
+
+[Internal<sup>sup</sup> link](git)
+
+[Internal <kbd>Input</kbd> link](git)
+
+[Section link](#lists)
 
 ## Blockquotes
 

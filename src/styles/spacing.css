@@ -5,6 +5,7 @@
     --spacing-md: var(--body-md);
     --spacing-lg: calc(var(--spacing-md) * 1.618);
 
+    --layout-sm: 2.5rem;
     --layout-md: 3rem;
     --layout-lg: 4rem;
     --layout-xl: 6rem;
