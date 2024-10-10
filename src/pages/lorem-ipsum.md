@@ -92,22 +92,22 @@ Two horizontal rules:
 
 ---
 
-pseudopseudohypoparathyroidism floccinaucinihilipilification
-antidisestablishmentarianism supercalifragilisticexpialidocious
-incomprehensibilities strengths euouae unimaginatively
-honorificabilitudinitatibus.
-
 ## Blockquotes
 
+A regular blockquote:
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 > eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-> The following codeblock:
+A blockquote with a code block inside:
+
+> The following code block:
 >
+> ```sh
+> sudo apt install discord
 > ```
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-> ```
+
+Nested blockquotes:
 
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 > > eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -117,9 +117,13 @@ honorificabilitudinitatibus.
 >
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 > > eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+A triple nested blockquote:
 
 > > > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 > > > eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+A blockquote with a list inside:
 
 > * level 1
 >     * level 2
@@ -129,15 +133,32 @@ honorificabilitudinitatibus.
 
 ## Lists
 
+A normal ordered list:
+
+1. Type <kbd>i</kbd> to go into insert mode.
+2. Write what you want to write.
+3. Press <kbd>esc</kbd> to return to normal mode.
+4. Enter the `:wq` command to write the file and exit.
+
+A normal unordered list:
+
+* Apples
+* Bananas
+* Oranges
+* Kiwi's
+
 Regular list with other elements:
 
 1. with `inline code`
 2. and some code blocks:
+   ```css
+   p {
+       color: var(--color-foreground);
+       background-color: var(--color-background);
+   }
    ```
-   and code blocks
-   ```
-3. and some blockquotes:
-   > a blockquote
+3. and a blockquote:
+   > "Here is an inspiring quote"
 
 Heavy indented unordered list:
 
