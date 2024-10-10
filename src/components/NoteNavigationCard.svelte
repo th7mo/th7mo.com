@@ -1,13 +1,10 @@
 <script lang="ts">
     export let title: string;
     export let description: string;
-    export let slug: string;
+    export let href: string;
 </script>
 
-<a
-    class="navigation-card"
-    href={`/notes/${slug}`}
->
+<a class="navigation-card" href={href}>
     {title}
     <p>{description}</p>
 </a>

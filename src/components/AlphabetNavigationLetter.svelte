@@ -1,12 +1,10 @@
 <script lang="ts">
     export let letter: string;
+    export let href: string;
 </script>
 
 <li>
-    <a
-        class="navigation-card"
-        href={`#${letter}`}
-    >
+    <a class="navigation-card" href={href}>
         {letter.toUpperCase()}
     </a>
 </li>

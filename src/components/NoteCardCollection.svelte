@@ -2,7 +2,9 @@
     import type { CollectionEntry } from "astro:content";
     import NoteNavigationCard from "@components/NoteNavigationCard.svelte";
 
+    export let currentPagePath: string;
     export let notes: CollectionEntry<"notes">[];
+
     const groupedNotes: {[key: string]: CollectionEntry<"notes">[]} = {};
 
     notes.forEach(note => {
@@ -18,7 +20,7 @@
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
     <ol>
         {#each notes as note}
-            <li><NoteNavigationCard {...note.data} {...note} /></li>
+            <li><NoteNavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} /></li>
         {/each}
     </ol>
 {/each}

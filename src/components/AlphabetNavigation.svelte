@@ -9,7 +9,7 @@
 
 <ol>
     {#each letters as letter}
-        <AlphabetNavigationLetter {letter} />
+        <AlphabetNavigationLetter {letter} href={`#${letter}`} />
     {/each}
 </ol>
 
