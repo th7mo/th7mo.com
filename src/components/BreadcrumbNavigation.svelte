@@ -33,7 +33,7 @@
 
     nav {
         max-width: var(--page-width);
-        padding: var(--page-padding);
+        padding: 0 var(--page-padding);
         margin: auto;
     }
 
