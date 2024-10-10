@@ -35,6 +35,11 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
 </html>
 
 <style>
+    :root {
+        --page-width: 42.5rem;
+        --page-padding: 0 var(--spacing-md);
+    }
+
     html {
         scroll-padding-top: 4.5rem;
     }
@@ -46,13 +51,10 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
     }
 
     body {
-        margin: auto;
-        padding: 0 var(--spacing-md);
         overflow-y: scroll;
         overflow-wrap: break-word;
         hyphens: auto;
         -webkit-hyphens: auto;
-        max-width: 42.5rem;
         background: var(--color-background);
         line-height: 1.5;
         font-size: var(--body-md);
@@ -64,5 +66,8 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
 
                              ┌ margin-above ┐   ┌ padding-above ┐   ┌ line-height*font-size ┐    ┌ padding-below ┐   ┌ margin-below ┐ */
         padding-bottom: calc(var(--layout-xl) + var(--spacing-md) + calc(1.5 * var(--body-lg)) + var(--spacing-md) + var(--layout-xl));
+        padding: var(--page-padding);
+        max-width: var(--page-width);
+        margin: auto;
     }
 </style>

@@ -31,6 +31,12 @@
         z-index: 1;
     }
 
+    nav {
+        max-width: var(--page-width);
+        padding: var(--page-padding);
+        margin: auto;
+    }
+
     ol {
         display: flex;
         padding: 0;
