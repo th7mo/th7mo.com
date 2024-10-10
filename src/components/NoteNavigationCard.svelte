@@ -2,7 +2,7 @@
     export let title: string;
     export let description: string | undefined = undefined;
     export let href: string;
-    export let iconPath: string = "/images/note.svg";
+    export let iconPath: string = "/images/external-link.svg";
 </script>
 
 <li>
@@ -41,6 +41,10 @@
             mask: var(--icon-path);
             -webkit-mask: var(--icon-path);
             transform: translateY(2px);
+        }
+
+        &::after {
+            display: none !important;
         }
 
         &:hover::before {
