@@ -39,3 +39,11 @@ color inversion technique by [Bradwoods garden](https://garden.bradwoods.io/).
 ## Tables
 
 * [GitHub](https://github.com)
+
+## Lorem ipsum
+
+When visiting [gwern.net](https://gwern.net/) I found a
+[sandbox page](https://gwern.net/lorem) the developer uses as a testing
+playground. I thought this was pretty handy and decided to implement my own
+[lorem ipsum](/lorem-ipsum) playground to quickly check if I did not break
+any of the features of the website.
