@@ -62,3 +62,10 @@ explains this in more detail.
 I want to keep my content repository manageable over the long term. Including
 images from the start could lead to a significant increase in the Git
 repository's size, which may cause storage and usability issues down the line.
+
+## Whitespace below the main content
+
+Each page has equal whitespace above and below the main content. This additional
+whitespace at the bottom of each page ensures that the last line of text is
+positioned closer to the center of the screen rather than at the bottom,
+enhancing the overall reading experience.
