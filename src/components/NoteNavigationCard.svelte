@@ -35,6 +35,7 @@
             margin-right: 0.5rem;
             mask: url("/images/note.svg");
             -webkit-mask: url("/images/note.svg");
+            transform: translateY(2px);
         }
 
         &:hover::before {
