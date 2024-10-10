@@ -46,12 +46,30 @@
             transform: translateY(2px);
         }
 
+        &:hover::before {
+            background-color: var(--color-background);
+        }
+
         &::after {
             display: none !important;
         }
+    }
 
-        &:hover::before {
-            background-color: var(--color-background);
+    @media (prefers-color-scheme: light) {
+        a {
+            box-shadow: var(--spacing-2xs) var(--spacing-2xs) var(--color-foreground);
+        }
+    }
+
+    @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
+        a:hover {
+            transform: translate(var(--spacing-2xs), var(--spacing-2xs));
+        }
+    }
+
+    @media (prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference) {
+        a:hover {
+            transform: translateY(-2px);
         }
     }
 </style>

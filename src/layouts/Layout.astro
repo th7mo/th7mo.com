@@ -14,21 +14,23 @@ import "@styles/tables.css";
 import "@styles/misc.css";
 import "@styles/colors.css";
 
-
 interface Props {
     title: string;
     description: string;
 }
+
+const { title, description } = Astro.props;
 
 const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$/g, "");
 ---
 
 <!doctype html>
 <html lang="en">
-    <Head {...Astro.props} />
+    <Head title={title} description={description} />
     <body>
         <BreadcrumbNavigation currentPagePath={currentPagePath} />
         <main>
+            <h1>{title}</h1>
             <slot />
         </main>
     </body>

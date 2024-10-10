@@ -7,10 +7,4 @@
     background-color: var(--color-surface);
     transition: all 0.15s;
     border: var(--border-md);
-
-    @media (prefers-reduced-motion: no-preference) {
-        &:hover {
-            transform: translateY(-3px);
-        }
-    }
 }
