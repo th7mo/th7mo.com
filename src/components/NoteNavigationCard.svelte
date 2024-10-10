@@ -1,13 +1,18 @@
 <script lang="ts">
     export let title: string;
-    export let description: string;
+    export let description: string | undefined = undefined;
     export let href: string;
+    export let iconPath: string = "/images/note.svg";
 </script>
 
-<a class="navigation-card" href={href}>
-    {title}
-    <p>{description}</p>
-</a>
+<li>
+    <a class="navigation-card" {href} style="--icon-path: url({iconPath})">
+        {title}
+        {#if description}
+            <p>{description}</p>
+        {/if}
+    </a>
+</li>
 
 <style>
     a {
@@ -33,8 +38,8 @@
             height: var(--body-md);
             display: inline-block;
             margin-right: 0.5rem;
-            mask: url("/images/note.svg");
-            -webkit-mask: url("/images/note.svg");
+            mask: var(--icon-path);
+            -webkit-mask: var(--icon-path);
             transform: translateY(2px);
         }
 

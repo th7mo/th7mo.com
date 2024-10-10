@@ -14,7 +14,7 @@
     <link rel="icon" href="/images/note.svg">
     <link
         rel="preload"
-        href="/fonts/iosevka-400-normal.woff2"
+        href="/fonts/iosevka-400-monospace.woff2"
         as="font"
         type="font/woff2"
         crossorigin="anonymous"

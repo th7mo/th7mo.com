@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { CollectionEntry } from "astro:content";
+    import CardCollection from "@components/CardCollection.svelte";
     import NoteNavigationCard from "@components/NoteNavigationCard.svelte";
 
     export let currentPagePath: string;
@@ -18,19 +19,9 @@
 
 {#each Object.entries(groupedNotes) as [firstLetter, notes]}
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
-    <ol>
+    <CardCollection>
         {#each notes as note}
-            <li><NoteNavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} /></li>
+            <NoteNavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} />
         {/each}
-    </ol>
+    </CardCollection>
 {/each}
-
-<style>
-    ol {
-        display: grid;
-        padding: 0;
-        gap: var(--spacing-md);
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        list-style: none;
-    }
-</style>

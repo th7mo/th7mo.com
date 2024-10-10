@@ -4,7 +4,7 @@
     export let currentPagePath: string;
     const breadcrumbItems = [{ href: "/", displayText: "th7mo" }];
 
-    currentPagePath.split("/").forEach((pathPart, index, array) => {
+    currentPagePath.split("/").filter(Boolean).forEach((pathPart, index, array) => {
         const href = `/${array.slice(0, index + 1).join("/")}`;
         const displayText = pathPart.replaceAll("-", " ");
         breadcrumbItems.push({ href, displayText });

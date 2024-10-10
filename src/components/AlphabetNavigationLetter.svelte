@@ -4,7 +4,7 @@
 </script>
 
 <li>
-    <a class="navigation-card" href={href}>
+    <a class="navigation-card" {href}>
         {letter.toUpperCase()}
     </a>
 </li>

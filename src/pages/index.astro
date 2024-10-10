@@ -1,7 +1,19 @@
 ---
-const baseUrlWithTrailingForwardSlash = Astro.url.href;
+import Layout from "@layouts/Layout.astro";
+import CardCollection from "@components/CardCollection.svelte";
+import NoteNavigationCard from "@components/NoteNavigationCard.svelte";
+
+const title = "127.0.0.1";
+const description = "I don't know what I'm doing";
 ---
 
-<head>
-    <meta http-equiv="refresh" content={`0; URL=${baseUrlWithTrailingForwardSlash}notes`}>
-</head>
+<Layout title={title} description={description}>
+<h1>{title}</h1>
+<p>{description}</p>
+<CardCollection>
+    <NoteNavigationCard title="My Notes" href="/notes" iconPath="/images/note.svg" />
+    <NoteNavigationCard title="GitHub" href="https://github.com/th7mo" iconPath="/images/external-link.svg" />
+    <NoteNavigationCard title="Vercel" href="https://vercel.com/th7mos-projects/th7mo" />
+    <NoteNavigationCard title="ChatGPT" href="https://chatgpt.com/" />
+</CardCollection>
+</Layout>

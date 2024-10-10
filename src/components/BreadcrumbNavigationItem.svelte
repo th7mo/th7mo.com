@@ -3,7 +3,7 @@
     export let displayText: string;
 </script>
 
-<li><a href={href}>{displayText}</a></li>
+<li><a {href}>{displayText}</a></li>
 
 <style>
     li {
