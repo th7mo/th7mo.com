@@ -65,8 +65,8 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
         /* Make whitespace below main content same as <BreadcrumbNavigation> height:
 
                              ┌ margin-above ┐   ┌ padding-above ┐   ┌ line-height*font-size ┐    ┌ padding-below ┐   ┌ margin-below ┐ */
-        padding-bottom: calc(var(--layout-xl) + var(--spacing-md) + calc(1.5 * var(--body-lg)) + var(--spacing-md) + var(--layout-xl));
         padding: var(--page-padding);
+        padding-bottom: calc(var(--layout-xl) + var(--spacing-md) + calc(1.5 * var(--body-lg)) + var(--spacing-md) + var(--layout-xl));
         max-width: var(--page-width);
         margin: auto;
     }
