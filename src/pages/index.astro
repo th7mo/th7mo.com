@@ -1,19 +1,19 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import CardCollection from "@components/CardCollection.svelte";
-import NoteNavigationCard from "@components/NoteNavigationCard.svelte";
+import NavigationCardList from "@components/NavigationCardList.svelte";
+import NavigationCard from "@components/NavigationCard.svelte";
 
 const title = "127.0.0.1";
 const description = "I don't know what I'm doing";
 ---
 
 <Layout title={title} description={description}>
-<h1>{title}</h1>
-<p>{description}</p>
-<CardCollection>
-    <NoteNavigationCard title="My Notes" href="/notes" iconPath="/images/note.svg" />
-    <NoteNavigationCard title="GitHub" href="https://github.com/th7mo" iconPath="/images/external-link.svg" />
-    <NoteNavigationCard title="Vercel" href="https://vercel.com/th7mos-projects/th7mo" />
-    <NoteNavigationCard title="ChatGPT" href="https://chatgpt.com/" />
-</CardCollection>
+    <h1>{title}</h1>
+    <p>{description} :)</p>
+    <NavigationCardList>
+        <NavigationCard title="My Notes" href="/notes" />
+        <NavigationCard title="GitHub" href="https://github.com/th7mo" />
+        <NavigationCard title="Vercel" href="https://vercel.com/th7mos-projects/th7mo" />
+        <NavigationCard title="ChatGPT" href="https://chatgpt.com/" />
+    </NavigationCardList>
 </Layout>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { CollectionEntry } from "astro:content";
-    import CardCollection from "@components/CardCollection.svelte";
-    import NoteNavigationCard from "@components/NoteNavigationCard.svelte";
+    import NavigationCardList from "@components/NavigationCardList.svelte";
+    import NavigationCard from "@components/NavigationCard.svelte";
 
     export let currentPagePath: string;
     export let notes: CollectionEntry<"notes">[];
@@ -19,9 +19,9 @@
 
 {#each Object.entries(groupedNotes) as [firstLetter, notes]}
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
-    <CardCollection>
+    <NavigationCardList>
         {#each notes as note}
-            <NoteNavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} />
+            <NavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} />
         {/each}
-    </CardCollection>
+    </NavigationCardList>
 {/each}
