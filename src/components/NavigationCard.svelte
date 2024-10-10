@@ -55,15 +55,14 @@
         }
     }
 
-    @media (prefers-color-scheme: light) {
-        a {
-            box-shadow: var(--spacing-2xs) var(--spacing-2xs) var(--color-foreground);
-        }
-    }
-
     @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
+        a {
+            --shadow-size: var(--spacing-2xs);
+            box-shadow: var(--shadow-size) var(--shadow-size) var(--color-foreground);
+        }
+
         a:hover {
-            transform: translate(var(--spacing-2xs), var(--spacing-2xs));
+            transform: translate(var(--shadow-size), var(--shadow-size));
         }
     }
 

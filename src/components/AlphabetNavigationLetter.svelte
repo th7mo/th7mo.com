@@ -18,15 +18,14 @@
         height: var(--alphabet-navigation-letter-size);
     }
 
-    @media (prefers-color-scheme: light) {
-        a {
-            box-shadow: 0.15rem 0.15rem var(--color-foreground);
-        }
-    }
-
     @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
+        a {
+            --shadow-size: 0.15rem;
+            box-shadow: var(--shadow-size) var(--shadow-size) var(--color-foreground);
+        }
+
         a:hover {
-            transform: translate(0.15rem, 0.15rem);
+            transform: translate(var(--shadow-size), var(--shadow-size));
         }
     }
 
