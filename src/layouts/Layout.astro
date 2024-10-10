@@ -1,6 +1,5 @@
 ---
 import Head from "@components/Head.svelte";
-import Footer from "@components/Footer.svelte";
 import BreadcrumbNavigation from "@components/BreadcrumbNavigation.svelte";
 
 import "@styles/fonts.css";
@@ -32,7 +31,6 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
         <main>
             <slot />
         </main>
-        <Footer />
     </body>
 </html>
 
@@ -65,10 +63,9 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
 
     main {
         --header-height: calc(calc(2 * var(--layout-xl)) + calc(2 * var(--spacing-md)) + calc(1.5 * var(--body-lg)));
-        --footer-height: calc(calc(2 * var(--spacing-lg)) + calc(1.5 * var(--body-2xs)));
 
         padding: 0 var(--page-padding);
-        padding-bottom: calc(var(--header-height) - var(--footer-height));
+        padding-bottom: var(--header-height);
         max-width: var(--page-width);
         margin: auto;
     }
