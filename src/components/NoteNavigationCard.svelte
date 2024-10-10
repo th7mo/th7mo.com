@@ -2,7 +2,10 @@
     export let title: string;
     export let description: string | undefined = undefined;
     export let href: string;
-    export let iconPath: string = "/images/external-link.svg";
+    export let iconPath: string = "/images/note.svg";
+    if (href.startsWith("http")) {
+        iconPath = "/images/external-link.svg";
+    }
 </script>
 
 <li>
