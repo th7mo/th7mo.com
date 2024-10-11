@@ -2,9 +2,9 @@
     export let href: string;
 
     export let iconPath: string | undefined = undefined;
-    export let center: boolean = false;
-    export let spacing: string = "var(--spacing-md)"
-    export let shadowSize: string = "";
+    export let centerSlottedContent: boolean = false;
+    export let padding: string = "var(--spacing-md)"
+    export let boxShadowSize: string = "";
 
     let isExternalLink = href.startsWith("http");
 </script>
@@ -12,11 +12,11 @@
 <li>
     <a
         {href}
-        class={`${iconPath ? "icon" : ""} ${center ? "center" : ""}`}
+        class={`${iconPath ? "icon" : ""} ${centerSlottedContent ? "center-slotted-content" : ""}`}
         style="
             --icon-path: url({iconPath});
-            --card-shadow-size: {shadowSize};
-            --card-spacing: {spacing};
+            --card-box-shadow-size: {boxShadowSize};
+            --card-padding: {padding};
         "
         target={isExternalLink ? "_blank" : undefined}
         rel={isExternalLink ? "noopener noreferrer" : undefined}
@@ -28,7 +28,7 @@
 <style>
     a {
         font-size: var(--body-lg);
-        padding: var(--card-spacing, var(--spacing-md));
+        padding: var(--card-padding);
         height: 100%;
         display: block;
         text-decoration: none;
@@ -36,7 +36,7 @@
         transition: all 0.15s;
         border: var(--border-md);
 
-        &.center {
+        &.center-slotted-content {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -79,11 +79,11 @@
 
     @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
         a {
-            box-shadow: var(--card-shadow-size) var(--card-shadow-size) var(--color-foreground);
+            box-shadow: var(--card-box-shadow-size) var(--card-box-shadow-size) var(--color-foreground);
         }
 
         a:hover {
-            transform: translate(var(--card-shadow-size), var(--card-shadow-size));
+            transform: translate(var(--card-box-shadow-size), var(--card-box-shadow-size));
         }
     }
 

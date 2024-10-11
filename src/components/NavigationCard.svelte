@@ -12,7 +12,7 @@
     }
 </script>
 
-<Card {href} {iconPath} shadowSize="var(--spacing-2xs)">
+<Card {href} {iconPath} boxShadowSize="var(--spacing-2xs)">
     {title}
     {#if description}
         <p>{description}</p>
