@@ -1,6 +1,5 @@
 {
-    "name": "notes",
-    "type": "module",
+    "name": "th7mo.com",
     "version": "1.0.0",
     "scripts": {
         "dev": "astro dev",
