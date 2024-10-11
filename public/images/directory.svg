@@ -2,19 +2,7 @@
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 16 16"
 >
-  <style>
-    path {
-      fill: #2a2a2a;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      path {
-        fill: #eee;
-      }
-    }
-  </style>
   <path
-    fill-rule="evenodd"
     d="
       M0 0 0 14 16 14 16 2 8 2 6 0z
       M14.25 12.25 1.75 12.25 1.75 3.75 14.25 3.75z
