@@ -3,13 +3,19 @@
     export let description: string | undefined = undefined;
     export let href: string;
     export let iconPath: string = "/images/note.svg";
-    if (href.startsWith("http")) {
+
+    let isExternalLink = href.startsWith("http");
+    if (isExternalLink) {
         iconPath = "/images/external-link.svg";
     }
 </script>
 
 <li>
-    <a class="navigation-card" {href} style="--icon-path: url({iconPath})">
+    <a
+         class="navigation-card"
+         {href}
+         target={isExternalLink ? "_blank" : null}
+         style="--icon-path: url({iconPath})">
         {title}
         {#if description}
             <p>{description}</p>
