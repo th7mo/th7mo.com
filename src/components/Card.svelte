@@ -4,7 +4,7 @@
     export let iconPath: string | undefined = undefined;
     export let centerSlottedContent: boolean = false;
     export let padding: string = "var(--spacing-md)"
-    export let boxShadowSize: string = "";
+    export let boxShadowSize: string = "var(--spacing-2xs)";
 
     let isExternalLink = href.startsWith("http");
 </script>
