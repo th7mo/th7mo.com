@@ -19,7 +19,7 @@
         padding: 0;
         display: grid;
         gap: var(--spacing-sm);
-        grid-template-columns: repeat(auto-fill, var(--alphabet-navigation-letter-size));
+        grid-template-columns: repeat(auto-fill, 2.9rem);
         justify-content: space-between;
         list-style: none;
     }

@@ -36,7 +36,7 @@ a:visited {
         }
     }
 
-    &[href^="#"]:not([href^="#user-content-fn"]):not(.navigation-card)::before {
+    &[href^="#"]:not([href^="#user-content-fn"])::before {
         content: "§";
     }
 
