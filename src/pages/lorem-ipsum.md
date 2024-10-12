@@ -49,15 +49,20 @@ Suspendisse malesuada vehicula arcu, ut mollis turpis rutrum a.
 
 ***~~Italic, strong and strikethrough~~***
 
-`Inline code`
-
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to refresh a page.
-
 ~~strikethrough~~
 
 Some<sup>sup</sup> text
 
 Some<sub>sub</sub> text.
+
+`Inline code` `with` `multiple` `after` `each other`
+
+Use the `<p>` tag for regular paragraphs.
+
+<kbd>Keyboard</kbd> <kbd>Input</kbd> <kbd>blocks</kbd>
+
+Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to refresh a page.
+
 
 A footnote[^1]
 
@@ -181,44 +186,74 @@ Heavy indented ordered list:
         2. Level 3.2
             1. level 4
 
-## Codeblocks
+## Code blocks
 
-```javascript
-public foo() {
-    bar();
-}
-```
+Shell:
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ```sh
-sh -c "$(curl -fsSL jfioewjfiewfoewfojewofoiepwqfewnfionqweuifhewqiofewqiofjewjfiewqjofpjewofjewqfjewqofjwqofjewqioj)"
-```
-
-```javascript
-public foo() {
-    bar();
-}
-```
-
-```javascript
-public foo() {
-    bar();
-}
-```
-
-```html
-<html class="foo">bar</html>
-```
-
-```sh
-sudo apt update
+sudo apt update && sudo apt upgrade
 ```
 
 ```sh
 sudo apt update a long line that wrappes around to the next line if it is even longer than this
+```
+
+Web development:
+
+```javascript
+if (number === 1) {
+    console.log("1 is neither prime nor composite number.");
+}
+
+// check if number is greater than 1
+else if (number > 1) {
+
+    // looping through 2 to number/2
+    for (let i = 2; i <= number/2; i++) {
+        if (number % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(`${number} is a prime number`);
+    } else {
+        console.log(`${number} is a not prime number`);
+    }
+}
+```
+
+```css
+@media (prefers-color-scheme:dark) {
+    :root {
+        --color-foreground: #eee;
+        --color-background: #000;
+        --color-surface: #1f1e25;
+        --color-overlay: #2e2d36;
+    }
+}
+```
+
+```svelte
+<script lang="ts">
+    export let title: string;
+    export let description: string;
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Thimo van Velzen">
+    <meta name="keywords" content="website">
+    <meta name="description" content={description}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{title}</title>
+</head>
 ```
 
 ## Tables

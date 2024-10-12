@@ -40,6 +40,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            aspect-ratio: 1 / 1;
         }
 
         &:hover p {
