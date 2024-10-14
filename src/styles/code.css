@@ -7,13 +7,17 @@ kbd {
 }
 
 pre {
-    white-space: pre-wrap;
+    border: var(--border-md);
+    overflow-x: auto;
 
     & code {        
-        background-color: var(--color-surface);
         display: block;
+        background-color: transparent;
         padding: var(--spacing-md);
-        border: var(--border-md);
+
+        & .line {
+            padding-right: var(--spacing-md);
+        }
     }
 }
 

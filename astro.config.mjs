@@ -15,7 +15,15 @@ export default defineConfig({
       themes: {
         light: "github-light",
         dark: "github-dark"
-      }
+      },
+      transformers: [{
+        preprocess(code) {
+          if (code.endsWith('\n')) {
+            code = code.slice(0, -1);
+          }
+          return code;
+        },
+      }]
     }
   },
 

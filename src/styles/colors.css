@@ -5,6 +5,11 @@
     --color-overlay: #efeff3;
 }
 
+.astro-code,
+.astro-code span {
+    background-color: var(--color-surface) !important;
+}
+
 @media (prefers-color-scheme:dark) {
     :root {
         --color-foreground: #eee;

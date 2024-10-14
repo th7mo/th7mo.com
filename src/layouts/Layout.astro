@@ -43,6 +43,7 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
 
     html {
         scroll-padding-top: 4.5rem;
+        scrollbar-color: var(--color-foreground) var(--color-overlay);
     }
 
     @media (prefers-reduced-motion: no-preference) {
