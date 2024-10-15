@@ -1,16 +1,16 @@
 :root {
     --border-sm: 1px solid var(--color-foreground);
     --border-md: 1.5px solid var(--color-foreground);
+    --border-md-inverted: 1.5px solid var(--color-background);
 }
 
 blockquote {
     padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-md);
     border-left: var(--spacing-xs) solid var(--color-foreground);
-}
 
-em,
-blockquote p {
-    font-style: italic;
+    & p {
+        font-style: italic;
+    }
 }
 
 hr {

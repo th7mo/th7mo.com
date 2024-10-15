@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/MarkdownLayout.astro"
-title: "Design inspiration"
+title: "Design Inspiration"
 description: "Aspects of other people their work that inspired th7mo.com"
 ---
 
@@ -38,7 +38,7 @@ color inversion technique by [Bradwoods garden](https://garden.bradwoods.io/).
 
 ## Tables
 
-* [GitHub](https://github.com)
+The table design is copied from [Bradwoods garden](https://garden.bradwoods.io/).
 
 ## Lorem ipsum
 

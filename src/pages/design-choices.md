@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/MarkdownLayout.astro"
-title: "Design choices"
+title: "Design Choices"
 description: "Design choices that made the th7mo.com website what it is today"
 ---
 

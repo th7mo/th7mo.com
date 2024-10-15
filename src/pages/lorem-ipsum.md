@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/MarkdownLayout.astro"
-title: "Lorem ipsum"
+title: "Lorem Ipsum"
 description: "The sandbox page for th7mo.com"
 ---
 

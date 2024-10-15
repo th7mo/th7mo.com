@@ -8,11 +8,10 @@ th {
     padding: var(--spacing-sm);
     background-color: var(--color-foreground);
     color: var(--color-background);
-    border: var(--border-md);
-}
 
-th:not(:last-child) {
-    border-right: 1.5px solid var(--color-background);
+    &:not(:last-child) {
+        border-right: var(--border-md-inverted);
+    }
 }
 
 td {
