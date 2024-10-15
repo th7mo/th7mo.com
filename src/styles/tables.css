@@ -6,22 +6,16 @@ table {
 
 th {
     padding: var(--spacing-sm);
-    background-color: var(--color-background);
-    border-right: var(--border-sm);
-    border-bottom: var(--border-md);
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+    border: var(--border-md);
+}
+
+th:not(:last-child) {
+    border-right: 1.5px solid var(--color-background);
 }
 
 td {
     padding: var(--spacing-xs);
     border: var(--border-sm);
-}
-
-tr {
-    &:nth-child(odd) {
-        background-color: var(--color-overlay);
-
-        & code {
-            background-color: var(--color-surface);
-        }
-    }
 }
