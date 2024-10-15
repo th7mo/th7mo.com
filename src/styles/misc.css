@@ -19,5 +19,5 @@ hr {
 }
 
 :is(p, ol, ul, blockquote, table, pre):not(:last-child) {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
