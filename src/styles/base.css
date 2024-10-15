@@ -1,3 +1,13 @@
+:root {
+    --rem: 1.125rem;
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        --rem: 1rem;        
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

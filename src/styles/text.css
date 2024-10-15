@@ -1,25 +1,20 @@
 :root {
-    --title-sm: calc(var(--body-md) * 1.4);
+    --title-sm: calc(var(--body-md) * 1.2);
     --title-md: calc(var(--title-sm) * 1.4);
-    --title-lg: calc(var(--title-md) * 1.4);
+    --title-lg: calc(var(--title-md) * 1.5);
 
     --body-2xs: calc(var(--body-xs) / 1.125);
     --body-xs: calc(var(--body-sm) / 1.125);
     --body-sm: calc(var(--body-md) / 1.125);
-    --body-md: 1.125rem;
+    --body-md: calc(1.1 * var(--rem));
     --body-lg: calc(var(--body-md) * 1.125);
 }
 
 h1, h2, h3 {
-    font-weight: 900;
     margin: calc(2 * var(--body-md)) 0 var(--body-md) 0;
+    font-weight: 900;
     line-height: 1;
     hyphens: none;
-}
-
-h3 {
-    font-size: var(--title-sm);
-    line-height: 1.2;
 }
 
 h1 {
@@ -30,11 +25,12 @@ h2 {
     font-size: var(--title-md);
 }
 
-@media screen and (max-width: 450px) {
-    :root {
-        --body-md: 1rem;        
-    }
+h3 {
+    font-size: var(--title-sm);
+    line-height: 1.2;
+}
 
+@media screen and (max-width: 450px) {
     h1 {
         font-size: var(--title-md);
     }

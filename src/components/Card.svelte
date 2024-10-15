@@ -63,7 +63,7 @@
             background-color: var(--color-foreground);
             width: var(--body-md);
             height: var(--body-md);
-            margin-right: 0.5rem;
+            margin-right: calc(0.5 * var(--rem));
             mask: var(--icon-path);
             -webkit-mask: var(--icon-path);
             transform: translateY(2px);

@@ -26,7 +26,7 @@
         top: 0;
         position: sticky;
         padding: var(--spacing-md) 0;
-        margin: var(--layout-xl) 0;
+        margin: var(--layout-lg) 0;
         background-color: var(--color-background);
         z-index: 1;
     }

@@ -2,12 +2,11 @@
     --spacing-2xs: calc(var(--spacing-xs) / 1.618);
     --spacing-xs: calc(var(--spacing-sm) / 1.618);
     --spacing-sm: calc(var(--spacing-md) / 1.618);
-    --spacing-md: var(--body-md);
+    --spacing-md: var(--rem);
     --spacing-lg: calc(var(--spacing-md) * 1.618);
 
-    --layout-sm: 2.5rem;
-    --layout-md: 3rem;
-    --layout-lg: 4rem;
-    --layout-xl: 6rem;
-    --layout-2xl: 12rem;
+    --layout-sm: calc(2.5 * var(--rem));
+    --layout-md: calc(3 * var(--rem));
+    --layout-lg: calc(5 * var(--rem));
+    --layout-xl: calc(14 * var(--rem));
 }

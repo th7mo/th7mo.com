@@ -5,9 +5,15 @@ table {
 }
 
 th {
+    text-align: start;
     padding: var(--spacing-sm);
     background-color: var(--color-foreground);
     color: var(--color-background);
+
+    &::selection {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+    }
 
     &:not(:last-child) {
         border-right: var(--border-md-inverted);
