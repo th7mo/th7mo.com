@@ -34,7 +34,8 @@ Since my website uses a black and white color scheme, I found the default
 blue text color for `<a>` links didn't match the design. To make links stand
 out, I added external link icons and underlined the link text. Additionally,
 I inverted the text and background colors on hover. I was inspired to use this
-color inversion technique by [Bradwoods garden](https://garden.bradwoods.io/).
+color inversion technique by [Bradwoods garden](https://garden.bradwoods.io/) 
+and [wiki.xxiivv.com](https://wiki.xxiivv.com).
 
 ## Tables
 
