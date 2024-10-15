@@ -13,6 +13,7 @@ pre {
     & code {        
         display: block;
         background-color: transparent;
+        font-size: calc(var(--body-sm) / 1.015);
         padding: var(--spacing-md);
 
         & .line {
