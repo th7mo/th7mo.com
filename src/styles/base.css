@@ -34,6 +34,7 @@ body {
     letter-spacing: -0.042rem;
     font-size: var(--body-md);
     font-family: var(--font-primary);
+    font-weight: 300;
 }
 
 ::selection {

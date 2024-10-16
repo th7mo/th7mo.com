@@ -13,8 +13,8 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       themes: {
-        light: "github-light",
-        dark: "github-dark"
+        light: "vitesse-light",
+        dark: "vitesse-dark"
       },
       transformers: [{
         preprocess(code) {
