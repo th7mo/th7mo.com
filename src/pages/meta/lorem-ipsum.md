@@ -103,32 +103,28 @@ Two horizontal rules:
 
 A regular blockquote:
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+> "Meditation is a useful tool – but we actually need to stop the people who are
+> pouring itching powder on us."
 
 A blockquote with a code block inside:
 
-> The following code block:
->
 > ```sh
 > sudo apt install discord
 > ```
 
 Nested blockquotes:
 
-> > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-> > eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+> "Meditation is a useful tool – but we actually need to stop the people who are
+> pouring itching powder on us."
 >
-> > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-> > eiusmod tempor incididunt ut labore et dolore magna aliqua.
+> > "Meditation is a useful tool – but we actually need to stop the people who are
+> > pouring itching powder on us."
 
 A triple nested blockquote:
 
-> > > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-> > > eiusmod tempor incididunt ut labore et dolore magna aliqua.
+> > > "Meditation is a useful tool – but we actually need to stop the people who are
+> > > pouring itching powder on us."
 
 A blockquote with a list inside:
 
@@ -304,4 +300,5 @@ A table with `sub` and `sup` text:
 | column             | column             |
 |--------------------|--------------------|
 | some<sub>sub</sub> | some<sup>sup</sup> |
+
 
