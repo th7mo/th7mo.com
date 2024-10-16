@@ -85,17 +85,17 @@ Two horizontal rules:
 
 [External Link](https://google.com)
 
-[Internal link](git)
+[Internal link](color-palette)
 
-[Internal `code` link](git)
+[Internal `code` link](color-palette)
 
-[Internal **bold** link](git)
+[Internal **bold** link](color-palette)
 
-[Internal ~~strikethrough~~ link](git)
+[Internal ~~strikethrough~~ link](color-palette)
 
-[Internal<sup>sup</sup> link](git)
+[Internal<sup>sup</sup> link](color-palette)
 
-[Internal <kbd>Input</kbd> link](git)
+[Internal <kbd>Input</kbd> link](color-palette)
 
 [Section link](#lists)
 
@@ -136,7 +136,7 @@ A blockquote with a list inside:
 >     * level 2
 >         * level 3
 >             * level 4
->                 * level 5.
+>                 * level 5
 
 ## Lists
 
@@ -213,7 +213,7 @@ if (number === 1) {
 else if (number > 1) {
 
     // looping through 2 to number/2
-    for (let i = 2; i <= number/2; i++) {
+    for (let i = 2; i <= number / 2; i++) {
         if (number % i == 0) {
             isPrime = false;
             break;
