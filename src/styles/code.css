@@ -24,5 +24,5 @@ pre {
 
 kbd {
     font-weight: 700;
-    box-shadow: 1px 1px 0 0 var(--color-foreground);
+    box-shadow: 1.5px 1.5px 0 0 var(--color-foreground);
 }
