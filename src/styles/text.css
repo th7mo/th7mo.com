@@ -1,7 +1,7 @@
 :root {
     --title-sm: calc(1.1 * var(--body-md));
     --title-md: calc(1.25 * var(--body-md));
-    --title-lg: calc(1.35 * var(--body-md));
+    --title-lg: calc(1.4 * var(--body-md));
 
     --body-2xs: calc(var(--body-xs) / 1.125);
     --body-xs: calc(var(--body-sm) / 1.125);
