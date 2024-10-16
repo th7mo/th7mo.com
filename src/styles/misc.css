@@ -19,6 +19,10 @@ hr {
     border: var(--border-md);
 }
 
+strong {
+    font-weight: 700;
+}
+
 :is(p, ol, ul, blockquote, table, pre):not(:last-child) {
     margin-bottom: var(--spacing-lg);
 }
