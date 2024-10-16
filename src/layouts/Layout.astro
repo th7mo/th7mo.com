@@ -41,27 +41,6 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
         --page-padding: var(--spacing-md);
     }
 
-    html {
-        scroll-padding-top: calc(4.5 * var(--rem));
-        scrollbar-color: var(--color-foreground) var(--color-overlay);
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-        html {
-            scroll-behavior: smooth;
-        }
-    }
-
-    body {
-        overflow-y: scroll;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        background: var(--color-background);
-        line-height: 1.5;
-        font-size: var(--body-md);
-        font-family: var(--font-primary);
-    }
 
     main {
         --header-height: calc(calc(2 * var(--layout-lg)) + calc(2 * var(--spacing-md)) + calc(1.5 * var(--body-lg)));

@@ -14,7 +14,21 @@
     <link rel="icon" href="/images/note.svg">
     <link
         rel="preload"
-        href="/fonts/iosevka-400-monospace.woff2"
+        href="/fonts/averia-300-normal.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+    >
+    <link
+        rel="preload"
+        href="/fonts/averia-700-normal.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+    >
+    <link
+        rel="preload"
+        href="/fonts/inconsolata-mono.woff2"
         as="font"
         type="font/woff2"
         crossorigin="anonymous"

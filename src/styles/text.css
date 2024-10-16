@@ -12,9 +12,8 @@
 
 h1, h2, h3 {
     margin: calc(2 * var(--body-md)) 0 var(--body-md) 0;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1;
-    hyphens: none;
 }
 
 h1 {

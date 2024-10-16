@@ -5,10 +5,6 @@
     --color-overlay: #efeff3;
 }
 
-.astro-code,
-.astro-code span {
-    background-color: var(--color-surface) !important;
-}
 
 @media (prefers-color-scheme:dark) {
     :root {
@@ -18,8 +14,4 @@
         --color-overlay: #2e2d36;
     }
 
-    .astro-code,
-    .astro-code span {
-        color: var(--shiki-dark) !important;
-    }
 }
