@@ -1,8 +1,5 @@
 <script lang="ts">
     import type { CollectionEntry } from "astro:content";
-    import NavigationCardList from "@components/NavigationCardList.svelte";
-    import NavigationCard from "@components/NavigationCard.svelte";
-
     import TerminalList from "@components/TerminalList.svelte";
     import TerminalListItem from "@components/TerminalListItem.svelte";
 

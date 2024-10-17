@@ -14,11 +14,12 @@
     let permissions = fileType + ownerPermissions + guestPermissions + guestPermissions;
 </script>
 
-<li>{permissions} {group} {date} <slot /></li>
+<li>{permissions} {group} {date} &nbsp;<slot /></li>
 
 <style>
     li {
         font-family: var(--font-monospace);
         white-space: pre;
+        letter-spacing: -0.025rem;
     }
 </style>
