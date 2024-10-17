@@ -7,7 +7,7 @@ ul {
     list-style-type: "» ";
 }
 
-li {
+main li {
     padding-left: var(--spacing-sm);
 }
 

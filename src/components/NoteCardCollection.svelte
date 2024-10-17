@@ -3,6 +3,9 @@
     import NavigationCardList from "@components/NavigationCardList.svelte";
     import NavigationCard from "@components/NavigationCard.svelte";
 
+    import TerminalList from "@components/TerminalList.svelte";
+    import TerminalListItem from "@components/TerminalListItem.svelte";
+
     export let currentPagePath: string;
     export let notes: CollectionEntry<"notes">[];
 
@@ -19,9 +22,11 @@
 
 {#each Object.entries(groupedNotes) as [firstLetter, notes]}
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
-    <NavigationCardList>
+    <TerminalList>
         {#each notes as note}
-            <NavigationCard href={`${currentPagePath}/${note.slug}`} {...note.data} />
+            <TerminalListItem date={note.data.dateLastModified}>
+                <a href={`${currentPagePath}/${note.slug}`}>{note.data.title}</a>
+            </TerminalListItem>
         {/each}
-    </NavigationCardList>
+    </TerminalList>
 {/each}
