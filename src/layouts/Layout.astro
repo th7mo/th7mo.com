@@ -1,5 +1,6 @@
 ---
 import Head from "@components/Head.svelte";
+import Footer from "@components/Footer.svelte";
 import BreadcrumbNavigation from "@components/BreadcrumbNavigation.svelte";
 
 import "@styles/fonts.css";
@@ -16,9 +17,10 @@ import "@styles/colors.css";
 interface Props {
     title: string;
     description: string;
+    dateCreated?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, dateCreated } = Astro.props;
 
 const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$/g, "");
 ---
@@ -32,6 +34,8 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
             <h1>{title}</h1>
             <slot />
         </main>
+        
+        {dateCreated && <Footer {dateCreated} />}
     </body>
 </html>
 
@@ -41,13 +45,25 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
         --page-padding: var(--spacing-md);
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        & > * {
+            width: 100%;
+        }
+    }
+
 
     main {
         --header-height: calc(calc(2 * var(--layout-lg)) + calc(2 * var(--spacing-md)) + calc(1.5 * var(--body-lg)));
+        --footer-height: calc(calc(2 * var(--page-padding)) + calc(1.5 * var(--body-xs)));
 
         padding: 0 var(--page-padding);
-        padding-bottom: var(--header-height);
+        padding-bottom: calc(var(--header-height) - var(--footer-height));
         max-width: var(--page-width);
         margin: auto;
+        flex: 1;
     }
 </style>
