@@ -19,7 +19,7 @@ hr {
     border: var(--border-md);
 }
 
-strong {
+b, strong {
     font-weight: 700;
 }
 
