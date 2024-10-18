@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{title}</title>
-    <link rel="icon" href="/images/note.svg">
+    <link rel="icon" href="/images/webring.svg">
     <link
         rel="preload"
         href="/fonts/iosevka-400-monospace.woff2"
