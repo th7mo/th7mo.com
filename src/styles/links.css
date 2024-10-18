@@ -1,7 +1,6 @@
 a,
 a:visited {
     font-weight: 700;
-    transition: all 0.15s;
 
     &:hover {
         text-decoration: none;
