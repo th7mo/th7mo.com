@@ -1,6 +1,4 @@
-<ol>
-    <slot />
-</ol>
+<ol><slot /></ol>
 
 <style>
     ol {

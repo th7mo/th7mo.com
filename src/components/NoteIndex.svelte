@@ -21,7 +21,7 @@
     <h2 id={firstLetter}>{firstLetter.toUpperCase()}</h2>
     <TerminalList>
         {#each notes as note}
-            <TerminalListItem short date={note.data.dateLastModified}>
+            <TerminalListItem date={note.data.dateLastModified}>
                 <a href={`${currentPagePath}/${note.slug}`}>{note.data.title}</a>
             </TerminalListItem>
         {/each}
