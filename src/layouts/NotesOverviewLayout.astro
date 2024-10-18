@@ -2,7 +2,6 @@
 import type { CollectionEntry } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
-import AlphabetNavigation from "@components/AlphabetNavigation.svelte";
 import NoteCardCollection from "@components/NoteCardCollection.svelte";
 
 interface Props {
@@ -10,16 +9,10 @@ interface Props {
     notes: CollectionEntry<"notes">[];
 }
 const { title, notes } = Astro.props;
+const description = `A collection of my ${notes.length} scattered thoughts`;
 ---
 
-<Layout title={title} description="A collection of my scattered thoughts.">
-    <p>A collection of my <b>{notes.length}</b> scattered thoughts.</p>
-    <AlphabetNavigation notes={notes} />
+<Layout title={title} description={description}>
+    <p>{description}.</p>
     <NoteCardCollection currentPagePath={Astro.url.pathname.replace(".html", "")} notes={notes} />
 </Layout>
-
-<style>
-    code {
-        font-weight: 700;
-    }
-</style>

@@ -34,7 +34,6 @@
         text-decoration: none;
         background-color: var(--color-surface);
         transition: all 0.15s;
-        border: var(--border-md);
 
         &.center-slotted-content {
             display: flex;

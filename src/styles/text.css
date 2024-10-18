@@ -3,8 +3,6 @@
     --title-md: calc(1.2 * var(--body-md));
     --title-lg: calc(1.5 * var(--body-md));
 
-    --body-2xs: calc(var(--body-xs) / 1.125);
-    --body-xs: calc(var(--body-sm) / 1.125);
     --body-sm: calc(var(--body-md) / 1.125);
     --body-md: calc(1.1 * var(--rem));
     --body-lg: calc(var(--body-md) * 1.125);

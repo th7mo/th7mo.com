@@ -1,8 +1,10 @@
 ---
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
 import NotesOverviewLayout from "@layouts/NotesOverviewLayout.astro";
 
-const notes = await getCollection("notes", ({ data }) => {
+const notes: CollectionEntry<"notes">[] = await getCollection("notes", ({ data }) => {
     return data.isPublic;
 });
 ---
