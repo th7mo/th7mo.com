@@ -33,8 +33,7 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
         <main>
             <h1>{title}</h1>
             <slot />
-        </main>
-        
+        </main>        
         {dateCreated && <Footer {dateCreated} />}
     </body>
 </html>

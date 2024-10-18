@@ -4,12 +4,10 @@
     --color-surface: #f8f8fa;
 }
 
-
 @media (prefers-color-scheme:dark) {
     :root {
         --color-foreground: #eee;
         --color-background: #161618;
         --color-surface: #1f1e25;
     }
-
 }

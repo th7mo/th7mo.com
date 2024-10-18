@@ -1,12 +1,9 @@
 :root {
-    --spacing-2xs: calc(var(--spacing-xs) / 1.618);
     --spacing-xs: calc(var(--spacing-sm) / 1.618);
     --spacing-sm: calc(var(--spacing-md) / 1.618);
     --spacing-md: var(--rem);
     --spacing-lg: calc(var(--spacing-md) * 1.618);
 
-    --layout-sm: calc(2.5 * var(--rem));
-    --layout-md: calc(3 * var(--rem));
+    --layout-md: calc(2.5 * var(--rem));
     --layout-lg: calc(5 * var(--rem));
-    --layout-xl: calc(14 * var(--rem));
 }
