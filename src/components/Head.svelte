@@ -21,7 +21,7 @@
     >
     <link
         rel="preload"
-        href="/fonts/iosevka-700-monospace.woff2"
+        href="/fonts/iosevka-900-monospace.woff2"
         as="font"
         type="font/woff2"
         crossorigin="anonymous"

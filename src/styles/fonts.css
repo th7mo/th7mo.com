@@ -1,5 +1,7 @@
 :root {
     --font: "Iosevka", mono;
+    --weight-normal: 400;
+    --weight-bold: 900;
 }
 
 @font-face {
@@ -12,8 +14,8 @@
 
 @font-face {
    font-family: "Iosevka";
-   src: url("/fonts/iosevka-700-monospace.woff2") format("woff2");
-   font-weight: 700;
+   src: url("/fonts/iosevka-900-monospace.woff2") format("woff2");
+   font-weight: 900;
    font-style: monospace;
    font-display: swap; 
 }

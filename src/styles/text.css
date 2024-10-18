@@ -10,7 +10,7 @@
 
 h1, h2, h3 {
     margin: calc(2 * var(--body-md)) 0 var(--body-md) 0;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
     line-height: 1;
 }
 

@@ -13,7 +13,7 @@ pre {
 }
 
 kbd {
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 }
 
 .astro-code,

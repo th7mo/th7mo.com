@@ -8,7 +8,7 @@
 <style>
     li {
         & a {
-            font-weight: 300;
+            font-weight: var(--weight-normal);
             text-decoration: none;
 
             &:hover {
@@ -17,7 +17,7 @@
         }
 
         &:last-child a {
-            font-weight: 700;
+            font-weight: var(--weight-bold);
         }
 
         &:not(:last-child)::after {

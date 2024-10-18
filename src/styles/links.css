@@ -1,6 +1,6 @@
 a,
 a:visited {
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 
     &:hover {
         text-decoration: none;

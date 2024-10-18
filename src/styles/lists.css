@@ -12,5 +12,5 @@ main li {
 }
 
 li::marker {
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 }
