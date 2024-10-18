@@ -49,8 +49,7 @@
 
         & p {
             font-size: var(--body-sm);
-            font-weight: 400;
-            hyphens: none;
+            font-weight: 300;
         }
 
         &::before {

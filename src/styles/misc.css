@@ -10,12 +10,17 @@ blockquote {
 
     & p {
         font-style: italic;
+        font-weight: bold;
     }
 }
 
 hr {
     margin: var(--spacing-lg) 0 var(--spacing-md);
     border: var(--border-md);
+}
+
+b, strong {
+    font-weight: 700;
 }
 
 :is(p, ol, ul, blockquote, table, pre):not(:last-child) {

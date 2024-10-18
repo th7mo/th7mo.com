@@ -1,7 +1,7 @@
 :root {
-    --title-sm: calc(var(--body-md) * 1.2);
-    --title-md: calc(var(--title-sm) * 1.4);
-    --title-lg: calc(var(--title-md) * 1.5);
+    --title-sm: calc(1.05 * var(--body-md));
+    --title-md: calc(1.2 * var(--body-md));
+    --title-lg: calc(1.4 * var(--body-md));
 
     --body-2xs: calc(var(--body-xs) / 1.125);
     --body-xs: calc(var(--body-sm) / 1.125);
@@ -12,9 +12,8 @@
 
 h1, h2, h3 {
     margin: calc(2 * var(--body-md)) 0 var(--body-md) 0;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1;
-    hyphens: none;
 }
 
 h1 {

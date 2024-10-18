@@ -1,17 +1,17 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import NavigationCard from "@components/NavigationCard.svelte";
-import NavigationCardList from "@components/NavigationCardList.svelte";
+import TerminalList from "@components/TerminalList.svelte";
+import TerminalListItem from "@components/TerminalListItem.svelte";
 
 const description = "Pages describing aspects about this website";
 ---
 
 <Layout title="Meta" {description}>
     <p>{description}.</p>
-    <NavigationCardList>
-        <NavigationCard title="Lorem Ipsum" description="A sandbox page for testing purposes" href="meta/lorem-ipsum" iconPath="/images/construction.svg" />
-        <NavigationCard title="Color Palette" description="All the colors used on th7mo.com" href="meta/color-palette" />
-        <NavigationCard title="Design Inspiration" description="Other websites that inspired th7mo.com" href="meta/design-inspiration" />
-        <NavigationCard title="Design Choices" description="Rules for preserving a pleasant reading experience" href="meta/design-choices" />
-    </NavigationCardList>
+    <TerminalList>
+        <TerminalListItem short date="16-10-2024" group="meta"><a href="meta/lorem-ipsum">Lorem Ipsum</a></TerminalListItem>
+        <TerminalListItem short date="15-10-2024" group="meta"><a href="meta/color-palette">Color Palette</a></TerminalListItem>
+        <TerminalListItem short date="15-10-2024" group="meta"><a href="meta/design-inspiration">Design Inspiration</a></TerminalListItem>
+        <TerminalListItem short date="15-10-2024" group="meta"><a href="meta/design-choices">Design Choices</a></TerminalListItem>
+    </TerminalList>
 </Layout>

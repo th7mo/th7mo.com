@@ -15,6 +15,28 @@
     color: var(--color-foreground);
 }
 
+html {
+    scroll-padding-top: calc(4.5 * var(--rem));
+    scrollbar-color: var(--color-foreground) var(--color-overlay);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    background: var(--color-background);
+    line-height: 1.356;
+    letter-spacing: -0.042rem;
+    font-size: var(--body-md);
+    font-family: var(--font-primary);
+    font-weight: 300;
+}
+
 ::selection {
     color: var(--color-background);
     background-color: var(--color-foreground);

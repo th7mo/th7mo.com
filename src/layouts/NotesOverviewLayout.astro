@@ -13,7 +13,7 @@ const { title, notes } = Astro.props;
 ---
 
 <Layout title={title} description="A collection of my scattered thoughts.">
-    <p>A collection of my <code>{notes.length}</code> scattered thoughts.</p>
+    <p>A collection of my <b>{notes.length}</b> scattered thoughts.</p>
     <AlphabetNavigation notes={notes} />
     <NoteCardCollection currentPagePath={Astro.url.pathname.replace(".html", "")} notes={notes} />
 </Layout>

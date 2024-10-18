@@ -1,25 +1,17 @@
 :root {
-    --color-foreground: #2a2a2a;
+    --color-foreground: #161618;
     --color-background: #fff;
     --color-surface: #f8f8fa;
     --color-overlay: #efeff3;
 }
 
-.astro-code,
-.astro-code span {
-    background-color: var(--color-surface) !important;
-}
 
 @media (prefers-color-scheme:dark) {
     :root {
         --color-foreground: #eee;
-        --color-background: #000;
+        --color-background: #161618;
         --color-surface: #1f1e25;
         --color-overlay: #2e2d36;
     }
 
-    .astro-code,
-    .astro-code span {
-        color: var(--shiki-dark) !important;
-    }
 }

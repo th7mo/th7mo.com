@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import NavigationCardList from "@components/NavigationCardList.svelte";
-import NavigationCard from "@components/NavigationCard.svelte";
+import TerminalList from "@components/TerminalList.svelte";
+import TerminalListItem from "@components/TerminalListItem.svelte";
 
 const title = "Hi.";
 const description = "I have no idea what I'm doing";
@@ -9,23 +9,30 @@ const description = "I have no idea what I'm doing";
 
 <Layout title={title} description={description}>
     <p>{description} :)</p>
-    <section>
-        <NavigationCardList>
-            <NavigationCard title="My Notes" description="A collection of my scattered thoughts" href="/notes" iconPath="/images/directory.svg" />
-            <NavigationCard title="Meta" description="About the th7mo.com website" href="/meta" iconPath="/images/directory.svg" />
-        </NavigationCardList>
-        <NavigationCardList>
-            <NavigationCard title="GitHub" href="https://github.com/th7mo" />
-            <NavigationCard title="Merveilles Webring" href="https://lieu.cblgh.org" />
-            <NavigationCard title="SoundCloud" href="https://soundcloud.com/media-361805444" />
-        </NavigationCardList>
-    </section>
-</Layout>
 
-<style>
-    section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(var(--layout-xl), 1fr));
-        gap: var(--spacing-lg);
-    }
-</style>
+    <TerminalList>
+        <TerminalListItem dir date="17-12-2023"><a href="/notes">notes/</a></TerminalListItem>
+        <TerminalListItem dir date="15-10-2024"><a href="/meta">meta/</a></TerminalListItem>
+    </TerminalList>
+
+    <TerminalList>
+        <TerminalListItem
+            executable
+            date="11-10-2024"
+            group="www"
+        ><a target="_blank" href="https://github.com/th7mo">GitHub</a>
+        </TerminalListItem>
+        <TerminalListItem
+            executable
+            date="15-10-2024" 
+            group="www"
+        ><a target="_blank" href="https://lieu.cblgh.org">Merveilles Webring</a>
+        </TerminalListItem>
+        <TerminalListItem
+            executable
+            date="11-10-2024"
+            group="www"
+        ><a target="_blank" href="https://soundcloud.com/media-361805444">SoundCloud</a>
+        </TerminalListItem>
+    </TerminalList>
+</Layout>
