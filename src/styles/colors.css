@@ -2,7 +2,6 @@
     --color-foreground: #161618;
     --color-background: #fff;
     --color-surface: #f8f8fa;
-    --color-overlay: #efeff3;
 }
 
 
@@ -11,7 +10,6 @@
         --color-foreground: #eee;
         --color-background: #161618;
         --color-surface: #1f1e25;
-        --color-overlay: #2e2d36;
     }
 
 }

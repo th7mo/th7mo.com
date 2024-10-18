@@ -18,7 +18,7 @@
 
 html {
     scroll-padding-top: calc(4.5 * var(--rem));
-    scrollbar-color: var(--color-foreground) var(--color-overlay);
+    scrollbar-color: var(--color-foreground) var(--color-surface);
 }
 
 @media (prefers-reduced-motion: no-preference) {

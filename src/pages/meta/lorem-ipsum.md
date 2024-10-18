@@ -230,7 +230,6 @@ else if (number > 1) {
         --color-foreground: #eee;
         --color-background: #000;
         --color-surface: #1f1e25;
-        --color-overlay: #2e2d36;
     }
 }
 ```
