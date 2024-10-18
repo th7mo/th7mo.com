@@ -1,28 +1,19 @@
 :root {
-    --font-primary: "Averia", serif;
-    --font-monospace: "Inconsolata", mono;
+    --font: "Iosevka", mono;
 }
 
 @font-face {
-   font-family: "Averia";
-   src: url("/fonts/averia-300-normal.woff2") format("woff2");
-   font-weight: 300;
-   font-style: normal;
-   font-display: swap; 
-}
-
-@font-face {
-   font-family: "Averia";
-   src: url("/fonts/averia-700-normal.woff2") format("woff2");
-   font-weight: 700;
-   font-style: normal;
-   font-display: swap; 
-}
-
-@font-face {
-   font-family: "Inconsolata";
-   src: url("/fonts/inconsolata-mono.woff2") format("woff2");
+   font-family: "Iosevka";
+   src: url("/fonts/iosevka-400-monospace.woff2") format("woff2");
    font-weight: 400;
+   font-style: monospace;
+   font-display: swap; 
+}
+
+@font-face {
+   font-family: "Iosevka";
+   src: url("/fonts/iosevka-700-monospace.woff2") format("woff2");
+   font-weight: 700;
    font-style: monospace;
    font-display: swap; 
 }

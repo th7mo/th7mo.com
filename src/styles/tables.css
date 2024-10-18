@@ -2,7 +2,6 @@ table {
     border: var(--border-md);
     border-collapse: collapse;
     width: 100%;
-    font-size: var(--body-sm);
 }
 
 th {

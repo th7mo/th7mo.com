@@ -1,23 +1,9 @@
-code,
-kbd {
-    padding: 2px var(--spacing-2xs);
-    background-color: var(--color-overlay);
-    font-size: calc(var(--body-sm) / 1.035);
-    font-family: var(--font-primary);
-    letter-spacing: normal;
-}
-
-code {
-    font-family: var(--font-monospace);
-}
-
 pre {
     overflow-x: auto;
 
     & code {        
         display: block;
         background-color: transparent;
-        font-size: calc(var(--body-sm) / 1.015);
         padding: var(--spacing-md);
 
         & .line {
@@ -28,7 +14,6 @@ pre {
 
 kbd {
     font-weight: 700;
-    box-shadow: 1.5px 1.5px 0 0 var(--color-foreground);
 }
 
 .astro-code,

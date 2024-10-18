@@ -20,11 +20,3 @@
 {:else}
     <li>{permissions} &nbsp;<slot /></li>
 {/if}
-
-<style>
-    li {
-        font-family: var(--font-monospace);
-        white-space: pre;
-        letter-spacing: -0.025rem;
-    }
-</style>

@@ -10,28 +10,14 @@ a:visited {
         color: var(--color-background);
 
         code, kbd, em, strong, sup, sub, del {
-            background-color: transparent;
             color: var(--color-background);
-        }
-
-        & kbd {
-            box-shadow: none;
         }
     }
 
     &[href^="http"] {
         &::after {
-            content: "";
-            background-color: var(--color-foreground);
-            width: var(--body-sm);
-            height: var(--body-sm);
+            content: "⬈ ";
             display: inline-block;
-            mask: url("/images/external-link.svg");
-            -webkit-mask: url("/images/external-link.svg");
-        }
-
-        &:hover::after {
-            background-color: var(--color-background);
         }
     }
 

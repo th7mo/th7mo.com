@@ -49,7 +49,7 @@
 
         & p {
             font-size: var(--body-sm);
-            font-weight: 300;
+            font-weight: 400;
         }
 
         &::before {

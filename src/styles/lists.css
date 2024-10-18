@@ -13,10 +13,4 @@ main li {
 
 li::marker {
     font-weight: 700;
-    font-size: var(--body-sm);
-}
-
-ol {
-    list-style-type: decimal-leading-zero;
-
 }
