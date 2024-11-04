@@ -1,11 +1,5 @@
 :root {
-    --rem: 1.1rem;
-}
-
-@media screen and (max-width: 450px) {
-    :root {
-        --rem: 1rem;        
-    }
+    --rem: 1rem;
 }
 
 * {
