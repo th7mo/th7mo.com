@@ -2,7 +2,7 @@
     export let dateCreated: string;
 </script>
 
-<footer>Posted on <time>{dateCreated}</time></footer>
+<footer>Created on <time>{dateCreated}</time></footer>
 
 <style>
     footer {
