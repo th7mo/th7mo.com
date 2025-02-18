@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font);
 }
 
 html {
@@ -24,8 +23,9 @@ body {
     overflow-y: scroll;
     overflow-wrap: break-word;
     background: var(--color-background);
+    font-family: var(--font);
     font-size: var(--body-md);
-    line-height: 1.35;
+    line-height: 1.5;
     color: var(--color-foreground);
 }
 

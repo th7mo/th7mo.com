@@ -4,7 +4,7 @@
     --title-lg: calc(1.5 * var(--body-md));
 
     --body-sm: calc(var(--body-md) / 1.125);
-    --body-md: calc(1.05 * var(--rem));
+    --body-md: calc(1.2 * var(--rem));
     --body-lg: calc(var(--body-md) * 1.125);
 }
 

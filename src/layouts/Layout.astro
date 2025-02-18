@@ -40,7 +40,7 @@ const currentPagePath = Astro.url.pathname.replace(".html", "").replace(/^\/|\/$
 
 <style>
     :root {
-        --page-width: 80ch;
+        --page-width: calc(47.5 * var(--rem));
         --page-padding: var(--spacing-md);
     }
 

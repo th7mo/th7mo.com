@@ -1,7 +1,16 @@
 :root {
-    --font: "Iosevka", mono;
+    --font: "Valkyrie", sans-serif;
+    --font-mono: "Iosevka", mono;
     --weight-normal: 400;
     --weight-bold: 900;
+}
+
+@font-face {
+   font-family: "Valkyrie";
+   src: url("/fonts/valkyrie-regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: sans-serif;
+   font-display: swap; 
 }
 
 @font-face {
