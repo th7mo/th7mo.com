@@ -4,8 +4,8 @@ title: "Lorem Ipsum"
 description: "The sandbox page for th7mo.com"
 ---
 
-It is used for this website to stress-test its features in a sandbox
-environment. Lorem Ipsum is placeholder text for previewing layouts.
+Lorem Ipsum is placeholder text for previewing layouts. It is used on this
+website to stress-test its features in a sandbox environment.
 
 ## Body text
 
