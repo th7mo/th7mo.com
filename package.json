@@ -11,7 +11,7 @@
     "devDependencies": {
         "astro": "5.4.2",
         "@astrojs/svelte": "7.0.4",
-        "svelte": "5.20.0",
+        "svelte": "5.25.6",
         "typescript": "5.8.2"
     }
 }
