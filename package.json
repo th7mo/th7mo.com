@@ -9,9 +9,9 @@
         "astro": "astro"
     },
     "devDependencies": {
-        "astro": "5.4.2",
+        "astro": "5.7.0",
         "@astrojs/svelte": "7.0.4",
         "svelte": "5.27.0",
-        "typescript": "5.8.2"
+        "typescript": "5.8.3"
     }
 }
