@@ -1,13 +1,14 @@
 code {
-    font-family: var(--font-mono);
-    font-size: var(--body-md);
-    font-weight: var(--weight-bold);
+    font-family: var(--font-regular);
 }
 
 pre {
     overflow-x: auto;
 
     & code {        
+        font-family: var(--font-mono);
+        font-size: var(--body-md);
+        font-weight: var(--weight-bold);
         display: block;
         background-color: transparent;
         padding: var(--spacing-md);
