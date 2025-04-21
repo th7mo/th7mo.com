@@ -1,6 +1,7 @@
 code {
     font-family: var(--font-mono);
-    font-size: var(--body-sm);
+    font-size: var(--body-md);
+    font-weight: var(--weight-bold);
 }
 
 pre {

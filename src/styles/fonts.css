@@ -1,30 +1,22 @@
 :root {
-    --font: "Valkyrie", sans-serif;
-    --font-mono: "Iosevka", mono;
+    --font: "Chicago", sans-serif;
+    --font-mono: "Pragmata Pro", mono;
     --weight-normal: 400;
-    --weight-bold: 900;
+    --weight-bold: 700;
 }
 
 @font-face {
-   font-family: "Valkyrie";
-   src: url("/fonts/valkyrie-regular.woff2") format("woff2");
+   font-family: "Chicago";
+   src: url("/fonts/chicago-400.woff2") format("woff2");
    font-weight: 400;
    font-style: sans-serif;
    font-display: swap; 
 }
 
 @font-face {
-   font-family: "Iosevka";
-   src: url("/fonts/iosevka-400-monospace.woff2") format("woff2");
-   font-weight: 400;
-   font-style: monospace;
-   font-display: swap; 
-}
-
-@font-face {
-   font-family: "Iosevka";
-   src: url("/fonts/iosevka-900-monospace.woff2") format("woff2");
-   font-weight: 900;
+   font-family: "Pragmata Pro";
+   src: url("/fonts/pragmata-pro-700-monospace.woff2") format("woff2");
+   font-weight: 700;
    font-style: monospace;
    font-display: swap; 
 }
