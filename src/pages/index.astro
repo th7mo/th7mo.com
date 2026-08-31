@@ -28,15 +28,21 @@ const externalListItems = [
 
     <TerminalList>
         {topLevelDirectories.map(listItem => (
-            <TerminalListItem dir><a href={listItem}>{listItem}/</a></TerminalListItem>
+            <TerminalListItem dir>
+                <a href={listItem}>{listItem}/</a>
+            </TerminalListItem>
         ))}
     </TerminalList>
 
     <TerminalList>
         {externalListItems.map(listItem => (
-            <TerminalListItem
-                executable
-            ><a target="_blank" href={listItem.href}/{username}>{listItem.displayName}</a>
+            <TerminalListItem executable>
+                <a
+                    target="_blank"
+                    href={listItem.href + "/" username}
+                >
+                    {listItem.displayName}
+                </a>
             </TerminalListItem>
         ))}
     </TerminalList>
