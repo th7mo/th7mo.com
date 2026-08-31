@@ -6,18 +6,19 @@ import TerminalListItem from "@components/TerminalListItem.svelte";
 const title = "Hi.";
 const description = "Some of my notes, served as a website";
 const topLevelDirectories = ["notes", "meta"];
+const username = "th7mo"
 const externalListItems = [
     {
-        href: "https://github.com/th7mo",
+        href: "https://github.com",
         displayName: "GitHub"
     },
     {
-        href: "https://soundcloud.com/th7mo",
+        href: "https://soundcloud.com",
         displayName: "SoundCloud"
     },
     {
-        href: "https://lieu.cblgh.org",
-        displayName: "Merveilles Webring"
+        href: "https://instagram.com",
+        displayName: "Instagram"
     }
 ];
 ---
@@ -35,7 +36,7 @@ const externalListItems = [
         {externalListItems.map(listItem => (
             <TerminalListItem
                 executable
-            ><a target="_blank" href={listItem.href}>{listItem.displayName}</a>
+            ><a target="_blank" href={listItem.href}/{username}>{listItem.displayName}</a>
             </TerminalListItem>
         ))}
     </TerminalList>
