@@ -9,7 +9,7 @@ interface Props {
     notes: CollectionEntry<"notes">[];
 }
 const { title, notes } = Astro.props;
-const description = `A collection of my ${notes.length} scattered thoughts`;
+const description = `A collection of my ${notes.length} notes, indexed by name`;
 ---
 
 <Layout title={title} description={description}>
