@@ -9,7 +9,7 @@
     const groupedNotes: {[key: string]: CollectionEntry<"notes">[]} = {};
 
     notes.forEach(note => {
-        let firstLetter = note.slug.charAt(0).toLowerCase();
+        let firstLetter = note.id.charAt(0).toLowerCase();
         if (!groupedNotes[firstLetter]) {
             groupedNotes[firstLetter] = [];
         }
@@ -22,7 +22,7 @@
     <TerminalList>
         {#each notes as note}
             <TerminalListItem date={note.data.dateLastModified}>
-                <a href={`${currentPagePath}/${note.slug}`}>{note.data.title}</a>
+                <a href={`${currentPagePath}/${note.id}`}>{note.data.title}</a>
             </TerminalListItem>
         {/each}
     </TerminalList>
